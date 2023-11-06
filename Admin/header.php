@@ -82,7 +82,7 @@
                     </form>
 
 
-                    <ul class="navbar-nav ml-auto">
+                    <!-- <ul class="navbar-nav ml-auto">
 
                         <div class="topbar-divider d-none d-sm-block"></div>
                         <li class="nav-item dropdown no-arrow">
@@ -105,6 +105,27 @@
                                             Đăng xuất
                                         </a>
                                 </div>
+                        </li>
+                    </ul> -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow d-flex align-items-center">
+                            <div>
+                                <a href="dangky.html"> Đăng ký </a>/
+                                <a href="dangky.html"> Đăng nhập </a>
+                            </div>
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">
+
+                                </span>
+
+                                <div>
+                                    <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+
+                                </div>
+
+
+                            </a>
                         </li>
                     </ul>
                 </nav>
