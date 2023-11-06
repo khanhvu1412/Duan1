@@ -40,16 +40,39 @@
             <div class="sidebar-heading">
                 Chức năng
             </div>
+
             <li class="nav-item">
-                <a class="nav-link" href="feedback.html">
-                    <i class="fas fa-fw fa-comment-dots"></i>
-                    <span>Feedbacks</span></a>
+                <a class="nav-link" href="index.php?act=">
+                    <i class="fas fa-fw fa-user-circle"></i>
+                    <span>Quản lý tài khoản</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="thongke.html">
+                <a class="nav-link" href="index.php?act=">
+                    <i class="fas fa-fw fa-clipboard"></i>
+                    <span>Quản lý danh mục</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.php?act=">
+                    <i class="fas fa-fw fa-box-open"></i>
+                    <span>Quản lý sản phẩm</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.php?act=">
+                    <i class=" fas fa-fw fa-comments "></i>
+                    <span>Quản lý bình luận</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.php?act=">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Thống kê</span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.php?act=">
+                    <i class="fas fa-fw fa-comment-dots"></i>
+                    <span>Feedbacks</span></a>
+            </li>
+
+
 
             <hr class="sidebar-divider d-none d-md-block">
 

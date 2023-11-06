@@ -7,7 +7,7 @@ include("header.php");
 if (isset($_GET['act'])) {
     $act = $_GET['act'];
     switch ($act) {
-        case 1:
+        case "":
             include("");
             break;
 
