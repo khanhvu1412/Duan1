@@ -42,27 +42,27 @@
             </div>
 
             <li class="nav-item">
-                <a class="nav-link" href="index.php?act=">
+                <a class="nav-link" href="index.php?act=listtk">
                     <i class="fas fa-fw fa-user-circle"></i>
                     <span>Quản lý tài khoản</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.php?act=">
+                <a class="nav-link" href="index.php?act=listdm">
                     <i class="fas fa-fw fa-clipboard"></i>
                     <span>Quản lý danh mục</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.php?act=">
+                <a class="nav-link" href="index.php?act=listsp">
                     <i class="fas fa-fw fa-box-open"></i>
                     <span>Quản lý sản phẩm</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.php?act=">
+                <a class="nav-link" href="index.php?act=listbl">
                     <i class=" fas fa-fw fa-comments "></i>
                     <span>Quản lý bình luận</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.php?act=">
+                <a class="nav-link" href="index.php?act=thongke">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Thống kê</span></a>
             </li>
