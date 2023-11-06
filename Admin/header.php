@@ -107,8 +107,8 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown no-arrow d-flex align-items-center">
                             <div>
-                                <a href="dangky.html"> Đăng ký </a>/
-                                <a href="dangky.html"> Đăng nhập </a>
+                                <!-- <a href="dangky.html"> Đăng ký </a>/ -->
+                                <a href="dangnhap.php"> Đăng nhập </a>
                             </div>
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
