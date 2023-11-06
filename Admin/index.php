@@ -1,7 +1,7 @@
 <?php
+
+
 include("header.php");
-include("home.php");
-include("footer.php");
 
 // contronler
 if (isset($_GET['act'])) {
@@ -13,7 +13,13 @@ if (isset($_GET['act'])) {
 
 
 
-    
+
     }
+} else {
+    include("home.php");
 }
+
+
+
+include("footer.php");
 ?>
