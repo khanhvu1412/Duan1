@@ -68,7 +68,7 @@
                 </table>
                 <form action="">
 
-                    <a href="index.php?act=bieudo.php"><input type="button" class="btn btn-primary" value="Biểu đồ"></a>
+                    <a href="index.php?act=bieudo"><input type="button" class="btn btn-primary" value="Biểu đồ"></a>
 
                 </form>
             </div>

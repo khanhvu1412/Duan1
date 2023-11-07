@@ -72,6 +72,12 @@
                     <span>Feedbacks</span></a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="index.php?act=">
+                    <!-- <i class="fas fa-fw "></i> -->
+                    <i class="fas fa-fw fa-solid fa-basket-shopping"></i>
+                    <span>Giỏ hàng</span></a>
+            </li>
 
 
             <hr class="sidebar-divider d-none d-md-block">

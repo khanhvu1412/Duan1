@@ -39,11 +39,11 @@ if (isset($_GET['act'])) {
             break;
 
         case "suadm":
-            include("taikhoan/update.php");
+            include("danhmuc/update.php");
             break;
 
         case "xoadm":
-            include("taikhoan/list.php");
+            include("danhmuc/list.php");
             break;
 
 
@@ -82,7 +82,7 @@ if (isset($_GET['act'])) {
             include("thongke/list.php");
             break;
 
-        case "thongke":
+        case "bieudo":
             include("thongke/bieudo.php");
             break;
 

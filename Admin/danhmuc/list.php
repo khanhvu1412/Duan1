@@ -46,16 +46,16 @@
                             <td>Áo</td>
                             <td>Áo gió</td>
                             <td>
-                                <input type="button" class="btn btn-primary" value="Sửa">
-                                <input type="button" class="btn btn-primary" value="Xóa">
+                                <a href="index.php?act=suadm"><input type="button" class="btn btn-primary" value="Sửa"></a>
+                                <a href="index.php?act=xoadm"><input type="button" class="btn btn-primary" value="Xóa"></a>
                             </td>
                         </tr>
                         <tr>
                             <td>Quần</td>
                             <td>Quần âu</td>
                             <td>
-                                <input type="button" class="btn btn-primary" value="Sửa">
-                                <input type="button" class="btn btn-primary" value="Xóa">
+                                <a href="index.php?act=suadm"><input type="button" class="btn btn-primary" value="Sửa"></a>
+                                <a href="index.php?act=xoadm"><input type="button" class="btn btn-primary" value="Xóa"></a>
                             </td>
                         </tr>
                     </tbody>

@@ -7,12 +7,20 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ["Direct", "Referral", "Social"],
+    labels: [
+      'Red',
+      'Blue',
+      'Yellow'
+    ],
     datasets: [{
-      data: [55, 30, 15],
-      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",
+      label: 'My First Dataset',
+      data: [300, 50, 100],
+      backgroundColor: [
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)'
+      ],
+      hoverOffset: 4
     }],
   },
   options: {
@@ -22,7 +30,7 @@ var myPieChart = new Chart(ctx, {
       bodyFontColor: "#858796",
       borderColor: '#dddfeb',
       borderWidth: 1,
-      xPadding: 15,
+      xPadding: 20,
       yPadding: 15,
       displayColors: false,
       caretPadding: 10,

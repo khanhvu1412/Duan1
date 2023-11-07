@@ -55,8 +55,8 @@
                             <td>Áo dành riêng cho phái nam</td>
                             <td>100</td>
                             <td>
-                                <input type="button" class="btn btn-primary" value="Sửa">
-                                <input type="button" class="btn btn-primary" value="Xóa">
+                                <a href="index.php?act=suasp"><input type="button" class="btn btn-primary" value="Sửa"></a>
+                                <a href="index.php?act=xoasp"><input type="button" class="btn btn-primary" value="Xóa"></a>
                             </td>
                         </tr>
                         <tr>
@@ -66,8 +66,8 @@
                             <td>Giảm 40% cho hôm nay</td>
                             <td>87</td>
                             <td>
-                                <input type="button" class="btn btn-primary" value="Sửa">
-                                <input type="button" class="btn btn-primary" value="Xóa">
+                                <a href="index.php?act=suasp"><input type="button" class="btn btn-primary" value="Sửa"></a>
+                                <a href="index.php?act=xoasp"><input type="button" class="btn btn-primary" value="Xóa"></a>
                             </td>
                         </tr>
                     </tbody>
