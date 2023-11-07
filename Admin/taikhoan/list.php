@@ -61,8 +61,10 @@
                             <td>09123743818</td>
                             <td>Admin</td>
                             <td>
-                                <input type="button" class="btn btn-primary" value="Sửa">
-                                <input type="button" class="btn btn-primary" value="Xóa">
+                                <a href="index.php?act=suatk"><input type="button" class="btn btn-primary"
+                                        value="Sửa"></a>
+                                <a href="index.php?act=xoatk"><input type="button" class="btn btn-primary"
+                                        value="Xóa"></a>
                             </td>
                         </tr>
                         <tr>
