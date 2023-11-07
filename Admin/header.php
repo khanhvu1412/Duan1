@@ -67,7 +67,7 @@
                     <span>Thống kê</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.php?act=">
+                <a class="nav-link" href="index.php?act=feedback">
                     <i class="fas fa-fw fa-comment-dots"></i>
                     <span>Feedbacks</span></a>
             </li>
