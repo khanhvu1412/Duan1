@@ -30,11 +30,11 @@
                     <h3>Admin</h3>
                 </div>
             </a>
-            <hr class="sidebar-divider my-0">
+            <!-- <hr class="sidebar-divider my-0">
             <li class="nav-item active">
                 <a class="nav-link" href="index.php?act=">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Trang chủ</span></a>
+                    <span>Trang chủ</span></a> -->
             </li>
             <hr class="sidebar-divider">
             <div class="sidebar-heading">
@@ -114,7 +114,7 @@
                         <li class="nav-item dropdown no-arrow d-flex align-items-center">
                             <div>
                                 <!-- <a href="dangky.html"> Đăng ký </a>/ -->
-                                <a href="dangnhap.php"> Xin chào Admin </a>
+                                <a href="dangnhap.php"> Admin </a>
                                 <!-- <a href="dangnhap.php"> Đăng nhập </a> -->
 
                             </div>
