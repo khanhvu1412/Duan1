@@ -32,7 +32,7 @@
             </a>
             <hr class="sidebar-divider my-0">
             <li class="nav-item active">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="index.php?act=">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Trang chủ</span></a>
             </li>
@@ -73,7 +73,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="index.php?act=">
+                <a class="nav-link" href="index.php?act=giohang">
                     <!-- <i class="fas fa-fw "></i> -->
                     <i class="fas fa-fw fa-solid fa-basket-shopping"></i>
                     <span>Giỏ hàng</span></a>
@@ -114,7 +114,9 @@
                         <li class="nav-item dropdown no-arrow d-flex align-items-center">
                             <div>
                                 <!-- <a href="dangky.html"> Đăng ký </a>/ -->
-                                <a href="dangnhap.php"> Đăng nhập </a>
+                                <a href="dangnhap.php"> Xin chào Admin </a>
+                                <!-- <a href="dangnhap.php"> Đăng nhập </a> -->
+
                             </div>
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

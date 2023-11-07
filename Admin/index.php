@@ -93,6 +93,10 @@ if (isset($_GET['act'])) {
         case "xoafeedback":
             include("feedback/list.php");
             break;
+        // Giỏ hàng
+        case "giohang":
+            include("giohang/giohang.php");
+            break;
         
         default:
             include("home.php");
