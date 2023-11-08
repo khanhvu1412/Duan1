@@ -29,10 +29,10 @@
                     <thead>
                         <tr>
                             <th>ID</th>
+                            <th>Tên đăng nhập</th>
+                            <th>Mật khẩu</th>
                             <th>Email</th>
-                            <th>Passworh</th>
-                            <th>Họ tên</th>
-                            <th>Ảnh</th>
+                            <th>Địa chỉ</th>
                             <th>Số điện thoại</th>
                             <th>Vai trò</th>
                             <th>Hành động</th>
@@ -42,30 +42,28 @@
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>vudkph37645@fpt.edu.vn</td>
-                            <td>**********</td>
                             <td>Đỗ Khánh Vũ</td>
-                            <td><img src="img/3.jpg" width="150"></td>
+                            <td>**********</td>
+                            <td>vudkph37645@fpt.edu.vn</td>
+                            <td>Phương Canh Hà Nội</td>
                             <td>09123743818</td>
                             <td>Admin</td>
                             <td>
-                                <a href="index.php?act=suatk"><input type="button" class="btn btn-primary"
-                                        value="Sửa"></a>
-                                <a href="index.php?act=xoatk"><input type="button" class="btn btn-primary"
-                                        value="Xóa"></a>
+                                <a href="index.php?act=suatk"><input type="button" class="btn btn-primary" value="Sửa"></a>
+                                <a href="index.php?act=xoatk"><input type="button" class="btn btn-primary" value="Xóa"></a>
                             </td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>huygp@gmail.com</td>
+                            <td>Đỗ Khánh Vũ</td>
                             <td>**********</td>
-                            <td>Phạm Gia Huy</td>
-                            <td><img src="img/4.jpg" width="150"></td>
-                            <td>03278382748</td>
+                            <td>vudkph37645@fpt.edu.vn</td>
+                            <td>Phương Canh Hà Nội</td>
+                            <td>09123743818</td>
                             <td>Nhân viên</td>
                             <td>
-                                <input type="button" class="btn btn-primary" value="Sửa">
-                                <input type="button" class="btn btn-primary" value="Xóa">
+                                <a href="index.php?act=suatk"><input type="button" class="btn btn-primary" value="Sửa"></a>
+                                <a href="index.php?act=xoatk"><input type="button" class="btn btn-primary" value="Xóa"></a>
                             </td>
                         </tr>
                     </tbody>

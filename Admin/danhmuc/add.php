@@ -12,12 +12,12 @@
                 <br>
                 <form action="">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Mã danh mục</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="exampleInputID" class="form-label">Mã danh mục</label>
+                        <input type="text" class="form-control" id="exampleInputID" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Tên danh mục</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1">
+                        <label for="exampleInputName" class="form-label">Tên danh mục</label>
+                        <input type="text" class="form-control" id="exampleInputName">
                     </div>
                     <a href="index.php?act=listdm"><input type="button" class="btn btn-primary" value="Thêm"></a>
                     <a href="index.php?act=adddm"><input type="reset" class="btn btn-primary" value="Nhập lại"></a>

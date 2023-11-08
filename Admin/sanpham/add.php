@@ -13,20 +13,20 @@
                 <br>
                 <form action="">
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Tên sản phẩm</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1">
+                        <label for="exampleInputName" class="form-label">Tên sản phẩm</label>
+                        <input type="text" class="form-control" id="exampleInputName">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Giá</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" >
+                        <label for="exampleInputPrice" class="form-label">Giá</label>
+                        <input type="text" class="form-control" id="exampleInputPrice" >
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Ảnh</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1">
+                        <label for="exampleInputImg" class="form-label">Ảnh</label>
+                        <input type="text" class="form-control" id="exampleInputImg">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Mô tả</label>
-                        <textarea class="form-control" rows="10" name="text"></textarea>
+                        <label for="exampleInputDescribe" class="form-label">Mô tả</label>
+                        <textarea class="form-control" rows="10" name="text" id="exampleInputDescribe"></textarea>
                     </div>
 
                     <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Thêm"></a>

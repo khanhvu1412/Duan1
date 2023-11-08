@@ -45,7 +45,7 @@
                             <td>Máy chạy rất mượt</td>
                             <td>31/10/2023</td>
                             <td>
-                                <input type="button" class="btn btn-primary" value="Xóa">
+                                <a href="index.php?act=xoabl"><input type="button" class="btn btn-primary" value="Xóa"></a>
                             </td>
                         </tr>
                         <tr>
@@ -55,7 +55,7 @@
                             <td>Máy đẹp</td>
                             <td>06/11/2023</td>
                             <td>
-                                <input type="button" class="btn btn-primary" value="Xóa">
+                            <a href="index.php?act=xoabl"><input type="button" class="btn btn-primary" value="Xóa"></a>
                             </td>
 
                     </tbody>
