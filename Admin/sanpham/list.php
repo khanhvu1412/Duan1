@@ -49,7 +49,7 @@
                     </tfoot>
                     <tbody>
                         <tr>
-                            <td>MS-003</td>
+                            <td>1</td>
                             <td>Áo polo ARIST</td>
                             <td><img src="../img/6.jpg" alt=""></td>
                             <td>Áo dành riêng cho phái nam</td>
@@ -60,7 +60,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>AT-001</td>
+                            <td>2</td>
                             <td>Quần âu GT-34</td>
                             <td><img src="../img/12.jpg" alt=""></td>
                             <td>Giảm 40% cho hôm nay</td>
