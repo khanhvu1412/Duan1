@@ -30,11 +30,6 @@
                     <h3>Admin</h3>
                 </div>
             </a>
-            <!-- <hr class="sidebar-divider my-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.php?act=">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Trang chủ</span></a> -->
             </li>
             <hr class="sidebar-divider">
             <div class="sidebar-heading">
@@ -71,7 +66,7 @@
                 <a class="nav-link" href="index.php?act=giohang">
                     <!-- <i class="fas fa-fw "></i> -->
                     <i class="fas fa-fw fa-solid fa-basket-shopping"></i>
-                    <span>Giỏ hàng</span></a>
+                    <span>Đơn hàng</span></a>
             </li>
 
 
@@ -109,7 +104,7 @@
                         <li class="nav-item dropdown no-arrow d-flex align-items-center">
                             <div>
                                 <!-- <a href="dangky.html"> Đăng ký </a>/ -->
-                                <a href="dangnhap.php"> Admin </a>
+                                Admin 
                                 <!-- <a href="dangnhap.php"> Đăng nhập </a> -->
 
                             </div>
@@ -129,3 +124,4 @@
                         </li>
                     </ul>
                 </nav>
+                
