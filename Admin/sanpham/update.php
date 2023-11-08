@@ -9,7 +9,7 @@
         <div class="card-body">
 
             <div class="table-responsive">
-                
+
                 <br>
                 <form action="">
                     <div class="mb-3">
@@ -18,7 +18,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Giá</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" >
+                        <input type="text" class="form-control" id="exampleInputEmail1">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Ảnh</label>
@@ -29,8 +29,9 @@
                         <textarea class="form-control" rows="10" name="text"></textarea>
                     </div>
 
-                    <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Sửa"></a>
+                    <<input type="button" class="btn btn-primary" value="Cập nhật">
                     <a href="index.php?act=addsp"><input type="reset" class="btn btn-primary" value="Nhập lại"></a>
+                    <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Danh sách"></a>
                 </form>
             </div>
         </div>
