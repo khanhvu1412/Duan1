@@ -42,7 +42,7 @@
                             <td>1</td>
                             <td>KH1</td>
                             <td>MT001</td>
-                            <td>Máy chạy rất mượt</td>
+                            <td>Quần áo rất đẹp và chất lượng</td>
                             <td>31/10/2023</td>
                             <td>
                                 <a href="index.php?act=xoabl"><input type="button" class="btn btn-primary" value="Xóa"></a>
@@ -52,7 +52,7 @@
                             <td>2</td>
                             <td>KH2</td>
                             <td>DT003</td>
-                            <td>Máy đẹp</td>
+                            <td>Áo rất đẹp</td>
                             <td>06/11/2023</td>
                             <td>
                             <a href="index.php?act=xoabl"><input type="button" class="btn btn-primary" value="Xóa"></a>
