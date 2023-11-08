@@ -24,7 +24,7 @@
                     <input type="submit" class="btn btn-primary" name="capnhat" value="Cập nhật">
                     <input type="reset" class="btn btn-primary" value="Nhập lại">
 
-                    <a href="index.php?act=listdm"><input type="reset" class="btn btn-primary" value="Danh sách"></a>
+                    <a href="index.php?act=listdm"><input type="button" class="btn btn-primary" value="Danh sách"></a>
                 </form>
             </div>
         </div>
