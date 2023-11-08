@@ -37,16 +37,6 @@
 
                         </tr>
                     </thead>
-                    <tfoot>
-                        <tr>
-                            <th>Mã sản phẩm</th>
-                            <th>Tên sản phẩm</th>
-                            <th>Hình</th>
-                            <th>Mô tả</th>
-                            <th>Lượt xem</th>
-                            <th>Hành động</th>
-                        </tr>
-                    </tfoot>
                     <tbody>
                         <tr>
                             <td>1</td>

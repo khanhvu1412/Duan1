@@ -34,13 +34,6 @@
 
                         </tr>
                     </thead>
-                    <tfoot>
-                        <tr>
-                            <th>Mã loại</th>
-                            <th>Tên loại</th>
-                            <th>Hành động</th>
-                        </tr>
-                    </tfoot>
                     <tbody>
                         <tr>
                             <td>Áo</td>

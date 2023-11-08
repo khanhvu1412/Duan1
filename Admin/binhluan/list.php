@@ -37,16 +37,6 @@
 
                         </tr>
                     </thead>
-                    <tfoot>
-                        <tr>
-                            <th>ID</th>
-                            <th>Iduser</th>
-                            <th>Idpro</th>
-                            <th>Nội dung</th>
-                            <th>Ngày bình luận</th>
-                            <th>Hành động</th>
-                        </tr>
-                    </tfoot>
                     <tbody>
                         <tr>
                             <td>1</td>

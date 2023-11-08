@@ -36,16 +36,6 @@
                             <th>Giá trung bình</th>
                         </tr>
                     </thead>
-                    <tfoot>
-                        <tr>
-                            <th>Mã danh mục</th>
-                            <th>Tên danh mục</th>
-                            <th>Số lượng</th>
-                            <th>Giá cao nhất</th>
-                            <th>Giá thấp nhất</th>
-                            <th>Giá trung bình</th>
-                        </tr>
-                    </tfoot>
                     <tbody>
                         <tr>
                             <td>1</td>

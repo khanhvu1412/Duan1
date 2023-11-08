@@ -39,18 +39,6 @@
 
                         </tr>
                     </thead>
-                    <tfoot>
-                        <tr>
-                            <td>Mã</td>
-                            <td>Email</td>
-                            <td>Password</td>
-                            <td>Họ tên</td>
-                            <td>Ảnh</td>
-                            <td>Số điện thoại</td>
-                            <td>Vai trò</td>
-                            <td>Hành động</td>
-                        </tr>
-                    </tfoot>
                     <tbody>
                         <tr>
                             <td>1</td>
