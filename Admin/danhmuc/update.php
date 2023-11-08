@@ -21,9 +21,10 @@
                         <input type="text" class="form-control" id="exampleInputName" >
                     </div>
                     
+                    <input type="submit" class="btn btn-primary" name="capnhat" value="Cập nhật">
+                    <input type="reset" class="btn btn-primary" value="Nhập lại">
 
-                    <a href="index.php?act=listdm"><input type="button" class="btn btn-primary" value="Sửa"></a>
-                    <a href="index.php?act=adddm"><input type="reset" class="btn btn-primary" value="Nhập lại"></a>
+                    <a href="index.php?act=listdm"><input type="reset" class="btn btn-primary" value="Danh sách"></a>
                 </form>
             </div>
         </div>

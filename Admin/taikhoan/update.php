@@ -37,8 +37,8 @@
                         <input type="text" class="form-control" id="exampleInputRole">
                     </div>
 
-                    <input type="submit" class="btn btn-primary" value="Cập nhật"></a>
-                    <input type="reset" class="btn btn-primary" value="Nhập lại"></a>
+                    <input type="submit" class="btn btn-primary" name="capnha" value="Cập nhật"></a>
+                    <input type="reset" class="btn btn-primary" value="Nhập lại">
                     <a href="index.php?act=listtk"><input type="button" class="btn btn-primary" value="Danh sách"></a></a>
                 </form>
             </div>

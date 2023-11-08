@@ -9,7 +9,7 @@
         <div class="card-body">
 
             <div class="table-responsive">
-                
+
                 <br>
                 <form action="">
                     <div class="mb-3">
@@ -18,7 +18,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPrice" class="form-label">Giá</label>
-                        <input type="text" class="form-control" id="exampleInputPrice" >
+                        <input type="text" class="form-control" id="exampleInputPrice">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputImg" class="form-label">Ảnh</label>
@@ -29,9 +29,9 @@
                         <textarea class="form-control" rows="10" name="text" id="exampleInputDescribe"></textarea>
                     </div>
 
-                    <input type="button" class="btn btn-primary" value="Thêm"></a>
-                    <a href="index.php?act=addsp"><input type="reset" class="btn btn-primary" value="Nhập lại"></a>
-                    <a href="index.php?act=listsp"><input type="submit" class="btn btn-primary" value="Danh sách"></a>
+                    <input type="submit" class="btn btn-primary" name="themmoi" value="Thêm mới">
+                    <input type="reset" class="btn btn-primary" value="Nhập lại">
+                    <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Danh sách"></a>
                 </form>
             </div>
         </div>

@@ -29,8 +29,9 @@
                         <textarea class="form-control" rows="10" name="text"></textarea>
                     </div>
 
-                    <<input type="button" class="btn btn-primary" value="Cập nhật">
-                    <a href="index.php?act=addsp"><input type="reset" class="btn btn-primary" value="Nhập lại"></a>
+                    <input type="submit" class="btn btn-primary" name="capnhat" value="Cập nhật">
+                    <input type="reset" class="btn btn-primary" value="Nhập lại">
+                    
                     <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Danh sách"></a>
                 </form>
             </div>

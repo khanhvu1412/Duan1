@@ -8,7 +8,7 @@
         </div>
         <div class="card-body">
             <div class="table-responsive">
-                
+
                 <br>
                 <form action="">
                     <div class="mb-3">
@@ -19,8 +19,11 @@
                         <label for="exampleInputName" class="form-label">Tên danh mục</label>
                         <input type="text" class="form-control" id="exampleInputName">
                     </div>
-                    <a href="index.php?act=listdm"><input type="button" class="btn btn-primary" value="Thêm"></a>
-                    <a href="index.php?act=adddm"><input type="reset" class="btn btn-primary" value="Nhập lại"></a>
+
+                    <input type="submit" class="btn btn-primary" name="themmoi" value="Thêm mới">
+                    <input type="reset" class="btn btn-primary" value="Nhập lại">
+
+                    <a href="index.php?act=listdm"><input type="button" class="btn btn-primary" value="Danh sách"></a>
                 </form>
             </div>
         </div>
