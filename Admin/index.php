@@ -86,13 +86,6 @@ if (isset($_GET['act'])) {
             include("thongke/bieudo.php");
             break;
 
-        case "feedback":
-            include("feedback/list.php");
-            break;
-        
-        case "xoafeedback":
-            include("feedback/list.php");
-            break;
         // Giỏ hàng
         case "giohang":
             include("giohang/giohang.php");

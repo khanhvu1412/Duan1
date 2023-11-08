@@ -10,7 +10,7 @@
 
             <div class="table-responsive">
                <br>
-                <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
+                <!-- <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -66,7 +66,7 @@
                             </td>
                         </tr>
                     </tbody>
-                </table>
+                </table> -->
             </div>
         </div>
     </div>
