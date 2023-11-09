@@ -14,8 +14,8 @@
 					<li class="product-item col-xs-12 col-sm-4 col-md-3">
 						<div class="product-inner">
 							<div class="product-thumb has-back-image">
-								<a href="#"><img src="images/products/1.jpg" alt=""></a>
-                                <a class="back-image" href="#"><img src="images/products/2.jpg" alt=""></a>
+								<a href="index.php?act=chitietsp"><img src="images/products/1.jpg" alt=""></a>
+                                <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/2.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
 									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
@@ -25,7 +25,7 @@
 							<div class="product-info">
 								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
 								<span class="price">
-									<ins>£85.00</ins>
+									<ins style = "color:red;">85.00 ₫</ins>
 								</span>
 								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
 							</div>
@@ -34,8 +34,8 @@
 					<li class="product-item col-xs-12 col-sm-4 col-md-3">
 						<div class="product-inner">
 							<div class="product-thumb has-back-image">
-								<a href="#"><img src="images/products/2.jpg" alt=""></a>
-                                <a class="back-image" href="#"><img src="images/products/3.jpg" alt=""></a>
+								<a href="index.php?act=chitietsp"><img src="images/products/2.jpg" alt=""></a>
+                                <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/3.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
 									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
@@ -45,8 +45,8 @@
 							<div class="product-info">
 								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
 								<span class="price">
-									<ins>£85.00</ins>
-									<del>£95.00</del>
+									<ins style = "color:red;">85.00 ₫</ins>
+									<del>95.00 ₫</del>
 								</span>
 								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
 							</div>
@@ -55,8 +55,8 @@
 					<li class="product-item col-xs-12 col-sm-4 col-md-3">
 						<div class="product-inner">
 							<div class="product-thumb has-back-image">
-								<a href="#"><img src="images/products/3.jpg" alt=""></a>
-                                <a class="back-image" href="#"><img src="images/products/4.jpg" alt=""></a>
+								<a href="index.php?act=chitietsp"><img src="images/products/3.jpg" alt=""></a>
+                                <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/4.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
 									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
@@ -66,7 +66,7 @@
 							<div class="product-info">
 								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
 								<span class="price">
-									<ins>£85.00</ins>
+									<ins style = "color:red;">85.00 ₫</ins>
 								</span>
 								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
 							</div>
@@ -75,8 +75,8 @@
 					<li class="product-item col-xs-12 col-sm-4 col-md-3">
 						<div class="product-inner">
 							<div class="product-thumb has-back-image">
-								<a href="#"><img src="images/products/4.jpg" alt=""></a>
-                                <a class="back-image" href="#"><img src="images/products/5.jpg" alt=""></a>
+								<a href="index.php?act=chitietsp"><img src="images/products/4.jpg" alt=""></a>
+                                <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/5.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
 									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
@@ -86,8 +86,8 @@
 							<div class="product-info">
 								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
 								<span class="price">
-									<ins>£85.00</ins>
-									<del>£95.00</del>
+									<ins style = "color:red;">85.00 ₫</ins>
+									<del>95.00 ₫</del>
 								</span>
 								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
 							</div>
@@ -96,8 +96,8 @@
 					<li class="product-item col-xs-12 col-sm-4 col-md-3">
 						<div class="product-inner">
 							<div class="product-thumb has-back-image">
-								<a href="#"><img src="images/products/5.jpg" alt=""></a>
-                                <a class="back-image" href="#"><img src="images/products/6.jpg" alt=""></a>
+								<a href="index.php?act=chitietsp"><img src="images/products/5.jpg" alt=""></a>
+                                <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/6.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
 									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
@@ -107,7 +107,7 @@
 							<div class="product-info">
 								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
 								<span class="price">
-									<ins>£85.00</ins>
+									<ins style = "color:red;">85.00 ₫</ins>
 								</span>
 								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
 							</div>
@@ -116,8 +116,8 @@
 					<li class="product-item col-xs-12 col-sm-4 col-md-3">
 						<div class="product-inner">
 							<div class="product-thumb has-back-image">
-								<a href="#"><img src="images/products/6.jpg" alt=""></a>
-                                <a class="back-image" href="#"><img src="images/products/7.jpg" alt=""></a>
+								<a href="index.php?act=chitietsp"><img src="images/products/6.jpg" alt=""></a>
+                                <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/7.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
 									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
@@ -127,7 +127,7 @@
 							<div class="product-info">
 								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
 								<span class="price">
-									<ins>£85.00</ins>
+									<ins style = "color:red;">85.00 ₫</ins>
 								</span>
 								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
 							</div>
@@ -136,8 +136,8 @@
 					<li class="product-item col-xs-12 col-sm-4 col-md-3">
 						<div class="product-inner">
 							<div class="product-thumb has-back-image">
-								<a href="#"><img src="images/products/7.jpg" alt=""></a>
-                                <a class="back-image" href="#"><img src="images/products/8.jpg" alt=""></a>
+								<a href="index.php?act=chitietsp"><img src="images/products/7.jpg" alt=""></a>
+                                <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/8.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
 									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
@@ -147,7 +147,7 @@
 							<div class="product-info">
 								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
 								<span class="price">
-									<ins>£85.00</ins>
+									<ins style = "color:red;">85.00 ₫</ins>
 								</span>
 								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
 							</div>
@@ -156,8 +156,8 @@
 					<li class="product-item col-xs-12 col-sm-4 col-md-3">
 						<div class="product-inner">
 							<div class="product-thumb has-back-image">
-								<a href="#"><img src="images/products/8.jpg" alt=""></a>
-                                <a class="back-image" href="#"><img src="images/products/9.jpg" alt=""></a>
+								<a href="index.php?act=chitietsp"><img src="images/products/8.jpg" alt=""></a>
+                                <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/9.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
 									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
@@ -167,7 +167,7 @@
 							<div class="product-info">
 								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
 								<span class="price">
-									<ins>£85.00</ins>
+									<ins style = "color:red;">85.00 ₫</ins>
 								</span>
 								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
 							</div>
@@ -176,8 +176,8 @@
 					<li class="product-item col-xs-12 col-sm-4 col-md-3">
 						<div class="product-inner">
 							<div class="product-thumb has-back-image">
-								<a href="#"><img src="images/products/9.jpg" alt=""></a>
-                                <a class="back-image" href="#"><img src="images/products/10.jpg" alt=""></a>
+								<a href="index.php?act=chitietsp"><img src="images/products/9.jpg" alt=""></a>
+                                <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/10.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
 									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
@@ -187,7 +187,7 @@
 							<div class="product-info">
 								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
 								<span class="price">
-									<ins>£85.00</ins>
+									<ins style = "color:red;">85.00 ₫</ins>
 								</span>
 								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
 							</div>
@@ -196,8 +196,8 @@
 					<li class="product-item col-xs-12 col-sm-4 col-md-3">
 						<div class="product-inner">
 							<div class="product-thumb has-back-image">
-								<a href="#"><img src="images/products/10.jpg" alt=""></a>
-                                <a class="back-image" href="#"><img src="images/products/11.jpg" alt=""></a>
+								<a href="index.php?act=chitietsp"><img src="images/products/10.jpg" alt=""></a>
+                                <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/11.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
 									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
@@ -207,7 +207,7 @@
 							<div class="product-info">
 								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
 								<span class="price">
-									<ins>£85.00</ins>
+									<ins style = "color:red;">85.00 ₫</ins>
 								</span>
 								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
 							</div>
@@ -216,8 +216,8 @@
 					<li class="product-item col-xs-12 col-sm-4 col-md-3">
 						<div class="product-inner">
 							<div class="product-thumb has-back-image">
-								<a href="#"><img src="images/products/11.jpg" alt=""></a>
-                                <a class="back-image" href="#"><img src="images/products/12.jpg" alt=""></a>
+								<a href="index.php?act=chitietsp"><img src="images/products/11.jpg" alt=""></a>
+                                <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/12.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
 									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
@@ -227,7 +227,7 @@
 							<div class="product-info">
 								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
 								<span class="price">
-									<ins>£85.00</ins>
+									<ins style = "color:red;">85.00 ₫</ins>
 								</span>
 								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
 							</div>
@@ -236,8 +236,8 @@
 					<li class="product-item col-xs-12 col-sm-4 col-md-3">
 						<div class="product-inner">
 							<div class="product-thumb has-back-image">
-								<a href="#"><img src="images/products/12.jpg" alt=""></a>
-                                <a class="back-image" href="#"><img src="images/products/13.jpg" alt=""></a>
+								<a href="index.php?act=chitietsp"><img src="images/products/12.jpg" alt=""></a>
+                                <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/13.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
 									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
@@ -247,7 +247,7 @@
 							<div class="product-info">
 								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
 								<span class="price">
-									<ins>£85.00</ins>
+									<ins style = "color:red;">85.00 ₫</ins>
 								</span>
 								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
 							</div>
@@ -257,8 +257,8 @@
 				<div class="navigation">
                     <ul>
                         <li><a href="#"><i class="fa fa-long-arrow-left"></i></a></li>
-                        <li><a href="#">1</a></li>
-                        <li class="active"><a href="#">2</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
                         <li><a href="#"><i class="fa fa-long-arrow-right"></i></a></li>
                     </ul>
