@@ -19,10 +19,10 @@
 	<div class="margin-top-30">
 		<div class="box-product-featured">
 			<div class="box-head banner-opacity">
-				<img src="images/b/19.jpg" alt="">
+			<img src="images/b/19.jpg" alt="">
 				<div class="inner">
 					<h2 class="box-title">MẶT HÀNG NỔI BẬT</h2>
-					<a href="category-4columns" class="box-link">MUA SẮM</a>
+					<a href="index.php?act=sanpham" class="box-link">MUA SẮM</a>
 				</div>
 			</div>
 			<div class="box-content">
@@ -102,9 +102,8 @@
 			<div class="box-head banner-opacity">
 				<img src="images/b/20.jpg" alt="">
 				<div class="inner">
-					<h2 class="box-title">FEATURED ITEMS</h2>
-					<span class="box-sub-title">Our Featured today!</span>
-					<a href="#" class="box-link">SHOP MORE ITEMS</a>
+					<h2 class="box-title">MẶT HÀNG NỔI BẬT</h2>
+					<a href="index.php?act=sanpham" class="box-link">MUA SẮM</a>
 				</div>
 			</div>
 			<div class="box-content">
@@ -192,9 +191,8 @@
 			<div class="box-head banner-opacity">
 				<img src="images/b/21.jpg" alt="">
 				<div class="inner">
-					<h2 class="box-title">FEATURED ITEMS</h2>
-					<span class="box-sub-title">Our Featured today!</span>
-					<a href="#" class="box-link">SHOP MORE ITEMS</a>
+					<h2 class="box-title">MẶT HÀNG NỔI BẬT</h2>
+					<a href="index.php?act=sanpham" class="box-link">MUA SẮM</a>
 				</div>
 			</div>
 			<div class="box-content">
