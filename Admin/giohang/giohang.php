@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Giỏ hàng</h1>
+        <h1 class="h3 mb-0 text-gray-800">Đơn hàng</h1>
     </div>
     <div class="card shadow mb-4">
         <div class="card-header py-3">
@@ -10,63 +10,50 @@
 
             <div class="table-responsive">
                <br>
-                <!-- <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Email</th>
-                            <th>Passworh</th>
-                            <th>Họ tên</th>
-                            <th>Ảnh</th>
+                            <th>Mã đơn</th>
+                            <th>Tên khách hàng</th>
+                            <th>Tên sản phẩm</th>
                             <th>Số điện thoại</th>
-                            <th>Vai trò</th>
+                            <th>Giá tiền</th>
+                            <th>Trạng thái</th>
                             <th>Hành động</th>
 
                         </tr>
                     </thead>
-                    <tfoot>
-                        <tr>
-                            <td>Mã</td>
-                            <td>Email</td>
-                            <td>Password</td>
-                            <td>Họ tên</td>
-                            <td>Ảnh</td>
-                            <td>Số điện thoại</td>
-                            <td>Vai trò</td>
-                            <td>Hành động</td>
-                        </tr>
-                    </tfoot>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>vudkph37645@fpt.edu.vn</td>
-                            <td>**********</td>
                             <td>Đỗ Khánh Vũ</td>
-                            <td><img src="img/3.jpg" width="150"></td>
+                            <td>Áo polo</td>
                             <td>09123743818</td>
-                            <td>Admin</td>
+                            <td>300.000 VNĐ</td>
+                            <td> <div class="trangthai form-cotrol btn-success">Đã thanh toán</div></td>
                             <td>
-                                <a href="index.php?act=suatk"><input type="button" class="btn btn-primary"
+                                <a href="index.php?act=suagh"><input type="button" class="btn btn-primary"
                                         value="Sửa"></a>
-                                <a href="index.php?act=xoatk"><input type="button" class="btn btn-primary"
+                                <a href="index.php?act=xoagh"><input type="button" class="btn btn-primary"
                                         value="Xóa"></a>
                             </td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>huygp@gmail.com</td>
-                            <td>**********</td>
                             <td>Phạm Gia Huy</td>
-                            <td><img src="img/4.jpg" width="150"></td>
-                            <td>03278382748</td>
-                            <td>Nhân viên</td>
+                            <td>Quần Âu</td>
+                            <td>09127357368</td>
+                            <td>450.000 VNĐ</td>
+                            <td> <div class="trangthai form-cotrol btn-warning">Đang giao hàng</div></td>
                             <td>
-                                <input type="button" class="btn btn-primary" value="Sửa">
-                                <input type="button" class="btn btn-primary" value="Xóa">
+                                <a href="index.php?act=suagh"><input type="button" class="btn btn-primary"
+                                        value="Sửa"></a>
+                                <a href="index.php?act=xoagh"><input type="button" class="btn btn-primary"
+                                        value="Xóa"></a>
                             </td>
                         </tr>
                     </tbody>
-                </table> -->
+                </table>
             </div>
         </div>
     </div>

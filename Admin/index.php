@@ -90,7 +90,15 @@ if (isset($_GET['act'])) {
         case "giohang":
             include("giohang/giohang.php");
             break;
-        
+
+        case "suagh":
+            include("giohang/update.php");
+            break;
+
+        case "xoagh":
+            include("giohang/giohang.php");
+            break;
+
         default:
             include("home.php");
             break;
