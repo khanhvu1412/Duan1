@@ -8,9 +8,8 @@
         </div>
         <div class="card-body">
 
-            <div id="myChart" style="width:100%; max-width:900px; height:600px; ">
+            <div id="myChart" style="width:100%;  height:600px; ">
             </div>
-            <div class="bieudo">
                 <script>
                     google.charts.load('current', { 'packages': ['corechart'] });
                     google.charts.setOnLoadCallback(drawChart);
@@ -33,7 +32,6 @@
                         chart.draw(data, options);
                     }
                 </script>
-            </div>
 
 
         </div>
