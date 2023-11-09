@@ -7,31 +7,34 @@
             <h4 class="m-0 font-weight-bold text-primary">Biểu đồ</h4>
         </div>
         <div class="card-body">
-            <!-- <script>
-                const config= {
-                    type: 'pie',
-                        data: data,
-                }
-                ;
-                const data= {
-                    labels: [ 'Red',
-                    'Blue',
-                    'Yellow'
-                    ],
-                    datasets: [ {
-                        label: 'My First Dataset',
-                            data: [300, 50, 100],
-                            backgroundColor: [ 'rgb(255, 99, 132)',
-                            'rgb(54, 162, 235)',
-                            'rgb(255, 205, 86)'
-                            ],
-                            hoverOffset: 4
+
+            <div id="myChart" style="width:100%; max-width:900px; height:600px; ">
+            </div>
+            <div class="bieudo">
+                <script>
+                    google.charts.load('current', { 'packages': ['corechart'] });
+                    google.charts.setOnLoadCallback(drawChart);
+
+                    function drawChart() {
+                        const data = google.visualization.arrayToDataTable([
+                            ['Tên', 'Số liệu'],
+                            ['Sản phẩm 1', 54.8],
+                            ['Sản phẩm 2', 48.6],
+                            ['Sản phẩm 3', 44.4],
+                            ['Sản phẩm 4', 23.9],
+                            ['Sản phẩm 5', 14.5]
+                        ]);
+
+                        const options = {
+                            title: 'Biểu đồ thống kê'
+                        };
+
+                        const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+                        chart.draw(data, options);
                     }
-                    ]
-                }
-                ;
-                </script> -->
-                
+                </script>
+            </div>
+
 
         </div>
     </div>

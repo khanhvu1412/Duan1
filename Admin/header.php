@@ -11,6 +11,7 @@
 
     <title>Admin </title>
 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
