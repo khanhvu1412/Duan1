@@ -115,7 +115,7 @@
 							</div>
 						</div>
 						<ul class="boutique-nav main-menu clone-main-menu">                                      
-							<li class="active menu-item-has-children item-megamenu">
+							<li class="menu-item-has-children item-megamenu">
 								<a href="index.php">HOME</a>
 							</li>
 	                        <li class="menu-item-has-children item-megamenu">

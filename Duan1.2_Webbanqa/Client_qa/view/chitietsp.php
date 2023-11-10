@@ -45,22 +45,24 @@
                             <span>Availalbe: <span class="text-primary">In Stock</span></span>
                         </div>
                         <div class="short-descript">
-                            A t-shirt that comes in three colors (red, white and blue) and three sizes (small, medium,
-                            large) is a configurable product. A configurable product is made up of other simple
-                            products. you can create a configurable product that ties them all together, and gives the
-                            end user the choice, usually from a drop-down menu.
+                            Một chiếc áo phông có ba màu (đỏ, trắng và xanh) và ba kích cỡ (nhỏ, vừa,
+                            lớn) là một sản phẩm có thể cấu hình. Một sản phẩm có thể cấu hình được tạo thành từ những
+                            thứ đơn giản khác
+                            các sản phẩm. bạn có thể tạo một sản phẩm có thể cấu hình để liên kết tất cả chúng lại với
+                            nhau và cung cấp
+                            sự lựa chọn của người dùng cuối, thường là từ menu thả xuống.
                         </div>
                         <div class="select-color">
-                            <label>COLOR</label>
+                            <label>MÀU</label>
                             <div class="inner">
                                 <a href="#"><span style="background-color:#736357;"></span></a>
-                                <a class="active" href="#"><span style="background-color:#bdb871;"></span></a>
+                                <a href="#"><span style="background-color:#bdb871;"></span></a>
                                 <a href="#"><span style="background-color:#f26522;"></span></a>
                                 <a href="#"><span style="background-color:#fff799;"></span></a>
                             </div>
                         </div>
                         <div class="select-size">
-                            <label>SIZE OPTIONS</label>
+                            <label>SIZE </label>
                             <div class="inner">
                                 <a class="active" href="#"><span>S</span></a>
                                 <a href="#"><span>M</span></a>
@@ -91,23 +93,21 @@
 <div class="container">
     <div class="tab-details-product style2">
         <ul class="box-tabs nav-tab">
-            <li class="active"><a data-toggle="tab" href="#tab-1">DESCRIPTION</a></li>
-            <li><a data-toggle="tab" href="#tab-2">ADDITIONAL INFORMATION</a></li>
+            <li class="active"><a data-toggle="tab" href="#tab-1">MÔ TẢ</a></li>
+            <li><a data-toggle="tab" href="#tab-2">THÔNG TIN </a></li>
         </ul>
         <div class="tab-container">
             <div id="tab-1" class="tab-panel active">
-                <p>Lorem ipsum dolor sit amet isse potenti sesquam ante aliquet lacusemper elit. Cras neque nulla
-                    convallis non comodo.</p>
                 <ul>
-                    <li>Soft-touch jersey</li>
-                    <li>Crew neck </li>
-                    <li>Logo print</li>
-                    <li>Regular fit - true to size</li>
+                    <li>Áo jersey mềm mại</li>
+                    <li>Cổ thuyền</li>
+                    <li>In logo</li>
+                    <li>Vừa vặn thông thường - đúng kích cỡ</li>
                 </ul>
                 <ul>
-                    <li>Machine wash</li>
+                    <li>Giặt máy</li>
                     <li>100% Cotton</li>
-                    <li>Our model wears a size Medium and is 185.5cm/6'1" tall</li>
+                    <li>Người mẫu của chúng tôi mặc cỡ Trung bình và cao 185,5cm/6'1</li>
                 </ul>
             </div>
             <div id="tab-2" class="tab-panel">
@@ -125,7 +125,7 @@
     </div>
     <div class="product-slide upsell-products">
         <div class="section-title text-center">
-            <h3>UPSELL PRODUCTS</h3>
+            <h3>SẢN PHẨM UPSELL</h3>
         </div>
         <ul class="owl-carousel" data-responsive='{"0":{"items":1},"600":{"items":3},"1000":{"items":4}}'
             data-autoplay="true" data-loop="true" data-items="4" data-dots="false" data-nav="false" data-margin="30">
@@ -135,14 +135,13 @@
                         <a href="#"><img src="images/products/5.jpg" alt=""></a>
                         <div class="gorup-button">
                             <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-                            <a href="#" class="compare"><i class="fa fa-exchange"></i></a>
                             <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
                         <span class="price">
-                            <ins style = "color:red"> 85.00 ₫</ins>
+                            <ins style="color:red"> 85.00 ₫</ins>
                             <del>95.00 ₫</del>
                         </span>
                         <a href="#" class="button">ADD TO CART</a>
@@ -155,14 +154,13 @@
                         <a href="#"><img src="images/products/6.jpg" alt=""></a>
                         <div class="gorup-button">
                             <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-                            <a href="#" class="compare"><i class="fa fa-exchange"></i></a>
                             <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
                         <span class="price">
-                            <ins style = "color:red"> 85.00 ₫</ins>
+                            <ins style="color:red"> 85.00 ₫</ins>
                             <del>95.00 ₫</del>
                         </span>
                         <a href="#" class="button">ADD TO CART</a>
@@ -175,14 +173,13 @@
                         <a href="#"><img src="images/products/7.jpg" alt=""></a>
                         <div class="gorup-button">
                             <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-                            <a href="#" class="compare"><i class="fa fa-exchange"></i></a>
                             <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
                         <span class="price">
-                            <ins style = "color:red"> 85.00 ₫</ins>
+                            <ins style="color:red"> 85.00 ₫</ins>
                             <del>95.00 ₫</del>
                         </span>
                         <a href="#" class="button">ADD TO CART</a>
@@ -195,14 +192,13 @@
                         <a href="#"><img src="images/products/8.jpg" alt=""></a>
                         <div class="gorup-button">
                             <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-                            <a href="#" class="compare"><i class="fa fa-exchange"></i></a>
                             <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
                         <span class="price">
-                            <ins style = "color:red"> 85.00 ₫</ins>
+                            <ins style="color:red"> 85.00 ₫</ins>
                             <del>95.00 ₫</del>
                         </span>
                         <a href="#" class="button">ADD TO CART</a>

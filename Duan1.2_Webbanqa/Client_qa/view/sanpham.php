@@ -18,7 +18,6 @@
                                 <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/2.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 									<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 								</div>
 							</div>
@@ -38,7 +37,6 @@
                                 <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/3.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 									<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 								</div>
 							</div>
@@ -59,7 +57,6 @@
                                 <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/4.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 									<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 								</div>
 							</div>
@@ -79,7 +76,6 @@
                                 <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/5.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 									<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 								</div>
 							</div>
@@ -100,7 +96,6 @@
                                 <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/6.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 									<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 								</div>
 							</div>
@@ -120,7 +115,6 @@
                                 <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/7.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 									<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 								</div>
 							</div>
@@ -140,7 +134,6 @@
                                 <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/8.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 									<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 								</div>
 							</div>
@@ -160,7 +153,6 @@
                                 <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/9.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 									<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 								</div>
 							</div>
@@ -180,7 +172,6 @@
                                 <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/10.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 									<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 								</div>
 							</div>
@@ -200,7 +191,6 @@
                                 <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/11.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 									<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 								</div>
 							</div>
@@ -220,7 +210,6 @@
                                 <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/12.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 									<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 								</div>
 							</div>
@@ -240,7 +229,6 @@
                                 <a class="back-image" href="index.php?act=chitietsp"><img src="images/products/13.jpg" alt=""></a>
 								<div class="gorup-button">
 									<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-									<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 									<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 								</div>
 							</div>
@@ -257,7 +245,7 @@
 				<div class="navigation">
                     <ul>
                         <li><a href="#"><i class="fa fa-long-arrow-left"></i></a></li>
-                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
                         <li><a href="#"><i class="fa fa-long-arrow-right"></i></a></li>
