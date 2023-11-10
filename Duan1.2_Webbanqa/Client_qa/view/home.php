@@ -35,7 +35,6 @@
 									<a class="back-image" href = "index.php?act=chitietsp"><img src="images/products/19.jpg" alt=""></a>
 									<div class="gorup-button">
 										<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-										<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 										<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 									</div>
 								</div>
@@ -45,7 +44,7 @@
 										<ins style = "color: red;" >85.00 ₫</ins>
 										<del>95.00 ₫</del>
 									</span>
-									<a href="#" class="button add_to_cart_button">Thêm vào giỏ hàng</a>
+									<a href="index.php?act=chitietsp" >Xem sản phẩm</a>
 								</div>
 							</div>
 						</li>
@@ -56,7 +55,6 @@
 									<a class="back-image" href = "index.php?act=chitietsp"><img src="images/products/20.jpg" alt=""></a>
 									<div class="gorup-button">
 										<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-										<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 										<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 									</div>
 								</div>
@@ -66,7 +64,7 @@
 										<ins style ="color: red;">85.00 ₫</ins>
 										<del>95.00 ₫</del>
 									</span>
-									<a href="#" class="button add_to_cart_button">Thêm vào giỏ hàng</a>
+									<a href="index.php?act=chitietsp" >Xem sản phẩm</a>
 								</div>
 							</div>
 						</li>
@@ -77,7 +75,6 @@
 									<a class="back-image" href = "index.php?act=chitietsp"><img src="images/products/21.jpg" alt=""></a>
 									<div class="gorup-button">
 										<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-										<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 										<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 									</div>
 								</div>
@@ -87,7 +84,7 @@
 										<ins style ="color: red;">85.00 ₫</ins>
 										<del>95.00 ₫</del>
 									</span>
-									<a href="#" class="button add_to_cart_button">Thêm vào giỏ hàng</a>
+									<a href="index.php?act=chitietsp" >Xem sản phẩm</a>
 								</div>
 							</div>
 						</li>
@@ -116,7 +113,6 @@
 									<a class="back-image" href = "index.php?act=chitietsp"><img src="images/products/22.jpg" alt=""></a>
 									<div class="gorup-button">
 										<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-										<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 										<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 									</div>
 								</div>
@@ -126,7 +122,7 @@
 										<ins style ="color: red;">85.00 ₫</ins>
 										<del>95.00 ₫</del>
 									</span>
-									<a href="#" class="button add_to_cart_button">Thêm vào giỏ hàng</a>
+									<a href="index.php?act=chitietsp" >Xem sản phẩm</a>
 								</div>
 							</div>
 						</li>
@@ -137,7 +133,6 @@
 									<a class="back-image" href = "index.php?act=chitietsp"><img src="images/products/23.jpg" alt=""></a>
 									<div class="gorup-button">
 										<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-										<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 										<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 									</div>
 								</div>
@@ -147,7 +142,7 @@
 										<ins style ="color: red;">85.00 ₫</ins>
 										<del>95.00 ₫</del>
 									</span>
-									<a href="#" class="button add_to_cart_button">Thêm vào giỏ hàng</a>
+									<a href="index.php?act=chitietsp" >Xem sản phẩm</a>
 								</div>
 							</div>
 						</li>
@@ -158,7 +153,6 @@
 									<a class="back-image" href = "index.php?act=chitietsp"><img src="images/products/24.jpg" alt=""></a>
 									<div class="gorup-button">
 										<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-										<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 										<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 									</div>
 								</div>
@@ -168,7 +162,7 @@
 										<ins style ="color: red;">85.00 ₫</ins>
 										<del>95.00 ₫</del>
 									</span>
-									<a href="#" class="button add_to_cart_button">Thêm vào giỏ hàng</a>
+									<a href="index.php?act=chitietsp" >Xem sản phẩm</a>
 								</div>
 							</div>
 						</li>
@@ -205,7 +199,6 @@
 									<a class="back-image" href = "index.php?act=chitietsp"><img src="images/products/25.jpg" alt=""></a>
 									<div class="gorup-button">
 										<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-										<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 										<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 									</div>
 								</div>
@@ -215,7 +208,7 @@
 										<ins style ="color: red;">85.00 ₫</ins>
 										<del>95.00 ₫</del>
 									</span>
-									<a href="#" class="button add_to_cart_button">Thêm vào giỏ hàng</a>
+									<a href="index.php?act=chitietsp" >Xem sản phẩm</a>
 								</div>
 							</div>
 						</li>
@@ -226,7 +219,6 @@
 									<a class="back-image" href = "index.php?act=chitietsp"><img src="images/products/26.jpg" alt=""></a>
 									<div class="gorup-button">
 										<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-										<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 										<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 									</div>
 								</div>
@@ -236,7 +228,7 @@
 										<ins style ="color: red;">85.00 ₫</ins>
 										<del>95.00 ₫</del>
 									</span>
-									<a href="#" class="button add_to_cart_button">Thêm vào giỏ hàng</a>
+									<a href="index.php?act=chitietsp" >Xem sản phẩm</a>
 								</div>
 							</div>
 						</li>
@@ -247,7 +239,6 @@
 									<a class="back-image" href = "index.php?act=chitietsp"><img src="images/products/27.jpg" alt=""></a>
 									<div class="gorup-button">
 										<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-										<a href="#" class="compare"><i class="fa fa-exchange"></i></a>
 										<a href="#" class="quick-view"><i class="fa fa-search"></i></a>
 									</div>
 								</div>
@@ -257,7 +248,7 @@
 										<ins style ="color: red;">85.00 ₫</ins>
 										<del>95.00 ₫</del>
 									</span>
-									<a href="#" class="button add_to_cart_button">Thêm vào giỏ hàng</a>
+									<a href="index.php?act=chitietsp" >Xem sản phẩm</a>
 								</div>
 							</div>
 						</li>
