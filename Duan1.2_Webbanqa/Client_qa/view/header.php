@@ -73,7 +73,7 @@
 	                                		</div>
 	                                		<div class="info">
 	                                			<h4 class="product-name"><a href="#">LONDON STAR SWEATSHIRT</a></h4>
-	                                			<span class="price">1x£375.00</span>
+	                                			<span class="price">375.00 ₫</span>
 	                                			<a class="remove-item" href="#"><i class="fa fa-close"></i></a>
 	                                		</div>
 	                                	</li>
@@ -83,7 +83,7 @@
 	                                		</div>
 	                                		<div class="info">
 	                                			<h4 class="product-name"><a href="#">LONDON STAR SWEATSHIRT</a></h4>
-	                                			<span class="price">1x£375.00</span>
+	                                			<span class="price">375.00 ₫</span>
 	                                			<a class="remove-item" href="#"><i class="fa fa-close"></i></a>
 	                                		</div>
 	                                	</li>

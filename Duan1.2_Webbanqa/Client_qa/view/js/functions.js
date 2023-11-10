@@ -303,22 +303,22 @@
       })
     }
 
-    /* ---------------------------------------------
-     Init popup
-     --------------------------------------------- */
-    // function init_popup(){
-    //     if($(window).width() + boutique_get_scrollbar_width() >= 768){
-    //         if($('body').hasClass('home')){
-    //             //Open directly via API
-    //             $.magnificPopup.open({
-    //               items: {
-    //                 src: '<div class="white-popup"><div class="kt-popup-newsletter"><div class="popup-title"><h3>BoutiQue</h3><img src="images/arow-popup.png" alt=""><p class="notice">Nhập email của bạn và nhận <span class="primary">Giảm 25%</span> Cho lượt mua hàng đầu tiên của bạn</p></div><form class="form-subscribe"><input class="input" placeholder="Nhập email" type="text" /><button class="button">Không, Cảm ơn!</button><button class="button">Ok</button></form><div class="checkbox"><label><input type="checkbox" value="">Không hiển thị cửa số này nữa</label></div></div></div>',  //can be a HTML string, jQuery object, or CSS selector
-    //                 type: 'inline'
-    //               }
-    //             });
-    //         }
-    //     }
-    // }
+    // /* ---------------------------------------------
+    //  Init popup
+    //  --------------------------------------------- */
+    // // function init_popup(){
+    // //     if($(window).width() + boutique_get_scrollbar_width() >= 768){
+    // //         if($('body').hasClass('home')){
+    // //             //Open directly via API
+    // //             $.magnificPopup.open({
+    // //               items: {
+    // //                 src: '<div class="white-popup"><div class="kt-popup-newsletter"><div class="popup-title"><h3>BoutiQue</h3><img src="images/arow-popup.png" alt=""><p class="notice">Nhập email của bạn và nhận <span class="primary">Giảm 25%</span> Cho lượt mua hàng đầu tiên của bạn</p></div><form class="form-subscribe"><input class="input" placeholder="Nhập email" type="text" /><button class="button">Không, Cảm ơn!</button><button class="button">Ok</button></form><div class="checkbox"><label><input type="checkbox" value="">Không hiển thị cửa số này nữa</label></div></div></div>',  //can be a HTML string, jQuery object, or CSS selector
+    // //                 type: 'inline'
+    // //               }
+    // //             });
+    // //         }
+    // //     }
+    // // }
 
     // function kt_parallax(){
     //   //parallax
