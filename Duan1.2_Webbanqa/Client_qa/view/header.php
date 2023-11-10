@@ -58,7 +58,7 @@
 							<form  class="box-search show-icon">
 								<span class="icon"><span class="pe-7s-search"></span></span>
 								<div class="inner">
-									<input type="text" class="search" placeholder="Search here...">
+									<input type="text" class="search" placeholder="Search here..." required>
 									<button class="button-search"><span class="pe-7s-search"></span></button>
 								</div>
 							</form>
@@ -89,7 +89,7 @@
 	                                	</li>
 	                                </ul>
 	                                <div class="sub-total">
-	                                	Tổng: £255.00
+	                                	Tổng: 255.000 ₫
 	                                </div>
 	                                <div class="group-button">
 	                                	<a href="#" class="button">Giỏ hàng</a>
@@ -107,7 +107,6 @@
 	                                        <ul>
 	                                            <li><a href="#"><span> <i class="fa-solid fa-circle-user"></i> Tài khoản </span></a></li>                                               
 	                                            <li><a href="#"></i><span> <i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuất</span></a></li>
-	                                             <!-- <li><a href="#"><i class="icon-lock-open icons"></i><span>Login / Register</span></a></li> -->
 	                                        </ul>
 	                                    </div>
 	                            	</div>
