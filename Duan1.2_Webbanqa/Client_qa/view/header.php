@@ -58,7 +58,7 @@
 							<form  class="box-search show-icon">
 								<span class="icon"><span class="pe-7s-search"></span></span>
 								<div class="inner">
-									<input type="text" class="search" placeholder="Search here..." required>
+									<input type="text" class="search" placeholder="Tìm kiếm..." required>
 									<button class="button-search"><span class="pe-7s-search"></span></button>
 								</div>
 							</form>
