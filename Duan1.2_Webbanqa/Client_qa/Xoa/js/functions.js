@@ -303,22 +303,22 @@
 //       })
 //     }
 
-//     // /* ---------------------------------------------
-//     //  Init popup
-//     //  --------------------------------------------- */
-//     // // function init_popup(){
-//     // //     if($(window).width() + boutique_get_scrollbar_width() >= 768){
-//     // //         if($('body').hasClass('home')){
-//     // //             //Open directly via API
-//     // //             $.magnificPopup.open({
-//     // //               items: {
-//     // //                 src: '<div class="white-popup"><div class="kt-popup-newsletter"><div class="popup-title"><h3>BoutiQue</h3><img src="images/arow-popup.png" alt=""><p class="notice">Nhập email của bạn và nhận <span class="primary">Giảm 25%</span> Cho lượt mua hàng đầu tiên của bạn</p></div><form class="form-subscribe"><input class="input" placeholder="Nhập email" type="text" /><button class="button">Không, Cảm ơn!</button><button class="button">Ok</button></form><div class="checkbox"><label><input type="checkbox" value="">Không hiển thị cửa số này nữa</label></div></div></div>',  //can be a HTML string, jQuery object, or CSS selector
-//     // //                 type: 'inline'
-//     // //               }
-//     // //             });
-//     // //         }
-//     // //     }
-//     // // }
+//     /* ---------------------------------------------
+//      Init popup
+//      --------------------------------------------- */
+//     // function init_popup(){
+//     //     if($(window).width() + boutique_get_scrollbar_width() >= 768){
+//     //         if($('body').hasClass('home')){
+//     //             //Open directly via API
+//     //             $.magnificPopup.open({
+//     //               items: {
+//     //                 src: '<div class="white-popup"><div class="kt-popup-newsletter"><div class="popup-title"><h3>BoutiQue</h3><img src="images/arow-popup.png" alt=""><p class="notice">Nhập email của bạn và nhận  <span class="primary">giảm 25% </span> cho lần mua đầu tiên của bạn!</p></div><form class="form-subscribe"><input class="input" placeholder="Nhập email" type="text" /><button class="button">Không, Cảm ơn!</button><button class="button">Ok</button></form><div class="checkbox"><label><input type="checkbox" value="">Dont show this popup again!</label></div></div></div>',  //can be a HTML string, jQuery object, or CSS selector
+//     //                 type: 'inline'
+//     //               }
+//     //             });
+//     //         }
+//     //     }
+//     // }
 
 //     // function kt_parallax(){
 //     //   //parallax
@@ -334,20 +334,20 @@
 //     /* ---------------------------------------------
 //      COUNTDOWN
 //      --------------------------------------------- */
-//     //  function kt_countdown(){
-//     //     if($('.kt-countdown').length >0){
-//     //       var labels = ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'];
-//     //       var layout = '<span class="box-count day"><span class="number">{dnn}</span> <span class="text">Days</span></span><span class="dot">:</span><span class="box-count hrs"><span class="number">{hnn}</span> <span class="text">Hrs</span></span><span class="dot">:</span><span class="box-count min"><span class="number">{mnn}</span> <span class="text">Mins</span></span><span class="dot">:</span><span class="box-count secs"><span class="number">{snn}</span> <span class="text">Secs</span></span>';
-//     //       $('.kt-countdown').each(function() {
-//     //           var austDay = new Date($(this).data('y'),$(this).data('m') - 1,$(this).data('d'),$(this).data('h'),$(this).data('i'),$(this).data('s'));
-//     //           $(this).countdown({
-//     //               until: austDay,
-//     //               labels: labels, 
-//     //               layout: layout
-//     //           });
-//     //       });
-//     //     }
-//     //  }
+//      function kt_countdown(){
+//         if($('.kt-countdown').length >0){
+//           var labels = ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'];
+//           var layout = '<span class="box-count day"><span class="number">{dnn}</span> <span class="text">Days</span></span><span class="dot">:</span><span class="box-count hrs"><span class="number">{hnn}</span> <span class="text">Hrs</span></span><span class="dot">:</span><span class="box-count min"><span class="number">{mnn}</span> <span class="text">Mins</span></span><span class="dot">:</span><span class="box-count secs"><span class="number">{snn}</span> <span class="text">Secs</span></span>';
+//           $('.kt-countdown').each(function() {
+//               var austDay = new Date($(this).data('y'),$(this).data('m') - 1,$(this).data('d'),$(this).data('h'),$(this).data('i'),$(this).data('s'));
+//               $(this).countdown({
+//                   until: austDay,
+//                   labels: labels, 
+//                   layout: layout
+//               });
+//           });
+//         }
+//      }
 //     /* ---------------------------------------------
 //      Scripts initialization
 //      --------------------------------------------- */

@@ -8695,12 +8695,12 @@ table{
     width: 433px;
     margin: 20px auto;
 }
-.kt-popup-newsletter{
+/* .kt-popup-newsletter{
     padding: 20px 60px;
     text-align: center;
     padding-bottom: 100px;
-}
-.kt-popup-newsletter .popup-title{
+} */
+/* .kt-popup-newsletter .popup-title{
     margin-top: 40px;
     text-transform: uppercase;
 }
@@ -8746,7 +8746,7 @@ table{
     background-color: #b28b46;
     color: #fff;
     padding: 0 10px;
-}
+} */
 .product-list-grid.desktop-columns-1 .product-item:nth-child(1n+1),
 .product-list-grid.desktop-columns-2 .product-item:nth-child(2n+1),
 .product-list-grid.desktop-columns-3 .product-item:nth-child(3n+1),
