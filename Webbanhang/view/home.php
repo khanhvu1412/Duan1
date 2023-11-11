@@ -39,10 +39,10 @@
                                     <a href="#"><img src="images/products/18.jpg" alt=""></a>
                                     <a class="back-image" href="index.php?act=chitietsp"><img
                                             src="images/products/19.jpg" alt=""></a>
-                                    <div class="gorup-button">
+                                    <!-- <div class="gorup-button">
                                         <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
                                         <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="product-info">
                                     <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
@@ -60,10 +60,10 @@
                                     <a href="#"><img src="images/products/19.jpg" alt=""></a>
                                     <a class="back-image" href="index.php?act=chitietsp"><img
                                             src="images/products/20.jpg" alt=""></a>
-                                    <div class="gorup-button">
+                                    <!-- <div class="gorup-button">
                                         <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
                                         <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="product-info">
                                     <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
@@ -81,10 +81,10 @@
                                     <a href="#"><img src="images/products/20.jpg" alt=""></a>
                                     <a class="back-image" href="index.php?act=chitietsp"><img
                                             src="images/products/21.jpg" alt=""></a>
-                                    <div class="gorup-button">
+                                    <!-- <div class="gorup-button">
                                         <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
                                         <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="product-info">
                                     <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
@@ -122,10 +122,10 @@
                                     <a href="#"><img src="images/products/21.jpg" alt=""></a>
                                     <a class="back-image" href="index.php?act=chitietsp"><img
                                             src="images/products/22.jpg" alt=""></a>
-                                    <div class="gorup-button">
+                                    <!-- <div class="gorup-button">
                                         <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
                                         <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="product-info">
                                     <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
@@ -143,10 +143,10 @@
                                     <a href="#"><img src="images/products/22.jpg" alt=""></a>
                                     <a class="back-image" href="index.php?act=chitietsp"><img
                                             src="images/products/23.jpg" alt=""></a>
-                                    <div class="gorup-button">
+                                    <!-- <div class="gorup-button">
                                         <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
                                         <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="product-info">
                                     <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
@@ -164,10 +164,10 @@
                                     <a href="#"><img src="images/products/23.jpg" alt=""></a>
                                     <a class="back-image" href="index.php?act=chitietsp"><img
                                             src="images/products/24.jpg" alt=""></a>
-                                    <div class="gorup-button">
+                                    <!-- <div class="gorup-button">
                                         <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
                                         <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="product-info">
                                     <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
@@ -184,16 +184,7 @@
             </div>
         </div>
     </div>
-    <div class="section-brand-slide">
-        <div class="brands-slide owl-carousel nav-center-center nav-style7" data-nav="true" data-dots="false"
-            data-loop="true" data-margin="60" data-responsive='{"0":{"items":1},"600":{"items":3},"1000":{"items":5}}'>
-            <a href="#"><img src="images/brands/brand1.png" alt=""></a>
-            <a href="#"><img src="images/brands/brand2.png" alt=""></a>
-            <a href="#"><img src="images/brands/brand3.png" alt=""></a>
-            <a href="#"><img src="images/brands/brand4.png" alt=""></a>
-            <a href="#"><img src="images/brands/brand5.png" alt=""></a>
-        </div>
-    </div>
+    
     <div class="margin-top-60">
         <div class="box-product-featured">
             <div class="box-head banner-opacity">
@@ -214,10 +205,10 @@
                                     <a href="#"><img src="images/products/24.jpg" alt=""></a>
                                     <a class="back-image" href="index.php?act=chitietsp"><img
                                             src="images/products/25.jpg" alt=""></a>
-                                    <div class="gorup-button">
+                                    <!-- <div class="gorup-button">
                                         <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
                                         <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="product-info">
                                     <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
@@ -235,10 +226,10 @@
                                     <a href="#"><img src="images/products/25.jpg" alt=""></a>
                                     <a class="back-image" href="index.php?act=chitietsp"><img
                                             src="images/products/26.jpg" alt=""></a>
-                                    <div class="gorup-button">
+                                    <!-- <div class="gorup-button">
                                         <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
                                         <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="product-info">
                                     <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
@@ -256,10 +247,10 @@
                                     <a href="#"><img src="images/products/26.jpg" alt=""></a>
                                     <a class="back-image" href="index.php?act=chitietsp"><img
                                             src="images/products/27.jpg" alt=""></a>
-                                    <div class="gorup-button">
+                                    <!-- <div class="gorup-button">
                                         <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
                                         <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="product-info">
                                     <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
