@@ -115,7 +115,7 @@
 												<ul>
 													<li><a href="index.php?act=tkcanhan"><span> <i class="fa-solid fa-circle-user"></i> Tài
 																khoản </span></a></li>
-													<li><a href="index.php?act=dangnhap"></i><span> <i
+													<li><a href="dangnhap.php"></i><span> <i
 																	class="fa-solid fa-arrow-right-from-bracket"></i>
 																Đăng xuất</span></a></li>
 												</ul>

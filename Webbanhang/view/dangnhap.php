@@ -1,8 +1,4 @@
-<div class="page-banner contact-banner">
-    <div class="banner-content">
-        <h2 class="title">Đăng nhập</h2>
-    </div>
-</div>
+
 <div class="container">
     <div class="row">
         <div class="kt-contact-form margin-top-60">
@@ -23,4 +19,3 @@
         </div>
     </div>
 </div>
-<?php include "menu/3hopcn.php"; ?>

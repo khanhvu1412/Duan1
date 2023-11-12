@@ -9,13 +9,7 @@ if (isset($_GET['act'])) {
             include('taikhoan/tkcanhan.php');
             break;
 
-        case 'dangky':
-            include('taikhoan/dangky.php');
-            break;
-
-        case 'dangnhap':
-            include('taikhoan/dangnhap.php');
-            break;
+        
 
         case "sanpham":
             include("sanpham.php");
