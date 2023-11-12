@@ -57,6 +57,7 @@
 								<a href="index.php"><img src="images/logos/3.png" alt=""></a>
 							</div>
 						</div>
+
 						<div class="col-sm-12 col-md-10">
 							<div class="box-control">
 								<form class="box-search show-icon">
@@ -65,6 +66,7 @@
 										<input type="text" class="search" placeholder="Tìm kiếm..." required>
 										<button class="button-search"><span class="pe-7s-search"></span></button>
 									</div>
+									
 								</form>
 								<div class="mini-cart">
 									<a class="cart-link" href="#"><span class="pe-7s-cart"></span> <span

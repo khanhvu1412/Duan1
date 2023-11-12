@@ -6210,11 +6210,11 @@ FOOTER
     transition: all 0.8s ease 0s;
     width: 100%;
 }
-/*.banner-text.style3:hover .content-text {
+.banner-text.style3:hover .content-text {
     width: 0%;
     opacity: 0;
     visibility: hidden;
-}*/
+}
 
 .banner-text.style3:hover img{
     -webkit-transform: scale(1);
@@ -6299,7 +6299,7 @@ FOOTER
     margin-bottom: 70px;
 }
 
-/*block-category-carousel*/
+/* block-category-carousel */
 .block-category-carousel{
     padding: 40px 25px 23px 25px;
     background:#121111 url('../images/bg_cat.png') repeat-y top left;

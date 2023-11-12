@@ -303,9 +303,34 @@
       })
     }
 
+    /* ---------------------------------------------
+     Init popup
+     --------------------------------------------- */
+  //    function init_popup(){
+  //     if($(window).width() + boutique_get_scrollbar_width() >= 768){
+  //         if($('body').hasClass('home')){
+  //             //Open directly via API
+  //             $.magnificPopup.open({
+  //               items: {
+  //                 src: '<div class="white-popup"><div class="kt-popup-newsletter"><div class="popup-title"><h3>BoutiQue</h3><img src="images/arow-popup.png" alt=""><p class="notice">enter your email and get  <span class="primary">25% off</span> YOUR first purchase!</p></div><form class="form-subscribe"><input class="input" placeholder="Your email here" type="text" /><button class="button">NO THANKS!</button><button class="button">Enter</button></form><div class="checkbox"><label><input type="checkbox" value="">Dont show this popup again!</label></div></div></div>',  //can be a HTML string, jQuery object, or CSS selector
+  //                 type: 'inline'
+  //               }
+  //             });
+  //         }
+  //     }
+  // }
 
 
-  
+  //   function kt_parallax(){
+  //     //parallax
+  //      var window_size =0;
+  //      window_size += boutique_get_scrollbar_width();
+  //       if( window_size > 991 ){
+  //         $('.bg-parallax').each(function(){
+  //               $(this).parallax('50%', 0.3);
+  //         });
+  //       }
+  //   }
 
     /* ---------------------------------------------
      COUNTDOWN
