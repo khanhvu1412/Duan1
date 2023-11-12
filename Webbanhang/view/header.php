@@ -63,10 +63,10 @@
 								<form class="box-search show-icon">
 									<span class="icon"><span class="pe-7s-search"></span></span>
 									<div class="inner">
-										<input type="text" class="search" placeholder="Tìm kiếm..." required>
+										<input type="search" class="search" placeholder="Tìm kiếm..." required>
 										<button class="button-search"><span class="pe-7s-search"></span></button>
 									</div>
-									
+
 								</form>
 								<div class="mini-cart">
 									<a class="cart-link" href="#"><span class="pe-7s-cart"></span> <span
