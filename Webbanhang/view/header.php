@@ -62,12 +62,13 @@
 							<div class="box-control">
 
 								<form class="box-search show-icon">
+									
 									<span class="icon"><span class="pe-7s-search"></span></span>
-									<div class="inner">
-										<input type="search" class="search" placeholder="Tìm kiếm..." required>
-										<button class="button-search"><span class="pe-7s-search"></span></button>
-									</div>
 
+									<!-- <div class="inner" >
+										<input type="text" class="search" placeholder="Search here...">
+										<button class="button-search"><span class="pe-7s-search"></span></button>
+									</div> -->
 								</form>
 								<div class="mini-cart">
 									<a class="cart-link" href="#"><span class="pe-7s-cart"></span> <span
@@ -113,7 +114,8 @@
 
 											<div class="setting-option">
 												<ul>
-													<li><a href="index.php?act=tkcanhan"><span> <i class="fa-solid fa-circle-user"></i> Tài
+													<li><a href="index.php?act=tkcanhan"><span> <i
+																	class="fa-solid fa-circle-user"></i> Tài
 																khoản </span></a></li>
 													<li><a href="dangnhap.php"></i><span> <i
 																	class="fa-solid fa-arrow-right-from-bracket"></i>
@@ -132,6 +134,7 @@
 									</div>
 								</div>
 							</div>
+
 							<ul class="boutique-nav main-menu clone-main-menu">
 								<li class="menu-item-has-children item-megamenu">
 									<a href="index.php">HOME</a>
@@ -155,4 +158,4 @@
 				</div>
 			</div>
 		</div>
-	</header> 
+	</header>
