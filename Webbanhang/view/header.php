@@ -61,21 +61,14 @@
 						<div class="col-sm-12 col-md-10">
 							<div class="box-control">
 
-							<form  class="box-search show-icon">
-								<span class="icon"><span class="pe-7s-search"></span></span>
-								<div class="inner">
-									<input type="text" class="search" placeholder="Search here...">
-									<button class="button-search"><span class="pe-7s-search"></span></button>
-								</div>
-							</form>
-								<!-- <form class="box-search show-icon">
+								<form class="box-search show-icon">
 									<span class="icon"><span class="pe-7s-search"></span></span>
 									<div class="inner">
 										<input type="search" class="search" placeholder="Tìm kiếm..." required>
 										<button class="button-search"><span class="pe-7s-search"></span></button>
 									</div>
 
-								</form> -->
+								</form>
 								<div class="mini-cart">
 									<a class="cart-link" href="#"><span class="pe-7s-cart"></span> <span
 											class="count">2</span></a>
