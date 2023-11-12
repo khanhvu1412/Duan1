@@ -39,7 +39,29 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <?php
+                        foreach ($listsanpham as $sanpham) {
+                            extract($sanpham);
+                            $suasp = "index.php?act=suasp&id=" . $id;
+                            $xoasp = "index.php?act=xoasp&id=" . $id;
+
+                            echo '<tr>
+                                <td>' . $id . '</td>
+                                <td>' . $tensp . '</td>
+                                <td>' . $giasp . '</td>
+                                <td>' . $img . '</td>
+                                <td>' . $mota . '</td>
+                                <td>' . $luotxem . '</td>
+                                <td> <a href="'.$suasp.'"><input type="button" class="btn btn-primary" value="Sửa"></a> 
+                                     <a href="'.$xoasp.'"><input type="button" class="btn btn-primary" value="Xóa"></a>
+                                </td> 
+                                </tr>';
+
+                        }
+                        ?>
+
+
+                        <!-- <tr>
                             <td>DM01</td>
                             <td>1</td>
                             <td>Áo polo ARIST</td>
@@ -52,21 +74,7 @@
                                 <a href="index.php?act=xoasp"><input type="button" class="btn btn-primary"
                                         value="Xóa"></a>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>DM2</td>
-                            <td>2</td>
-                            <td>Quần âu GT-34</td>
-                            <td><img src="../img/12.jpg" alt=""></td>
-                            <td>Giảm 40% cho hôm nay</td>
-                            <td>87</td>
-                            <td>
-                                <a href="index.php?act=suasp"><input type="button" class="btn btn-primary"
-                                        value="Sửa"></a>
-                                <a href="index.php?act=xoasp"><input type="button" class="btn btn-primary"
-                                        value="Xóa"></a>
-                            </td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
                 <form action="">

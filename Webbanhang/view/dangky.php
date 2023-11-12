@@ -1,32 +1,102 @@
-<div class="page-banner contact-banner">
-    <div class="banner-content">
-        <h2 class="title">Đăng ký</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Đăng ký</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+    <div class="container">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Tạo tài khoản!</h1>
+                            </div>
+                            <form class="user">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                            placeholder="First Name">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                            placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Email ">
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleInputPassword" placeholder="Password">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleRepeatPassword" placeholder="Repeat Password">
+                                    </div>
+                                </div>
+                                <a href="dangnhap.html" class="btn btn-primary btn-user btn-block">
+                                    Đăng ký tài khoản
+                                </a>
+                                <hr>
+                                <a href="index.html" class="btn btn-google btn-user btn-block">
+                                    <i class="fab fa-google fa-fw"></i>  Đăng nhập với Google
+                                </a>
+                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                    <i class="fab fa-facebook-f fa-fw"></i>  Đăng nhập với Facebook
+                                </a>
+                            </form>
+                            <hr>
+                            <div class="text-center">
+                                <a class="small" href="quenmk.php">Quên mật khẩu?</a>
+                            </div>
+                            <div class="text-center">
+                                <a class="small" href="login.php">Bạn đã có tài khoản? Đăng nhập!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-</div>
-<div class="container">
-    <div class="kt-contact-form margin-top-60">
-        <div id="message-box-conact"></div>
-        <h3 class="title">Đăng ký</h3>
-        <form action="">
-            <label for="name">Tên đăng nhập</label>
-            <input id="name" class="form-control" type="text">
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <label for="email">Email</label>
-            <input id="email" class="form-control" type="email">
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-            <label for="password" class="mt-2">Mật khẩu</label>
-            <input id="password" class="form-control" type="password">
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
 
-            <label for="requestpassword" class="mt-2">Nhập lại mật khẩu</label>
-            <input id="requestpassword" class="form-control" type="password">
-            <br>
-            <a href="index.php"></a><button id='btn-send-contact' class="button">Đăng ký</button>
-            <a href="index.php"></a><button id='btn-send-contact' class="button">Đăng nhập</button>
+</body>
 
-
-
-        </form>
-    </div>
-</div>
-<?php include "menu/3hopcn.php"; ?>
+</html>

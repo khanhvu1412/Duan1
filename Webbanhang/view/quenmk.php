@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Đăng nhập</title>
+    <title>Quên mật khẩu</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,34 +35,30 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-6 d-none d-lg-block bg-password-image"></div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Chào mừng quay trở lại </h1>
+                                        <h1 class="h4 text-gray-900 mb-2">Bạn đã quên mật khẩu?</h1>
+                                        <p class="mb-4">Hãy nhập địa chỉ email của bạn dưới đây
+                                            và chờ để nhận một liên kết để đặt lại mật khẩu của bạn!</p>
                                     </div>
                                     <form class="user">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder=" Email">
+                                                placeholder="Nhập địa chỉ email...">
                                         </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
-                                        </div>
-
-                                        <a href="index.php" class="btn btn-primary btn-user btn-block">
-                                            Đăng nhập
+                                        <a href="dangnhap.php" class="btn btn-primary btn-user btn-block">
+                                            Đặt lại mật khẩu
                                         </a>
-                                       
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="quenmk.php">Quên mật khẩu?</a>
+                                        <a class="small" href="dangky.php">Tạo tài khoản!</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="dangky.php">Tạo tài khoản!</a>
+                                        <a class="small" href="dangnhap.php">Bạn đã có tài khoản? Đăng nhập!</a>
                                     </div>
                                 </div>
                             </div>

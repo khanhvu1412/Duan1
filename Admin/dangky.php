@@ -61,16 +61,10 @@
                                             id="exampleRepeatPassword" placeholder="Repeat Password">
                                     </div>
                                 </div>
-                                <a href="dangnhap.html" class="btn btn-primary btn-user btn-block">
+                                <a href="dangnhap.php" class="btn btn-primary btn-user btn-block">
                                     Đăng ký tài khoản
                                 </a>
-                                <hr>
-                                <a href="index.html" class="btn btn-google btn-user btn-block">
-                                    <i class="fab fa-google fa-fw"></i>  Đăng nhập với Google
-                                </a>
-                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                    <i class="fab fa-facebook-f fa-fw"></i>  Đăng nhập với Facebook
-                                </a>
+                                
                             </form>
                             <hr>
                             <div class="text-center">
