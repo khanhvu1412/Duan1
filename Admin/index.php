@@ -83,6 +83,10 @@ if (isset($_GET['act'])) {
             include("binhluan/list.php");
             break;
 
+        case "suabl":
+            include("binhluan/update.php");
+            break;
+
         case "xoabl":
             include("binhluan/list.php");
             break;

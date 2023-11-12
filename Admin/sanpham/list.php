@@ -28,6 +28,7 @@
                 <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
+                            <th>Mã danh mục</th>
                             <th>Mã sản phẩm</th>
                             <th>Tên sản phẩm</th>
                             <th>Hình</th>
@@ -39,25 +40,31 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>DM01</td>
                             <td>1</td>
                             <td>Áo polo ARIST</td>
                             <td><img src="../img/6.jpg" alt=""></td>
                             <td>Áo dành riêng cho phái nam</td>
                             <td>100</td>
                             <td>
-                                <a href="index.php?act=suasp"><input type="button" class="btn btn-primary" value="Sửa"></a>
-                                <a href="index.php?act=xoasp"><input type="button" class="btn btn-primary" value="Xóa"></a>
+                                <a href="index.php?act=suasp"><input type="button" class="btn btn-primary"
+                                        value="Sửa"></a>
+                                <a href="index.php?act=xoasp"><input type="button" class="btn btn-primary"
+                                        value="Xóa"></a>
                             </td>
                         </tr>
                         <tr>
+                            <td>DM2</td>
                             <td>2</td>
                             <td>Quần âu GT-34</td>
                             <td><img src="../img/12.jpg" alt=""></td>
                             <td>Giảm 40% cho hôm nay</td>
                             <td>87</td>
                             <td>
-                                <a href="index.php?act=suasp"><input type="button" class="btn btn-primary" value="Sửa"></a>
-                                <a href="index.php?act=xoasp"><input type="button" class="btn btn-primary" value="Xóa"></a>
+                                <a href="index.php?act=suasp"><input type="button" class="btn btn-primary"
+                                        value="Sửa"></a>
+                                <a href="index.php?act=xoasp"><input type="button" class="btn btn-primary"
+                                        value="Xóa"></a>
                             </td>
                         </tr>
                     </tbody>
