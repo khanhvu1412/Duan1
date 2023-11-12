@@ -5,6 +5,10 @@ if (isset($_GET['act'])) {
     $act = $_GET['act'];
     switch ($act) {
 
+        case 'tkcanhan':
+            include('taikhoan/tkcanhan.php');
+            break;
+
         case 'dangky':
             include('taikhoan/dangky.php');
             break;

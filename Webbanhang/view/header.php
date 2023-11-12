@@ -111,7 +111,7 @@
 
 											<div class="setting-option">
 												<ul>
-													<li><a href="#"><span> <i class="fa-solid fa-circle-user"></i> Tài
+													<li><a href="index.php?act=tkcanhan"><span> <i class="fa-solid fa-circle-user"></i> Tài
 																khoản </span></a></li>
 													<li><a href="#"></i><span> <i
 																	class="fa-solid fa-arrow-right-from-bracket"></i>

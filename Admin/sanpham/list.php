@@ -64,6 +64,8 @@
                 </table>
                 <form action="">
                     <a href="index.php?act=addsp"><input type="button" class="btn btn-primary" value="Nhập thêm"></a>
+                    <a href="index.php?act=listbl"><input type="button" class="btn btn-primary" value="Bình luận"></a>
+
                 </form>
             </div>
         </div>
