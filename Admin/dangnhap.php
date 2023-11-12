@@ -51,29 +51,18 @@
                                             <input type="password" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Password">
                                         </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck"> Ghi nhớ mật khẩu</label>
-                                            </div>
-                                        </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                            Login
+
+                                        <a href="index.php" class="btn btn-primary btn-user btn-block">
+                                            Đăng nhập
                                         </a>
-                                        <hr>
-                                        <a href="index.html" class="btn btn-google btn-user btn-block">
-                                            <i class="fab fa-google fa-fw"></i> Đăng nhập với Google
-                                        </a>
-                                        <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                            <i class="fab fa-facebook-f fa-fw"></i> Đăng nhập với Facebook
-                                        </a>
+                                       
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="quenmk.html">Quên mật khẩu?</a>
+                                        <a class="small" href="quenmk.php">Quên mật khẩu?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="register.html">Tạo tài khoản!</a>
+                                        <a class="small" href="dangky.php">Tạo tài khoản!</a>
                                     </div>
                                 </div>
                             </div>

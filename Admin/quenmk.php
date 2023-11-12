@@ -49,16 +49,16 @@
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
                                                 placeholder="Nhập địa chỉ email...">
                                         </div>
-                                        <a href="dangnhap.html" class="btn btn-primary btn-user btn-block">
+                                        <a href="dangnhap.php" class="btn btn-primary btn-user btn-block">
                                             Đặt lại mật khẩu
                                         </a>
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="dangky.html">Tạo tài khoản!</a>
+                                        <a class="small" href="dangky.php">Tạo tài khoản!</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="dangnhap.html">Bạn đã có tài khoản? Đăng nhập!</a>
+                                        <a class="small" href="dangnhap.php">Bạn đã có tài khoản? Đăng nhập!</a>
                                     </div>
                                 </div>
                             </div>

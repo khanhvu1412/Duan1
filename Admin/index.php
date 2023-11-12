@@ -8,6 +8,16 @@ if (isset($_GET['act'])) {
     $act = $_GET['act'];
     switch ($act) {
 
+
+        // case 'dangnhap':
+        //     include('dangnhap.php');
+        //     break;
+
+        // case 'dangky':
+        //     include('dangky.php');
+        //     break;
+
+
         // Tài khoản
         case "listtk":
             include("taikhoan/list.php");

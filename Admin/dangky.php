@@ -74,10 +74,10 @@
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="quenmk.html">Quên mật khẩu?</a>
+                                <a class="small" href="quenmk.php">Quên mật khẩu?</a>
                             </div>
                             <div class="text-center">
-                                <a class="small" href="login.html">Bạn đã có tài khoản? Đăng nhập!</a>
+                                <a class="small" href="login.php">Bạn đã có tài khoản? Đăng nhập!</a>
                             </div>
                         </div>
                     </div>
