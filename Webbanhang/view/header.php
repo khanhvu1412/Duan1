@@ -101,7 +101,7 @@
 											Tổng: 255.000 ₫
 										</div>
 										<div class="group-button">
-											<a href="#" class="button">Giỏ hàng</a>
+											<a href="index.php?act=giohang" class="button">Giỏ hàng</a>
 											<a href="index.php?act=thanhtoan" class="check-out button">Mua</a>
 										</div>
 									</div>
@@ -111,22 +111,23 @@
 									<div class="settings-wrapper ">
 										<div class="setting-content">
 
-
-											<!-- <div class="setting-option">
+											<div class="setting-option">
 												<ul>
 													<li><a href="index.php?act=tkcanhan"><span> <i class="fa-solid fa-circle-user"></i> Tài
 																khoản </span></a></li>
-													<li><a href="#"></i><span> <i
+													<li><a href="index.php?act=dangnhap"></i><span> <i
 																	class="fa-solid fa-arrow-right-from-bracket"></i>
 																Đăng xuất</span></a></li>
 												</ul>
-											</div> -->
-											<div class="setting-option">
+											</div>
+
+											<!-- <div class="setting-option">
 												<ul>
 													<li><a href="#"><span>Đăng ký</span></a></li>
 													<li><a href="#"></i><span> Đăng nhập</span></a></li>
 												</ul> 
-											</div>
+											</div> -->
+
 										</div>
 									</div>
 								</div>

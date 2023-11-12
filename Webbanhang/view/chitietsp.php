@@ -52,7 +52,7 @@
                             nhau và cung cấp
                             sự lựa chọn của người dùng cuối, thường là từ menu thả xuống.
                         </div>
-                        <div class="select-color">
+                        <!-- <div class="select-color">
                             <label>MÀU</label>
                             <div class="inner">
                                 <a href="#"><span style="background-color:#736357;"></span></a>
@@ -70,18 +70,14 @@
                                 <a href="#"><span>XL</span></a>
                                 <a href="#"><span>XXL</span></a>
                             </div>
-                        </div>
+                        </div> -->
 
                         <form class="cart-form" enctype="multipart/form-data" method="post">
                             <div class="quantity">
-                                <a href="#">-</a>
-                                <input type="text" size="4" class="input-text qty text" title="Qty" value="03"
-                                    name="quantity">
-                                <a href="#">+</a>
+                                <input style="border: 1px solid #000" type="number" name="" id="">
                             </div>
                             <a class="button button-add-cart" data-quantity="1" href="#">Mua</a>
                             <a class="wishlist button" href="#"><i class="fa-solid fa-cart-plus"></i></a>
-                            <a class="wishlist button" href="#"><i class="fa fa-heart-o"></i></a>
                         </form>
                     </div>
                 </div>
@@ -121,8 +117,19 @@
                     ante dapibus varius. Nulla at auctor nunc. Curabitur accumsan feugiat felis ut pretium. Praesent
                     semper semper nisi, eu cursus augue.</p>
             </div>
+            <br>
+            <div class="binhluan">
+                <span style="font-size: 30px">Bình luận</span>
+                <div class="binhluan_content">
+                    <textarea name="" id="" cols="1000" rows="10"></textarea>
+                    <a href="index.php?act=chitietsp"><input type="submit" value="Gửi"></a>
+                </div>
+            </div>
         </div>
+
     </div>
+
+
     <div class="product-slide upsell-products">
         <div class="section-title text-center">
             <h3>SẢN PHẨM UPSELL</h3>
@@ -133,10 +140,7 @@
                 <div class="product-inner">
                     <div class="product-thumb">
                         <a href="#"><img src="images/products/5.jpg" alt=""></a>
-                        <div class="gorup-button">
-                            <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-                            <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
-                        </div>
+
                     </div>
                     <div class="product-info">
                         <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
@@ -152,10 +156,7 @@
                 <div class="product-inner">
                     <div class="product-thumb">
                         <a href="#"><img src="images/products/6.jpg" alt=""></a>
-                        <div class="gorup-button">
-                            <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-                            <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
-                        </div>
+
                     </div>
                     <div class="product-info">
                         <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
@@ -171,10 +172,7 @@
                 <div class="product-inner">
                     <div class="product-thumb">
                         <a href="#"><img src="images/products/7.jpg" alt=""></a>
-                        <div class="gorup-button">
-                            <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-                            <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
-                        </div>
+
                     </div>
                     <div class="product-info">
                         <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
@@ -190,10 +188,7 @@
                 <div class="product-inner">
                     <div class="product-thumb">
                         <a href="#"><img src="images/products/8.jpg" alt=""></a>
-                        <div class="gorup-button">
-                            <a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
-                            <a href="#" class="quick-view"><i class="fa fa-search"></i></a>
-                        </div>
+
                     </div>
                     <div class="product-info">
                         <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
@@ -211,34 +206,5 @@
 
 <!--END CONTAINER-->
 <!-- ./tab -->
-<div class="margin-top-60 margin-bottom-30">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-4">
-                <div class="element-icon style2">
-                    <div class="icon"><i class="flaticon flaticon-origami28"></i></div>
-                    <div class="content">
-                        <h4 class="title">MIỄN PHÍ VẬN CHUYỂN TOÀN CẦU</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="element-icon style2">
-                    <div class="icon"><i class="flaticon flaticon-curvearrows9"></i></div>
-                    <div class="content">
-                        <h4 class="title">ĐẢM BẢO HOÀN LẠI TIỀN</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="element-icon style2">
-                    <div class="icon"><i class="flaticon flaticon-headphones54"></i></div>
-                    <div class="content">
-                        <h4 class="title">HỖ TRỢ TRỰC TUYẾN 24/7</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?php include "menu/3hopcn.php" ?>
 </div>

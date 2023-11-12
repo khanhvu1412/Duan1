@@ -41,11 +41,15 @@ if (isset($_GET['act'])) {
             include('menu/blog.php');
             break;
 
+        case 'giohang':
+            include('menu/giohang.php');
+            break;
+
 
         default:
             include("home.php");
             break;
-        
+
     }
 } else {
     include("home.php");
