@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="text-center GreatVibes">
-            Khánh Vũ
+            Nhóm 4 - Dự án 1
         </div>
     </div>
 </div>
@@ -43,7 +43,7 @@
                     <img src="images/teams/1.jpg" alt="">
                 </div>
                 <div class="info">
-                    <h3 class="name">Khánh Vũ</h3>
+                    <h3 class="name">Đỗ Khánh Vũ</h3>
                     <span class="position">Sinh viên lập trình Web</span>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                     <img src="images/teams/3.jpg" alt="">
                 </div>
                 <div class="info">
-                    <h3 class="name">Đăng Diện</h3>
+                    <h3 class="name">Trần Đăng Diện</h3>
                     <span class="position">Sinh viên lập trình Web</span>
                 </div>
             </div>
@@ -70,51 +70,7 @@
 </div>
 <!-- ./Team -->
 
-<!-- section Skills -->
-<div class="section-skills margin-top-80">
-    <div class="container">
-        <div class="section-title text-center style7">
-            <span class="sub-title">Tất cả chúng tôi đều là tài năng!</span>
-            <h3>KỸ NĂNG TUYỆT VỜI CỦA CHÚNG TÔI</h3>
-        </div>
 
-        <div class="kt-processbar">
-            <div data-bgskill="#c99947" data-bgbar="#e4e4e4" data-percent="85" data-height="36" class="item-processbar">
-                <span class="processbar-title">ADOBE/PHOTOSHOP</span>
-                <div class="processbar-bg">
-                    <div class="processbar-width">
-                        <div class="processbar-percent">85%</div>
-                    </div>
-                </div>
-            </div>
-            <div data-bgskill="#c99947" data-bgbar="#e4e4e4" data-percent="70" data-height="36" class="item-processbar">
-                <span class="processbar-title">LAYOUT/FRAME</span>
-                <div class="processbar-bg">
-                    <div class="processbar-width">
-                        <div class="processbar-percent">70%</div>
-                    </div>
-                </div>
-            </div>
-            <div data-bgskill="#c99947" data-bgbar="#e4e4e4" data-percent="90" data-height="36" class="item-processbar">
-                <span class="processbar-title">UI DESIGN</span>
-                <div class="processbar-bg">
-                    <div class="processbar-width">
-                        <div class="processbar-percent">90%</div>
-                    </div>
-                </div>
-            </div>
-            <div data-bgskill="#c99947" data-bgbar="#e4e4e4" data-percent="75" data-height="36" class="item-processbar">
-                <span class="processbar-title">FONT/TYPOGRAPHY</span>
-                <div class="processbar-bg">
-                    <div class="processbar-width">
-                        <div class="processbar-percent">75%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ./section Skills -->
 
 <!-- Section-testimonials-->
 
