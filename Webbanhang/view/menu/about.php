@@ -40,7 +40,7 @@
             data-margin="30" data-responsive='{"0":{"items":1},"600":{"items":2},"1000":{"items":3}}'>
             <div class="team">
                 <div class="avatar">
-                    <img src="/Vu" alt="">
+                    <img src="images/teams/VU.jpg" style="height: 700px;" alt="">
                 </div>
                 <div class="info">
                     <h3 class="name">Đỗ Khánh Vũ</h3>
@@ -49,7 +49,7 @@
             </div>
             <div class="team">
                 <div class="avatar">
-                    <img src="img/Vinh" alt="">
+                    <img src="images/teams/Vinh.jpg" style="height: 700px;" alt="">
                 </div>
                 <div class="info">
                     <h3 class="name">Quang Vinh</h3>
@@ -58,7 +58,7 @@
             </div>
             <div class="team">
                 <div class="avatar">
-                    <img src="img/Dien" alt="">
+                    <img src="images/teams/Dien.jpg" style="height: 700px;" alt="">
                 </div>
                 <div class="info">
                     <h3 class="name">Trần Đăng Diện</h3>
