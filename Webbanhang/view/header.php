@@ -60,14 +60,22 @@
 
 						<div class="col-sm-12 col-md-10">
 							<div class="box-control">
-								<form class="box-search show-icon">
+
+							<form  class="box-search show-icon">
+								<span class="icon"><span class="pe-7s-search"></span></span>
+								<div class="inner">
+									<input type="text" class="search" placeholder="Search here...">
+									<button class="button-search"><span class="pe-7s-search"></span></button>
+								</div>
+							</form>
+								<!-- <form class="box-search show-icon">
 									<span class="icon"><span class="pe-7s-search"></span></span>
 									<div class="inner">
 										<input type="search" class="search" placeholder="Tìm kiếm..." required>
 										<button class="button-search"><span class="pe-7s-search"></span></button>
 									</div>
 
-								</form>
+								</form> -->
 								<div class="mini-cart">
 									<a class="cart-link" href="#"><span class="pe-7s-cart"></span> <span
 											class="count">2</span></a>
@@ -111,7 +119,7 @@
 										<div class="setting-content">
 
 
-											<div class="setting-option">
+											<!-- <div class="setting-option">
 												<ul>
 													<li><a href="index.php?act=tkcanhan"><span> <i class="fa-solid fa-circle-user"></i> Tài
 																khoản </span></a></li>
@@ -119,6 +127,12 @@
 																	class="fa-solid fa-arrow-right-from-bracket"></i>
 																Đăng xuất</span></a></li>
 												</ul>
+											</div> -->
+											<div class="setting-option">
+												<ul>
+													<li><a href="#"><span>Đăng ký</span></a></li>
+													<li><a href="#"></i><span> Đăng nhập</span></a></li>
+												</ul> 
 											</div>
 										</div>
 									</div>
