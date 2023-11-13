@@ -12,7 +12,8 @@
                 <h5><label for="">Tìm kiếm</label></h5>
                 <div>
 
-                    <form action="index.php?act=listsp" method="post" class="d-none d-sm-inline-block form-inline navbar-search">
+                    <form action="index.php?act=listsp" method="post"
+                        class="d-none d-sm-inline-block form-inline navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small"
                                 aria-describedby="basic-addon2" required>
@@ -44,16 +45,22 @@
                             extract($sanpham);
                             $suasp = "index.php?act=suasp&id=" . $id;
                             $xoasp = "index.php?act=xoasp&id=" . $id;
+                            $hinhpath = "../upload_file/" . $img;
+                            if (is_file($hinhpath)) {
+                                $hinh = "<img src='" . $hinhpath . "' height='90'>";
+                            } else {
+                                $hinh = "No img";
+                            }
 
                             echo '<tr>
-                                <td>' . $id. '</td>
+                                <td>' . $id . '</td>
                                 <td>' . $tensp . '</td>
                                 <td>' . $giasp . '</td>
-                                <td>' . $img . '</td>
+                                <td>' . $hinh . '</td>
                                 <td>' . $mota . '</td>
                                 <td>' . $luotxem . '</td>
-                                <td> <a href="'.$suasp.'"><input type="button" class="btn btn-primary" value="Sửa"></a> 
-                                     <a href="'.$xoasp.'"><input type="button" class="btn btn-primary" value="Xóa"></a>
+                                <td> <a href="' . $suasp . '"><input type="button" class="btn btn-primary" value="Sửa"></a> 
+                                     <a href="' . $xoasp . '"><input type="button" class="btn btn-primary" value="Xóa"></a>
                                 </td> 
                                 </tr>';
 

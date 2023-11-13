@@ -1,8 +1,8 @@
 <?php
 
-function insert_sanpham($tensp, $giasp, $hinh, $mota, $iddm)
+function insert_sanpham($tensp, $giasp, $hinh , $mota, $iddm)
 {
-    $sql = "insert into sanpham (tensp, giasp, hinh , mota, iddm) values ('$tensp', '$giasp', '$hinh','$mota', '$iddm)";
+    $sql = "insert into sanpham (tensp, giasp, img , mota, iddm) values ('$tensp', '$giasp', '$hinh', '$mota', '$iddm' )";
     pdo_execute($sql);
    
 }
@@ -29,9 +29,9 @@ function loadone_sanpham($id)
 function update_sanpham($id, $iddm, $tensp, $giasp, $mota, $hinh)
 {
     if ($hinh != "") {
-        $sql = "update sanham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "', img = '" . $hinh . "' where id = " . $id;
+        $sql = "update sanham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "', img = '" . $img . "' where id = " . $id;
     } else {
-        $sql = "update sanham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "' where id = " . $id;
+        $hinh = "update sanham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "' where id = " . $id;
     }
     pdo_execute($sql);
 }

@@ -96,7 +96,7 @@ if (isset($_GET['act'])) {
                 } else {
                     echo "Upload ảnh không thành công";
                 }
-                insert_sanpham($tensp, $giasp, $hinh, $mota, $iddm);
+                insert_sanpham($tensp, $giasp, $hinh , $mota, $iddm);
                 $thongbao = "Thêm thành công";
 
             }
@@ -104,13 +104,13 @@ if (isset($_GET['act'])) {
             include "sanpham/add.php";
             break;
 
-        // case "xoasp":
-        //     if(isset($_GET['id']) && ($_GET['id'] > 0 )) {
-        //         delete_sapham($_GET('id'));
-        //     }
-        //     $listsanpham = loadall_sanpham(" ", 0);
-        //     include "sanpham/list.php" ;
-        //     break;
+        case "xoasp":
+            // if(isset($_GET['id']) && ($_GET['id'] > 0 )) {
+            //     delete_sapham($_GET('id'));
+            // }
+            // $listsanpham = loadall_sanpham(" ", 0);
+            //include "sanpham/list.php" ;
+            break;
 
         // case "suasp":
         //     if (isset($_GET['id']) && ($_GET['id'] > 0)) {
