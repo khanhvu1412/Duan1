@@ -54,54 +54,54 @@
                             <table class="shop_table cart">
                                 <tbody>
                                     <tr>
-                                        <td class="product-thumbnail"><img src="images/products/1.png" alt=""></td>
+                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img src="images/products/1.png" alt=""></a></td>
 
-                                        <td class="product-name"><a href="#">Oversize Fit Trousers Sneaker</a></td>
-                                        <td>£85.00</td>
+                                        <td class="product-name"><a href="index.php?act=chitietsp">Oversize Fit Trousers Sneaker</a></td>
+                                        <td>85.00 ₫</td>
                                        
                                         <td class="product-remove"><a href="#"></a></td>
                                         <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
                                     </tr>
                                     <tr>
-                                        <td class="product-thumbnail"><img src="images/products/2.jpg" alt=""></td>
-                                        <td class="product-name"><a href="#">Oversize Fit Trousers Sneaker</a></td>
-                                        <td>£85.00</td>
-                                       
-
-                                        <td class="product-remove"><a href="#"></a></td>
-                                        <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="product-thumbnail"><img src="images/products/1.png" alt=""></td>
-
-                                        <td class="product-name"><a href="#">Oversize Fit Trousers Sneaker</a></td>
-                                        <td>£85.00</td>
-                                       
-                                        <td class="product-remove"><a href="#"></a></td>
-                                        <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="product-thumbnail"><img src="images/products/2.jpg" alt=""></td>
-                                        <td class="product-name"><a href="#">Oversize Fit Trousers Sneaker</a></td>
-                                        <td>£85.00</td>
+                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img src="images/products/2.jpg" alt=""></a></td>
+                                        <td class="product-name"><a href="index.php?act=chitietsp">Oversize Fit Trousers Sneaker</a></td>
+                                        <td>85.00 ₫</td>
                                        
 
                                         <td class="product-remove"><a href="#"></a></td>
                                         <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
                                     </tr>
                                     <tr>
-                                        <td class="product-thumbnail"><img src="images/products/1.png" alt=""></td>
+                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img src="images/products/1.png" alt=""></a></td>
 
-                                        <td class="product-name"><a href="#">Oversize Fit Trousers Sneaker</a></td>
-                                        <td>£85.00</td>
+                                        <td class="product-name"><a href="index.php?act=chitietsp">Oversize Fit Trousers Sneaker</a></td>
+                                        <td>85.00 ₫</td>
                                        
                                         <td class="product-remove"><a href="#"></a></td>
                                         <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
                                     </tr>
                                     <tr>
-                                        <td class="product-thumbnail"><img src="images/products/2.jpg" alt=""></td>
+                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img src="images/products/2.jpg" alt=""></a></td>
+                                        <td class="product-name"><a href="index.php?act=chitietsp">Oversize Fit Trousers Sneaker</a></td>
+                                        <td>85.00 ₫</td>
+                                       
+
+                                        <td class="product-remove"><a href="#"></a></td>
+                                        <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img src="images/products/1.png" alt=""></td>
+
                                         <td class="product-name"><a href="#">Oversize Fit Trousers Sneaker</a></td>
-                                        <td>£85.00</td>
+                                        <td>85.00 ₫</td>
+                                       
+                                        <td class="product-remove"><a href="#"></a></td>
+                                        <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img src="images/products/2.jpg" alt=""></td>
+                                        <td class="product-name"><a href="#">Oversize Fit Trousers Sneaker</a></td>
+                                        <td>85.00 ₫</td>
                                         <td class="product-remove"><a href="#"></a></td>
                                         <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
                                     </tr>

@@ -9,21 +9,30 @@ function insert_sanpham($tensp, $giasp, $hinh , $mota, $iddm)
 
 function delete_sapham($id)
 {
-    $sql = "delete form sanpham where id=" . $id;
+    $sql = "delete from sanpham where id=" . $id;
+    pdo_execute($sql);
 }
 
-function loadall_sanpham()
+function loadall_sanpham($kyw = " ", $iddm = 0)
 {
-    $sql = "select * from sanpham  order by id asc ";
+    $sql="select * from sanpham where 1"; 
+    if($kyw!=""){
+        $sql.=" and tendm like '%".$kyw."%'";
+    }
+    if($iddm > 0){
+        $sql.=" and iddm ='".$iddm."'";
+    }
+    $sql.=" order by id asc";
+
     $listsanpham = pdo_query($sql);
     return $listsanpham;
 }
 
 function loadone_sanpham($id)
 {
-    $sql = "select * from sanpham id= " . $id;
-    $listsanpham = pdo_query($sql);
-    return $listsanpham;
+    $sql = "select * from sanpham where id= " . $id;
+    $dm = pdo_query($sql);
+    return $dm;
 }
 
 function update_sanpham($id, $iddm, $tensp, $giasp, $mota, $hinh)

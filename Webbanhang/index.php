@@ -40,7 +40,7 @@ if (isset($_GET['act'])) {
 
 
         default:
-            include("home.php");
+            include("view/home.php");
             break;
 
     }

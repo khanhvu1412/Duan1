@@ -79,8 +79,15 @@ if (isset($_GET['act'])) {
 
         // Sản phẩm
         case "listsp":
-
-            $listsanpham = loadall_sanpham();
+            if(isset($_POST['listok'])&&($_POST['listok'])){
+                $kyw=$_POST['kyw'];
+                $iddm=$_POST['iddm'];
+            }else{
+                $kyw='';
+                $iddm=0;
+            }
+            $listdanhmuc = loadall_danhmuc();
+            $listsanpham = loadall_sanpham($kyw, $iddm);
             include "sanpham/list.php";
             break;
 
@@ -107,30 +114,30 @@ if (isset($_GET['act'])) {
             break;
 
         case "xoasp":
-            // if(isset($_GET['id']) && ($_GET['id'] > 0 )) {
-            //     delete_sapham($_GET('id'));
-            // }
-            // $listsanpham = loadall_sanpham(" ", 0);
-            //include "sanpham/list.php" ;
+            if(isset($_GET['id']) && ($_GET['id'] > 0 )) {
+                delete_sapham($_GET['id']);
+            }
+            $listsanpham = loadall_sanpham(" ", 0);
+            include "sanpham/list.php" ;
             break;
 
         // case "suasp":
         //     if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-        //         $sanpham = loadone_sanpham($_GET('id'));
+        //         $sanpham = loadone_sanpham($_GET['id']));
         //     }
         //     include "sanpham/update.php";
         //     break;
 
         // case "updatesp":
         //     if(isset($_POST["capnhat"]) && ($_POST["capnhat"])) {
-        //         $tenloai = $_POST['tenloai'];
+        //         $tendm = $_POST['tendm'];
         //         $id = $_POST['id'];
 
-        //         update_sanpham($id, $tenloai);
+        //         update_sanpham($id, $dm);
         //         $thongbao = 'Cập nhật thành công';
 
         //     }
-        //     $listsanpham = loadall_sanpham();
+        //     $listsanpham = loadall_sanpham(" ", 0);
         //     include "sanpham/update.php";
         //     break;
 
