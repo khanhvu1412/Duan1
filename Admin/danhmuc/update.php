@@ -18,9 +18,9 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên danh mục</label>
-                        <input type="text" class="form-control" name="tendm" value="<?php if (isset($tendm) && ($tendm != "")) echo $tendm ?>">
+                        <input type="text" class="form-control" name="tendm" value="<?php if (isset($tendm) && ($tendm != "")) echo $tendm; ?>">
                         </div>
-                        <input type="hidden" name="id"  value="<?php if(isset($id) && ($id) > 0) echo $id ;?>">
+                        <input type="hidden" name="id"  value="<?php if(isset($id) && ($id > 0)) echo $id ;?>">
                         <input type="submit" class="btn btn-primary" name="capnhat" value="Cập nhật">
                         <input type="reset" class="btn btn-primary" value="Nhập lại">
 

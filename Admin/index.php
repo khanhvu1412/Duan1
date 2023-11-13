@@ -48,20 +48,22 @@ if (isset($_GET['act'])) {
 
         case "suadm":
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                $dm = loadone_danhmuc($id);
+                $dm = loadone_danhmuc($_GET['id']);
             }
+            
             include "danhmuc/update.php";
             break;
 
         case "updatedm":
-            // if (isset($_POST['capnhat']) && ($_POST['capnhat'] )) {
-            //     $tendm = $_POST['tendm'];
-            //     $id = $_POST['id'];
-            //     update_danhmuc($id , $tendm);  
-            //     $thongbao = "Cập nhật danh mục thành công";
+            if (isset($_POST['capnhat']) && ($_POST['capnhat'] )) {
+                $tendm = $_POST['tendm'];
+                $id = $_POST['id'];
+                update_danhmuc($id , $tendm);  
+                $thongbao = "Cập nhật danh mục thành công";
 
 
-            // }
+            }
+            $listdanhmuc = loadall_danhmuc();
             include "danhmuc/update.php";
             break;
 
