@@ -40,32 +40,27 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Đỗ Khánh Vũ</td>
-                            <td>**********</td>
-                            <td>vudkph37645@fpt.edu.vn</td>
-                            <td>Phương Canh Hà Nội</td>
-                            <td>09123743818</td>
-                            <td>Admin</td>
-                            <td>
-                                <a href="index.php?act=suatk"><input type="button" class="btn btn-primary" value="Sửa"></a>
-                                <a href="index.php?act=xoatk"><input type="button" class="btn btn-primary" value="Xóa"></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Phạm Thế Hiếu</td>
-                            <td>**********</td>
-                            <td>hieupt@gamil.com</td>
-                            <td>Phương Canh Hà Nội</td>
-                            <td>09123743818</td>
-                            <td>Nhân viên</td>
-                            <td>
-                                <a href="index.php?act=suatk"><input type="button" class="btn btn-primary" value="Sửa"></a>
-                                <a href="index.php?act=xoatk"><input type="button" class="btn btn-primary" value="Xóa"></a>
-                            </td>
-                        </tr>
+                        <?php
+
+                        foreach ($listtaikhoan as $taikhoan) {
+                            extract($taikhoan);
+                            $suatk = "index.php?act=suatk&id=" . $id;
+                            $xoatk = "index.php?act=xoatk&id=" . $id;
+                            echo '
+                            <tr>
+                            <td>' . $id . '</td>
+                            <td>' . $nguoidung . '</td>
+                            <td>' . $matkhau . '</td>
+                            <td>' . $email . '</td>
+                            <td>' . $diachi . '</td>
+                            <td>' . $sdt . '</td>
+                            <td>' . $id_role  . '</td>
+                            <td><a href="' . $suatk . '"><input type="button" class="btn btn-primary" value="Sửa"></a> <a href="' . $xoatk . '"><input type="button" class="btn btn-primary" value="Xóa"></a></td>
+                        </tr>';
+                        }
+
+                        ?>
+
                     </tbody>
                 </table>
             </div>

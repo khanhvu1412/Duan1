@@ -18,14 +18,8 @@
                         </div>
                         <p><input type="text" placeholder="Địa chỉ"></p>
                         <p><input type="text" placeholder="Thị trấn / Thành phố"></p>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p><input type="text" placeholder="Mã bưu điện"></p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><input type="text" placeholder="Số điện thoại"></p>
-                            </div>
-                        </div>
+                        <p><input type="text" placeholder="Số điện thoại"></p>
+                       
                     </div>
                     <div class="form-checkout checkout-payment">
                         <h5 class="form-title">Bạn muốn thanh toán</h5>

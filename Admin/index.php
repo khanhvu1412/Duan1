@@ -2,6 +2,7 @@
 include "../model/pdo.php";
 include "../model/sanpham.php";
 include "../model/danhmuc.php";
+include "../model/taikhoan.php";
 
 include "header.php";
 
@@ -15,14 +16,13 @@ if (isset($_GET['act'])) {
 
         // Tài khoản
         case "listtk":
+
+            $listtaikhoan = loadall_taikhoan();
             include "taikhoan/list.php";
             break;
 
         case "updatetk":
-            include "taikhoan/update.php";
-            break;
 
-        case "suatk":
             include "taikhoan/update.php";
             break;
 
@@ -170,16 +170,16 @@ if (isset($_GET['act'])) {
             break;
 
         // Giỏ hàng
-        case "giohang":
-            include "giohang/giohang.php";
+        case "donhang":
+            include "giohang/donhang.php";
             break;
 
-        case "suagh":
+        case "suadh":
             include "giohang/update.php";
             break;
 
-        case "xoagh":
-            include "giohang/giohang.php";
+        case "xoadh":
+            include "giohang/donhang.php";
             break;
 
         default:

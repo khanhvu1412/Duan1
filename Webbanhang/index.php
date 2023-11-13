@@ -23,7 +23,7 @@ if (isset($_GET['act'])) {
             break;
 
         case "thanhtoan":
-            include("view/cart/thanhtoan.php");
+            include("view/thanhtoan.php");
             break;
 
         case 'about':
