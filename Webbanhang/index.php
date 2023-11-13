@@ -11,11 +11,11 @@ if (isset($_GET['act'])) {
             break;
 
         case "sanpham":
-            include("sanpham.php");
+            include("view/sanpham.php");
             break;
 
         case "chitietsp":
-            include("chitietsp.php");
+            include("view/chitietsp.php");
             break;
 
         case "lienhe":
@@ -23,7 +23,7 @@ if (isset($_GET['act'])) {
             break;
 
         case "thanhtoan":
-            include("cart/thanhtoan.php");
+            include("view/cart/thanhtoan.php");
             break;
 
         case 'about':

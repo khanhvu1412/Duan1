@@ -1,3 +1,17 @@
+<?php 
+
+    if(is_array($sanpham)){
+        extract($sanpham);
+    }
+    $hinhpath="../upload/".$img;
+      if(is_file($hinhpath)){
+        $hinh="<img src='".$hinhpath."' height='80'>";
+      }else{
+        $hinh="no photo";
+      }
+
+?>
+
 <div class="container-fluid">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Sản phẩm</h1>

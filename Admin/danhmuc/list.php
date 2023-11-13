@@ -35,22 +35,22 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Áo</td>
-                            <td>Áo gió</td>
-                            <td>
-                                <a href="index.php?act=suadm"><input type="button" class="btn btn-primary" value="Sửa"></a>
-                                <a href="index.php?act=xoadm"><input type="button" class="btn btn-primary" value="Xóa"></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Quần</td>
-                            <td>Quần âu</td>
-                            <td>
-                                <a href="index.php?act=suadm"><input type="button" class="btn btn-primary" value="Sửa"></a>
-                                <a href="index.php?act=xoadm"><input type="button" class="btn btn-primary" value="Xóa"></a>
-                            </td>
-                        </tr>
+
+                        <?php foreach ($listdanhmuc as $danhmuc) {
+
+                            extract($danhmuc);
+                            $suadm = "index.php?act=suadm&id=" . $id;
+                            $xoadm = "index.php?act=xoadm&id=" . $id;
+                            echo '
+                            <tr>
+                                <td>' . $id . '</td>
+                                <td>' . $tendm . '</td>
+                                <td> <a href="' . $suadm . '"><input type="button" class="btn btn-primary" value="Sửa"></a> 
+                                    <a href="' . $xoadm . '"><input type="button" class="btn btn-primary" value="Xóa"></a>
+                            
+                                </td>
+                            </tr>';
+                        } ?>
                     </tbody>
                 </table>
                 <form action="">

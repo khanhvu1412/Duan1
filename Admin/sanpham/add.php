@@ -12,10 +12,19 @@
 
                 <br>
                 <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
-                    <!-- <div class="mb-3">
-                        <label for="exampleInputName" class="form-label">Mã sản phẩm</label>
-                        <input type="text" class="form-control" name="masp">
-                    </div> -->
+                    
+                <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Danh mục</label>
+                        <select name="iddm" id="">
+                            <?php 
+                                foreach ($listdanhmuc as $danhmuc) {
+                                    extract($danhmuc);
+                                    echo '<option value="'. $id .'"> '.$tendm .'</option>';
+                                }
+                            ?>
+                            
+                        </select>
+                    </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên sản phẩm</label>
                         <input type="text" class="form-control" name="tensp">

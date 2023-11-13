@@ -10,20 +10,26 @@
             <div class="table-responsive">
 
                 <br>
-                <form action="">
+                <form action="index.php?act=adddm" method="post">
                     <div class="mb-3">
                         <label for="exampleInputID" class="form-label">Mã danh mục</label>
-                        <input type="text" class="form-control" id="exampleInputID" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" name = madm>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên danh mục</label>
-                        <input type="text" class="form-control" id="exampleInputName">
+                        <input type="text" class="form-control" name = "tendm">
                     </div>
 
                     <input type="submit" class="btn btn-primary" name="themmoi" value="Thêm mới">
                     <input type="reset" class="btn btn-primary" value="Nhập lại">
 
                     <a href="index.php?act=listdm"><input type="button" class="btn btn-primary" value="Danh sách"></a>
+                    <?php 
+
+                        if(isset($thongbao) && ($thongbao!=""))
+                        echo $thongbao;
+                    
+                    ?>
                 </form>
             </div>
         </div>

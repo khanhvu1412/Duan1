@@ -12,7 +12,7 @@
                 <h5><label for="">Tìm kiếm</label></h5>
                 <div>
 
-                    <form class="d-none d-sm-inline-block form-inline navbar-search">
+                    <form action="index.php?act=listsp" method="post" class="d-none d-sm-inline-block form-inline navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small"
                                 aria-describedby="basic-addon2" required>
@@ -28,9 +28,9 @@
                 <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>Mã danh mục</th>
                             <th>Mã sản phẩm</th>
                             <th>Tên sản phẩm</th>
+                            <th>Giá sản phẩm</th>
                             <th>Hình</th>
                             <th>Mô tả</th>
                             <th>Lượt xem</th>
@@ -46,7 +46,7 @@
                             $xoasp = "index.php?act=xoasp&id=" . $id;
 
                             echo '<tr>
-                                <td>' . $id . '</td>
+                                <td>' . $id. '</td>
                                 <td>' . $tensp . '</td>
                                 <td>' . $giasp . '</td>
                                 <td>' . $img . '</td>
