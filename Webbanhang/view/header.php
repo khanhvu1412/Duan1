@@ -62,8 +62,8 @@
 							<div class="box-control">
 
 								<form class="box-search show-icon">
-									
-								<!-- <input type="text" name="timkiem" id="timkiem"> -->
+
+									<!-- <input type="text" name="timkiem" id="timkiem"> -->
 
 									<span class="icon">
 										<span class="pe-7s-search"></span>
@@ -121,6 +121,9 @@
 													<li><a href="index.php?act=tkcanhan"><span> <i
 																	class="fa-solid fa-circle-user"></i> Tài
 																khoản </span></a></li>
+													<li><a href=".././Admin"></i><span> 
+																	
+																Trang Admin</span></a></li>
 													<li><a href="./view/taikhoan/dangnhap.php"></i><span> <i
 																	class="fa-solid fa-arrow-right-from-bracket"></i>
 																Đăng xuất</span></a></li>

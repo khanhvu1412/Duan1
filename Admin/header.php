@@ -52,11 +52,6 @@
                     <i class="fas fa-fw fa-box-open"></i>
                     <span>Quản lý sản phẩm</span></a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="index.php?act=listbl">
-                    <i class=" fas fa-fw fa-comments "></i>
-                    <span>Quản lý bình luận</span></a>
-            </li> -->
             <li class="nav-item">
                 <a class="nav-link" href="index.php?act=thongke">
                     <i class="fas fa-fw fa-folder"></i>
@@ -125,8 +120,8 @@
                     </ul> -->
 
                     <ul class="navbar-nav ml-auto">
-                    
-                    <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -138,6 +133,10 @@
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Tài khoản
+                                </a>
+                                <a class="dropdown-item" href="../Webbanhang/index.php">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Trang web
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="" data-toggle="modal" data-target="#logoutModal">
