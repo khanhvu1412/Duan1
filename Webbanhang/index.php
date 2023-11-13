@@ -7,7 +7,7 @@ if (isset($_GET['act'])) {
     switch ($act) {
 
         case 'tkcanhan':
-            include('taikhoan/tkcanhan.php');
+            include('view/tkcanhan.php');
             break;
 
         case "sanpham":
