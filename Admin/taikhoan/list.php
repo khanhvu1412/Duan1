@@ -7,23 +7,7 @@
             <h4 class="m-0 font-weight-bold text-primary">Quản lý tài khoản</h4>
         </div>
         <div class="card-body">
-
             <div class="table-responsive">
-                <h5><label for="">Tìm kiếm</label></h5>
-                <div>
-
-                    <form class="d-none d-sm-inline-block form-inline navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small"
-                                aria-describedby="basic-addon2" required>
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="submit">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
                 <br>
                 <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                     <thead>
