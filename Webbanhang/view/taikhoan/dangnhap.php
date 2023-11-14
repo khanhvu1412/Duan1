@@ -1,3 +1,16 @@
+
+<?php
+
+    session_start();
+    ob_start();
+    // if ((isset($_POST['dangnhap']))&&($_POST['dangnhap'])){
+    //     $email = $_POST['email'];
+    //     $matkhau = $_POST['matkhau'];
+
+    // }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,29 +54,38 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Chào mừng quay trở lại </h1>
                                     </div>
-                                    <form class="user">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder=" Email">
+                                    <?php if (!$_SESSION) { ?>
+
+                                        <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control form-control-user" name="email"
+                                                    aria-describedby="emailHelp" placeholder=" Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control form-control-user" name="matkhau"
+                                                    placeholder="Password">
+                                            </div>
+                                            <input type="submit" class="btn btn-primary btn-user btn-block" name="dangnhap"
+                                                value="Đăng nhập">
+                                            <?php if (isset($loginMess) && $loginMess != '') {
+                                                echo $loginMess;
+                                            }
+                                            ?>
+
+
+                                        </form>
+                                        <hr>
+                                        <div class="text-center"> <a class="small" href="quenmk.php">Quên mật khẩu?</a>
                                         </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                        <div class="text-center"> <a class="small" href="dangky.php">Tạo tài khoản!</a>
                                         </div>
 
-                                        <a href="../../index.php" class="btn btn-primary btn-user btn-block">
-                                            Đăng nhập
-                                        </a>
-                                       
-                                    </form>
-                                    <hr>
-                                    <div class="text-center">
-                                        <a class="small" href="quenmk.php">Quên mật khẩu?</a>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="small" href="dangky.php">Tạo tài khoản!</a>
-                                    </div>
+                                    <?php } else { ?>
+                                        <?php $_SESSION['email']["matkhau"] ?>
+                                    <?php } ?>
+
+
+
                                 </div>
                             </div>
                         </div>

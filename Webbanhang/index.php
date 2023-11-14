@@ -1,5 +1,7 @@
 <?php
 
+include("../model/taikhoan.php");
+
 include("view/header.php");
 
 if (isset($_GET['act'])) {
@@ -8,6 +10,19 @@ if (isset($_GET['act'])) {
 
         case 'tkcanhan':
             include('view/tkcanhan.php');
+            break;
+
+        
+        case 'dangnhap':
+            if(isset($_POST['dangnhap'])&& ($_POST['dangnhap'])){
+                dangnhap($_POST['email'], $_POST['matkhau']);
+                include('view/home.php');
+            }
+        break;
+
+        case 'dangxuat':
+            dangxuat();
+            include('../Webbanhang/view/taikhoan/dangnhap.php');
             break;
 
         case "sanpham":

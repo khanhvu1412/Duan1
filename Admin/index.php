@@ -12,6 +12,11 @@ if (isset($_GET['act'])) {
     $act = $_GET['act'];
     switch ($act) {
 
+        case 'chitietsp':
+
+            include "sanpham/chitietsp.php";
+            break;
+
 
 
 
@@ -215,7 +220,7 @@ if (isset($_GET['act'])) {
 
         // Giỏ hàng
         case "donhang":
-            include "giohang/donhang.php";
+            include "giohang/listdonhang.php";
             break;
 
         case "suadh":

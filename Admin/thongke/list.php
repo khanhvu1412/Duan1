@@ -42,7 +42,7 @@
                 </table>
                 <form action="">
 
-                    <a href="index.php?act=bieudo"><input type="button" class=" form-control btn btn-success"
+                    <a href="index.php?act=bieudo"><input type="button" class="  btn btn-success"
                             value="Biểu đồ"></a>
 
                 </form>

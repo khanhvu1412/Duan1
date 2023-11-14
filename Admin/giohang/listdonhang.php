@@ -16,7 +16,7 @@
                             <th>Mã đơn</th>
                             <th>Tên khách hàng</th>
                             <th>Tên sản phẩm</th>
-                            <th>Số điện thoại</th>
+                            <th>Ảnh</th>
                             <th>Giá tiền</th>
                             <th>Trạng thái</th>
                             <th>Hành động</th>
@@ -28,7 +28,7 @@
                             <td>1</td>
                             <td>Đỗ Khánh Vũ</td>
                             <td>Áo polo</td>
-                            <td>09123743818</td>
+                            <td></td>
                             <td>300.000 VNĐ</td>
                             <td> <div class="trangthai form-cotrol btn-success">Đã thanh toán</div></td>
                             <td>
@@ -42,7 +42,7 @@
                             <td>2</td>
                             <td>Phạm Gia Huy</td>
                             <td>Quần Âu</td>
-                            <td>09127357368</td>
+                            <td></td>
                             <td>450.000 VNĐ</td>
                             <td> <div class="trangthai form-cotrol btn-warning">Đang giao hàng</div></td>
                             <td>

@@ -3,12 +3,12 @@
     if(is_array($sanpham)){
         extract($sanpham);
     }
-    $hinhpath="../upload_file/".$img;
-      if(is_file($hinhpath)){
-        $hinh="<img src='".$hinhpath."' height='80'>";
-      }else{
-        $hinh="no photo";
-      }
+    // $hinhpath="../upload_file/".$hinh;
+    //   if(is_file($hinhpath)){
+    //     $hinh="<img src='".$hinhpath."' height='80'>";
+    //   }else{
+    //     $hinh="no photo";
+    //   }
 
 ?>
 
@@ -29,7 +29,7 @@
                     
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên sản phẩm</label>
-                        <input type="text" class="form-control"  name="tensp" value="<?php echo $sanpham['tensp'] ?>">
+                        <input type="text" class="form-control"  name="tensp" value="<?php echo $sanpham['tensp'] ;?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPrice" class="form-label">Giá</label>
@@ -38,7 +38,7 @@
                     <div class="mb-3">
                         <label for="exampleInputImg" class="form-label">Ảnh</label>
                         <br>
-                        <input type="file" name="hinh">
+                        <input type="file" name="hinh" value="<?= $hinh ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Mô tả</label>
