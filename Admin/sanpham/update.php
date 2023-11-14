@@ -1,14 +1,14 @@
 <?php 
 
-    // if(is_array($sanpham)){
-    //     extract($sanpham);
-    // }
-    // $hinhpath="../upload_file/".$img;
-    //   if(is_file($hinhpath)){
-    //     $hinh="<img src='".$hinhpath."' height='80'>";
-    //   }else{
-    //     $hinh="no photo";
-    //   }
+    if(is_array($sanpham)){
+        extract($sanpham);
+    }
+    $hinhpath="../upload_file/".$img;
+      if(is_file($hinhpath)){
+        $hinh="<img src='".$hinhpath."' height='80'>";
+      }else{
+        $hinh="no photo";
+      }
 
 ?>
 
@@ -26,17 +26,14 @@
 
                 <br>
                 <form action="index.php?act=updatesp" method="post" enctype="multipart/form-data">
-                    <div class="mb-3">
-                        <label for="exampleInputName" class="form-label">Mã sản phẩm</label>
-                        <input type="text" class="form-control" name="masp">
-                    </div>
+                    
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên sản phẩm</label>
-                        <input type="text" class="form-control" name="tensp">
+                        <input type="text" class="form-control"  name="tensp" value="<?php echo $sanpham['tensp'] ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPrice" class="form-label">Giá</label>
-                        <input type="text" class="form-control" name="masp">
+                        <input type="text" class="form-control" name="giasp" value="<?= $giasp ?>" >
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputImg" class="form-label">Ảnh</label>
@@ -45,7 +42,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Mô tả</label>
-                        <textarea class="form-control" rows="10" name="mota"></textarea>
+                        <textarea class="form-control" rows="10" name="mota" ><?= $mota ?></textarea>
                     </div>
 
                     <input type="submit" class="btn btn-primary" name="capnhat" value="Cập nhật">

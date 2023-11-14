@@ -21,8 +21,8 @@
                         <input type="text" class="form-control" name="tendm" value="<?php if (isset($tendm) && ($tendm != "")) echo $tendm; ?>">
                         </div>
                         <input type="hidden" name="id"  value="<?php if(isset($id) && ($id > 0)) echo $id ;?>">
-                        <input type="submit" class="btn btn-primary" name="capnhat" value="Cập nhật">
-                        <input type="reset" class="btn btn-primary" value="Nhập lại">
+                        <input type="submit" class="btn btn-success" name="capnhat" value="Cập nhật">
+                        <input type="reset" class="btn btn-info" value="Nhập lại">
 
                         <a href="index.php?act=listdm"><input type="button" class="btn btn-primary" value="Danh sách"></a>
                         <?php 

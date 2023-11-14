@@ -23,11 +23,38 @@ if (isset($_GET['act'])) {
 
         case "updatetk":
 
-            include "taikhoan/update.php";
+            if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
+                $id = $_POST['id'];
+                $nguoidung = $_POST['nguoidung'];
+                $matkhau = $_POST['matkhau'];
+                $email = $_POST['email'];
+                $diachi = $_POST['diachi'];
+                $sdt = $_POST['sdt'];
+                $id_role = $_POST['id_role'];
+                
+                update_taikhoan($id, $nguoidung, $matkhau, $email, $diachi, $sdt, $id_role);
+                $thongbao = "Cập nhật thành công";
+
+            }
+            $listtaikhoan = loadall_taikhoan();
+            include "taikhoan/list.php";
             break;
 
+
         case "xoatk":
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                delete_taikhoan($_GET['id']);
+            }
+            $listtaikhoan = loadall_taikhoan();
             include "taikhoan/list.php";
+            break;
+
+        case "suatk":
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                $taikhoan = loadone_taikhoan($_GET['id']);
+            }
+            $listtaikhoan = loadall_taikhoan();
+            include "taikhoan/update.php";
             break;
 
         // Danh mục
@@ -54,20 +81,6 @@ if (isset($_GET['act'])) {
             include "danhmuc/update.php";
             break;
 
-        case "updatedm":
-            if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
-                $tendm = $_POST['tendm'];
-                $id = $_POST['id'];
-                update_danhmuc($id, $tendm);
-                $thongbao = " Cập nhật danh mục thành công ";
-
-
-            }
-            $listdanhmuc = loadall_danhmuc();
-            include "danhmuc/update.php";
-            break;
-
-
         case "xoadm":
             if (isset($_GET['id']) && ($_GET['id'])) {
                 delete_danhmuc($_GET['id']);
@@ -75,6 +88,20 @@ if (isset($_GET['act'])) {
             $listdanhmuc = loadall_danhmuc();
             include "danhmuc/list.php";
             break;
+
+        case "updatedm":
+            if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
+                $tendm = $_POST['tendm'];
+                $id = $_POST['id'];
+                update_danhmuc($id, $tendm);
+                $thongbao = "Cập nhật danh mục thành công";
+
+
+            }
+            $listdanhmuc = loadall_danhmuc();
+            include "danhmuc/list.php";
+            break;
+
 
 
         // Sản phẩm
@@ -142,9 +169,8 @@ if (isset($_GET['act'])) {
                 if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
                     //echo "Load ảnh thành công";
                 } else {
-                   // echo "Upload ảnh không thành công";
+                    // echo "Upload ảnh không thành công";
                 }
-
 
 
                 update_sanpham($id, $iddm, $tensp, $giasp, $mota, $hinh);
