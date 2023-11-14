@@ -100,7 +100,7 @@ if (isset($_GET['act'])) {
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
                 $tendm = $_POST['tendm'];
                 $id = $_POST['id'];
-                
+
                 update_danhmuc($id, $tendm);
                 $thongbao = "Sửa thành công";
             }
@@ -183,7 +183,6 @@ if (isset($_GET['act'])) {
                 } else {
                     // echo "Upload ảnh không thành công";
                 }
-
 
                 update_sanpham($id, $iddm, $tensp, $giasp, $mota, $hinh);
                 $thongbao = 'Cập nhật thành công';

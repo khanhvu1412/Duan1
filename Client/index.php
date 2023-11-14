@@ -14,13 +14,26 @@ if (isset($_GET['act'])) {
             break;
 
         
+        case "dangky":
+            if (isset($_POST['dangky']) && $_POST['dangky']) {
+                $nguoidung = $_POST['nguoidung'];
+                $email = $_POST['email'];
+                $matkhau = $_POST['matkhau'];
+                $diachi = $_POST['diachi'];
+                $sdt = $_POST['sdt'];
+                insert_taikhoan( $nguoidung,  $email, $matkhau, $diachi, $sdt);
+                $thongbao = "Đăng ký thành công";
+            }
+            include "view/taikhoan/dangky.php";
+            break;
+
         case 'dangnhap':
             // if(isset($_POST['dangnhap'])&& ($_POST['dangnhap'])){
             //     dangnhap($_POST['email'], $_POST['matkhau']);
             //     include('view/home.php');
             // }
             include('dangnhap.php');
-        break;
+            break;
 
         case 'dangxuat':
             dangxuat();

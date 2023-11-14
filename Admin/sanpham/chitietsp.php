@@ -1,13 +1,13 @@
 <?php
-// if (is_array($sanpham)) {
-//     extract($sanpham);
-// }
-// $hinhpath = ".././upload_file/" . $hinh;
-// if (is_file($hinhpath)) {
-//     $hinh = "<img src='" . $hinhpath . "' height='180'>";
-// } else {
-//     $hinh = "no photo";
-// }
+if (is_array($sanpham)) {
+    extract($sanpham);
+}
+$hinhpath = ".././upload_file/" . $img;
+if (is_file($hinhpath)) {
+    $img = "<img src='" . $hinhpath . "' height='200'>";
+} else {
+    $img = "no photo";
+}
 
 ?>
 
@@ -31,37 +31,17 @@
                 <div class="row">
 
                     <div class="container">
-                        <!-- <?php //extract($sanpham); ?>
                         <div class="list-product-img">
-                            <img src="../../upload_file/ <?php //$hinh"?> alt="">
-                        </div> -->
+                            <img src="../../upload_file/"<?= $img ?> alt="">
+                        </div>
 
                     </div>
 
                     <div class="container">
                         <div class="list-product-img">
-                            <img src="" alt="">
+                            <?= $img ?>
                         </div>
-                        <?php 
-
-
-
                         
-                        ?>
-                        <!-- <div class="list-product-detail">
-                            <p>Id sản phẩm:
-                            </p>
-                            <p>Tên sản phẩm:
-                            </p>
-                            <p>
-                                Ảnh:
-                            </p>
-                            <p>Giá:
-                            </p>
-                            <p>Mô tả:
-                                
-                            </p>
-                        </div> -->
                     </div>
 
                 </div>

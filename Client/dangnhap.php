@@ -89,7 +89,7 @@ ob_start();
                                         <hr>
                                         <div class="text-center"> <a class="small" href="quenmk.php">Quên mật khẩu?</a>
                                         </div>
-                                        <div class="text-center"> <a class="small" href="dangky.php">Tạo tài khoản!</a>
+                                        <div class="text-center"> <a class="small" href="../Client/taikhoan/dangky.php">Tạo tài khoản!</a>
                                         </div>
 
 

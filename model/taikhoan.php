@@ -2,9 +2,9 @@
 session_start();
 
 
-function insert_taikhoan($id, $nguoidung, $matkhau, $email, $diachi, $sdt, $id_role)
+function insert_taikhoan( $nguoidung, $matkhau, $email, $diachi, $sdt)
 {
-    $sql = "INSERT INTO `taikhoan` ( `id`, `nguoidung`, `matkhau`, `email`, `diachi`, `sdt`, `id_role `) VALUES ('$id','$nguoidung', '$matkhau', '$email', '$diachi', '$sdt', '$id_role  '); ";
+    $sql = "INSERT INTO `taikhoan` (  `nguoidung`, `matkhau`, `email`, `diachi`, `sdt`, `id_role `) VALUES ('$nguoidung', '$matkhau', '$email', '$diachi', '$sdt'); ";
     pdo_execute($sql);
 }
 
@@ -46,7 +46,7 @@ function loadall_taikhoan()
 
 function loadone_taikhoan($id){
     $sql = "select * from taikhoan where id = " . $id;
-    $listtaikhoan = pdo_query($sql);
+    $listtaikhoan = pdo_query_one($sql);
     return $listtaikhoan;
 
 }

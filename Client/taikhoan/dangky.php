@@ -36,42 +36,49 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Tạo tài khoản!</h1>
                             </div>
-                            <form class="user">
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                            placeholder="First Name">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                            placeholder="Last Name">
-                                    </div>
+                            <form class="user" action="./../index.php?act=dangky" method="post">
+                                <div class="form-group">
+                                    <input type="text" name="nguoidung" class="form-control form-control-user"
+                                        placeholder="Tên tài khoản ">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Email ">
+                                    <input type="email" name="email" class="form-control form-control-user" placeholder="Email ">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="diachi" class="form-control form-control-user" placeholder="Địa chỉ ">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="sdt" class="form-control form-control-user" placeholder="Số điện thoại ">
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="exampleInputPassword" placeholder="Password">
+                                        <input type="password" name="matkhau" class="form-control form-control-user"
+                                            placeholder="Password">
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="exampleRepeatPassword" placeholder="Repeat Password">
+                                        <input type="password" name="matkhau" class="form-control form-control-user"
+                                            placeholder="Repeat Password">
                                     </div>
                                 </div>
-                                <a href="dangnhap.php" class="btn btn-primary btn-user btn-block">
-                                    Đăng ký tài khoản
-                                </a>
+                                <input type="submit" class="btn btn-primary btn-user btn-block"
+                                        name="dangky" value="Đăng ký tài khoản">
+                                <hr>
+                                <div class="text-center">
+                                    <a class="small" href="quenmk.php">Quên mật khẩu?</a>
+                                </div>
+                                <div class="text-center">
+                                    <a class="small" href="../Client/dangnhap.php">Bạn đã có tài khoản? Đăng nhập!</a>
+                                </div>
+
+
                             </form>
-                            <hr>
-                            <div class="text-center">
-                                <a class="small" href="quenmk.php">Quên mật khẩu?</a>
-                            </div>
-                            <div class="text-center">
-                                <a class="small" href="dangnhap.php">Bạn đã có tài khoản? Đăng nhập!</a>
-                            </div>
+                            <?php
+                            if (isset($thongbao) && $thongbao != "") {
+                                echo $thongbao;
+                            }
+                            ?>
+
+
                         </div>
                     </div>
                 </div>
