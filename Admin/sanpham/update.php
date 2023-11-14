@@ -3,12 +3,12 @@
     if(is_array($sanpham)){
         extract($sanpham);
     }
-    // $hinhpath="../upload_file/".$hinh;
-    //   if(is_file($hinhpath)){
-    //     $hinh="<img src='".$hinhpath."' height='80'>";
-    //   }else{
-    //     $hinh="no photo";
-    //   }
+    $hinhpath=".././upload_file/".$img;
+      if(is_file($hinhpath)){
+        $hinh="<img src='".$hinhpath."' height='80'>";
+      }else{
+        $hinh="no photo";
+      }
 
 ?>
 

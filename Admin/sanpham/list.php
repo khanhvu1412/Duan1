@@ -18,7 +18,6 @@
                             <th>Giá sản phẩm</th>
                             <th>Hình</th>
                             <th>Mô tả</th>
-                            <th>Lượt xem</th>
                             <th>Hành động</th>
 
                         </tr>
@@ -39,10 +38,9 @@
                             echo '<tr>
                                 <td>' . $id . '</td>
                                 <td>' . $tensp . '</td>
-                                <td>' . $giasp . '</td>
+                                <td>' . $giasp . ' VNĐ</td>
                                 <td>' . $hinh . '</td>
                                 <td>' . $mota . '</td>
-                                <td>' . $luotxem . '</td>
                                 <td> 
                                     <a href=" index.php?act=chitietsp "><input type="button" class=" form-control btn btn-secondary" value="Xem sản phẩm"></a> 
                                     <a href="' . $suasp . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 

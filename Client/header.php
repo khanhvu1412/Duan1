@@ -124,7 +124,7 @@
 													<li><a href=".././Admin"></i><span> 
 																	
 																Trang Admin</span></a></li>
-													<li><a href="./view/taikhoan/dangnhap.php"></i><span> <i
+													<li><a href="dangnhap.php"></i><span> <i
 																	class="fa-solid fa-arrow-right-from-bracket"></i>
 																Đăng xuất</span></a></li>
 												</ul>

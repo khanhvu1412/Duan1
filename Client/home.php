@@ -339,4 +339,4 @@
 
 </div>
 
-<?php include "menu/3hopcn.php"; ?>
+<?php include "view//menu/3hopcn.php"; ?>

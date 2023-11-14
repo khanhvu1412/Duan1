@@ -47,6 +47,9 @@
 	</footer>
 
 
+	
+
+
 
 	<a href="#" class="scroll_top" title="Scroll to Top" style="display: block;"><i class="fa fa-arrow-up"></i></a>
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>

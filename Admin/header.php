@@ -134,7 +134,7 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Tài khoản
                                 </a>
-                                <a class="dropdown-item" href="../Webbanhang/index.php">
+                                <a class="dropdown-item" href="../Client/index.php">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Trang web
                                 </a>

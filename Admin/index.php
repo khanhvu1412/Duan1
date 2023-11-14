@@ -1,4 +1,17 @@
 <?php
+
+// if(!isset($_SESSION["admin@gmail.com"])){
+//    echo "Bạn không phải admin nên không có quyền truy cập";
+//    die;
+// }
+// echo $_SESSION["admin@gmail.com"];
+// if(isset($_POST["dangxuat"])){
+//     unset($_SESSION["admin"]);
+//     header("Location: ../client/index.php");
+// }
+
+
+
 include "../model/pdo.php";
 include "../model/sanpham.php";
 include "../model/danhmuc.php";
@@ -220,15 +233,15 @@ if (isset($_GET['act'])) {
 
         // Giỏ hàng
         case "donhang":
-            include "giohang/listdonhang.php";
+            include "donhang/list.php";
             break;
 
         case "suadh":
-            include "giohang/update.php";
+            include "donhang/update.php";
             break;
 
         case "xoadh":
-            include "giohang/donhang.php";
+            include "donhang/donhang.php";
             break;
 
         default:

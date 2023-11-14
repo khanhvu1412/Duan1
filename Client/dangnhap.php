@@ -1,13 +1,32 @@
-
 <?php
 
-    session_start();
-    ob_start();
-    // if ((isset($_POST['dangnhap']))&&($_POST['dangnhap'])){
-    //     $email = $_POST['email'];
-    //     $matkhau = $_POST['matkhau'];
+// session_start();
+// ob_start();
+// // if ((isset($_POST['dangnhap']))&&($_POST['dangnhap'])){
+// //     $email = $_POST['email'];
+// //     $matkhau = $_POST['matkhau'];
 
-    // }
+// // }
+
+
+
+if (isset($_POST["dangnhap"])) {
+    $email = $_POST["email"];
+    $matkhau = $_POST["matkhau"];
+    if ($email == "admin@gmail.com" && $matkhau == "12345678") {
+        $_SESSION["admin@gmail.com"] = $emal;
+        header("location: ../Admin/index.php");
+    }
+}
+
+if (isset($_SESSION["admin"])) {
+    header("location: ../Admin/index.php");
+}
+if (isset($_SESSION["user"])) {
+    header("location: ../Client/index.php");
+}
+
+ob_start();
 
 ?>
 
@@ -25,13 +44,13 @@
     <title>Đăng nhập</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="taikhoan/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="taikhoan/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -54,35 +73,28 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Chào mừng quay trở lại </h1>
                                     </div>
-                                    <?php if (!$_SESSION) { ?>
 
-                                        <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control form-control-user" name="email"
-                                                    aria-describedby="emailHelp" placeholder=" Email">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="password" class="form-control form-control-user" name="matkhau"
-                                                    placeholder="Password">
-                                            </div>
-                                            <input type="submit" class="btn btn-primary btn-user btn-block" name="dangnhap"
-                                                value="Đăng nhập">
-                                            <?php if (isset($loginMess) && $loginMess != '') {
-                                                echo $loginMess;
-                                            }
-                                            ?>
-
-
-                                        </form>
+                                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control form-control-user" name="email"
+                                                aria-describedby="emailHelp" placeholder=" Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control form-control-user" name="matkhau"
+                                                placeholder="Password">
+                                        </div>
+                                        <input type="submit" class="btn btn-primary btn-user btn-block" name="dangnhap"
+                                            value="Đăng nhập">
+                                        <?php ob_end_flush(); ?>
                                         <hr>
                                         <div class="text-center"> <a class="small" href="quenmk.php">Quên mật khẩu?</a>
                                         </div>
                                         <div class="text-center"> <a class="small" href="dangky.php">Tạo tài khoản!</a>
                                         </div>
 
-                                    <?php } else { ?>
-                                        <?php $_SESSION['email']["matkhau"] ?>
-                                    <?php } ?>
+
+                                    </form>
+
 
 
 
@@ -99,14 +111,14 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="taikhoan/vendor/jquery/jquery.min.js"></script>
+    <script src="taikhoan/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="taikhoan/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="taikhoan/js/sb-admin-2.min.js"></script>
 
 </body>
 

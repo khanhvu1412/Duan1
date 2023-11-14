@@ -1,8 +1,9 @@
 <?php
 
+
 include("../model/taikhoan.php");
 
-include("view/header.php");
+include("header.php");
 
 if (isset($_GET['act'])) {
     $act = $_GET['act'];
@@ -14,10 +15,11 @@ if (isset($_GET['act'])) {
 
         
         case 'dangnhap':
-            if(isset($_POST['dangnhap'])&& ($_POST['dangnhap'])){
-                dangnhap($_POST['email'], $_POST['matkhau']);
-                include('view/home.php');
-            }
+            // if(isset($_POST['dangnhap'])&& ($_POST['dangnhap'])){
+            //     dangnhap($_POST['email'], $_POST['matkhau']);
+            //     include('view/home.php');
+            // }
+            include('dangnhap.php');
         break;
 
         case 'dangxuat':
@@ -55,12 +57,12 @@ if (isset($_GET['act'])) {
 
 
         default:
-            include("view/home.php");
+            include("home.php");
             break;
 
     }
 } else {
-    include("view/home.php");
+    include("home.php");
 }
 
-include("view/footer.php");
+include("footer.php");
