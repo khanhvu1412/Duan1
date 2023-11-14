@@ -3,6 +3,7 @@ include "../model/pdo.php";
 include "../model/sanpham.php";
 include "../model/danhmuc.php";
 include "../model/taikhoan.php";
+include "../model/thongke.php";
 
 include "header.php";
 
@@ -203,10 +204,12 @@ if (isset($_GET['act'])) {
 
         // Thống kê
         case "thongke":
+            $listthongke = loadall_thongke();
             include "thongke/list.php";
             break;
 
         case "bieudo":
+            $listthongke = loadall_thongke();
             include "thongke/bieudo.php";
             break;
 

@@ -17,11 +17,20 @@
                     function drawChart() {
                         const data = google.visualization.arrayToDataTable([
                             ['Tên', 'Số liệu'],
-                            ['Sản phẩm 1', 54.8],
-                            ['Sản phẩm 2', 48.6],
-                            ['Sản phẩm 3', 44.4],
-                            ['Sản phẩm 4', 23.9],
-                            ['Sản phẩm 5', 14.5]
+                            <?php 
+                            $tongdm = count($listthongke);
+                            $i =1;
+
+                            foreach ($listthongke as $thongke) {
+                                extract($thongke);
+                                if ($i == $tongdm) $dauphay = ""; 
+                                else $dauphay = ",";
+                                echo "['".$thongke['tendm']."', ".$thongke['countsp']."]". $dauphay;
+                                $i+=1;
+
+                            }
+
+                            ?>
                         ]);
 
                         const options = {

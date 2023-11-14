@@ -21,28 +21,29 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Áo gió</td>
-                            <td>30</td>
-                            <td>120.000</td>
-                            <td>52.200</td>
-                            <td>200.000</td>
-                        </tr>
 
-                        <tr>
-                            <td>2</td>
-                            <td>Áo thun</td>
-                            <td>30</td>
-                            <td>320.000</td>
-                            <td>43.500</td>
-                            <td>300.000</td>
-                        </tr>
+                        <?php foreach ($listthongke as $thongke) {
+                            extract($thongke);
+                            echo '
+                            <tr>
+                            <td>'.$madm.'</td>
+                            <td>'.$tendm.'</td>
+                            <td>'.$countsp.'</td>
+                            <td>'.$maxprice.'</td>
+                            <td>'.$minprice.'</td>
+                            <td>'.$avgprice.'</td>
+                            </tr>
+                            ';
+                        } ?>
+
+
+
                     </tbody>
                 </table>
                 <form action="">
 
-                    <a href="index.php?act=bieudo"><input type="button" class=" form-control btn btn-success" value="Biểu đồ"></a>
+                    <a href="index.php?act=bieudo"><input type="button" class=" form-control btn btn-success"
+                            value="Biểu đồ"></a>
 
                 </form>
             </div>
