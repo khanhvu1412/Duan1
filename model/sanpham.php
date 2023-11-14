@@ -40,7 +40,7 @@ function update_sanpham($id, $iddm, $tensp, $giasp, $mota, $hinh)
     if ($hinh != "") {
         $sql = "update sanham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "', img = '" . $hinh . "' where id = " . $id;
     } else {
-        $hinh = "update sanham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "' where id = " . $id;
+        $sql = "update sanham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "' where id = " . $id;
     }
     pdo_execute($sql);
 }

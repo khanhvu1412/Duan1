@@ -1,13 +1,13 @@
 <?php
-if (is_array($sanpham)) {
-    extract($sanpham);
-}
-$hinhpath = ".././upload_file/" . $hinh;
-if (is_file($hinhpath)) {
-    $hinh = "<img src='" . $hinhpath . "' height='180'>";
-} else {
-    $hinh = "no photo";
-}
+// if (is_array($sanpham)) {
+//     extract($sanpham);
+// }
+// $hinhpath = ".././upload_file/" . $hinh;
+// if (is_file($hinhpath)) {
+//     $hinh = "<img src='" . $hinhpath . "' height='180'>";
+// } else {
+//     $hinh = "no photo";
+// }
 
 ?>
 
@@ -21,19 +21,19 @@ if (is_file($hinhpath)) {
             <h4 class="m-0 font-weight-bold text-primary">Chi tiết sản phẩm</h4>
         </div>
         <br>
-        
+
         <div class="card-body">
-        <div class="function-back">
-            <a href="index.php?act=listsp"><input type="submit" class="btn btn-primary"
-                    value="Quay lại trang sản phẩm"></a>
-        </div>
+            <div class="function-back">
+                <a href="index.php?act=listsp"><input type="submit" class="btn btn-primary"
+                        value="Quay lại trang sản phẩm"></a>
+            </div>
             <div class="table-responsive">
                 <div class="row">
 
                     <div class="container">
                         <!-- <?php //extract($sanpham); ?>
                         <div class="list-product-img">
-                            <img src="../../upload_file/<?= $hinh ?>" alt="">
+                            <img src="../../upload_file/ <?php //$hinh"?> alt="">
                         </div> -->
 
                     </div>
@@ -42,20 +42,26 @@ if (is_file($hinhpath)) {
                         <div class="list-product-img">
                             <img src="" alt="">
                         </div>
-                        <div class="list-product-detail">
+                        <?php 
+
+
+
+                        
+                        ?>
+                        <!-- <div class="list-product-detail">
                             <p>Id sản phẩm:
-                                <?= $idsp ?>
                             </p>
                             <p>Tên sản phẩm:
-                                <?= $tensp ?>
+                            </p>
+                            <p>
+                                Ảnh:
                             </p>
                             <p>Giá:
-                                <?= $giasp ?>đ
                             </p>
                             <p>Mô tả:
-                                <?= $mota ?>
+                                
                             </p>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>

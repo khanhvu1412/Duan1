@@ -1,9 +1,10 @@
-<?php 
-    
+<?php
+
+if (is_array($taikhoan)) {
+    extract($taikhoan);
+}
+
 ?>
-
-
-
 <div class="container-fluid">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Tài khoản</h1>
@@ -17,31 +18,31 @@
             <div class="table-responsive">
 
                 <br>
-                <form action="index.php?act=updatesp" method="post" enctype="multipart/form-data">
-                    
+                <form action="index.php?act=updatesp" method="post">
+
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên tài khoản</label>
-                        <input type="text" class="form-control"  name="nguoidung" value=" <?=$taikhoan['nguoidung'];?> ">
+                        <input type="text" class="form-control" name="nguoidung" value="<?= $nguoidung ?> ">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPrice" class="form-label">Mật khẩu</label>
-                        <input type="text" class="form-control" name="matkhau" value="<?= $taikhoan['mathau']; ?>" >
+                        <input type="text" class="form-control" name="matkhau" value="<?= $matkhau ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputImg" class="form-label">Email</label>
-                        <input type="text" class="form-control"  name="email"value="<?= $taikhoan['email']; ?>">
+                        <input type="text" class="form-control" name="email" value="<?= $email?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Địa chỉ</label>
-                        <input type="text" class="form-control"  name="diachi" value="<?= $taikhoan['diachi']; ?>">
+                        <input type="text" class="form-control" name="diachi" value="<?= $diachi ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Số điện thoại</label>
-                        <input type="text" class="form-control"  name="sdt" value="<?= $taikhoan['sdt']; ?>">
+                        <input type="text" class="form-control" name="sdt" value="<?= $sdt ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Vai trò</label>
-                        <input type="text" class="form-control"  name="id_role" value="<?= $taikhoan['id_role']; ?>">
+                        <input type="text" class="form-control" name="id_role" value="<?= $id_role ?>">
                     </div>
 
                     <input type="submit" class="btn btn-success" name="capnhat" value="Cập nhật">
@@ -56,6 +57,6 @@
             </div>
         </div>
     </div>
-
 </div>
 
+</div>

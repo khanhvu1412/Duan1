@@ -30,7 +30,7 @@ function loadone_danhmuc($id)
 // sửa danh mục
 function update_danhmuc($id, $tendm)
 {
-    $sql = " update danhmuc set tendm =' ". $tendm ." ' where id= " . $id;
+    $sql = " update danhmuc set tendm = '". $tendm ."' where id= " . $id;
     pdo_execute($sql);
 }
 

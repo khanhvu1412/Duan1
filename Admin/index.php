@@ -1,14 +1,6 @@
 <?php
 
-// if(!isset($_SESSION["admin@gmail.com"])){
-//    echo "Bạn không phải admin nên không có quyền truy cập";
-//    die;
-// }
-// echo $_SESSION["admin@gmail.com"];
-// if(isset($_POST["dangxuat"])){
-//     unset($_SESSION["admin"]);
-//     header("Location: ../client/index.php");
-// }
+
 
 
 
@@ -104,24 +96,11 @@ if (isset($_GET['act'])) {
             include "danhmuc/list.php";
             break;
 
-        // case "updatedm":
-        //     if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
-        //         $tendm = $_POST['tendm'];
-        //         $id = $_POST['id'];
-        //         update_danhmuc($id, $tendm);
-        //         $thongbao = "Cập nhật danh mục thành công";
-
-
-        //     }
-        //     $listdanhmuc = loadall_danhmuc();
-        //     include "danhmuc/list.php";
-        //     break;
-
         case "updatedm":
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
                 $tendm = $_POST['tendm'];
                 $id = $_POST['id'];
-
+                
                 update_danhmuc($id, $tendm);
                 $thongbao = "Sửa thành công";
             }
