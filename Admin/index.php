@@ -25,10 +25,6 @@ if (isset($_GET['act'])) {
     $act = $_GET['act'];
     switch ($act) {
 
-        case 'chitietsp':
-
-            include "sanpham/chitietsp.php";
-            break;
 
 
 
@@ -50,7 +46,7 @@ if (isset($_GET['act'])) {
                 $diachi = $_POST['diachi'];
                 $sdt = $_POST['sdt'];
                 $id_role = $_POST['id_role'];
-                
+
                 update_taikhoan($id, $nguoidung, $matkhau, $email, $diachi, $sdt, $id_role);
                 $thongbao = "Cập nhật thành công";
 
@@ -108,14 +104,26 @@ if (isset($_GET['act'])) {
             include "danhmuc/list.php";
             break;
 
+        // case "updatedm":
+        //     if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
+        //         $tendm = $_POST['tendm'];
+        //         $id = $_POST['id'];
+        //         update_danhmuc($id, $tendm);
+        //         $thongbao = "Cập nhật danh mục thành công";
+
+
+        //     }
+        //     $listdanhmuc = loadall_danhmuc();
+        //     include "danhmuc/list.php";
+        //     break;
+
         case "updatedm":
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
                 $tendm = $_POST['tendm'];
                 $id = $_POST['id'];
+
                 update_danhmuc($id, $tendm);
-                $thongbao = "Cập nhật danh mục thành công";
-
-
+                $thongbao = "Sửa thành công";
             }
             $listdanhmuc = loadall_danhmuc();
             include "danhmuc/list.php";
@@ -135,6 +143,12 @@ if (isset($_GET['act'])) {
             $listdanhmuc = loadall_danhmuc();
             $listsanpham = loadall_sanpham($kyw, $iddm);
             include "sanpham/list.php";
+            break;
+        case "chitietsp":
+            if (isset($_GET['id']) && $_GET['id'] > 0) {
+                $sanpham = loadone_sanpham($_GET['id']);
+            }
+            include "sanpham/chitietsp.php";
             break;
 
         case "addsp":
@@ -207,6 +221,7 @@ if (isset($_GET['act'])) {
 
 
 
+
         // Bình luận
         case "listbl":
             include "binhluan/list.php";
@@ -232,6 +247,10 @@ if (isset($_GET['act'])) {
             break;
 
         // Giỏ hàng
+        case "chitietdh":
+            include "donhang/chitietsh.php";
+            break;
+
         case "donhang":
             include "donhang/list.php";
             break;
@@ -241,7 +260,7 @@ if (isset($_GET['act'])) {
             break;
 
         case "xoadh":
-            include "donhang/donhang.php";
+            include "donhang/list.php";
             break;
 
         default:

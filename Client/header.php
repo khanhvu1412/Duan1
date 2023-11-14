@@ -63,16 +63,14 @@
 
 								<form class="box-search show-icon">
 
-									<!-- <input type="text" name="timkiem" id="timkiem"> -->
-
 									<span class="icon">
 										<span class="pe-7s-search"></span>
 									</span>
 
-									<!-- <div class="inner" >
-										<input type="text" class="search" placeholder="Search here...">
+									<div class="inner" >
+										<input type="text" class="search" placeholder="Search here..." required>
 										<button class="button-search"><span class="pe-7s-search"></span></button>
-									</div> -->
+									</div>
 								</form>
 								<div class="mini-cart">
 									<a class="cart-link" href="#"><span class="pe-7s-cart"></span> <span

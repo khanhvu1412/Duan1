@@ -9,7 +9,7 @@
         <div class="card-body">
 
             <div class="table-responsive">
-               <br>
+                <br>
                 <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
@@ -30,12 +30,16 @@
                             <td>Áo polo</td>
                             <td></td>
                             <td>300.000 VNĐ</td>
-                            <td> <div class="trangthai form-cotrol btn-success">Đã thanh toán</div></td>
                             <td>
-                                <a href="index.php?act=suagh"><input type="button" class="form-control btn btn-warning"
-                                        value="Sửa"></a>
-                                <a href="index.php?act=xoagh"><input type="button" class="form-control btn btn-danger mt-2"
-                                        value="Xóa"></a>
+                                <div class="trangthai form-cotrol btn-success">Đã thanh toán</div>
+                            </td>
+                            <td>
+                                <a href="index.php?act=chitietdh"><input type="button"
+                                        class="form-control btn btn-primary" value="Chi tiết"></a>
+                                <a href="index.php?act=suadh"><input type="button"
+                                        class="form-control btn btn-warning mt-2" value="Sửa"></a>
+                                <a href="index.php?act=xoadh"><input type="button"
+                                        class="form-control btn btn-danger mt-2" value="Xóa"></a>
                             </td>
                         </tr>
                         <tr>
@@ -44,12 +48,16 @@
                             <td>Quần Âu</td>
                             <td></td>
                             <td>450.000 VNĐ</td>
-                            <td> <div class="trangthai form-cotrol btn-warning">Đang giao hàng</div></td>
                             <td>
-                                <a href="index.php?act=suagh"><input type="button" class=" form-control btn btn-warning"
+                                <div class="trangthai form-cotrol btn-warning">Đang giao hàng</div>
+                            </td>
+                            <td>
+                                <a href="index.php?act=chitietdh"><input type="button"
+                                        class="form-control btn btn-primary" value="Chi tiết"></a>
+                                <a href="index.php?act=suagh"><input type="button" class=" form-control btn btn-warning mt-2"
                                         value="Sửa"></a>
-                                <a href="index.php?act=xoagh"><input type="button" class=" form-control btn btn-danger mt-2"
-                                        value="Xóa"></a>
+                                <a href="index.php?act=xoagh"><input type="button"
+                                        class=" form-control btn btn-danger mt-2" value="Xóa"></a>
                             </td>
                         </tr>
                     </tbody>

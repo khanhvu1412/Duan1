@@ -13,7 +13,19 @@
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 footer-sidebar">
-						<!-- LOGO -->
+						<div class="widget our-service">
+							<span class="text-primary PlayfairDisplay">Nói chuyện với chúng tôi ngay bây giờ!</span>
+							<h3 class="widget-title">THEO DÕI CHÚNG TÔI</h3>
+							<div class="content">
+								<ul>
+									<li><a href="index.php?act=blog">About</a></li>
+									<li><a href="index.php?act=lienhe">Liên hệ</a></li>
+									<li><a href="index.php?act=giohang">Giỏ hàng</a></li>
+
+
+								</ul>
+							</div>
+						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 footer-sidebar">
 						<div class="widget widget_social">
@@ -37,9 +49,9 @@
 			<div class="payment">
 				<div class="head"><span>Chúng tôi cam kết!</span><span class="PlayfairDisplay">Thanh toán trực tuyến được bảo mật</span></div>
 				<div class="list">
-					<a href="#" class="item"><img src="images/payments/1.png" alt=""></a>
-					<a href="#" class="item"><img src="images/payments/2.png" alt=""></a>
-					<a href="#" class="item"><img src="images/payments/3.png" alt=""></a>
+					<a href="" class="item"><img src="images/payments/1.png" alt=""></a>
+					<a href="" class="item"><img src="images/payments/2.png" alt=""></a>
+					<a href="" class="item"><img src="images/payments/3.png" alt=""></a>
 				</div>
 			</div>
 			</div>
