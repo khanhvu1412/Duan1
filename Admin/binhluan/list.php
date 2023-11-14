@@ -30,8 +30,8 @@
                             <td>Quần áo rất đẹp và chất lượng</td>
                             <td>31/10/2023</td>
                             <td>
-                                <a href="index.php?act=suabl"><input type="button" class="btn btn-primary" value="Sửa"></a>
-                                <a href="index.php?act=xoabl"><input type="button" class="btn btn-primary" value="Xóa"></a>
+                                <a href="index.php?act=suabl"><input type="button" class=" form-control btn btn-primary" value="Sửa"></a>
+                                <a href="index.php?act=xoabl"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
                             </td>
                         </tr>
                         <tr>
@@ -41,8 +41,8 @@
                             <td>Áo rất đẹp</td>
                             <td>06/11/2023</td>
                             <td>
-                                <a href="index.php?act=suabl"><input type="button" class="btn btn-primary" value="Sửa"></a>
-                                <a href="index.php?act=xoabl"><input type="button" class="btn btn-primary" value="Xóa"></a>
+                                <a href="index.php?act=suabl"><input type="button" class=" form-control btn btn-primary" value="Sửa"></a>
+                                <a href="index.php?act=xoabl"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
                             </td>
 
                     </tbody>

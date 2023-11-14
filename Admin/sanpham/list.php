@@ -43,8 +43,8 @@
                                 <td>' . $hinh . '</td>
                                 <td>' . $mota . '</td>
                                 <td>' . $luotxem . '</td>
-                                <td> <a href="' . $suasp . '"><input type="button" class="btn btn-primary" value="Sửa"></a> 
-                                     <a href="' . $xoasp . '"><input type="button" class="btn btn-primary" value="Xóa"></a>
+                                <td> <a href="' . $suasp . '"><input type="button" class=" form-control btn btn-warning" value="Sửa"></a> 
+                                     <a href="' . $xoasp . '"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
                                 </td> 
                                 </tr>';
 

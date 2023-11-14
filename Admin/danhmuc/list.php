@@ -29,8 +29,8 @@
                             <tr>
                                 <td>' . $id . '</td>
                                 <td>' . $tendm . '</td>
-                                <td> <a href="' . $suadm . '"><input type="button" class="btn btn-primary" value="Sửa"></a> 
-                                    <a href="' . $xoadm . '"><input type="button" class="btn btn-primary" value="Xóa"></a>
+                                <td> <a href="' . $suadm . '"><input type="button" class=" btn btn-warning" value="Sửa"></a> 
+                                    <a href="' . $xoadm . '"><input type="button" class="  btn btn-danger " value="Xóa"></a>
                             
                                 </td>
                             </tr>';

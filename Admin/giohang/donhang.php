@@ -32,9 +32,9 @@
                             <td>300.000 VNĐ</td>
                             <td> <div class="trangthai form-cotrol btn-success">Đã thanh toán</div></td>
                             <td>
-                                <a href="index.php?act=suagh"><input type="button" class="btn btn-primary"
+                                <a href="index.php?act=suagh"><input type="button" class="form-control btn btn-warning"
                                         value="Sửa"></a>
-                                <a href="index.php?act=xoagh"><input type="button" class="btn btn-primary"
+                                <a href="index.php?act=xoagh"><input type="button" class="form-control btn btn-danger mt-2"
                                         value="Xóa"></a>
                             </td>
                         </tr>
@@ -46,9 +46,9 @@
                             <td>450.000 VNĐ</td>
                             <td> <div class="trangthai form-cotrol btn-warning">Đang giao hàng</div></td>
                             <td>
-                                <a href="index.php?act=suagh"><input type="button" class="btn btn-primary"
+                                <a href="index.php?act=suagh"><input type="button" class=" form-control btn btn-warning"
                                         value="Sửa"></a>
-                                <a href="index.php?act=xoagh"><input type="button" class="btn btn-primary"
+                                <a href="index.php?act=xoagh"><input type="button" class=" form-control btn btn-danger mt-2"
                                         value="Xóa"></a>
                             </td>
                         </tr>
