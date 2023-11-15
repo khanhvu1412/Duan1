@@ -20,7 +20,7 @@
 
                     <div class="container">
                         <div class="list-product-img">
-                            <!-- <img src="../../upload_file/" alt=""> -->
+                            
                         </div>
 
                     </div>

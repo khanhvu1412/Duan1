@@ -4,11 +4,11 @@ if (is_array($sanpham)) {
     extract($sanpham);
 }
 
-$hinhpath = ".././upload_file/" . $img;
+$hinhpath = ".././upload_file/" . $hinh;
 if (is_file($hinhpath)) {
-    $img = "<img src='" . $hinhpath . "' height='200'>";
+    $hinh = "<img src='" . $hinhpath . "' height='200'>";
 } else {
-    $img = "no photo";
+    $hinh = "no photo";
 }
 
 ?>
@@ -34,14 +34,14 @@ if (is_file($hinhpath)) {
 
                     <div class="container">
                         <div class="list-product-img">
-                            <img src="../../upload_file/"<?= $img ?> alt="">
+                            <img src="../../upload_file/"<?= $hinh ?> alt="">
                         </div>
 
                     </div>
 
                     <div class="container">
                         <div class="list-product-img">
-                            <?= $img ?>
+                            <?= $hinh ?>
                         </div>
                         
                     </div>

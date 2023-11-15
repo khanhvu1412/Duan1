@@ -17,7 +17,7 @@ if (isset($_POST["dangnhap"])) {
         $_SESSION["admin@gmail.com"] = $emal;
         header("location: ../Admin/index.php");
     }
-}
+} 
 
 if (isset($_SESSION["admin"])) {
     header("location: ../Admin/index.php");
