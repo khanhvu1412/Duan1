@@ -1,7 +1,9 @@
 <?php
+
 if (is_array($sanpham)) {
     extract($sanpham);
 }
+
 $hinhpath = ".././upload_file/" . $img;
 if (is_file($hinhpath)) {
     $img = "<img src='" . $hinhpath . "' height='200'>";

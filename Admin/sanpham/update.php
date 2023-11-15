@@ -19,7 +19,7 @@ if (is_file($hinhpath)) {
     </div>
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h4 class="m-0 font-weight-bold text-primary">Thêm sản phẩm</h4>
+            <h4 class="m-0 font-weight-bold text-primary">Sửa sản phẩm</h4>
         </div>
         <div class="card-body">
 
@@ -62,7 +62,7 @@ if (is_file($hinhpath)) {
                         <label for="exampleInputDescribe" class="form-label">Mô tả</label>
                         <textarea class="form-control" rows="10" name="mota"><?= $mota ?></textarea>
                     </div>
-                    <input type="hidden" name="id" value="<?= $sanpham['id']?>">
+                    <input type="hidden" name="id" value="<?= $sanpham['id'] ;?>">
                     <input type="submit" class="btn btn-primary" name="capnhat" value="Cập nhật">
                     <input type="reset" class="btn btn-primary" value="Nhập lại">
                     <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Danh sách"></a>

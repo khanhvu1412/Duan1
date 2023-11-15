@@ -31,8 +31,8 @@ function loadall_sanpham($kyw = " ", $iddm = 0)
 function loadone_sanpham($id)
 {
     $sql = "select * from sanpham where id= " . $id;
-    $dm = pdo_query_one($sql);
-    return $dm;
+    $sanpham = pdo_query_one($sql);
+    return $sanpham;
 }
 
 function update_sanpham($id, $iddm, $tensp, $giasp, $mota, $hinh)
@@ -42,7 +42,6 @@ function update_sanpham($id, $iddm, $tensp, $giasp, $mota, $hinh)
     } else {
         $sql = "update sanham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "' where id = " . $id;
     }
-    
     pdo_execute($sql);
 }
 

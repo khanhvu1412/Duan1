@@ -1,9 +1,5 @@
 <?php
 
-
-
-
-
 include "../model/pdo.php";
 include "../model/sanpham.php";
 include "../model/danhmuc.php";
@@ -16,9 +12,6 @@ include "header.php";
 if (isset($_GET['act'])) {
     $act = $_GET['act'];
     switch ($act) {
-
-
-
 
 
         // Tài khoản
@@ -226,7 +219,7 @@ if (isset($_GET['act'])) {
 
         // Giỏ hàng
         case "chitietdh":
-            include "donhang/chitietsh.php";
+            include "donhang/chitietdh.php";
             break;
 
         case "donhang":
