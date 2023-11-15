@@ -116,6 +116,7 @@ if (isset($_GET['act'])) {
             $listsanpham = loadall_sanpham($kyw, $iddm);
             include "sanpham/list.php";
             break;
+
         case "chitietsp":
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
