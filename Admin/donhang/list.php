@@ -16,7 +16,6 @@
                             <th>Mã đơn</th>
                             <th>Tên khách hàng</th>
                             <th>Tên sản phẩm</th>
-                            <th>Ảnh</th>
                             <th>Giá tiền</th>
                             <th>Trạng thái</th>
                             <th>Hành động</th>
@@ -32,19 +31,12 @@
                             extract($donhang);
                             $suadh = "index.php?act=suadh&id=" . $id;
                             $xoadh = "index.php?act=xoadh&id=" . $id;
-                            $hinhpath = "../upload_file/" . $img;
-                            if (is_file($hinhpath)) {
-                                $hinh = "<img src='" . $hinhpath . "' height='90'>";
-                            } else {
-                                $hinh = "No img";
-                            }
 
                             echo '
                                 <tr>
                                 <td>' . $id . '</td>
                                 <td>' . $tentk . '</td>
                                 <td>' . $tensp . ' </td>
-                                <td>' . $img . '</td>
                                 <td>' . $gia . ' VNĐ</td>
                                 <td> </td>
                                 <td>  

@@ -231,7 +231,10 @@ if (isset($_GET['act'])) {
             break;
 
         case "suadh":
-
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                $donhang = loadone_donhang($_GET['id']);
+            }
+            $listdonhang = loadall_donhang();
             include "donhang/update.php";
             break;
 
@@ -253,11 +256,7 @@ if (isset($_GET['act'])) {
                 $hinh = $_FILES['hinh']['name'];
                 $target_dir = "../upload_file/";
                 $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
-                if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
-                    //echo "Load ảnh thành công";
-                } else {
-                    // echo "Upload ảnh không thành công";
-                }
+
 
                 update_donhang($id, $tentk, $tensp, $gia, $trangthai);
                 $thongbao = 'Cập nhật thành công';

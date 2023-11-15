@@ -1,4 +1,5 @@
 <?php
+
     if (is_array($donhang)) {
         extract($donhang);
     }
@@ -20,22 +21,23 @@
                 <form action="index.php?act=updatedm" method="post">
                     <div class="mb-3">
                         <label for="exampleInputId" class="form-label" >Mã đơn hàng</label>
-                        <input type="text" class="form-control" name="id" value="<?= $id; ?>>
+                        <input type="text" class="form-control" name="id" value="<?= $id ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên khách hàng</label>
-                        <input type="text" class="form-control" name="tentk" value="<?= $tentk; ?>">
+                        <input type="text" class="form-control" name="tentk" value="<?= $tentk ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên sản phẩm</label>
-                        <input type="text" class="form-control" name="tensp" value="<?= $tensp; ?>">
+                        <input type="text" class="form-control" name="tensp" value="<?= $tensp ?>">
                     </div> <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Giá tiền</label>
-                        <input type="text" class="form-control" name="gia" value="<?= $gia; ?>">
+                        <input type="text" class="form-control" name="gia" value="<?= $gia ?>">
                     </div>
                      <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Trạng thái</label>
-                        <input type="text" class="form-control" name="trangthai" value="<?= $trangthai; ?>">
+                        <input type="text" class="form-control" name="trangthai" value="<?= $trangthai ?>">
+                        
 
                     </div>
                     <input type="submit" class="btn btn-success" name="capnhat" value="Cập nhật">
