@@ -4,11 +4,11 @@ if (is_array($sanpham)) {
     extract($sanpham);
 }
 
-$hinhpath = ".././upload_file/" . $hinh;
+$hinhpath = ".././upload_file/" . $img;
 if (is_file($hinhpath)) {
-    $hinh = "<img src='" . $hinhpath . "' height='200'>";
+    $img = "<img src='" . $hinhpath . "' height='500px' width='500px'>";
 } else {
-    $hinh = "no photo";
+    $img = "no photo";
 }
 
 ?>
@@ -25,27 +25,32 @@ if (is_file($hinhpath)) {
         <br>
 
         <div class="card-body">
-            <div class="function-back">
-                <a href="index.php?act=listsp"><input type="submit" class="btn btn-primary"
-                        value="Quay lại trang sản phẩm"></a>
-            </div>
+
             <div class="table-responsive">
                 <div class="row">
 
+
+
                     <div class="container">
+                        <h2><label for="">Mã sản phẩm: <?= $id ?></label></h2>
+                        <h2><label for="">Tên sản phẩm: <?= $tensp ?></label></h2>
+                        <h2><label for="">Giá sản phẩm: <?= $giasp ?></label></h2>
+                        <h2><label for="">Mô tả: <?= $mota ?></label></h2>
+
                         <div class="list-product-img">
-                            <img src="../../upload_file/"<?= $hinh ?> alt="">
+                            <?= $img ?>
                         </div>
+
+
 
                     </div>
 
-                    <div class="container">
-                        <div class="list-product-img">
-                            <?= $hinh ?>
-                        </div>
-                        
-                    </div>
 
+                </div>
+                <br>
+                <div class="function-back">
+                    <a href="index.php?act=listsp"><input type="submit" class="btn btn-primary"
+                            value="Quay lại trang sản phẩm"></a>
                 </div>
 
 

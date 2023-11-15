@@ -5,6 +5,7 @@ include "../model/sanpham.php";
 include "../model/danhmuc.php";
 include "../model/taikhoan.php";
 include "../model/thongke.php";
+include "../model/donhang.php";
 
 include "header.php";
 
@@ -223,15 +224,46 @@ if (isset($_GET['act'])) {
             include "donhang/chitietdh.php";
             break;
 
-        case "donhang":
+        case "listdh":
+
+            $listdonhang = loadall_donhang();
             include "donhang/list.php";
             break;
 
         case "suadh":
+
             include "donhang/update.php";
             break;
 
         case "xoadh":
+            if (isset($_GET['id']) && ($_GET['id'])) {
+                delete_donhang($_GET['id']);
+            }
+            $listdonhang = loadall_donhang();
+            include "donhang/list.php";
+            break;
+        case "updatedh":
+
+            if (isset($_POST["capnhat"]) && ($_POST["capnhat"])) {
+                $id = $_POST['id'];
+                $tentk = $_POST['tentk'];
+                $tensp = $_POST['tensp'];
+                $gia = $_POST['gia'];
+                $trangthai = $_POST['trangthai'];
+                $hinh = $_FILES['hinh']['name'];
+                $target_dir = "../upload_file/";
+                $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
+                if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
+                    //echo "Load ảnh thành công";
+                } else {
+                    // echo "Upload ảnh không thành công";
+                }
+
+                update_donhang($id, $tentk, $tensp, $gia, $trangthai);
+                $thongbao = 'Cập nhật thành công';
+
+            }
+            $listdonhang = loadall_donhang();
             include "donhang/list.php";
             break;
 

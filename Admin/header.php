@@ -59,7 +59,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="index.php?act=donhang">
+                <a class="nav-link" href="index.php?act=listdh">
                     <!-- <i class="fas fa-fw "></i> -->
                     <i class="fas fa-fw fa-solid fa-basket-shopping"></i>
                     <span>Đơn hàng</span></a>

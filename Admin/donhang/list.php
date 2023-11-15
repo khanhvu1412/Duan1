@@ -24,42 +24,40 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Đỗ Khánh Vũ</td>
-                            <td>Áo polo</td>
-                            <td></td>
-                            <td>300.000 VNĐ</td>
-                            <td>
-                                <div class="trangthai form-cotrol btn-success">Đã thanh toán</div>
-                            </td>
-                            <td>
-                                <a href="index.php?act=chitietdh"><input type="button"
-                                        class="form-control btn btn-primary" value="Chi tiết"></a>
-                                <a href="index.php?act=suadh"><input type="button"
-                                        class="form-control btn btn-warning mt-2" value="Sửa"></a>
-                                <a href="index.php?act=xoadh"><input type="button"
-                                        class="form-control btn btn-danger mt-2" value="Xóa"></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Phạm Gia Huy</td>
-                            <td>Quần Âu</td>
-                            <td></td>
-                            <td>450.000 VNĐ</td>
-                            <td>
-                                <div class="trangthai form-cotrol btn-warning">Đang giao hàng</div>
-                            </td>
-                            <td>
-                                <a href="index.php?act=chitietdh"><input type="button"
-                                        class="form-control btn btn-primary" value="Chi tiết"></a>
-                                <a href="index.php?act=suagh"><input type="button" class=" form-control btn btn-warning mt-2"
-                                        value="Sửa"></a>
-                                <a href="index.php?act=xoagh"><input type="button"
-                                        class=" form-control btn btn-danger mt-2" value="Xóa"></a>
-                            </td>
-                        </tr>
+
+
+
+                    <?php
+                        foreach ($listdonhang as $donhang) {
+                            extract($donhang);
+                            $suadh = "index.php?act=suadh&id=" . $id;
+                            $xoadh = "index.php?act=xoadh&id=" . $id;
+                            $hinhpath = "../upload_file/" . $img;
+                            if (is_file($hinhpath)) {
+                                $hinh = "<img src='" . $hinhpath . "' height='90'>";
+                            } else {
+                                $hinh = "No img";
+                            }
+
+                            echo '
+                                <tr>
+                                <td>' . $id . '</td>
+                                <td>' . $tentk . '</td>
+                                <td>' . $tensp . ' </td>
+                                <td>' . $img . '</td>
+                                <td>' . $gia . ' VNĐ</td>
+                                <td> </td>
+                                <td>  
+                                   <a href=" index.php?act=chitietdh&id= '.$id.'"><input type="button" class=" form-control btn btn-secondary" value="Xem đơn hàng"></a> 
+                                    <a href="' . $suadh . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
+                                    <a href="' . $xoadh . '"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
+                                </td> 
+                                </tr>';
+
+                        }
+                        ?>
+                       
+                        
                     </tbody>
                 </table>
             </div>

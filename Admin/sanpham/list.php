@@ -42,7 +42,7 @@
                                 <td>' . $hinh . '</td>
                                 <td>' . $mota . '</td>
                                 <td>  
-                                   <a href=" index.php?act=chitietsp"><input type="button" class=" form-control btn btn-secondary" value="Xem sản phẩm"></a> 
+                                   <a href=" index.php?act=chitietsp&id= '.$id.'"><input type="button" class=" form-control btn btn-secondary" value="Xem sản phẩm"></a> 
                                     <a href="' . $suasp . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
                                     <a href="' . $xoasp . '"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
                                 </td> 
