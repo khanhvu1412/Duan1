@@ -14,8 +14,8 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Iduser</th>
-                            <th>Idpro</th>
+                            <th>Tên khách hàng</th>
+                            <th>Sản phẩm</th>
                             <th>Nội dung</th>
                             <th>Ngày bình luận</th>
                             <th>Hành động</th>
@@ -23,28 +23,30 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>KH1</td>
-                            <td>MT001</td>
-                            <td>Quần áo rất đẹp và chất lượng</td>
-                            <td>31/10/2023</td>
-                            <td>
-                                <a href="index.php?act=suabl"><input type="button" class=" form-control btn btn-primary" value="Sửa"></a>
-                                <a href="index.php?act=xoabl"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>KH2</td>
-                            <td>DT003</td>
-                            <td>Áo rất đẹp</td>
-                            <td>06/11/2023</td>
-                            <td>
-                                <a href="index.php?act=suabl"><input type="button" class=" form-control btn btn-primary" value="Sửa"></a>
-                                <a href="index.php?act=xoabl"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
-                            </td>
 
+                    <?php
+                        foreach ($listbinhluan as $binhluan) {
+                            extract($binhluan);
+                            $suabl = "index.php?act=suabl&id=" . $id;
+                            $xoabl = "index.php?act=xoabl&id=" . $id;
+                            $hinhpath = "../upload_file/" . $img;
+                            
+
+                            echo '<tr>
+                                <td>' . $id . '</td>
+                                <td>' . $tensp . '</td>
+                                <td>' . $giasp . ' VNĐ</td>
+                                <td>' . $hinh . '</td>
+                                <td>' . $mota . '</td>
+                                <td> 
+                                    <a href="' . $suabl . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
+                                    <a href="' . $xoabl . '"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
+                                </td> 
+                                </tr>';
+
+                        }
+                        ?>
+                        
                     </tbody>
                 </table>
             </div>

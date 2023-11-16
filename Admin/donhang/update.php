@@ -3,6 +3,7 @@
     if (is_array($donhang)) {
         extract($donhang);
     }
+    
 ?>
 
 <div class="container-fluid">
@@ -25,7 +26,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên khách hàng</label>
-                        <input type="text" class="form-control" name="tentk" value="<?=$tentk ?>">
+                        <input type="text" class="form-control" name="tentk" value="<?= $tentk ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên sản phẩm</label>
@@ -43,7 +44,7 @@
                     <input type="submit" class="btn btn-success" name="capnhat" value="Cập nhật">
                     <input type="reset" class="btn btn-info" value="Nhập lại">
 
-                    <a href="index.php?act=listdm"><input type="button" class="btn btn-primary" value="Danh sách"></a>
+                    <a href="index.php?act=listdh"><input type="button" class="btn btn-primary" value="Danh sách"></a>
                     <?php
 
                     if (isset($thongbao) && ($thongbao != ""))

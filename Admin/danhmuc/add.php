@@ -10,7 +10,7 @@
             <div class="table-responsive">
 
                 <br>
-                <form action="index.php?act=adddm" method="post">
+                <form action="index.php?act=adddm" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="exampleInputID" class="form-label">Mã danh mục</label>
                         <input type="text" class="form-control" name = madm>

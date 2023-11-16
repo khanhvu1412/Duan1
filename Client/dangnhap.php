@@ -44,13 +44,13 @@ ob_start();
     <title>Đăng nhập</title>
 
     <!-- Custom fonts for this template-->
-    <link href="taikhoan/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="view/taikhoan/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="taikhoan/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="view/taikhoan/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -87,9 +87,9 @@ ob_start();
                                             value="Đăng nhập">
                                         <?php ob_end_flush(); ?>
                                         <hr>
-                                        <div class="text-center"> <a class="small" href="quenmk.php">Quên mật khẩu?</a>
+                                        <div class="text-center"> <a class="small" href="view/taikhoan/quenmk.php">Quên mật khẩu ?</a>
                                         </div>
-                                        <div class="text-center"> <a class="small" href="../Client/taikhoan/dangky.php">Tạo tài khoản!</a>
+                                        <div class="text-center"> <a class="small" href="view/taikhoan/dangky.php">Tạo tài khoản!</a>
                                         </div>
 
 
@@ -111,14 +111,14 @@ ob_start();
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="taikhoan/vendor/jquery/jquery.min.js"></script>
-    <script src="taikhoan/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="view/taikhoan/vendor/jquery/jquery.min.js"></script>
+    <script src="view/taikhoan/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="taikhoan/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="view/taikhoan/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="taikhoan/js/sb-admin-2.min.js"></script>
+    <script src="view/taikhoan/js/sb-admin-2.min.js"></script>
 
 </body>
 

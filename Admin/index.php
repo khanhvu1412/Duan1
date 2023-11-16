@@ -6,6 +6,7 @@ include "../model/danhmuc.php";
 include "../model/taikhoan.php";
 include "../model/thongke.php";
 include "../model/donhang.php";
+include "../model/binhluan.php";
 
 include "header.php";
 
@@ -67,28 +68,27 @@ if (isset($_GET['act'])) {
 
         case "adddm":
             if (isset($_POST["themmoi"]) && ($_POST["themmoi"])) {
-                $tendm = $_POST["tendm"];
+
+                $tendm = $_POST['tendm'];
                 $hinh = $_FILES['hinh']['name'];
                 $target_dir = "../upload_file/";
                 $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
                 if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
-                    echo "Load ảnh thành công";
+                    //echo "Load ảnh thành công";
                 } else {
-                    echo "Upload ảnh không thành công";
+                    //echo "Upload ảnh không thành công";
                 }
 
                 insert_danhmuc($tendm, $hinh);
                 $thongbao = "Thêm thành công danh mục";
             }
-            $listdanhmuc = loadall_danhmuc();
             include "danhmuc/add.php";
             break;
 
         case "suadm":
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                $dm = loadone_danhmuc($_GET['id']);
+                $danhmuc = loadone_danhmuc($_GET['id']);
             }
-
             include "danhmuc/update.php";
             break;
 
@@ -104,19 +104,11 @@ if (isset($_GET['act'])) {
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
                 $id = $_POST['id'];
                 $tendm = $_POST['tendm'];
-                // $img = $_FILES['hinh']['name'];
-                // $target_dir = "../upload_file/";
-                // $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
-                // if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
-                //     //echo "Load ảnh thành công";
-                // } else {
-                //     // echo "Upload ảnh không thành công";
-                // }
-                
-
-                update_danhmuc($id, $tendm);
-                $thongbao = "Sửa thành công";
+                $hinh = $_POST['img'];
+                update_danhmuc($id, $tendm, $hinh);
+                $thongbao = "Cập nhật thành công";
             }
+            $listdanhmuc = loadall_danhmuc();
             include "danhmuc/list.php";
             break;
 
@@ -140,6 +132,7 @@ if (isset($_GET['act'])) {
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
             }
+            $listdanhmuc = loadall_danhmuc();
             include "sanpham/chitietsp.php";
             break;
 
@@ -209,20 +202,27 @@ if (isset($_GET['act'])) {
 
 
 
-
-
-
-
         // Bình luận
         case "listbl":
+            
+            $listsanpham = loadall_sanpham();
+            $listbinhluan = loadall_binhluan();
             include "binhluan/list.php";
             break;
 
         case "suabl":
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                $binhluan = loadone_binhluan($_GET['id']);
+            }
+
             include "binhluan/update.php";
             break;
 
         case "xoabl":
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                delete_binhluan($_GET['id']);
+            }
+            $listsanpham = loadall_binhluan();
             include "binhluan/list.php";
             break;
 
@@ -238,14 +238,26 @@ if (isset($_GET['act'])) {
             break;
 
         // Đơn hàng
-        case "chitietdh":
-            include "donhang/chitietdh.php";
-            break;
+
 
         case "listdh":
-
             $listdonhang = loadall_donhang();
             include "donhang/list.php";
+            break;
+
+        case "chitietdh":
+            // if (isset($_GET['id']) && $_GET['id'] > 0) {
+            //     $donhang = loadone_donhang($_GET['id']);
+            // }
+            // include "donhang/chitietdh.php";
+            // break;
+
+            if (isset($_GET['id']) && $_GET['id'] > 0) {
+                $donhang = loadone_donhang($_GET['id']);
+            }
+            $listsanpham = loadall_sanpham();
+            $listdonhang = loadall_donhang();
+            include "donhang/chitietdh.php";
             break;
 
         case "suadh":
@@ -263,16 +275,14 @@ if (isset($_GET['act'])) {
             $listdonhang = loadall_donhang();
             include "donhang/list.php";
             break;
-        case "updatedh":
 
+        case "updatedh":
             if (isset($_POST["capnhat"]) && ($_POST["capnhat"])) {
                 $id = $_POST['id'];
                 $tentk = $_POST['tentk'];
                 $tensp = $_POST['tensp'];
                 $gia = $_POST['gia'];
                 $trangthai = $_POST['trangthai'];
-                
-
 
                 update_donhang($id, $tentk, $tensp, $gia, $trangthai);
                 $thongbao = 'Cập nhật thành công';

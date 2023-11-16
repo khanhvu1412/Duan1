@@ -38,7 +38,7 @@
                             <td>' . $email . '</td>
                             <td>' . $diachi . '</td>
                             <td>' . $sdt . '</td>
-                            <td>' . $id_role  . '</td>
+                            <td> </td>
                             <td><a href="' . $suatk . '"><input type="button" class= " form-control btn btn-warning" value="Sửa"></a> <a href="' . $xoatk . '"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a></td>
                         </tr>';
                         }

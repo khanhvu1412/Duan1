@@ -24,7 +24,7 @@ if (isset($_GET['act'])) {
                 insert_taikhoan( $nguoidung,  $email, $matkhau, $diachi, $sdt);
                 $thongbao = "Đăng ký thành công";
             }
-            include "view/taikhoan/dangky.php";
+            include "../taikhoan/dangky.php";
             break;
 
         case 'dangnhap':

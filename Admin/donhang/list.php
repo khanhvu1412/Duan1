@@ -38,11 +38,12 @@
                                 <td>' . $tentk . '</td>
                                 <td>' . $tensp . ' </td>
                                 <td>' . $gia . ' VNĐ</td>
-                                <td> </td>
+                                <td>' .($trangthai === 1 ? "<p style='background-color: yellow; color: black; '>Mới đặt hàng</p>" :
+                                        "<p style='background-color: green; color: white;'>Đã thanh toán</p>"  ).'</td>
                                 <td>  
                                    <a href=" index.php?act=chitietdh&id= '.$id.'"><input type="button" class=" form-control btn btn-secondary" value="Xem đơn hàng"></a> 
                                     <a href="' . $suadh . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
-                                    <a href="' . $xoadh . '"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
+                                    <a href="' . $xoadh . '" ><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
                                 </td> 
                                 </tr>';
 
@@ -57,6 +58,15 @@
     </div>
 
 </div>
+<!-- <script>
+    function confirmDelete() {
+        if (confirm("Bạn có muốn xóa không")) {
+            document.location = "index.php?act=listdm";
+        } else {
+            return false;
+        }
+    }
+    </script> -->
 <!--End Content -->
 
 </div>

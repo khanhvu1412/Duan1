@@ -24,16 +24,16 @@ function loadall_donhang()
 
 function loadone_donhang($id)
 {
-    $sql = "select * from danhmuc where id=" . $id;
+    $sql = "select * from donhang where id=" . $id;
     $donhang = pdo_query_one($sql);
     return $donhang;
 }
 
 
 
-function  update_donhang($id, $tentk, $tensp, $gia, $trangthai)
+function update_donhang($id, $tentk, $tensp, $gia, $trangthai)
 {
-    $sql = " update danhmuc set tentk = '" . $tentk . "', tensp ='".$tensp."', gia = '".$gia."', trangthai = '".$trangthai."'  where id= " . $id;
+    $sql = " update donhang set tentk = '" . $tentk . "', tensp ='" . $tensp . "', gia = '" . $gia . "', trangthai = '" . $trangthai . "'  where id= " . $id;
     pdo_execute($sql);
 }
 ?>

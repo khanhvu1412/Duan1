@@ -1,11 +1,13 @@
-<?php
-function insert_binhluan($tendm)
+<?php 
+
+// in danh sách
+function insert_binhluan()
 {
-    $sql = "insert into danhmuc(tendm) values('$tendm')";
+    $sql = "insert into binhluan() values()";
     pdo_execute($sql);
 }
 
-
+// xóa danh mục
 function delete_binhluan($id)
 {
     $sql = "delete from binhluan where id=" . $id;
@@ -16,15 +18,21 @@ function delete_binhluan($id)
 function loadall_binhluan()
 {
     $sql = "select * from binhluan order by id asc";
-    $listdanhmuc = pdo_query($sql);
-    return $listdanhmuc;
+    $listbinhluan = pdo_query($sql);
+    return $listbinhluan;
 }
-
-
-
-function update_binhluan($id, $noidung)
+function loadone_binhluan($id)
 {
-    $sql = " update danhmuc set tendm = '" . $noidung . "' where id= " . $id;
+    $sql = "select * from binhluan where id=" . $id;
+    $binhluan = pdo_query_one($sql);
+    return $binhluan;
+}
+// sửa danh mục
+function update_dbinhluan($id)
+{
+    
+        $sql = " update danhmuc set  where id= " . $id;
     pdo_execute($sql);
 }
+
 ?>

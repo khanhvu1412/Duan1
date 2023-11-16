@@ -14,30 +14,30 @@
                         <tr>
                             <th>Mã loại</th>
                             <th>Tên loại</th>
-                            <!-- <th>Ảnh</th> -->
+                            <th>Ảnh</th>
                             <th>Hành động</th>
 
                         </tr>
                     </thead>
                     <tbody>
 
-                        <?php foreach ( $listdanhmuc as $danhmuc) {
+                        <?php foreach ($listdanhmuc as $danhmuc) {
                             extract($danhmuc);
                             $suadm = "index.php?act=suadm&id=" . $id;
                             $xoadm = "index.php?act=xoadm&id=" . $id;
-                            // $hinhpath = "../upload_file/" . $img;
-                            // if (is_file($hinhpath)) {
-                            //     $hinh = "<img src='" . $hinhpath . "' height='90'>";
-                            // } else {
-                            //     $hinh = "No img";
-                            // }
+                            $hinhpath = "../upload_file/" . $img;
+                            if (is_file($hinhpath)) {
+                                $hinh = "<img src='" . $hinhpath . "' height='90'>";
+                            } else {
+                                $hinh = "No img";
+                            }
                             echo '
                             <tr>
                                 <td>' . $id . '</td>
                                 <td>' . $tendm . '</td>
-                                
+                                <td>'. $hinh . '</td>
                                 <td> <a href="' . $suadm . '"><input type="button" class=" btn btn-warning" value="Sửa"></a> 
-                                    <a href="' . $xoadm . '"><input type="button" class="  btn btn-danger " value="Xóa"></a>
+                                    <a href="' . $xoadm . '" ><input type="button" class="  btn btn-danger " value="Xóa"></a>
                             
                                 </td>
                             </tr>';
@@ -47,6 +47,16 @@
                 <form action="">
                     <a href="index.php?act=adddm"><input type="button" class="btn btn-primary" value="Nhập thêm"></a>
                 </form>
+                <!-- <script>
+                    function confirmDelete() {
+                        if (confirm("Bạn có muốn xóa không")) {
+                            document.location = "index.php?act=listdm";
+                        } else {
+                            return false;
+                        }
+                    }
+                </script> -->
+                
             </div>
         </div>
     </div>

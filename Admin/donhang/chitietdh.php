@@ -1,5 +1,8 @@
 <?php
 
+if (is_array($donhang)) {
+    extract($donhang);
+}
 
 ?>
 
@@ -19,22 +22,31 @@
                 <div class="row">
 
                     <div class="container">
-                        <div class="list-product-img">
-                            
+                        <div class="list-product-text" style="padding-left: 50px">
+                            <h2><label for="">Mã đơn:
+                                    <?= $id ?>
+                                </label></h2>
+                            <h2><label for="">Tên khách hàng:
+                                    <?= $tentk ?>
+                                </label></h2>
+                            <h2><label for="">Tên sản phẩm:
+                                    <?= $tensp ?>
+                                </label></h2>
+                            <h2><label for="">Giá sản phẩm:
+                                    <?= $gia ?>
+                                </label></h2>
+                            <h2><label for="">Trạng thái:
+                                    <?= $trangthai ?>
+                                </label></h2>
+
                         </div>
-
                     </div>
-
-                    <div class="container">
-                        <div class="list-product-img">
-                            
-                        </div>
-                        
+                    <br>
+                    <div class="function-back">
+                        <a href="index.php?act=listdh"><input type="submit" class="btn btn-primary"
+                                value="Quay lại trang đơn hàng"></a>
                     </div>
-
                 </div>
-
-
             </div>
         </div>
     </div>

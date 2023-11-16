@@ -31,27 +31,36 @@ if (is_file($hinhpath)) {
 
 
 
-                    <div class="container">
-                        <h2><label for="">Mã sản phẩm: <?= $id ?></label></h2>
-                        <h2><label for="">Tên sản phẩm: <?= $tensp ?></label></h2>
-                        <h2><label for="">Giá sản phẩm: <?= $giasp ?></label></h2>
-                        <h2><label for="">Mô tả: <?= $mota ?></label></h2>
-
+                    <div class="container" style="display: flex; ">
                         <div class="list-product-img">
                             <?= $img ?>
                         </div>
-
-
-
+                        <div class="list-product-text" style="padding-left: 50px">
+                        <h2><label for="">Mã sản phẩm : <?= $id ?> </label></h2>
+                        <h2><label for="">Tên danh mục:
+                                <?php foreach ($listdanhmuc as $danhmuc) {
+                                    extract($danhmuc);
+                                    if ($iddm === $id) {
+                                        echo $tendm;
+                                    } else {
+                                        echo "";
+                                    }
+                                } ?>
+                            </label></h2>
+                        <h2><label for="">Tên sản phẩm: <?= $tensp ?> </label></h2>
+                        <h2><label for="">Giá sản phẩm: <?= $giasp ?> </label></h2>
+                        <h2><label for="">Mô tả: <?= $mota ?> </label></h2>
+                            
+                        </div>
                     </div>
-
-
                 </div>
+                
                 <br>
                 <div class="function-back">
                     <a href="index.php?act=listsp"><input type="submit" class="btn btn-primary"
                             value="Quay lại trang sản phẩm"></a>
                 </div>
+                
 
 
             </div>

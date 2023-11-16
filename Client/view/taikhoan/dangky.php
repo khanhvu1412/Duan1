@@ -67,7 +67,7 @@
                                     <a class="small" href="quenmk.php">Quên mật khẩu?</a>
                                 </div>
                                 <div class="text-center">
-                                    <a class="small" href="../Client/dangnhap.php">Bạn đã có tài khoản? Đăng nhập!</a>
+                                    <a class="small" href="../../dangnhap.php">Bạn đã có tài khoản? Đăng nhập!</a>
                                 </div>
 
 
