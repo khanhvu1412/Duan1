@@ -42,7 +42,7 @@
                                 <td>' . $hinh . '</td>
                                 <td>' . $mota . '</td>
                                 <td>  
-                                   <a href=" index.php?act=chitietsp&id= '.$id.'"><input type="button" class=" form-control btn btn-secondary" value="Xem sản phẩm"></a> 
+                                   <a href=" index.php?act=chitietsp&id= '.$id.'"><input type="button" class=" form-control btn btn-secondary" value="Chi tiết"></a> 
                                     <a href="' . $suasp . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
                                     <a href="' . $xoasp . '"  onclick="return confirmDeletesp()"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
                                 </td> 
@@ -70,7 +70,7 @@
                 </table>
                 <form action="">
                     <a href="index.php?act=addsp"><input type="button" class="btn btn-primary" value="Nhập thêm"></a>
-                    <a href="index.php?act=listbl"><input type="button" class="btn btn-primary" value="Bình luận"></a>
+                    <!-- <a href="index.php?act=listbl"><input type="button" class="btn btn-primary" value="Bình luận"></a> -->
 
                 </form>
 

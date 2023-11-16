@@ -36,9 +36,8 @@
                                 <td>' . $id . '</td>
                                 <td>' . $tenkh . '</td>
                                 <td>' . $tensp . '</td>
-                                <td>' . $giasp . ' VNĐ</td>
-                                <td>' . $hinh . '</td>
-                                <td>' . $mota . '</td>
+                                <td>' . $noidung . ' VNĐ</td>
+                                <td>' . $ngaybinhluan . '</td>
                                 <td> 
                                     <a href="' . $suabl . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
                                     <a href="' . $xoabl . '"  onclick="return confirmDeletebl()"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>

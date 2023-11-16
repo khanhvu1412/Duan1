@@ -3,8 +3,17 @@
 // in danh sách
 function insert_binhluan()
 {
-    $sql = "insert into binhluan() values()";
-    pdo_execute($sql);
+
+    $sql = "
+            SELECT binhluan.id, binhluan.noidung, taikhoan.nguoidung,  binhluan.ngaybinhluan FROM `binhluan` 
+             JOIN taikhoan ON binhluan.id_nguoidung = taikhoan.id
+             JOIN sanpham ON binhluan.id_sp = sanpham.id
+            WHERE sanpham.id = $id;
+        ";
+        $result =  pdo_query($sql);
+        return $result;
+    //$sql = "insert into binhluan() values()";
+    //pdo_execute($sql);
 }
 
 // xóa danh mục

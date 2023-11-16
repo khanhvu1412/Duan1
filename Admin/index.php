@@ -133,6 +133,8 @@ if (isset($_GET['act'])) {
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
             }
+            //$listsanpham = loadall_sanpham();
+            $listbinhluan = loadall_binhluan();
             $listdanhmuc = loadall_danhmuc();
             include "sanpham/chitietsp.php";
             break;

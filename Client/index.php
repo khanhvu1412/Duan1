@@ -25,8 +25,10 @@ if (isset($_GET['act'])) {
                 $matkhau = $_POST['matkhau'];
                 $diachi = $_POST['diachi'];
                 $sdt = $_POST['sdt'];
+                $id_role = $_POST['$id_role'];
+
                 
-                insert_taikhoan($nguoidung, $email, $matkhau, $diachi, $sdt);
+                insert_taikhoan($nguoidung, $email, $matkhau, $diachi, $sdt, $id_role);
                 $thongbao = "Đăng ký thành công";
             }
             include "../taikhoan/dangky.php";
