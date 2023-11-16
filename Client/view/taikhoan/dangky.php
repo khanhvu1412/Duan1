@@ -36,39 +36,43 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Tạo tài khoản!</h1>
                             </div>
-                            <form action="" method="post">
+                            <form class="user">
                                 <div class="form-group">
-                                    <input type="text" name="nguoidung" class="form-control form-control-user"
-                                        placeholder="Tên tài khoản ">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Họ tên ">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control form-control-user" placeholder="Email ">
+                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Email ">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="diachi" class="form-control form-control-user" placeholder="Địa chỉ ">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Địa chỉ ">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="sdt" class="form-control form-control-user" placeholder="Số điện thoại ">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Số điện thoại ">
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="password" name="matkhau" class="form-control form-control-user"
-                                            placeholder="Mật khẩu">
+                                        <input type="password" class="form-control form-control-user "
+                                            id="exampleInputPassword" placeholder="Password">
+
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="password" name="matkhau" class="form-control form-control-user"
-                                            placeholder="Nhập lại mật khẩu">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleRepeatPassword" placeholder="Repeat Password">
                                     </div>
                                 </div>
-                                <input type="submit" class="btn btn-primary btn-user btn-block" name="dangky" value="Đăng ký tài khoản">
+                                <a href="dangnhap.php"><input type="submit" class="btn btn-primary btn-user btn-block"
+                                        name="dangky" value="Đăng ký tài khoản"></a>
                                 <hr>
                                 <div class="text-center">
                                     <a class="small" href="quenmk.php">Quên mật khẩu?</a>
                                 </div>
                                 <div class="text-center">
-                                    <a class="small" href="../../dangnhap.php">Bạn đã có tài khoản? Đăng nhập!</a>
+                                    <a class="small" href="../Client/dangnhap.php">Bạn đã có tài khoản? Đăng nhập!</a>
                                 </div>
-
 
                             </form>
                             <?php
@@ -78,12 +82,12 @@
                             ?>
 
 
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
     </div>
 

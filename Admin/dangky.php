@@ -61,7 +61,6 @@
                                     <a class="small" href="../Client/dangnhap.php">Bạn đã có tài khoản? Đăng nhập!</a>
                                 </div>
 
-
                             </form>
                             <?php
                             if (isset($thongbao) && $thongbao != "") {
@@ -91,3 +90,4 @@
 </body>
 
 </html>
+

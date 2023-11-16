@@ -4,6 +4,7 @@ function insert_taikhoan( $nguoidung, $email, $matkhau,  $diachi, $sdt)
 {
     $sql = "insert into taikhoan values ( null, '$nguoidung', '$email', '$matkhau',  '$diachi', '$sdt')";
     pdo_execute($sql);
+    header("location:index.php?act=listsp");
 }
 
 // Đăng nhập / đăng xuất

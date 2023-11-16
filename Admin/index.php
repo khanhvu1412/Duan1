@@ -284,12 +284,15 @@ if (isset($_GET['act'])) {
                 $tentk = $_POST['tentk'];
                 $tensp = $_POST['tensp'];
                 $gia = $_POST['gia'];
+                $diachi_giaohang = $_POST['diachi_giaohang'];
+                $thoigian_mua = $_POST['thoigian_mua'];
                 $trangthai = $_POST['trangthai'];
 
-                update_donhang($id, $tentk, $tensp, $gia, $trangthai);
+                update_donhang($id, $tentk, $tensp, $gia, $diachi_giaohang, $thoigian_mua, $trangthai);
                 $thongbao = 'Cập nhật thành công';
 
             }
+            $listsanpham = loadall_sanpham();
             $listdonhang = loadall_donhang();
             include "donhang/list.php";
             break;
