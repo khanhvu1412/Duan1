@@ -16,7 +16,7 @@
                             <th>Mã sản phẩm</th>
                             <th>Tên sản phẩm</th>
                             <th>Giá sản phẩm</th>
-                            <th>Hình</th>
+                            <th>Ảnh</th>
                             <th>Mô tả</th>
                             <th>Hành động</th>
 

@@ -1,7 +1,13 @@
 <?php
-    if (is_array($dm)) {
-        extract($dm);
-    }
+if (is_array($dm)) {
+    extract($dm);
+}
+// $hinhpath = ".././upload_file/" . $img;
+// if (is_file($hinhpath)) {
+//     $img = "<img src='" . $hinhpath . "' height='200'>";
+// } else {
+//     $img = "no photo";
+// }
 ?>
 
 <div class="container-fluid">
@@ -24,8 +30,15 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên danh mục</label>
-                        <input type="text" class="form-control" name="tendm" value="<?= $tendm; ?>">
+                        <input type="text" class="form-control" name="tendm" value="<?= $tendm ?>">
                     </div>
+                    <!-- <div class="mb-3">
+                        <label for="exampleInputImg" class="form-label">Ảnh</label>
+                        <br>
+                        <br>
+                        <input type="file" class="mt-2" name="hinh">
+
+                    </div> -->
                     <input type="hidden" name="id" value="<?php if (isset($id) && ($id > 0))
                         echo $id; ?>">
                     <input type="submit" class="btn btn-success" name="capnhat" value="Cập nhật">

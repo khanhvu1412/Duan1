@@ -68,9 +68,19 @@ if (isset($_GET['act'])) {
         case "adddm":
             if (isset($_POST["themmoi"]) && ($_POST["themmoi"])) {
                 $tendm = $_POST["tendm"];
-                insert_danhmuc($tendm);
+                $hinh = $_FILES['hinh']['name'];
+                $target_dir = "../upload_file/";
+                $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
+                if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
+                    echo "Load ảnh thành công";
+                } else {
+                    echo "Upload ảnh không thành công";
+                }
+
+                insert_danhmuc($tendm, $hinh);
                 $thongbao = "Thêm thành công danh mục";
             }
+            $listdanhmuc = loadall_danhmuc();
             include "danhmuc/add.php";
             break;
 
@@ -92,13 +102,21 @@ if (isset($_GET['act'])) {
 
         case "updatedm":
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
-                $tendm = $_POST['tendm'];
                 $id = $_POST['id'];
+                $tendm = $_POST['tendm'];
+                // $img = $_FILES['hinh']['name'];
+                // $target_dir = "../upload_file/";
+                // $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
+                // if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
+                //     //echo "Load ảnh thành công";
+                // } else {
+                //     // echo "Upload ảnh không thành công";
+                // }
+                
 
                 update_danhmuc($id, $tendm);
                 $thongbao = "Sửa thành công";
             }
-            $listdanhmuc = loadall_danhmuc();
             include "danhmuc/list.php";
             break;
 
@@ -219,7 +237,7 @@ if (isset($_GET['act'])) {
             include "thongke/bieudo.php";
             break;
 
-        // Giỏ hàng
+        // Đơn hàng
         case "chitietdh":
             include "donhang/chitietdh.php";
             break;
@@ -253,9 +271,7 @@ if (isset($_GET['act'])) {
                 $tensp = $_POST['tensp'];
                 $gia = $_POST['gia'];
                 $trangthai = $_POST['trangthai'];
-                $hinh = $_FILES['hinh']['name'];
-                $target_dir = "../upload_file/";
-                $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
+                
 
 
                 update_donhang($id, $tentk, $tensp, $gia, $trangthai);

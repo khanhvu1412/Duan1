@@ -19,6 +19,11 @@
                         <label for="exampleInputName" class="form-label">Tên danh mục</label>
                         <input type="text" class="form-control" name = "tendm">
                     </div>
+                    <div class="mb-3">
+                        <label for="exampleInputImg" class="form-label">Ảnh</label>
+                        <br>
+                        <input type="file"  name="hinh">
+                    </div>
 
                    <input type="submit" class="btn btn-primary" name="themmoi" value="Thêm mới">
                     <input type="reset" class="btn btn-primary" value="Nhập lại">
