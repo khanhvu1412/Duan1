@@ -34,6 +34,7 @@
 
                             echo '<tr>
                                 <td>' . $id . '</td>
+                                <td>' . $tenkh . '</td>
                                 <td>' . $tensp . '</td>
                                 <td>' . $giasp . ' VNĐ</td>
                                 <td>' . $hinh . '</td>
