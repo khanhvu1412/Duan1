@@ -70,7 +70,7 @@ if (isset($_GET['act'])) {
             if (isset($_POST["themmoi"]) && ($_POST["themmoi"])) {
 
                 $tendm = $_POST['tendm'];
-                $hinh = $_FILES['hinh']['name'];
+                $img = $_FILES['hinh']['name'];
                 $target_dir = "../upload_file/";
                 $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
                 if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
@@ -79,7 +79,7 @@ if (isset($_GET['act'])) {
                     //echo "Upload ảnh không thành công";
                 }
 
-                insert_danhmuc($tendm, $hinh);
+                insert_danhmuc($tendm, $img);
                 $thongbao = "Thêm thành công danh mục";
             }
             include "danhmuc/add.php";
@@ -146,12 +146,13 @@ if (isset($_GET['act'])) {
                 $target_dir = "../upload_file/";
                 $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
                 if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
-                    echo "Load ảnh thành công";
+                    //echo "Load ảnh thành công";
                 } else {
-                    echo "Upload ảnh không thành công";
+                    //echo "Upload ảnh không thành công";
                 }
                 insert_sanpham($tensp, $giasp, $hinh, $mota, $iddm);
                 $thongbao = "Thêm thành công";
+                
 
             }
             $listdanhmuc = loadall_danhmuc();

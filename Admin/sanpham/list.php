@@ -44,7 +44,7 @@
                                 <td>  
                                    <a href=" index.php?act=chitietsp&id= '.$id.'"><input type="button" class=" form-control btn btn-secondary" value="Xem sản phẩm"></a> 
                                     <a href="' . $suasp . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
-                                    <a href="' . $xoasp . '"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
+                                    <a href="' . $xoasp . '"  onclick="return confirmDeletesp()"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
                                 </td> 
                                 </tr>';
 
@@ -73,6 +73,7 @@
                     <a href="index.php?act=listbl"><input type="button" class="btn btn-primary" value="Bình luận"></a>
 
                 </form>
+
             </div>
         </div>
     </div>
@@ -80,3 +81,14 @@
 </div>
 
 </div>
+
+
+<script>
+function confirmDeletesp() {
+    if (confirm("Bạn có muốn xóa sản phẩm này không ?")) {
+        document.location = "index.php?act=listsp";
+    } else {
+        return false;
+    }
+}
+</script>

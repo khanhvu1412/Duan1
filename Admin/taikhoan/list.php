@@ -39,7 +39,7 @@
                             <td>' . $diachi . '</td>
                             <td>' . $sdt . '</td>
                             <td> </td>
-                            <td><a href="' . $suatk . '"><input type="button" class= " form-control btn btn-warning" value="Sửa"></a> <a href="' . $xoatk . '"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a></td>
+                            <td><a href="' . $suatk . '" ><input type="button" class= " form-control btn btn-warning" value="Sửa"></a> <a href="' . $xoatk . '" onclick="return confirmDeletetk()"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a></td>
                         </tr>';
                         }
 
@@ -52,6 +52,15 @@
     </div>
 
 </div>
+<script>
+    function confirmDeletetk() {
+        if (confirm("Bạn có muốn xóa tài khoản này không")) {
+            document.location = "index.php?act=listtk";
+        } else {
+            return false;
+        }
+    }
+</script>
 <!--End Content -->
 
 </div>

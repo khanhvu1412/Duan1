@@ -114,7 +114,7 @@
 									<div class="settings-wrapper ">
 										<div class="setting-content">
 
-											<div class="setting-option">
+											<!-- <div class="setting-option">
 												<ul>
 													<li><a href="index.php?act=tkcanhan"><span> <i
 																	class="fa-solid fa-circle-user"></i> Tài
@@ -126,14 +126,14 @@
 																	class="fa-solid fa-arrow-right-from-bracket"></i>
 																Đăng xuất</span></a></li>
 												</ul>
-											</div>
+											</div> -->
 
-											<!-- <div class="setting-option">
+											<div class="setting-option">
 												<ul>
 													<li><a href="view/taikhoan/dangky.php"><span>Đăng ký</span></a></li>
 													<li><a href="dangnhap.php"></i><span> Đăng nhập</span></a></li>
 												</ul> 
-											</div> -->
+											</div>
 
 										</div>
 									</div>

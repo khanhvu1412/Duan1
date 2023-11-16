@@ -2,9 +2,9 @@
 session_start();
 
 
-function insert_taikhoan( $nguoidung, $matkhau, $email, $diachi, $sdt)
+function insert_taikhoan( $nguoidung, $email, $matkhau,  $diachi, $sdt)
 {
-    $sql = "INSERT INTO `taikhoan` (  `nguoidung`, `matkhau`, `email`, `diachi`, `sdt`, `id_role `) VALUES ('$nguoidung', '$matkhau', '$email', '$diachi', '$sdt'); ";
+    $sql = "insert into taikhoan values ('$nguoidung', '$email', '$matkhau',  '$diachi', '$sdt')";
     pdo_execute($sql);
 }
 

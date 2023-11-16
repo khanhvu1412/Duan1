@@ -12,17 +12,17 @@
 
                 <br>
                 <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
-                    
-                <div class="mb-3">
+
+                    <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Danh mục</label>
                         <select name="iddm" id="">
-                            <?php 
-                                foreach ($listdanhmuc as $danhmuc) {
-                                    extract($danhmuc);
-                                    echo '<option value="'. $id .'"> '.$tendm .'</option>';
-                                }
+                            <?php
+                            foreach ($listdanhmuc as $danhmuc) {
+                                extract($danhmuc);
+                                echo '<option value="' . $id . '"> ' . $tendm . '</option>';
+                            }
                             ?>
-                            
+
                         </select>
                     </div>
                     <div class="mb-3">
@@ -36,14 +36,14 @@
                     <div class="mb-3">
                         <label for="exampleInputImg" class="form-label">Ảnh</label>
                         <br>
-                        <input type="file"  name="hinh">
+                        <input type="file" name="hinh">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Mô tả</label>
                         <textarea class="form-control" rows="10" name="mota"></textarea>
                     </div>
 
-                    <input type="submit" class="btn btn-primary" name="themmoi" value="Thêm mới">
+                    <input type="submit" class="btn btn-primary" name="themmoi"  onclick="return confirmAddsp()" value="Thêm mới">
                     <input type="reset" class="btn btn-primary" value="Nhập lại">
                     <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Danh sách"></a>
 
@@ -55,6 +55,15 @@
             </div>
         </div>
     </div>
+    <script>
+        function confirmAddsp() {
+            if (confirm("Bạn có muốn thêm sản phẩm này không?")) {
+                document.location = "index.php?act=listsp";
+            } else {
+                return false;
+            }
+        }
+    </script>
 
 </div>
 

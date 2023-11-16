@@ -1,9 +1,9 @@
 <?php 
 
 // in danh sách
-function insert_danhmuc($tendm, $hinh)
+function insert_danhmuc($tendm, $img)
 {
-    $sql = "insert into danhmuc(tendm, img) values('$tendm', '$hinh')";
+    $sql = "insert into danhmuc(tendm, img) values('$tendm', '$img')";
     pdo_execute($sql);
 }
 
@@ -28,10 +28,10 @@ function loadone_danhmuc($id)
     return $danhmuc;
 }
 // sửa danh mục
-function update_danhmuc($id, $tendm, $hinh)
+function update_danhmuc($id, $tendm, $img)
 {
-    if ($hinh != "") {
-        $sql = " update danhmuc set tendm = '". $tendm ."', img ='".$hinh."' where id= " . $id;
+    if ($img != "") {
+        $sql = " update danhmuc set tendm = '". $tendm ."', img ='".$img."' where id= " . $id;
     } else {
         $sql = " update danhmuc set tendm = '". $tendm ."' where id= " . $id;
     }

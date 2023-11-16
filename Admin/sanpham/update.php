@@ -62,8 +62,8 @@ if (is_file($hinhpath)) {
                         <label for="exampleInputDescribe" class="form-label">Mô tả</label>
                         <textarea class="form-control" rows="10" name="mota"><?= $mota ?></textarea>
                     </div>
-                    <input type="hidden" name="id" value="<?= $sanpham['id'] ;?>">
-                    <input type="submit" class="btn btn-primary" name="capnhat" value="Cập nhật">
+                    <input type="hidden" name="id" value="<?= $sanpham['id']; ?>">
+                    <input type="submit"  class="btn btn-primary" name="capnhat"  onclick="return confirmUpdatesp()" value="Cập nhật">
                     <input type="reset" class="btn btn-primary" value="Nhập lại">
                     <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Danh sách"></a>
 
@@ -77,5 +77,14 @@ if (is_file($hinhpath)) {
     </div>
 
 </div>
+<script>
+    function confirmUpdatesp() {
+        if (confirm("Bạn có muốn sửa sản phẩm này  không")) {
+            document.location = "index.php?act=listsp";
+        } else {
+            return false;
+        }
+    }
+</script>
 
 </div>

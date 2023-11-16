@@ -36,7 +36,7 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Tạo tài khoản!</h1>
                             </div>
-                            <form class="user" action="./../index.php?act=dangky" method="post">
+                            <form action="../../index.php?act=dangky" method="post">
                                 <div class="form-group">
                                     <input type="text" name="nguoidung" class="form-control form-control-user"
                                         placeholder="Tên tài khoản ">
@@ -60,8 +60,7 @@
                                             placeholder="Repeat Password">
                                     </div>
                                 </div>
-                                <input type="submit" class="btn btn-primary btn-user btn-block"
-                                        name="dangky" value="Đăng ký tài khoản">
+                                <input type="submit" class="btn btn-primary btn-user btn-block" name="dangky" value="Đăng ký tài khoản">
                                 <hr>
                                 <div class="text-center">
                                     <a class="small" href="quenmk.php">Quên mật khẩu?</a>
@@ -77,6 +76,7 @@
                                 echo $thongbao;
                             }
                             ?>
+
 
 
                         </div>

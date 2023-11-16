@@ -24,13 +24,13 @@
                     </thead>
                     <tbody>
 
-                    <?php
+                        <?php
                         foreach ($listbinhluan as $binhluan) {
                             extract($binhluan);
                             $suabl = "index.php?act=suabl&id=" . $id;
                             $xoabl = "index.php?act=xoabl&id=" . $id;
                             $hinhpath = "../upload_file/" . $img;
-                            
+
 
                             echo '<tr>
                                 <td>' . $id . '</td>
@@ -40,18 +40,27 @@
                                 <td>' . $mota . '</td>
                                 <td> 
                                     <a href="' . $suabl . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
-                                    <a href="' . $xoabl . '"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
+                                    <a href="' . $xoabl . '"  onclick="return confirmDeletebl()"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
                                 </td> 
                                 </tr>';
 
                         }
                         ?>
-                        
+
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
+    <script>
+        function confirmDeletebl() {
+            if (confirm("Bạn có muốn xóa bình luận này không")) {
+                document.location = "index.php?act=listdm";
+            } else {
+                return false;
+            }
+        }
+    </script>
 
 </div>
 

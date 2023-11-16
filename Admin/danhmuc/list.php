@@ -37,7 +37,7 @@
                                 <td>' . $tendm . '</td>
                                 <td>'. $hinh . '</td>
                                 <td> <a href="' . $suadm . '"><input type="button" class=" btn btn-warning" value="Sửa"></a> 
-                                    <a href="' . $xoadm . '" ><input type="button" class="  btn btn-danger " value="Xóa"></a>
+                                    <a href="' . $xoadm . '" onclick="return confirmDeletedm()" ><input type="button" class="  btn btn-danger " value="Xóa"></a>
                             
                                 </td>
                             </tr>';
@@ -47,15 +47,15 @@
                 <form action="">
                     <a href="index.php?act=adddm"><input type="button" class="btn btn-primary" value="Nhập thêm"></a>
                 </form>
-                <!-- <script>
-                    function confirmDelete() {
-                        if (confirm("Bạn có muốn xóa không")) {
+                <script>
+                    function confirmDelete(dm) {
+                        if (confirm("Bạn có muốn xóa danh mục này không")) {
                             document.location = "index.php?act=listdm";
                         } else {
                             return false;
                         }
                     }
-                </script> -->
+                </script>
                 
             </div>
         </div>

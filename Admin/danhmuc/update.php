@@ -43,7 +43,7 @@ if (is_file($hinhpath)) {
                     </div>
                     <input type="hidden" name="id" value="<?php if (isset($id) && ($id > 0))
                         echo $id; ?>">
-                    <input type="submit" class="btn btn-success" name="capnhat" value="Cập nhật">
+                    <input type="submit" class="btn btn-success" name="capnhat"  onclick="return confirmUpdatedm()" value="Cập nhật">
                     <input type="reset" class="btn btn-info" value="Nhập lại">
 
                     <a href="index.php?act=listdm"><input type="button" class="btn btn-primary" value="Danh sách"></a>
@@ -54,6 +54,15 @@ if (is_file($hinhpath)) {
 
                     ?>
                 </form>
+                <script>
+                    function confirmUpdatedm() {
+                        if (confirm("Bạn có muốn sửa danh mục này không ?")) {
+                            document.location = "index.php?act=listdm";
+                        } else {
+                            return false;
+                        }
+                    }
+                </script>
             </div>
         </div>
     </div>

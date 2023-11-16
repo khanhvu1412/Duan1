@@ -22,7 +22,8 @@ if (is_array($taikhoan)) {
 
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên tài khoản</label>
-                        <input type="text" class="form-control" name="nguoidung" value="<?= $taikhoan['nguoidung']; ?> ">
+                        <input type="text" class="form-control" name="nguoidung"
+                            value="<?= $taikhoan['nguoidung']; ?> ">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPrice" class="form-label">Mật khẩu</label>
@@ -30,7 +31,7 @@ if (is_array($taikhoan)) {
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputImg" class="form-label">Email</label>
-                        <input type="text" class="form-control" name="email" value="<?= $email?>">
+                        <input type="text" class="form-control" name="email" value="<?= $email ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Địa chỉ</label>
@@ -44,8 +45,8 @@ if (is_array($taikhoan)) {
                         <label for="exampleInputDescribe" class="form-label">Vai trò</label>
                         <input type="text" class="form-control" name="id_role" value="<?= $id_role ?>">
                     </div>
-                    <input type="hidden" name="id" value="<?=$taikhoan['id']?>  ">
-                    <input type="submit" class="btn btn-success" name="capnhat" value="Cập nhật">
+                    <input type="hidden" name="id" value="<?= $taikhoan['id'] ?>  ">
+                    <input type="submit" class="btn btn-success" name="capnhat" onclick="return confirmUpdatetk()" value="Cập nhật">
                     <input type="reset" class="btn btn-info" value="Nhập lại">
                     <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Danh sách"></a>
 
@@ -58,5 +59,14 @@ if (is_array($taikhoan)) {
         </div>
     </div>
 </div>
+<script>
+    function confirmUpdatetk() {
+        if (confirm("Bạn có muốn sửa tài khoản này không")) {
+            document.location = "index.php?act=listdm";
+        } else {
+            return false;
+        }
+    }
+</script>
 
 </div>
