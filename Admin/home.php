@@ -12,7 +12,12 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <p>2</p>
+                            <h3>
+                                <?php foreach ($tongtk as $taikhoan) {
+                                    extract($taikhoan);
+                                    echo $total;
+                                } ?>
+                            </h3>
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                 Tài khoản</div>
 
@@ -31,7 +36,12 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <p>2</p>
+                            <h3>
+                                <?php foreach ($tongdm as $dm) {
+                                    extract($dm);
+                                    echo $total;
+                                } ?>
+                            </h3>
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                 Danh mục</div>
 
@@ -51,7 +61,12 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <p>2</p>
+                            <h3>
+                                <?php foreach ($tongsp as $sp) {
+                                    extract($sp);
+                                    echo $total;
+                                } ?>
+                            </h3>
                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                                 Sản phẩm</div>
 
@@ -71,7 +86,6 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <p>2</p>
                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                 Bình luận</div>
 

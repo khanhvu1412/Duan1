@@ -7,6 +7,7 @@ include "../model/taikhoan.php";
 include "../model/thongke.php";
 include "../model/donhang.php";
 include "../model/binhluan.php";
+include "../model/tong.php";
 
 include "header.php";
 
@@ -152,7 +153,7 @@ if (isset($_GET['act'])) {
                 }
                 insert_sanpham($tensp, $giasp, $hinh, $mota, $iddm);
                 $thongbao = "Thêm thành công";
-                
+
 
             }
             $listdanhmuc = loadall_danhmuc();
@@ -205,7 +206,7 @@ if (isset($_GET['act'])) {
 
         // Bình luận
         case "listbl":
-            
+
             $listsanpham = loadall_sanpham();
             $listbinhluan = loadall_binhluan();
             include "binhluan/list.php";
@@ -294,10 +295,30 @@ if (isset($_GET['act'])) {
             break;
 
         default:
+            $tongdm = tinhtongdm();
+            $tongsp = tinhtongsp();
+            $tongtk = tinhtongtk();
+            $tongbl = tinhtongbl();
+            $listdanhmuc = loadall_danhmuc();
+            $listsanpham = loadall_sanpham($kym, $iddm);
             include "home.php";
             break;
     }
 } else {
+
+    if(isset($_POST['listok']) && ($_POST['listok'])){
+        $kym = $_POST['kym'];
+        $iddm = $_POST['iddm'];
+    } else {
+        $kym = "";
+        $iddm = 0;
+    };
+    $tongdm = tinhtongdm();
+    $tongsp = tinhtongsp();
+    $tongtk = tinhtongtk();
+    $tongbl = tinhtongbl();
+    $listdanhmuc = loadall_danhmuc();
+    $listsanpham = loadall_sanpham($kym,$iddm);
     include "home.php";
 }
 
