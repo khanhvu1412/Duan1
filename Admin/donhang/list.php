@@ -17,6 +17,8 @@
                             <th>Tên khách hàng</th>
                             <th>Tên sản phẩm</th>
                             <th>Giá tiền</th>
+                            <th>Địa chỉ giao hàng</th>
+                            <th>Thời gian mua</th>
                             <th>Trạng thái</th>
                             <th>Hành động</th>
 
@@ -26,7 +28,7 @@
 
 
 
-                    <?php
+                        <?php
                         foreach ($listdonhang as $donhang) {
                             extract($donhang);
                             $suadh = "index.php?act=suadh&id=" . $id;
@@ -38,10 +40,12 @@
                                 <td>' . $tentk . '</td>
                                 <td>' . $tensp . ' </td>
                                 <td>' . $gia . ' VNĐ</td>
-                                <td>' .($trangthai === 1 ? "<p style='background-color: yellow; color: black; '>Mới đặt hàng</p>" :
-                                        "<p style='background-color: green; color: white;'>Đã thanh toán</p>"  ).'</td>
+                                <td>' . $diachi_giaohang . '</td>
+                                <td>' . $thoigian_mua . '</td>
+                                <td>' . ($trangthai === 1 ? "<p style='background-color: yellow; color: black; '>Mới đặt hàng</p>" :
+                                "<p style='background-color: green; color: white;'>Đã thanh toán</p>") . '</td>
                                 <td>  
-                                   <a href=" index.php?act=chitietdh&id= '.$id.'"><input type="button" class=" form-control btn btn-secondary" value="Xem đơn hàng"></a> 
+                                   <a href=" index.php?act=chitietdh&id= ' . $id . '"><input type="button" class=" form-control btn btn-secondary" value="Xem đơn hàng"></a> 
                                     <a href="' . $suadh . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
                                     <a href="' . $xoadh . '" ><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
                                 </td> 
@@ -49,8 +53,8 @@
 
                         }
                         ?>
-                       
-                        
+
+
                     </tbody>
                 </table>
             </div>

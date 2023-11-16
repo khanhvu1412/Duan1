@@ -130,7 +130,7 @@
 
 											<div class="setting-option">
 												<ul>
-													<li><a href="view/taikhoan/dangky.php"><span>Đăng ký</span></a></li>
+													<li><a href="view/taikhoan/dangky.php"><span> Đăng ký</span></a></li>
 													<li><a href="dangnhap.php"></i><span> Đăng nhập</span></a></li>
 												</ul> 
 											</div>

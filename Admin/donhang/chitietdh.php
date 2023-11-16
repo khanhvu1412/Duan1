@@ -35,8 +35,24 @@ if (is_array($donhang)) {
                             <h2><label for="">Giá sản phẩm:
                                     <?= $gia ?>
                                 </label></h2>
+                            <h2><label for="">Địa chỉ giao hàng:
+                                    <?= $diachi_giaohang ?>
+                                </label></h2>
+                            <h2><label for="">Thời gian mua:
+                                    <?= $thoigian_mua ?>
+                                </label></h2>
                             <h2><label for="">Trạng thái:
-                                    <?= $trangthai ?>
+                                    <?php
+                                    if ($trangthai === "1") {
+                                        echo "Mới đặt hàng";
+                                    } elseif ($trangthai === "2") {
+                                        echo "Đang giao hàng";
+                                    } else {
+                                        echo "Đã thanh toán";
+                                    }
+                                    //  if($trangthai === 1 ) "<p style='background-color: yellow; color: black; '>Mới đặt hàng</p>" :
+                                    //     "<p style='background-color: green; color: white;'>Đã thanh toán</p>" 
+                                    ?>
                                 </label></h2>
 
                         </div>

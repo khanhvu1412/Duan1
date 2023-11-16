@@ -65,6 +65,9 @@ if (isset($_GET['act'])) {
             break;
 
         case "chitietsp":
+            if(isset($_GET['id'])&&$_GET['id']>0){
+                $sanpham = loadone_sanpham($_GET['id']);
+            }
             include("view/chitietsp.php");
             break;
 

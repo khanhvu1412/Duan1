@@ -1,10 +1,8 @@
 <?php
 session_start();
-
-
 function insert_taikhoan( $nguoidung, $email, $matkhau,  $diachi, $sdt)
 {
-    $sql = "insert into taikhoan values ('$nguoidung', '$email', '$matkhau',  '$diachi', '$sdt')";
+    $sql = "insert into taikhoan values ( null, '$nguoidung', '$email', '$matkhau',  '$diachi', '$sdt')";
     pdo_execute($sql);
 }
 
