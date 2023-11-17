@@ -58,7 +58,7 @@ function loadone_binhluan($id)
 function update_binhluan($id, $id_nguoidung, $noidung)
 {
 
-    $sql = " update binhluan set id_nguoidunng = '$id_nguoidung', noidung = '$noidung'  where id= " . $id;
+    $sql = " update binhluan set id_nguoidung = '$id_nguoidung', noidung = '$noidung'  where id= " . $id;
     pdo_execute($sql);
 }
 

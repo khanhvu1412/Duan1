@@ -55,7 +55,7 @@
     <script>
         function confirmDeletebl() {
             if (confirm("Bạn có muốn xóa bình luận này không")) {
-                document.location = "index.php?act=listdm";
+                document.location = "index.php?act=listbl";
             } else {
                 return false;
             }

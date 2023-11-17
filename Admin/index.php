@@ -239,6 +239,7 @@ if (isset($_GET['act'])) {
                 update_binhluan($id, $tennguoidung, $noidung);
                 $thongbao = "Cập nhật thành công";
             }
+            
             $listbinhluan = loadall_binhluan();
             include "binhluan/list.php";
             break;

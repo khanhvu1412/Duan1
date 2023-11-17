@@ -5,6 +5,7 @@ if (is_array($binhluan)) {
 
 
 
+
 ?>
 
 <div class="container-fluid">
@@ -20,7 +21,7 @@ if (is_array($binhluan)) {
             <div class="table-responsive">
 
                 <br>
-                <form action="index.php?act=updatedm" method="post">
+                <form action="index.php?act=updatebl" method="post">
                     <div class="mb-3">
                         <label for="exampleInputId" class="form-label">Mã bình luận</label>
                         <input type="text" class="form-control" name="madm" value="<?= $id ?>"disabled>
@@ -42,10 +43,10 @@ if (is_array($binhluan)) {
 
                     <input type="hidden" name="id" value="<?php if (isset($id) && ($id > 0))
                         echo $id; ?>">
-                    <input type="submit" class="btn btn-success" name="capnhat"  onclick="return confirmUpdatedm()" value="Cập nhật">
+                    <input type="submit" class="btn btn-success" name="capnhat"  onclick="return confirmUpdatebl()" value="Cập nhật">
                     <input type="reset" class="btn btn-info" value="Nhập lại">
 
-                    <a href="index.php?act=listdm"><input type="button" class="btn btn-primary" value="Danh sách"></a>
+                    <a href="index.php?act=chitietsp"><input type="button" class="btn btn-primary" value="Quay lại"></a>
                     <?php
 
                     if (isset($thongbao) && ($thongbao != ""))
@@ -54,9 +55,9 @@ if (is_array($binhluan)) {
                     ?>
                 </form>
                 <script>
-                    function confirmUpdatedm() {
+                    function confirmUpdatebl() {
                         if (confirm("Bạn có muốn sửa danh mục này không ?")) {
-                            document.location = "index.php?act=listdm";
+                            document.location = "index.php?act=listbl";
                         } else {
                             return false;
                         }

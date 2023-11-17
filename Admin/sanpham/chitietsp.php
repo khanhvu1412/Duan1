@@ -22,15 +22,15 @@ if (is_file($hinhpath)) {
         <div class="card-header py-3">
             <h4 class="m-0 font-weight-bold text-primary">Chi tiết sản phẩm</h4>
         </div>
-        <br>
 
         <div class="card-body">
-
+               
             <div class="table-responsive">
-                <div class="row">
-
-
-
+                
+            
+                
+                
+                    
                     <div class="container" style="display: flex; ">
                         <div class="list-product-img">
                             <?= $img ?>
@@ -54,12 +54,14 @@ if (is_file($hinhpath)) {
                         </div>
                     </div>
                 </div>
-                
                 <br>
-                <div class="function-back">
+                <div class="row">
+                     <div class="function-back">
                     <a href="index.php?act=listsp"><input type="submit" class="btn btn-primary"
                             value="Quay lại trang sản phẩm"></a>
                 </div>
+                
+                
                 
 
 

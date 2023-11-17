@@ -48,7 +48,7 @@
                     <a href="index.php?act=adddm"><input type="button" class="btn btn-primary" value="Nhập thêm"></a>
                 </form>
                 <script>
-                    function confirmDelete(dm) {
+                    function confirmDeletedm() {
                         if (confirm("Bạn có muốn xóa danh mục này không")) {
                             document.location = "index.php?act=listdm";
                         } else {
