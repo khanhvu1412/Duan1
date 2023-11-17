@@ -15,7 +15,7 @@
                             <h3>
                                 <?php foreach ($tongtk as $taikhoan) {
                                     extract($taikhoan);
-                                    echo $total;
+                                    echo $tongtk;
                                 } ?>
                             </h3>
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
@@ -39,7 +39,7 @@
                             <h3>
                                 <?php foreach ($tongdm as $dm) {
                                     extract($dm);
-                                    echo $total;
+                                    echo $tongdm;
                                 } ?>
                             </h3>
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
@@ -64,7 +64,7 @@
                             <h3>
                                 <?php foreach ($tongsp as $sp) {
                                     extract($sp);
-                                    echo $total;
+                                    echo $tongsp;
                                 } ?>
                             </h3>
                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
@@ -86,6 +86,12 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
+                        <h3>
+                                <?php foreach ($tongbl as $binhluan) {
+                                    extract($binhluan);
+                                    echo $tongbl;
+                                } ?>
+                            </h3>
                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                 Bình luận</div>
 

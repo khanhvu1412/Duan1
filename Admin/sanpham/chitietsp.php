@@ -102,7 +102,8 @@ if (is_file($hinhpath)) {
 
                             echo '<tr>
                                 <td>' . $id . '</td>
-                                <td>' . $tenkh . '</td>
+                                <td>' . $id_nguoidung. '</td>
+                                <td>' . $noidung. ' </td>
                                 <td>' . $ngaybinhluan . '</td>
                                 <td> 
                                     <a href="' . $suabl . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
@@ -121,7 +122,7 @@ if (is_file($hinhpath)) {
     <script>
         function confirmDeletebl() {
             if (confirm("Bạn có muốn xóa bình luận này không")) {
-                document.location = "index.php?act=listdm";
+                document.location = "index.php?act=listbl";
             } else {
                 return false;
             }

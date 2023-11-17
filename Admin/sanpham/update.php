@@ -63,8 +63,8 @@ if (is_file($hinhpath)) {
                         <textarea class="form-control" rows="10" name="mota"><?= $mota ?></textarea>
                     </div>
                     <input type="hidden" name="id" value="<?= $sanpham['id']; ?>">
-                    <input type="submit"  class="btn btn-primary" name="capnhat"  onclick="return confirmUpdatesp()" value="Cập nhật">
-                    <input type="reset" class="btn btn-primary" value="Nhập lại">
+                    <input type="submit"  class="btn btn-success" name="capnhat"  onclick="return confirmUpdatesp()" value="Cập nhật">
+                    <input type="reset" class="btn btn-info" value="Nhập lại">
                     <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Danh sách"></a>
 
                     <?php

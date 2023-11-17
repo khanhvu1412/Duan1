@@ -230,6 +230,19 @@ if (isset($_GET['act'])) {
             include "binhluan/list.php";
             break;
 
+        case "updatebl":
+            if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
+                $id = $_POST['id'];
+                $id_nguoidung = $_POST['id_nguoidung'];
+                $noidung = $_POST['noidung'];
+
+                update_binhluan($id, $tennguoidung, $noidung);
+                $thongbao = "Cập nhật thành công";
+            }
+            $listbinhluan = loadall_binhluan();
+            include "binhluan/list.php";
+            break;
+
         // Thống kê
         case "thongke":
             $listthongke = loadall_thongke();
@@ -311,19 +324,20 @@ if (isset($_GET['act'])) {
     }
 } else {
 
-    if(isset($_POST['listok']) && ($_POST['listok'])){
+    if (isset($_POST['listok']) && ($_POST['listok'])) {
         $kym = $_POST['kym'];
         $iddm = $_POST['iddm'];
     } else {
         $kym = "";
         $iddm = 0;
-    };
+    }
+    ;
     $tongdm = tinhtongdm();
     $tongsp = tinhtongsp();
     $tongtk = tinhtongtk();
     $tongbl = tinhtongbl();
     $listdanhmuc = loadall_danhmuc();
-    $listsanpham = loadall_sanpham($kym,$iddm);
+    $listsanpham = loadall_sanpham($kym, $iddm);
     include "home.php";
 }
 

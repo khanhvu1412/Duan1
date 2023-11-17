@@ -22,7 +22,6 @@ if (is_array($donhang)) {
                 <div class="row">
 
                     <div class="container">
-                        <div class="list-product-text" style="padding-left: 50px">
                             <h2><label for="">Mã đơn:
                                     <?= $id ?>
                                 </label></h2>
@@ -43,9 +42,9 @@ if (is_array($donhang)) {
                                 </label></h2>
                             <h2><label for="">Trạng thái:
                                     <?php
-                                    if ($trangthai === "1") {
+                                    if ($trangthai == 1) {
                                         echo "Mới đặt hàng";
-                                    } elseif ($trangthai === "2") {
+                                    } else if ($trangthai == 2) {
                                         echo "Đang giao hàng";
                                     } else {
                                         echo "Đã thanh toán";
@@ -55,7 +54,6 @@ if (is_array($donhang)) {
                                     ?>
                                 </label></h2>
 
-                        </div>
                     </div>
                     <br>
                     <div class="function-back">

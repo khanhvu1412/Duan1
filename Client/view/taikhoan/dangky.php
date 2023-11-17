@@ -39,28 +39,28 @@
                             <form class="user">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Họ tên ">
+                                        name="nguoidung" placeholder="Họ tên ">
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Email ">
+                                        name="email" placeholder="Email ">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Địa chỉ ">
+                                        name="diachi" placeholder="Địa chỉ ">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Số điện thoại ">
+                                        name="sdt" placeholder="Số điện thoại ">
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="password" class="form-control form-control-user "
+                                        <input type="password" class="form-control form-control-user " name="matkhau"
                                             id="exampleInputPassword" placeholder="Password">
 
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="password" class="form-control form-control-user"
+                                        <input type="password" class="form-control form-control-user" name="matkhau"
                                             id="exampleRepeatPassword" placeholder="Repeat Password">
                                     </div>
                                 </div>

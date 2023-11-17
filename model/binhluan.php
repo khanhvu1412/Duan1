@@ -1,19 +1,19 @@
-<?php 
+<?php
 
 // in danh sách
-function insert_binhluan()
+function insert_binhluan($id_sp, $id_nguoidung, $noidung)
 {
-
-    $sql = "
-            SELECT binhluan.id, binhluan.noidung, taikhoan.nguoidung,  binhluan.ngaybinhluan FROM `binhluan` 
-             JOIN taikhoan ON binhluan.id_nguoidung = taikhoan.id
-             JOIN sanpham ON binhluan.id_sp = sanpham.id
-            WHERE sanpham.id = $id;
-        ";
-        $result =  pdo_query($sql);
-        return $result;
-    //$sql = "insert into binhluan() values()";
-    //pdo_execute($sql);
+    // $sql = "insert into binhluan() values()";
+    // pdo_execute($sql);
+    {
+        $date = date(' d-m-Y');
+        $sql = "
+                INSERT INTO binhluan(`noidung`, `iduser`, `idpro`, `ngaybinhluan`) 
+                VALUES ('$noidung','$id_nguoidung','$id_sp','$date'); ";
+        //echo $sql;
+        // die;
+        pdo_execute($sql);
+    }
 }
 
 // xóa danh mục
@@ -26,21 +26,39 @@ function delete_binhluan($id)
 
 function loadall_binhluan()
 {
-    $sql = "select * from binhluan order by id asc";
-    $listbinhluan = pdo_query($sql);
-    return $listbinhluan;
+    // $sql = "select * from binhluan order by id asc";
+    // $listbinhluan = pdo_query($sql);
+    // return $listbinhluan;
+
+
+    $sql = "
+            SELECT binhluan.id, binhluan.noidung, taikhoan.nguoidung, binhluan.id_nguoidung, binhluan.id_sp, binhluan.ngaybinhluan FROM `binhluan` 
+            LEFT JOIN taikhoan ON binhluan.id_nguoidung = taikhoan.id
+            LEFT JOIN sanpham ON binhluan.id_sp = sanpham.id; 
+        ";
+    $result = pdo_query($sql);
+    return $result;
 }
 function loadone_binhluan($id)
 {
-    $sql = "select * from binhluan where id=" . $id;
-    $binhluan = pdo_query_one($sql);
-    return $binhluan;
+    // $sql = "select * from binhluan where id=" . $id;
+    // $binhluan = pdo_query_one($sql);
+    // return $binhluan;
+
+    $sql = "
+    SELECT binhluan.id, binhluan.noidung, taikhoan.nguoidung,  binhluan.ngaybinhluan FROM `binhluan` 
+     JOIN taikhoan ON binhluan.id_nguoidung = taikhoan.id
+     JOIN sanpham ON binhluan.id_sp = sanpham.id
+    WHERE sanpham.id = $id;
+";
+    $result = pdo_query($sql);
+    return $result;
 }
 // sửa danh mục
-function update_dbinhluan($id)
+function update_binhluan($id, $id_nguoidung, $noidung)
 {
-    
-        $sql = " update danhmuc set  where id= " . $id;
+
+    $sql = " update binhluan set id_nguoidunng = '$id_nguoidung', noidung = '$noidung'  where id= " . $id;
     pdo_execute($sql);
 }
 
