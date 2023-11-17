@@ -36,7 +36,8 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Tạo tài khoản!</h1>
                             </div>
-                            <form class="user" action="" method="post">
+                            <form class="user" action="http://localhost/Duan1/Client/index.php?act=dangky"
+                                method="post">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputEmail"
                                         name="nguoidung" placeholder="Họ tên ">

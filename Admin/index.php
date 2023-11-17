@@ -302,9 +302,9 @@ if (isset($_GET['act'])) {
                 $gia = $_POST['gia'];
                 $diachi_giaohang = $_POST['diachi_giaohang'];
                 $thoigian_mua = $_POST['thoigian_mua'];
-                $trangthai = $_POST['trangthai'];
+                $id_trangthai_donhang = $_POST['trangthai'];
 
-                update_donhang($id, $tentk, $tensp, $gia, $diachi_giaohang, $thoigian_mua, $trangthai);
+                update_donhang($id, $tentk, $tensp, $gia, $diachi_giaohang, $thoigian_mua, $id_trangthai_donhang);
                 $thongbao = 'Cập nhật thành công';
 
             }

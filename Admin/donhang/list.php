@@ -42,7 +42,7 @@
                                 <td>' . $gia . ' VNĐ</td>
                                 <td>' . $diachi_giaohang . '</td>
                                 <td>' . $thoigian_mua . '</td>
-                                <td>' . ($trangthai === 1 ? "<p style='background-color: yellow; color: black; '>Mới đặt hàng</p>" :
+                                <td>' . ($id_trangthai_donhang === 1 ? "<p style='background-color: yellow; color: black; '>Mới đặt hàng</p>" :
                                 "<p style='background-color: green; color: white;'>Đã thanh toán</p>") . '</td>
                                 <td>  
                                     <a href=" index.php?act=chitietdh&id= ' . $id . '"><input type="button" class=" form-control btn btn-secondary" value="Xem đơn hàng"></a> 

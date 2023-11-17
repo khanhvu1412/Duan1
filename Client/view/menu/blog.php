@@ -29,11 +29,10 @@
 			  	<h4>2 Comments</h4>                           
 				<div class="social">
 				        <span>Share</span>
-				        <a href="#"><i class="fa fa-facebook"></i></a>
-				        <a href="#"><i class="fa fa-twitter"></i></a>
-				        <a href="#"><i class="fa fa-google-plus"></i></a>
-				        <a href="#"><i class="fa fa-pinterest"></i></a>
-				        <a href="#"><i class="fa fa-instagram"></i></a>
+				        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+				        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+				        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+				        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
 				</div>
 			</div>
 			<div class="author-info-wrap">
@@ -44,7 +43,7 @@
 				</div>
 			</div>
 			<div class="related-wrap">
-				<h4 class="related-title"> YOU MAY ALSO LIKE</h4>                            
+				<h4 class="related-title"> Có thể bạn thích</h4>                            
 			     <ul class="blog-related row">
 					<li class="blog-item col-sm-4">  
 	                    <div class="post-thumbnail">                               
@@ -116,44 +115,17 @@
 			    		</li><!-- #comment-## -->
 				</ul>
 			    <div class="comment-form">
-		            <h3 class="comment-reply-title">Leave a comment</h3>
+		            <h3 class="comment-reply-title">Hãy để lại một bình luận</h3>
 		            <form  method="post">
-		                <input type="text" id="author" name="author" value="" placeholder="Your name" size="30" aria-required="true">
-		                <input type="text" id="email" name="email" value="" size="30" placeholder="Your Email" aria-required="true">                         
-		                <textarea class="comment-form-comment" name="comment" cols="45" placeholder="Your Comment" rows="8" aria-required="true"></textarea>
+		                <input type="text" id="author" name="author" value="" placeholder="Tên của bạn" size="30" aria-required="true">
+		                <input type="text" id="email" name="email" value="" size="30" placeholder="Email" aria-required="true">                         
+		                <textarea class="comment-form-comment" name="comment" cols="45" placeholder="Bình luận" rows="8" aria-required="true"></textarea>
 		               	<div class="clear"></div>
-		                <input type="submit" name="button"  class="submit style2" value="Submit">
+		                <input type="submit" name="button"  class="submit style2" value="Gửi">
 		                <input class="button" type="hidden" name="comment_parent" id="comment_parent" value="0">                                           
 		            </form>
 			    </div>  
 			</div>
-			<div class="margin-top-60">
-				<div class="row">
-					<div class="col-sm-12 col-md-4">
-		                <div class="element-icon style2">
-							<div class="icon"><i class="flaticon flaticon-origami28"></i></div>
-							<div class="content">
-								<h4 class="title">FREE SHIPPING WORLD WIDE</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-4">
-		                <div class="element-icon style2">
-							<div class="icon"><i class="flaticon flaticon-curvearrows9"></i></div>
-							<div class="content">
-								<h4 class="title">MONEY BACK GUARANTEE</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-4">
-		                <div class="element-icon style2">
-							<div class="icon"><i class="flaticon flaticon-headphones54"></i></div>
-							<div class="content">
-								<h4 class="title">ONLINE SUPPORT 24/7</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>      
+			<?php include '3hopcn.php' ?>    
 	  	</div>
 	</div>

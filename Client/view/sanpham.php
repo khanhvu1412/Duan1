@@ -19,11 +19,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -35,12 +35,12 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
-									<del>95.00 ₫</del>
+									<ins style = "color:red;">85.000 VNĐ</ins>
+									<del>95.000 VNĐ</del>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -52,11 +52,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -68,12 +68,12 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
-									<del>95.00 ₫</del>
+									<ins style = "color:red;">85.000 VNĐ</ins>
+									<del>95.000 VNĐ</del>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -85,11 +85,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -101,11 +101,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -117,11 +117,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -133,11 +133,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -149,11 +149,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -165,11 +165,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -181,11 +181,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -197,11 +197,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -215,11 +215,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -231,12 +231,12 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
-									<del>95.00 ₫</del>
+									<ins style = "color:red;">85.000 VNĐ</ins>
+									<del>95.000 VNĐ</del>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -248,11 +248,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -264,12 +264,12 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
-									<del>95.00 ₫</del>
+									<ins style = "color:red;">85.000 VNĐ</ins>
+									<del>95.000 VNĐ</del>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -281,11 +281,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -297,11 +297,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -313,11 +313,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -329,11 +329,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -345,11 +345,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -361,11 +361,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -377,11 +377,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -393,11 +393,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -410,11 +410,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -426,12 +426,12 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
-									<del>95.00 ₫</del>
+									<ins style = "color:red;">85.000 VNĐ</ins>
+									<del>95.000 VNĐ</del>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -443,11 +443,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -459,12 +459,12 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
-									<del>95.00 ₫</del>
+									<ins style = "color:red;">85.000 VNĐ</ins>
+									<del>95.000 VNĐ</del>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -476,11 +476,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -492,11 +492,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -508,11 +508,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -524,11 +524,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -540,11 +540,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -556,11 +556,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -572,11 +572,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>
@@ -588,11 +588,11 @@
 								
 							</div>
 							<div class="product-info">
-								<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
+								<h3 class="product-name"><a href="index.php?act=chitietsp">Quần áo nam</a></h3>
 								<span class="price">
-									<ins style = "color:red;">85.00 ₫</ins>
+									<ins style = "color:red;">85.000 VNĐ</ins>
 								</span>
-								<a href="index.php?act=chitietsp" class="button">ADD TO CART</a>
+								<a href="index.php?act=chitietsp" class="button">Thêm vào giỏ hàng</a>
 							</div>
 						</div>
 					</li>

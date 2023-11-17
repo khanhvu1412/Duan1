@@ -42,9 +42,9 @@ if (is_array($donhang)) {
                                 </label></h2>
                             <h2><label for="">Trạng thái:
                                     <?php
-                                    if ($trangthai == 1) {
+                                    if ($id_trangthai_donhang == 1) {
                                         echo "Mới đặt hàng";
-                                    } else if ($trangthai == 2) {
+                                    } else if ($id_trangthai_donhang == 2) {
                                         echo "Đang giao hàng";
                                     } else {
                                         echo "Đã thanh toán";

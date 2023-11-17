@@ -144,6 +144,15 @@
 								<li class="menu-item-has-children item-megamenu">
 									<a href="index.php">HOME</a>
 								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Danh mục</a>
+									<span class="arow"></span>
+	                            <ul class="sub-menu">
+	                                <li><a href="#">Danh mục 1</a></li>
+	                                <li><a href="#">Danh mục 2</a></li>
+	                                <li><a href="#">Danh mục 3</a></li>
+	                            </ul>
+								</li>
 								<li class="menu-item-has-children item-megamenu">
 									<a href="index.php?act=sanpham">SHOP</a>
 								</li>

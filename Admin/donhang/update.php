@@ -21,31 +21,41 @@ if (is_array($donhang)) {
                 <form action="index.php?act=updatedh" method="post">
                     <div class="mb-3">
                         <label for="exampleInputId" class="form-label">Mã đơn hàng</label>
-                        <input type="text" class="form-control" name="id" value="<?= $id ?>" >
+                        <input type="text" class="form-control" name="id" value="<?= $id ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên khách hàng</label>
-                        <input type="text" class="form-control" name="tentk" value="<?= $tentk ?>" >
+                        <input type="text" class="form-control" name="tentk" value="<?= $tentk ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên sản phẩm</label>
-                        <input type="text" class="form-control" name="tensp" value="<?= $tensp ?>" >
+                        <input type="text" class="form-control" name="tensp" value="<?= $tensp ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Giá tiền</label>
-                        <input type="text" class="form-control" name="gia" value="<?= $gia ?>" >
+                        <input type="text" class="form-control" name="gia" value="<?= $gia ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Địa chỉ giao hàng</label>
-                        <input type="text" class="form-control" name="diachi_giaohang" value="<?= $diachi_giaohang ?>" >
+                        <input type="text" class="form-control" name="diachi_giaohang" value="<?= $diachi_giaohang ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Thời gian mua</label>
-                        <input type="text" class="form-control" name="thoigian_mua" value="<?= $thoigian_mua ?>" >
+                        <input type="text" class="form-control" name="thoigian_mua" value="<?= $thoigian_mua ?>">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputName" class="form-label">Trạng thái</label>
-                        <input type="text" class="form-control" name="trangthai" value="<?= $trangthai ?>">
+                        <label for="exampleInputName" class="form-label">Trạng thái</label><br>
+                        <input type="radio" name="trangthai" id="trangthai" value="1">Chờ xác nhận
+                        <input type="radio" name="trangthai" id="trangthai" value="2">Đã xác nhận
+                        <input type="radio" name="trangthai" id="trangthai" value="3">Đang xử lý
+                        <input type="radio" name="trangthai" id="trangthai" value="4">Đang vận chuyển
+                        <input type="radio" name="trangthai" id="trangthai" value="5">Giao hàng thành công
+                        <input type="radio" name="trangthai" id="trangthai" value="6">Đã hủy
+                        <input type="radio" name="trangthai" id="trangthai" value="7">Chờ thanh toán
+                        <input type="radio" name="trangthai" id="trangthai" value="8">Đã thanh toán
+                        
+
+                        <input type="text" class="form-control" name="trangthai" value="<?= $id_trangthai_donhang ?>">
                     </div>
                     <input type="submit" class="btn btn-success" name="capnhat" value="Cập nhật">
                     <input type="reset" class="btn btn-info" value="Nhập lại">

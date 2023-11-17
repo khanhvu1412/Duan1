@@ -31,9 +31,9 @@ function loadone_donhang($id)
 
 
 
-function update_donhang($id, $tentk, $tensp, $gia, $diachi_giaohang, $thoigian_mua , $trangthai)
+function update_donhang($id, $tentk, $tensp, $gia, $diachi_giaohang, $thoigian_mua , $id_trangthai_donhang)
 {
-    $sql = " update donhang set tentk = '" . $tentk . "', tensp ='" . $tensp . "', gia = '" . $gia . "', diachi_giaohang = '".$diachi_giaohang."', thoigian_mua= '".$thoigian_mua."' , trangthai = '" . $trangthai . "'  where id= " . $id;
+    $sql = " update donhang set tentk = '" . $tentk . "', tensp ='" . $tensp . "', gia = '" . $gia . "', diachi_giaohang = '".$diachi_giaohang."', thoigian_mua= '".$thoigian_mua."' , id_trangthai_donhang = '" . $id_trangthai_donhang . "'  where id= " . $id;
     pdo_execute($sql);
 }
 ?>
