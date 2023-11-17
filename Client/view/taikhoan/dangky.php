@@ -36,7 +36,7 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Tạo tài khoản!</h1>
                             </div>
-                            <form class="user">
+                            <form class="user" action="index.php?act=dangky" method="post">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="exampleInputEmail"
                                         name="nguoidung" placeholder="Họ tên ">
@@ -56,12 +56,12 @@
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="password" class="form-control form-control-user " name="matkhau"
-                                            id="exampleInputPassword" placeholder="Password">
+                                            id="exampleInputPassword" placeholder="Mật khẩu">
 
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="password" class="form-control form-control-user" name="matkhau"
-                                            id="exampleRepeatPassword" placeholder="Repeat Password">
+                                            id="exampleRepeatPassword" placeholder="Nhập lại mật khẩu">
                                     </div>
                                 </div>
                                 <a href="dangnhap.php"><input type="submit" class="btn btn-primary btn-user btn-block"
