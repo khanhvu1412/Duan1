@@ -1,3 +1,11 @@
+<?php
+if (is_array($sanpham)) {
+    extract($sanpham);
+}
+
+
+?>
+
 <div class="container">
     <div class="breadcrumbs style2">
         <a href="index.php">Home</a>
@@ -9,26 +17,17 @@
                 <div class="col-sm-4">
                     <div class="product-detail-image style2">
                         <div class="main-image-wapper">
-                            <img class="main-image" src="images/products/4_cate2.png" alt="">
+                            <img class="main-image" src="../upload_file/<?= $img ?>" height="450px" width="600px"
+                                alt="">
                         </div>
-                        <div class="thumbnails owl-carousel nav-center-center nav-style3"
-                            data-responsive='{"0":{"items":3},"481":{"items":4},"600":{"items":3},"1000":{"items":4}}'
-                            data-autoplay="true" data-loop="true" data-items="4" data-dots="false" data-nav="true"
-                            data-margin="20">
-                            <a data-url="images/products/4_cate2.png" class="active" href="#"><img
-                                    src="images/products/4_cate2.png" alt=""></a>
-                            <a data-url="images/products/4_cate5.png" href="#"><img src="images/products/4_cate5.png"
-                                    alt=""></a>
-                            <a data-url="images/products/4_cate4.png" href="#"><img src="images/products/4_cate4.png"
-                                    alt=""></a>
-                            <a data-url="images/products/4_cate1.png" href="#"><img src="images/products/4_cate1.png"
-                                    alt=""></a>
-                        </div>
+
                     </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="product-details-right style2">
-                        <h3 class="product-name">Readwing Shoes 875 MOC</h3>
+                        <h3 class="product-name">
+                            <?= $tensp ?>
+                        </h3>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -37,20 +36,23 @@
                             <i class="fa fa-star"></i>
                         </div>
                         <span class="price">
-                            <ins>85.00 ₫</ins>
-                            <del>125.00 ₫</del>
+                            <ins>
+                                <?= $giasp ?> VNĐ
+                            </ins>
+                            <!-- <del>125.00 ₫</del> -->
                         </span>
                         <div class="meta">
                             <span>Only 15 left 3</span>
                             <span>Availalbe: <span class="text-primary">In Stock</span></span>
                         </div>
                         <div class="short-descript">
-                            Một chiếc áo phông có ba màu (đỏ, trắng và xanh) và ba kích cỡ (nhỏ, vừa,
+                            <?= $mota ?>
+                            <!-- Một chiếc áo phông có ba màu (đỏ, trắng và xanh) và ba kích cỡ (nhỏ, vừa,
                             lớn) là một sản phẩm có thể cấu hình. Một sản phẩm có thể cấu hình được tạo thành từ những
                             thứ đơn giản khác
                             các sản phẩm. bạn có thể tạo một sản phẩm có thể cấu hình để liên kết tất cả chúng lại với
                             nhau và cung cấp
-                            sự lựa chọn của người dùng cuối, thường là từ menu thả xuống.
+                            sự lựa chọn của người dùng cuối, thường là từ menu thả xuống. -->
                         </div>
                         <!-- <div class="select-color">
                             <label>MÀU</label>
@@ -85,44 +87,50 @@
         </div>
     </div>
 </div>
+
 <!-- tab -->
 <div class="container">
+    <hr>
     <div class="tab-details-product style2">
-        <ul class="box-tabs nav-tab">
-            <li class="active"><a data-toggle="tab" href="#tab-1">MÔ TẢ</a></li>
-            <li><a data-toggle="tab" href="#tab-2">THÔNG TIN </a></li>
-        </ul>
+
+        <br>
         <div class="tab-container">
-            <div id="tab-1" class="tab-panel active">
-                <ul>
-                    <li>Áo jersey mềm mại</li>
-                    <li>Cổ thuyền</li>
-                    <li>In logo</li>
-                    <li>Vừa vặn thông thường - đúng kích cỡ</li>
-                </ul>
-                <ul>
-                    <li>Giặt máy</li>
-                    <li>100% Cotton</li>
-                    <li>Người mẫu của chúng tôi mặc cỡ Trung bình và cao 185,5cm/6'1</li>
-                </ul>
-            </div>
-            <div id="tab-2" class="tab-panel">
-                <p>Quisque sodales sodales lacus pharetra bibendum. Etiam commodo non velit ac rhoncus. Mauris euismod
-                    purus sem, ac adipiscing quam laoreet et. Praesent vulputate ornare sem vel scelerisque. Ut dictum
-                    augue non erat lacinia, sed lobortis elit gravida. Proin ante massa, ornare accumsan ultricies et,
-                    posuere sit amet magna. Praesent dignissim, enim sed malesuada luctus, arcu sapien sodales sapien,
-                    ut placerat eros nunc vel est. Donec tristique mi turpis, et sodales nibh gravida eu. Etiam odio
-                    risus, porttitor non lacus id, rhoncus tempus tortor. Curabitur tincidunt molestie turpis, ut luctus
-                    nibh sollicitudin vel. Sed vel luctus nisi, at mattis metus. Aenean ultricies dolor est, a congue
-                    ante dapibus varius. Nulla at auctor nunc. Curabitur accumsan feugiat felis ut pretium. Praesent
-                    semper semper nisi, eu cursus augue.</p>
-            </div>
-            <br>
             <div class="binhluan">
-                <span style="font-size: 30px">Bình luận</span>
+                <span style="font-size: 35px">Bình luận</span>
+
+                <table>
+
+                    <tr>
+                        <th>Tài khoản</th>
+                        <th>Nội dung</th>
+                        <th>Ngày bình luận</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>HEHE</td>
+                        <td>HEHE</td>
+                        <td>HEHE</td>
+                    </tr>
+                    <tr>
+                        <td>HEHE</td>
+                        <td>HEHE</td>
+                        <td>HEHE</td>
+                    </tr>
+                    <tr>
+                        <td>HEHE</td>
+                        <td>HEHE</td>
+                        <td>HEHE</td>
+                    </tr>
+                </table>
+                <br>
+
+
+
+
                 <div class="binhluan_content">
-                    <textarea name="" id="" cols="1000" rows="10"></textarea>
-                    <a href="index.php?act=chitietsp"><input type="submit" value="Gửi"></a>
+                    <div class="ndbinhluan"><input type="text" name="binhluan" height="20px" width="400px"
+                            id="binhluan"></div>
+                    <div class="nut"><a href="index.php?act=chitietsp"><input type="submit" value="Gửi"></a></div>
                 </div>
             </div>
         </div>
@@ -132,10 +140,29 @@
 
     <div class="product-slide upsell-products">
         <div class="section-title text-center">
-            <h3>SẢN PHẨM UPSELL</h3>
+            <h3>SẢN PHẨM KHÁC</h3>
         </div>
         <ul class="owl-carousel" data-responsive='{"0":{"items":1},"600":{"items":3},"1000":{"items":4}}'
             data-autoplay="true" data-loop="true" data-items="4" data-dots="false" data-nav="false" data-margin="30">
+            <?php
+            //foreach ($sanphamcl as $spcl): ?>
+            <!-- <li class="product-item">
+                    <div class="product-inner">
+                        <div class="product-thumb">
+                            <a href="#"><img src="#" alt=""></a>
+
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#"><?php //$tensp ?></a></h3>
+                            <span class="price">
+                                <ins style="color:red"> <?php //$giasp ?> VNĐ</ins>
+                            </span>
+                            <a href="index.php?act=giohang" class="button">Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </li> -->
+
+            <?php //endforeach; ?>
             <li class="product-item">
                 <div class="product-inner">
                     <div class="product-thumb">

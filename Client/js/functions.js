@@ -363,7 +363,7 @@
       heightheader_categoy_menu();
       boutique_stick_menu();
       clone_header_ontop();
-      init_popup();
+      // init_popup();
 
       //Group banner
       if( $('.group-banner-masonry').length >0 ){

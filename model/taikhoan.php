@@ -1,10 +1,9 @@
 <?php
-session_start();
-function insert_taikhoan($nguoidung, $email, $matkhau, $diachi, $sdt, $id_role)
+function insert_taikhoan( $nguoidung, $matkhau, $email,  $diachi, $sdt )
 {
-    $sql = "insert into taikhoan values ( null, '$nguoidung', '$email', '$matkhau',  '$diachi', '$sdt', '$id_role')";
+    $sql = "insert into taikhoan(nguoidung, matkhau, email, diachi, sdt) values ('$nguoidung', '$matkhau', '$email', '$diachi', '$sdt')";
     pdo_execute($sql);
-    header("location:index.php?act=listsp");
+    // header("location:index.php?act=listsp");
 }
 
 // Đăng nhập / đăng xuất
@@ -13,15 +12,16 @@ function dangnhap($email, $matkhau)
     $sql = "select * from taikhoan where email = '$email' and matkhau='$matkhau '";
 
     $taikhoan = pdo_query_one($sql);
+    return $taikhoan;
 
-    if ($taikhoan != false) {
+    // if ($taikhoan != false) {
 
-        $_SESSION['email'] = $taikhoan;
+    //     $_SESSION['email'] = $taikhoan;
 
-    } else {
+    // } else {
 
-        return "Thông tin tài khoản sai";
-    }
+    //     return "Thông tin tài khoản sai";
+    // }
 }
 function dangxuat()
 {
@@ -65,5 +65,10 @@ function delete_taikhoan($id)
     pdo_execute($sql);
 }
 
+function checkemail($email){
+    $sql="SELECT * FROM user WHERE email='".$email."'";
+    $sp=pdo_query_one($sql);
+    return $sp;
+}
 
 ?>

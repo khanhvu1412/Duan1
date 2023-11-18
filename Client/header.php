@@ -27,6 +27,8 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -61,78 +63,50 @@
 						<div class="col-sm-12 col-md-10">
 							<div class="box-control">
 
-								<form class="box-search show-icon">
+								<form action="index.php?act=sanpham" method="post" class="box-search show-icon">
 
 									<span class="icon">
 										<span class="pe-7s-search"></span>
 									</span>
 
-									<div class="inner" >
-										<input type="text" class="search" placeholder="Search here..." required>
+									<div class="inner">
+										<input type="text" class="search" placeholder="Tìm kiếm..." name="kyw" required>
 										<button class="button-search"><span class="pe-7s-search"></span></button>
 									</div>
 								</form>
 								<div class="mini-cart">
-									<a class="cart-link" href="#"><span class="pe-7s-cart"></span> <span
-											class="count">2</span></a>
-									<div class="show-shopping-cart">
-										<h3 class="title">Bạn có <span class="text-primary">(2 mặt hàng)</span> trong
-											giỏ hàng</h3>
-										<ul class="list-product">
-											<li>
-												<div class="thumb">
-													<img src="images/products/1.png" alt="">
-												</div>
-												<div class="info">
-													<h4 class="product-name"><a href="#">LONDON STAR SWEATSHIRT</a></h4>
-													<span class="price">375.00 ₫</span>
-													<a class="remove-item" href="#"><i class="fa fa-close"></i></a>
-												</div>
-											</li>
-											<li>
-												<div class="thumb">
-													<img src="images/products/1.png" alt="">
-												</div>
-												<div class="info">
-													<h4 class="product-name"><a href="#">LONDON STAR SWEATSHIRT</a></h4>
-													<span class="price">375.00 ₫</span>
-													<a class="remove-item" href="#"><i class="fa fa-close"></i></a>
-												</div>
-											</li>
-										</ul>
-										<div class="sub-total">
-											Tổng: 255.000 ₫
-										</div>
-										<div class="group-button">
-											<a href="index.php?act=giohang" class="button">Giỏ hàng</a>
-											<a href="index.php?act=thanhtoan" class="check-out button">Mua</a>
-										</div>
-									</div>
+									<a class="cart-link" href="index.php?act=giohang"><span class="pe-7s-cart"></a>
+
 								</div>
 								<div class="box-settings">
 									<span class="icon pe-7s-config"></span>
 									<div class="settings-wrapper ">
 										<div class="setting-content">
+											<!-- < ?php
 
-											<!-- <div class="setting-option">
-												<ul>
-													<li><a href="index.php?act=tkcanhan"><span> <i
-																	class="fa-solid fa-circle-user"></i> Tài
-																khoản </span></a></li>
-													<li><a href=".././Admin"></i><span> 
-																	
-																Trang Admin</span></a></li>
-													<li><a href="dangnhap.php"></i><span> <i
-																	class="fa-solid fa-arrow-right-from-bracket"></i>
-																Đăng xuất</span></a></li>
-												</ul>
-											</div> -->
+											// echo ' <div class="setting-option">
+											// 	<ul>
+											// 		<li><a href="index.php?act=tkcanhan"><span> <i
+											// 						class="fa-solid fa-circle-user"></i> Tài
+											// 					khoản </span></a></li>
+											// 		<li><a href=".././Admin"></i><span> 
+											
+											// 					Trang Admin</span></a></li>
+											// 		<li><a href="dangnhap.php"></i><span> <i
+											// 						class="fa-solid fa-arrow-right-from-bracket"></i>
+											// 					Đăng xuất</span></a></li>
+											// 	</ul>
+											// </div> ';
+											? > -->
+
+
 
 											<div class="setting-option">
 												<ul>
-													<li><a href="view/taikhoan/dangky.php"><span> Đăng ký</span></a></li>
-													<li><a href="dangnhap.php"></i><span> Đăng nhập</span></a></li>
-												</ul> 
+													<li><a href="index.php?act=dangky"><span> Đăng ký</span></a>
+													</li>
+													<li><a href="index.php?act=dangnhap"></i><span> Đăng nhập</span></a></li>
+												</ul>
 											</div>
 
 										</div>
@@ -147,11 +121,12 @@
 								<li class="menu-item-has-children">
 									<a href="#">Danh mục</a>
 									<span class="arow"></span>
-	                            <ul class="sub-menu">
-	                                <li><a href="#">Danh mục 1</a></li>
-	                                <li><a href="#">Danh mục 2</a></li>
-	                                <li><a href="#">Danh mục 3</a></li>
-	                            </ul>
+									<ul class="sub-menu">
+										
+
+										<li><a href="#">Danh mục 2</a></li>
+										<li><a href="#">Danh mục 3</a></li>
+									</ul>
 								</li>
 								<li class="menu-item-has-children item-megamenu">
 									<a href="index.php?act=sanpham">SHOP</a>

@@ -45,14 +45,17 @@ if (is_array($donhang)) {
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Trạng thái</label><br>
-                        <input type="radio" name="trangthai" id="trangthai" value="1">Chờ xác nhận
-                        <input type="radio" name="trangthai" id="trangthai" value="2">Đã xác nhận
-                        <input type="radio" name="trangthai" id="trangthai" value="3">Đang xử lý
-                        <input type="radio" name="trangthai" id="trangthai" value="4">Đang vận chuyển
-                        <input type="radio" name="trangthai" id="trangthai" value="5">Giao hàng thành công
-                        <input type="radio" name="trangthai" id="trangthai" value="6">Đã hủy
-                        <input type="radio" name="trangthai" id="trangthai" value="7">Chờ thanh toán
-                        <input type="radio" name="trangthai" id="trangthai" value="8">Đã thanh toán
+                        <select name="" id="">
+                            <option value=""></option>
+                        </select>
+                        Chờ xác nhận
+                        Đã xác nhận
+                        Đang xử lý
+                        Đang vận chuyển
+                        Giao hàng thành công
+                        Đã hủy
+                        Chờ thanh toán
+                        Đã thanh toán
                         
 
                         <input type="text" class="form-control" name="trangthai" value="<?= $id_trangthai_donhang ?>">

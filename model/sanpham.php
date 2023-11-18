@@ -1,11 +1,24 @@
 <?php
 
-function insert_sanpham($tensp, $giasp, $hinh , $mota, $iddm)
+function insert_sanpham($tensp, $giasp, $hinh, $mota, $iddm)
 {
     $sql = "insert into sanpham (tensp, giasp, img , mota, iddm) values ('$tensp', '$giasp', '$hinh', '$mota', '$iddm' )";
     pdo_execute($sql);
-   
+
 }
+
+// function loadall_sanpham_home()
+// {
+//     $sql = "select * from sanpham where 1 order by id desc limit 0,10";
+//     $listsanpham = pdo_query($sql);
+//     return $listsanpham;
+// }
+
+// function load_sanpham_cungloai($id, $iddm){
+//     $sql = "select * from sanpham where iddm =  $iddm and  id <> $id"; 
+//     $listsanpham = pdo_query($sql);
+//     return $listsanpham;
+// }
 
 function delete_sapham($id)
 {
@@ -13,16 +26,22 @@ function delete_sapham($id)
     pdo_execute($sql);
 }
 
+function load_danhmuc(){
+    $sql = "select * from danhmuc";
+    $listdanhmuc = pdo_query($sql);
+    return $listdanhmuc;
+}
+
 function loadall_sanpham($kyw = " ", $iddm = 0)
 {
-    $sql="select * from sanpham where 1"; 
-    if($kyw!=""){
-        $sql.=" and tensp like '%".$kyw."%'";
+    $sql = "select * from sanpham where 1";
+    if ($kyw != "") {
+        $sql .= " and tensp like '%" . $kyw . "%'";
     }
-    if($iddm > 0){
-        $sql.=" and iddm ='".$iddm."'";
+    if ($iddm > 0) {
+        $sql .= " and iddm ='" . $iddm . "'";
     }
-    $sql.=" order by id asc";
+    $sql .= " order by id asc";
 
     $listsanpham = pdo_query($sql);
     return $listsanpham;
@@ -34,6 +53,18 @@ function loadone_sanpham($id)
     $sanpham = pdo_query_one($sql);
     return $sanpham;
 }
+
+// function load_ten_dm($iddm)
+// {
+//     if ($iddm > 0) {
+//         $sql = "select * from danhmuc where id=" . $iddm;
+//         $danhmuc = pdo_query_one($sql);
+//         extract($danhmuc);
+//         return $tendm;
+//     } else {
+//         return "";
+//     }
+// }
 
 function update_sanpham($id, $iddm, $tensp, $giasp, $mota, $hinh)
 {

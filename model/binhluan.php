@@ -10,8 +10,7 @@ function insert_binhluan($id_sp, $id_nguoidung, $noidung)
         $sql = "
                 INSERT INTO binhluan(`noidung`, `iduser`, `idpro`, `ngaybinhluan`) 
                 VALUES ('$noidung','$id_nguoidung','$id_sp','$date'); ";
-        //echo $sql;
-        // die;
+        
         pdo_execute($sql);
     }
 }
@@ -36,8 +35,8 @@ function loadall_binhluan()
             LEFT JOIN taikhoan ON binhluan.id_nguoidung = taikhoan.id
             LEFT JOIN sanpham ON binhluan.id_sp = sanpham.id; 
         ";
-    $result = pdo_query($sql);
-    return $result;
+    $listbinhluan = pdo_query($sql);
+    return $listbinhluan;
 }
 function loadone_binhluan($id)
 {
@@ -51,8 +50,8 @@ function loadone_binhluan($id)
      JOIN sanpham ON binhluan.id_sp = sanpham.id
     WHERE sanpham.id = $id;
 ";
-    $result = pdo_query($sql);
-    return $result;
+    $listbinhluan = pdo_query($sql);
+    return $listbinhluan;
 }
 // sửa danh mục
 function update_binhluan($id, $id_nguoidung, $noidung)
