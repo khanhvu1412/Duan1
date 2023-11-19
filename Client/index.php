@@ -1,24 +1,19 @@
-
 <?php
 
 session_start();
-
+ob_start();
 include("../model/pdo.php");
 include("../model/taikhoan.php");
 include("../model/binhluan.php");
 include("../model/danhmuc.php");
 include("../model/sanpham.php");
 include("../model/donhang.php");
-
 include("global.php");
 
 include("header.php");
 
-if (!isset($_SESSION['mycart']))
-    $_SESSION['mycart'] = [];
-
-// $spnew = loadall_sanpham_home();
-// $dsdm = loadall_danhmuc();
+// if (!isset($_SESSION['mycart']))
+//     $_SESSION['mycart'] = [];
 
 if (isset($_GET['act']) && $_GET['act'] != "") {
     $act = $_GET['act'];
@@ -79,12 +74,12 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 
         case 'dangnhap':
             if (isset($_POST['dangnhap']) && ($_POST['dangnhap'])) {
-                $email = $_POST['email'];
+                $nguoidung = $_POST['nguoidung'];
                 $matkhau = $_POST['matkhau'];
-                $checkuser = checkuser($email, $matkhau);
+                $checkuser = checkuser($nguoidung, $matkhau);
                 if (is_array($checkuser)) {
-                    $_SESSION['email'] = $checkuser;
-                    header('location: index.php');
+                    $_SESSION['user'] = $checkuser;
+                    header("Location: index.php");
                 }
                 $thongbao = "Tài khoản không tồn tại. Vui lòng nhập lại";
 
@@ -108,14 +103,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 
             include('view/taikhoan/quenmk.pjp');
             break;
-
-        case 'dangxuat':
-            dangxuat();
-            include('../Clientview/taikhoan/dangnhap.php');
-            break;
-
-
-
         case "lienhe":
             include("view/menu/lienhe.php");
             break;
@@ -135,6 +122,8 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
         case 'giohang':
             include('view/menu/giohang.php');
             break;
+
+
 
         case 'addtocart':
             if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
@@ -162,14 +151,14 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             }
             ;
             $listdanhmuc = loadall_danhmuc();
-            $listsanpham = loadall_sanpham($kym, $iddm);
+            $listsanpham = loadall_sanpham($kyw, $iddm);
             include("home.php");
             break;
 
     }
 } else {
     if (isset($_POST['listok']) && ($_POST['listok'])) {
-        $kyw = $_POST['kym'];
+        $kyw = $_POST['kyw'];
         $iddm = $_POST['iddm'];
     } else {
         $kyw = "";
@@ -182,3 +171,5 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 }
 
 include("footer.php");
+ob_end_flush(); 
+?>

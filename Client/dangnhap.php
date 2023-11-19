@@ -1,24 +1,21 @@
 <?php
-if (isset($_SESSION["email"])) {
+ob_start();
+if (isset($_SESSION["user"])) {
     header("Location: index.php");
 }
 
-ob_start();
 ?>
 <div class="wrapper">
     <div class="login">
         <h1>Đăng nhập</h1>
-        <form action="index.php?act=dangnhap" method="post" class="form-login">
+        <form action="" method="post" class="form-login">
             <div class="form-input">
-                <p>Email</p>
-                <input type="text" name="email" />
+                <p>Tài khoản</p>
+                <input type="text" name="nguoidung" />
             </div>
             <div class="form-input">
                 <p>Mật khẩu</p>
                 <input type="password" name="matkhau" />
-                <?php
-                ob_end_flush();
-                ?>
             </div>
 
             <div class="login-btn">
@@ -34,3 +31,4 @@ ob_start();
     </div>
 </div>
 </div>
+<?php ob_end_flush(); ?>

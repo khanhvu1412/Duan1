@@ -1,46 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+if (isset($_POST["dangxuat"])) {
+	unset($_SESSION["user"]);
+	header("Location: index.php");
+}
+?>
 
 <!-- Mirrored from html.kutethemes.com/boutique/html/index9.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Nov 2023 04:33:46 GMT -->
 
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
-	<title>Boutique - eCommerce</title>
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 
-	<link rel="stylesheet" type="text/css" href="css/chosen.css">
+<link rel="stylesheet" type="text/css" href="css/chosen.css">
 
-	<link rel="stylesheet" type="text/css" href="/css/lightbox.min.css">
+<link rel="stylesheet" type="text/css" href="/css/lightbox.min.css">
 
-	<link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke.css">
+<link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke.css">
 
-	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
 
-	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<link rel="stylesheet" type="text/css" href="css/form.css">
+<link rel="stylesheet" type="text/css" href="css/form.css">
 
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-	<link rel='stylesheet' type='text/css'
-		href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,400,700,700italic,900,900italic'>
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,400,700,700italic,900,900italic'>
 
-	<link rel='stylesheet' type='text/css'
-		href='https://fonts.googleapis.com/css?family=Roboto:300,100,100italic,300italic,400,400italic,500,500italic,700,700italic,900,900italic'>
+<link rel='stylesheet' type='text/css'
+	href='https://fonts.googleapis.com/css?family=Roboto:300,100,100italic,300italic,400,400italic,500,500italic,700,700italic,900,900italic'>
 
-	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Oswald:400,300,700'>
-</head>
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Oswald:400,300,700'>
 
 <body class="home">
 	<div id="box-mobile-menu" class="box-mobile-menu full-height full-width">
@@ -82,33 +81,32 @@
 									<span class="icon pe-7s-config"></span>
 									<div class="settings-wrapper ">
 										<div class="setting-content">
-											<!-- < ?php
-
-											// echo ' <div class="setting-option">
-											// 	<ul>
-											// 		<li><a href="index.php?act=tkcanhan"><span> <i
-											// 						class="fa-solid fa-circle-user"></i> Tài
-											// 					khoản </span></a></li>
-											// 		<li><a href=".././Admin"></i><span> 
-											
-											// 					Trang Admin</span></a></li>
-											// 		<li><a href="dangnhap.php"></i><span> <i
-											// 						class="fa-solid fa-arrow-right-from-bracket"></i>
-											// 					Đăng xuất</span></a></li>
-											// 	</ul>
-											// </div> ';
-											? > -->
-
-
-
-											<div class="setting-option">
-												<ul>
-													<li><a href="index.php?act=dangky"><span> Đăng ký</span></a>
-													</li>
-													<li><a href="index.php?act=dangnhap"></i><span> Đăng nhập</span></a></li>
-												</ul>
-											</div>
-
+											<?php ob_start();
+											if (isset($_SESSION["user"])) {
+												extract($_SESSION['user']);
+												echo '
+												<div class="setting-option">
+													<ul>
+													    <p> Xin chào ' . $nguoidung . '</p>
+														<form action="" method="post">
+														<input type="submit" name="dangxuat" value="Đăng xuất">
+														</input>
+														</form>
+													</ul>
+											 	</div> ';
+											} else {
+												echo '
+													<div class="setting-option">
+													<ul>
+														<li><a href="index.php?act=dangky"><span> Đăng ký</span></a>
+														</li>
+														<li><a href="index.php?act=dangnhap"></i><span> Đăng nhập</span></a>
+														</li>
+													</ul>
+												</div>';
+												ob_end_flush();
+											}
+											?>
 										</div>
 									</div>
 								</div>
@@ -122,7 +120,7 @@
 									<a href="#">Danh mục</a>
 									<span class="arow"></span>
 									<ul class="sub-menu">
-										
+
 
 										<li><a href="#">Danh mục 2</a></li>
 										<li><a href="#">Danh mục 3</a></li>

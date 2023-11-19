@@ -34,17 +34,12 @@
                                         <td class="product-remove"><a href="#"><i class="fa-regular fa-trash-can"></i></a></td>
                                     </tr>';
                             }
-                            echo '
-                            <tr>
-                            <td class="product-thumbnail">Tổng đơn hàng</td>
-                            <td>'.$tong.'</td>
-                            <td></td>
-                        </tr>
-
-                            
-                            
-                            
-                            ';
+                            // echo '
+                            // <tr>
+                            //     <td class="product-thumbnail">Tổng đơn hàng</td>
+                            //     <td>' . $tong . '</td>
+                            //     <td></td>
+                            // </tr> ';
                             ?>
                             <!-- <tr>
                                 <td class="product-thumbnail"><img src="images/products/1.png" alt=""></td>
@@ -66,7 +61,7 @@
                             </tr> -->
                         </tbody>
                     </table>
-                    <div class="box-coupon">
+                    <!-- <div class="box-coupon">
                         <div class="coupon">
                             <h3 class="coupon-box-title">Phiếu giảm giá</h3>
                             <div class="inner-box">
@@ -75,7 +70,7 @@
                                 <input type="submit" class="button" name="ap_dung_ma_giam_gia" value="Áp dụng">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <div class="box-cart-total">
@@ -90,7 +85,7 @@
                                 <td>
                                     <label><input name="shipping" type="checkbox"> Miễn phí vận chuyển</label>
                                     <label>
-                                        <input name="shipping" type="checkbox">Giao hàng tận nơi
+                                        <input name="shipping" type="checkbox"> Giao hàng tận nơi
                                     </label>
                                 </td>
                             </tr>

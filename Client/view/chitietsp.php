@@ -90,7 +90,7 @@ if (is_array($sanpham)) {
 
 <!-- tab -->
 <div class="container">
-    <hr>
+    
     <div class="tab-details-product style2">
 
         <br>
@@ -98,7 +98,7 @@ if (is_array($sanpham)) {
             <div class="binhluan">
                 <span style="font-size: 35px">Bình luận</span>
 
-                <table>
+                <table class="product-cart">
 
                     <tr>
                         <th>Tài khoản</th>

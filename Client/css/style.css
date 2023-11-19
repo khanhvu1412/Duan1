@@ -9902,16 +9902,16 @@ Last change: 01/15/2016
       }
   }
 
-  table{
+ .product-cart {
     margin-top: 15px;
     border: 1px solid  gray;
     
   }
-   table th  {
+ .product-cart  th  {
     padding: 10px  0  10px 0 ;
     text-align: center;
   }
-  table td  {
+ .product-cart  td  {
     text-align: center;
   }
   .binhluan_content{
