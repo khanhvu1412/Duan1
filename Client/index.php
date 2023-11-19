@@ -34,6 +34,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $iddm = 0;
             }
             $dssp = loadall_sanpham("", $iddm);
+            $sanphamShop = loadall_shop($kyw, $iddm);
             //$listsphome = loadall_sanpham_home();
             $listsanpham = loadall_sanpham($kyw, $iddm);
             $listdanhmuc = load_danhmuc();
@@ -50,7 +51,10 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 // $binhluan = loadone_binhluan($_GET['idsp']);
                 // }else{
                 //     include("view/chitietsp.php");
+                
+
             }
+            $sanphamcl = load_sanpham_cungloai($_GET['id'], $sanpham['iddm']);
             include("view/chitietsp.php");
             break;
 
@@ -173,5 +177,5 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 }
 
 include("footer.php");
-ob_end_flush(); 
+ob_end_flush();
 ?>

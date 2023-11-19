@@ -6,9 +6,9 @@ if (is_array($sanpham)) {
 
 $hinhpath = ".././upload_file/" . $img;
 if (is_file($hinhpath)) {
-    $img = "<img src='" . $hinhpath . "' height='500px' width='500px'>";
+    $img = "<img src='" . $hinhpath . "' height='500px' width='auto'>";
 } else {
-    $img = "no photo";
+    $img = "Chưa có ảnh";
 }
 
 ?>

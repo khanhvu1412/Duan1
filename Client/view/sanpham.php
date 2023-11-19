@@ -13,7 +13,7 @@
 				<ul class="product-list-grid desktop-columns-4 tablet-columns-3 mobile-columns-1 row flex-flow">
 					<?php 
 
-					foreach ($listsanpham as $sanpham) {
+					foreach ($sanphamShop as $sanpham) {
 						extract($sanpham);
 						
 						$linksp = "index.php?act=chitietsp&id=" . $id;

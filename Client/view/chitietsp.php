@@ -47,12 +47,7 @@ if (is_array($sanpham)) {
                         </div>
                         <div class="short-descript">
                             <?= $mota ?>
-                            <!-- Một chiếc áo phông có ba màu (đỏ, trắng và xanh) và ba kích cỡ (nhỏ, vừa,
-                            lớn) là một sản phẩm có thể cấu hình. Một sản phẩm có thể cấu hình được tạo thành từ những
-                            thứ đơn giản khác
-                            các sản phẩm. bạn có thể tạo một sản phẩm có thể cấu hình để liên kết tất cả chúng lại với
-                            nhau và cung cấp
-                            sự lựa chọn của người dùng cuối, thường là từ menu thả xuống. -->
+
                         </div>
                         <!-- <div class="select-color">
                             <label>MÀU</label>
@@ -79,7 +74,7 @@ if (is_array($sanpham)) {
                                 <input style="border: 1px solid #000" type="number" name="" id="">
                             </div>
                             <a class="button button-add-cart" data-quantity="1" href="#">Mua</a>
-                            <a class="wishlist button" href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                            <a class="wishlist button" href="#"><i class="fa-solid fa-cart-plus" style="padding-top: 10px ;"></i></a>
                         </form>
                     </div>
                 </div>
@@ -90,7 +85,7 @@ if (is_array($sanpham)) {
 
 <!-- tab -->
 <div class="container">
-    
+
     <div class="tab-details-product style2">
 
         <br>
@@ -105,7 +100,7 @@ if (is_array($sanpham)) {
                         <th>Nội dung</th>
                         <th>Ngày bình luận</th>
                     </tr>
-                    
+
                     <tr>
                         <td>HEHE</td>
                         <td>HEHE</td>
@@ -150,7 +145,6 @@ if (is_array($sanpham)) {
                     <div class="product-inner">
                         <div class="product-thumb">
                             <a href="#"><img src="#" alt=""></a>
-
                         </div>
                         <div class="product-info">
                             <h3 class="product-name"><a href="#"><?php //$tensp ?></a></h3>

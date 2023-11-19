@@ -35,10 +35,10 @@
 						<h3 class="widget-title">THEO DÕI CHÚNG TÔI</h3>
 						<div class="content">
 							<div class="social">
-								<a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-								<a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
-								<a href="#" class="icon"><i class="fa-brands fa-pinterest"></i></a>
-								<a href="#" class="icon"><i class="fa-brands fa-square-instagram"></i></a>
+								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="#"><i class="fa-brands fa-twitter"></i></a>
+								<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+								<a href="#"><i class="fa-brands fa-square-instagram"></i></a>
 
 							</div>
 						</div>
@@ -67,7 +67,8 @@
 
 
 
-<a href="#" class="scroll_top" title="Scroll to Top" style="display: block;"><i class="fa fa-arrow-up"></i></a>
+<a href="#" class="scroll_top" title="Scroll to Top" style="display: block;">
+	<i class="fa fa-arrow-up" style="padding-top: 14px;"></i></a>
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>

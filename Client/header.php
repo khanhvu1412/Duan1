@@ -84,10 +84,13 @@ if (isset($_POST["dangxuat"])) {
 											<?php ob_start();
 											if (isset($_SESSION["user"])) {
 												extract($_SESSION['user']);
+												
 												echo '
 												<div class="setting-option">
 													<ul>
 													    <p> Xin chào ' . $nguoidung . '</p>
+														<li><a href=""><span></span></a>
+														</li>
 														<form action="" method="post">
 														<input type="submit" name="dangxuat" value="Đăng xuất">
 														</input>
