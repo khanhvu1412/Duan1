@@ -35,9 +35,11 @@
 						<h3 class="widget-title">THEO DÕI CHÚNG TÔI</h3>
 						<div class="content">
 							<div class="social">
-								<a href="#"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
-								<a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
-								<a href="#"><i class="fa-brands fa-square-instagram fa-lg"></i></a>
+								<a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+								<a href="#" class="icon"><i class="fa-brands fa-pinterest"></i></a>
+								<a href="#" class="icon"><i class="fa-brands fa-square-instagram"></i></a>
+
 							</div>
 						</div>
 					</div>
@@ -84,4 +86,3 @@
 </body>
 
 <!-- Mirrored from html.kutethemes.com/boutique/html/index9.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Nov 2023 14:03:22 GMT -->
-
