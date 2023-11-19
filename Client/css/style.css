@@ -4333,10 +4333,10 @@ Last change: 01/15/2016
       color: #888;
       padding-top: 50px;
   }
-  /*.footer .flex-flow{
+  .footer .flex-flow{
       flex-flow: row wrap;
       display: flex;
-  }*/
+  }
   .footer .widget{
       margin-top: 30px;
       text-align: center;
