@@ -89,8 +89,7 @@ if (isset($_POST["dangxuat"])) {
 												<div class="setting-option">
 													<ul>
 													    <p> Xin chào ' . $nguoidung . '</p>
-														<li><a href=""><span></span></a>
-														</li>
+														
 														<form action="" method="post">
 														<input type="submit" name="dangxuat" value="Đăng xuất">
 														</input>
