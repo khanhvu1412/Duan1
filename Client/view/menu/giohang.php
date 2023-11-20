@@ -20,14 +20,15 @@
 
                             foreach ($_SESSION['mycart'] as $cart) {
                                 $hinh = '../upload_file/' . $cart[2] . '';
+                                $linksp = 'index.php?act=chitietsp';
                                 $xoa = 'index.php?act=deletecart&id=' . $id . '';
-                                //$tong += $thanhtien;
+                                
                                 echo '<tr>
                                         <td class="product-thumbnail"><img src="' . $hinh . '" alt=""></td>
 
                                         <td class="product-name"><a href="#">' . $cart[1] . '</a></td>
                                         <td class="product-price"><a href="#">' . $cart[3] . ' VNĐ</a></td>
-                                        <td class="product-remove"><a href=' . $xoa . '><i class="fa-regular fa-trash-can"></i></a></td> 
+                                        <td class="product-remove"><a href=' . $xoa . ' onclick="return confirmDeletegh()"><i class="fa-regular fa-trash-can"></i></a></td> 
                                     </tr>';
 
                                 $id += 1;
@@ -49,7 +50,7 @@
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <div class="box-cart-total">
-                        <h2 class="title">Tổng</h2>
+                        <h2 class="title">Tổng đơn hàng</h2>
                         <table>
 
                             <tr>
@@ -59,7 +60,8 @@
                                     $tong += $cart[4];
                                     $count = count($_SESSION['mycart']);
                                 }
-                                echo '<p>x' . $count . ' Số lượng</p>  <b>' . $tong . '.000 VNĐ</b>';
+                                echo '<p>Số lượng x' . $count . ' </p> 
+                                <p> Tổng: ' . $tong . '.000 VNĐ</p>';
                                 ?>
 
                             </tr>
@@ -79,17 +81,27 @@
                                 }
                                 echo '
                                 <td>Tổng: </td>
-                                <td><span class="price">' . $tong . '.000 VNĐ</span></td>';
+                                <td><span class="price" style ="color: red">' . $tong . '.000 VNĐ</span></td>';
 
                                 ?>
 
                             </tr>
                         </table>
-                        <button class="button medium">Thanh toán</button>
+                        <a href="index.php?act=thanhtoan"><button class="button medium">Thanh toán</button></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+function confirmDeletegh() {
+    if (confirm("Bạn có muốn xóa sản phẩm này không?")) {
+        document.location = "index.php?act=listsp";
+    } else {
+        return false;
+    }
+}
+</script>
+
     <?php include '3hopcn.php'; ?>
 </div>

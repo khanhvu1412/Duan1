@@ -17,6 +17,10 @@ include("header.php");
 // if (!isset($_SESSION['mycart']))
 //     $_SESSION['mycart'] = [];
 
+if (!isset($_SESSION['mycart'])) {
+    $_SESSION['mycart'] = [];
+}
+
 if (isset($_GET['act']) && $_GET['act'] != "") {
     $act = $_GET['act'];
     switch ($act) {
@@ -37,7 +41,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             $sanphamShop = loadall_shop($kyw, $iddm);
             //$listsphome = loadall_sanpham_home();
             $listsanpham = loadall_sanpham($kyw, $iddm);
-            $listdanhmuc = load_danhmuc();
+            $listdanhmuc = loadall_danhmuc();
             include("view/sanpham.php");
             break;
 
@@ -51,20 +55,37 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 
 
             }
-            // $sanphamcl = load_sanpham_cungloai($_GET['id'], $sanpham['iddm']);
+            $sanphamcl = load_sanpham_cungloai($_GET['id'], $sanpham['iddm']);
             include("view/chitietsp.php");
             break;
 
-            // case "timkiemdm":
-            //     if(isset($_GET['iddm']) && ($_GET['iddm']) > 0){
-            //         $iddm = $_GET['iddm'];
-            //         $danhmuc = loadone_danhmuc($_GET['iddm']);
-            //     } else {
-            //         $iddm = 0;
-            //     }
-            //     $listsanpham = loadall_sanpham("",$iddm);
-            //     include "view/timkiemdm.php";
-            //     break;
+        // case "timkiem":
+        //     if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
+        //         $kyw = $_POST['kyw'];
+        //     } else {
+        //         $kyw = "";
+        //     }
+        //     if (isset($_GET['iddm']) && ($_GET['iddm']) > 0) {
+        //         $iddm = $_GET['iddm'];
+        //     } else {
+        //         $iddm = 0;
+        //     }
+        //     $dssp = loadall_sanpham("", $iddm);
+        //     $listsanpham = loadall_sanpham($kyw, $iddm);
+        //     $listdanhmuc = loadall_danhmuc();
+        //     include "view/timkiem.php";
+        //     break;
+
+        case "timkiemdm":
+            if (isset($_GET['iddm']) && ($_GET['iddm']) > 0) {
+                $iddm = $_GET['iddm'];
+                $danhmuc = loadone_danhmuc($_GET['iddm']);
+            } else {
+                $iddm = 0;
+            }
+            $listsanpham = loadall_sanpham("", $iddm);
+            include "view/timkiemdm.php";
+            break;
 
         // case 'tkcanhan':
         //     include('view/tkcanhan.php');
@@ -144,6 +165,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $sanphamadd = [$id, $tensp, $img, $giasp, $thanhtien];
                 array_push($_SESSION['mycart'], $sanphamadd);
             }
+
             include('view/menu/giohang.php');
             break;
 
@@ -153,7 +175,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             } else {
                 $_SESSION['mycart'] = [];
             }
-            header("Location: index.php?act=giohang");
+            header("Location: index.php?act=addgiohang");
             break;
 
 

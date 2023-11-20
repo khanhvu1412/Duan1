@@ -51,7 +51,7 @@
 								<input type ="hidden" name="giasp" class="price" value ="'.$giasp.'">
 								<span class ="price"><ins>' . $giasp . ' VNĐ</ins></span> 
 
-								<input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+								<input type="submit" name="addtocart" onclick="return confirmAddgh()" value="Thêm vào giỏ hàng">
 								
 								</form>
 								</div>
@@ -64,17 +64,15 @@
 		</div>
 	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
+<script>
+function confirmAddgh() {
+    if (confirm("Bạn thêm sản phẩm này vào giỏ hàng?")) {
+        document.location = "index.php?act=addgiohang";
+    } else {
+        return false;
+    }
+}
+</script>
 </div>
 
-<?php include "view//menu/3hopcn.php"; ?>
+<?php include "view/menu/3hopcn.php"; ?>

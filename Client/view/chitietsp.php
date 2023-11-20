@@ -39,7 +39,6 @@ if (is_array($sanpham)) {
                             <ins>
                                 <?= $giasp ?> VNĐ
                             </ins>
-                            <!-- <del>125.00 ₫</del> -->
                         </span>
                         <!-- <div class="meta">
                             <span>Only 15 left 3</span>
@@ -61,7 +60,7 @@ if (is_array($sanpham)) {
                         <div class="select-size">
                             <label>SIZE </label>
                             <div class="inner">
-                                <a class="active" href="#"><span>S</span></a>
+                                <a href="#"><span>S</span></a>
                                 <a href="#"><span>M</span></a>
                                 <a href="#"><span>L</span></a>
                                 <a href="#"><span>XL</span></a>
@@ -74,7 +73,7 @@ if (is_array($sanpham)) {
                                 <input style="border: 1px solid #000" type="number" name="" id="">
                             </div>
                             <a class="button button-add-cart" data-quantity="1" href="#">Mua</a>
-                            <a class="wishlist button" href="#"><i class="fa-solid fa-cart-plus" style="padding-top: 10px ;"></i></a>
+                            <a class="wishlist button" href="#" style="margin-left: 5px;"><i class="fa-solid fa-cart-plus" style="padding-top: 10px ;"></i></a>
                         </form>
                     </div>
                 </div>
@@ -140,24 +139,24 @@ if (is_array($sanpham)) {
         <ul class="owl-carousel" data-responsive='{"0":{"items":1},"600":{"items":3},"1000":{"items":4}}'
             data-autoplay="true" data-loop="true" data-items="4" data-dots="false" data-nav="false" data-margin="30">
             <?php
-            //foreach ($sanphamcl as $spcl): ?>
-            <!-- <li class="product-item">
-                    <div class="product-inner">
-                        <div class="product-thumb">
-                            <a href="#"><img src="#" alt=""></a>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name"><a href="#"><?php //$tensp ?></a></h3>
-                            <span class="price">
-                                <ins style="color:red"> <?php //$giasp ?> VNĐ</ins>
-                            </span>
-                            <a href="index.php?act=giohang" class="button">Thêm vào giỏ hàng</a>
-                        </div>
-                    </div>
-                </li> -->
-
-            <?php //endforeach; ?>
+            foreach ($sanphamcl as $spcl): ?>
             <li class="product-item">
+                     <div class="product-inner">
+                         <div class="product-thumb">
+                             <a href="#"><img src="../upload_file/<?= $img ?>" alt=""></a>
+                         </div>
+                         <div class="product-info">
+                             <h3 class="product-name"><a href="#"><?php $tensp ?></a></h3>
+                             <span class="price">
+                                 <ins style="color:red"> <?php $giasp ?> VNĐ</ins>
+                             </span>
+                             <a href="index.php?act=giohang" class="button">Thêm vào giỏ hàng</a>
+                         </div>
+                     </div>
+                 </li>
+
+            <?php endforeach; ?>
+            <!-- <li class="product-item">
                 <div class="product-inner">
                     <div class="product-thumb">
                         <a href="#"><img src="images/products/5.jpg" alt=""></a>
@@ -173,54 +172,8 @@ if (is_array($sanpham)) {
                     </div>
                 </div>
             </li>
-            <li class="product-item">
-                <div class="product-inner">
-                    <div class="product-thumb">
-                        <a href="#"><img src="images/products/6.jpg" alt=""></a>
-
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
-                        <span class="price">
-                            <ins style="color:red"> 85.00 ₫</ins>
-                            <del>95.00 ₫</del>
-                        </span>
-                        <a href="#" class="button">ADD TO CART</a>
-                    </div>
-                </div>
-            </li>
-            <li class="product-item">
-                <div class="product-inner">
-                    <div class="product-thumb">
-                        <a href="#"><img src="images/products/7.jpg" alt=""></a>
-
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
-                        <span class="price">
-                            <ins style="color:red"> 85.00 ₫</ins>
-                            <del>95.00 ₫</del>
-                        </span>
-                        <a href="#" class="button">ADD TO CART</a>
-                    </div>
-                </div>
-            </li>
-            <li class="product-item">
-                <div class="product-inner">
-                    <div class="product-thumb">
-                        <a href="#"><img src="images/products/8.jpg" alt=""></a>
-
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
-                        <span class="price">
-                            <ins style="color:red"> 85.00 ₫</ins>
-                            <del>95.00 ₫</del>
-                        </span>
-                        <a href="#" class="button">ADD TO CART</a>
-                    </div>
-                </div>
-            </li>
+            
+            </li> -->
         </ul>
     </div>
 </div>

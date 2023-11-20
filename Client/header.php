@@ -70,7 +70,7 @@ if (isset($_POST["dangxuat"])) {
 
 									<div class="inner">
 										<input type="text" class="search" placeholder="Tìm kiếm..." name="kyw" required>
-										<button class="button-search"><span class="pe-7s-search"></span></button>
+										<button class="button-search" name="timkiem"><span class="pe-7s-search"></span></button>
 									</div>
 								</form>
 								<div class="mini-cart">
@@ -78,7 +78,7 @@ if (isset($_POST["dangxuat"])) {
 
 								</div>
 								<div class="box-settings">
-									<span class="icon pe-7s-config"></span>
+									<span class="icon pe-7s-config" style="margin-bottom: 9px;"></span>
 									<div class="settings-wrapper ">
 										<div class="setting-content">
 											<?php ob_start();
