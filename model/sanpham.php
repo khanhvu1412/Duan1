@@ -23,7 +23,7 @@ function loadall_shop($kyw = " ", $iddm = 0)
 }
 
 function load_sanpham_cungloai($id, $iddm){
-    $sql = "select * from sanpham where iddm <>  $iddm and  id <> $id"; 
+    $sql = "select * from sanpham where iddm <> $iddm and  id <> $id"; 
     $sanphamcl= pdo_query($sql);
     return $sanphamcl;
 }

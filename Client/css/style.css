@@ -9903,10 +9903,16 @@ Last change: 01/15/2016
           text-align: center;
       }
   }
-
+  .luot{
+    margin-top: 20px;
+    border: 1px solid gray ;
+    overflow-y: scroll;
+    height: 220px;
+  }
  .product-cart {
-    margin-top: 15px;
-    border: 1px solid  gray;
+    max-width: auto;
+    margin-bottom: 10px;
+   
     
   }
  .product-cart  th  {

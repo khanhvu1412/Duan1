@@ -48,14 +48,16 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
         case "chitietsp":
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
-                //$sanphamcl = load_sanpham_cungloai($_GET['id'], $sanpham['iddm']);
-                // $binhluan = loadone_binhluan($_GET['idsp']);
-                // }else{
-                //     include("view/chitietsp.php");
+                $sanphamcl = load_sanpham_cungloai($_GET['id'], $sanpham['iddm']);
+                //$binhluan = loadone_binhluan($_GET['id']);
+                //echo "<pre>";
+                //print_r($binhluan);
+            // } else {
+            //     include("view/chitietsp.php");
 
 
-            }
-            $sanphamcl = load_sanpham_cungloai($_GET['id'], $sanpham['iddm']);
+             }
+            // $sanphamcl = load_sanpham_cungloai($_GET['id'], $sanpham['iddm']);
             include("view/chitietsp.php");
             break;
 

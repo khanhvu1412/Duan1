@@ -73,7 +73,9 @@ if (is_array($sanpham)) {
                                 <input style="border: 1px solid #000" type="number" name="" id="">
                             </div>
                             <a class="button button-add-cart" data-quantity="1" href="#">Mua</a>
-                            <a class="wishlist button" href="#" style="margin-left: 5px;"><i class="fa-solid fa-cart-plus" style="padding-top: 10px ;"></i></a>
+
+                            <a class="wishlist button" href="#"  style="margin-left: 5px;"><i
+                                    class="fa-solid fa-cart-plus" style="padding-top: 10px ;"></i></a>
                         </form>
                     </div>
                 </div>
@@ -84,38 +86,45 @@ if (is_array($sanpham)) {
 
 <!-- tab -->
 <div class="container">
-
     <div class="tab-details-product style2">
-
         <br>
         <div class="tab-container">
             <div class="binhluan">
                 <span style="font-size: 35px">Bình luận</span>
+                <div class="luot">
+                    <table class="product-cart">
 
-                <table class="product-cart">
+                        <tr>
+                            <th>Tài khoản</th>
+                            <th>Nội dung</th>
+                            <th>Ngày bình luận</th>
+                        </tr>
+                        <?php //foreach ($listbinhluan as $binhluan): ?>
+                        <?php //extract($binhl)?>
 
-                    <tr>
-                        <th>Tài khoản</th>
-                        <th>Nội dung</th>
-                        <th>Ngày bình luận</th>
-                    </tr>
+                            <tr>
+                                <td><?php //echo $binhluan['nguoidung'] ?></td>
+                                <td><?php //echo $binhluan['noidung'] ?></td>
+                                <td><?php //echo date("d/m/Y", strtotime($value['ngaybinhluan'])) ?></td>
+                            </tr>
 
-                    <tr>
-                        <td>HEHE</td>
-                        <td>HEHE</td>
-                        <td>HEHE</td>
-                    </tr>
-                    <tr>
-                        <td>HEHE</td>
-                        <td>HEHE</td>
-                        <td>HEHE</td>
-                    </tr>
-                    <tr>
-                        <td>HEHE</td>
-                        <td>HEHE</td>
-                        <td>HEHE</td>
-                    </tr>
-                </table>
+
+                        <?php //endforeach; ?>
+
+
+                        <tr>
+                            <td>HEHE</td>
+                            <td>HEHE</td>
+                            <td>HEHE</td>
+                        </tr>
+                        <tr>
+                            <td>HEHE</td>
+                            <td>HEHE</td>
+                            <td>HEHE</td>
+                        </tr>
+
+                    </table>
+                </div>
                 <br>
 
 
@@ -124,7 +133,7 @@ if (is_array($sanpham)) {
                 <div class="binhluan_content">
                     <div class="ndbinhluan"><input type="text" name="binhluan" height="20px" width="400px"
                             id="binhluan"></div>
-                    <div class="nut"><a href="index.php?act=chitietsp"><input type="submit" value="Gửi"></a></div>
+                    <div class="nut"><a href="#"><input type="submit" value="Gửi"></a></div>
                 </div>
             </div>
         </div>
@@ -140,20 +149,24 @@ if (is_array($sanpham)) {
             data-autoplay="true" data-loop="true" data-items="4" data-dots="false" data-nav="false" data-margin="30">
             <?php
             foreach ($sanphamcl as $spcl): ?>
-            <li class="product-item">
-                     <div class="product-inner">
-                         <div class="product-thumb">
-                             <a href="#"><img src="../upload_file/<?= $img ?>" alt=""></a>
-                         </div>
-                         <div class="product-info">
-                             <h3 class="product-name"><a href="#"><?php $tensp ?></a></h3>
-                             <span class="price">
-                                 <ins style="color:red"> <?php $giasp ?> VNĐ</ins>
-                             </span>
-                             <a href="index.php?act=giohang" class="button">Thêm vào giỏ hàng</a>
-                         </div>
-                     </div>
-                 </li>
+                <li class="product-item">
+                    <div class="product-inner">
+                        <div class="product-thumb">
+                            <a href="#"><img src="../upload_file/<?= $img ?>" alt=""></a>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">
+                                    <?php $tensp ?>
+                                </a></h3>
+                            <span class="price">
+                                <ins style="color:red">
+                                    <?php $giasp ?> VNĐ
+                                </ins>
+                            </span>
+                            <a href="#"  class="button">Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </li>
 
             <?php endforeach; ?>
             <!-- <li class="product-item">
@@ -180,5 +193,6 @@ if (is_array($sanpham)) {
 
 <!--END CONTAINER-->
 <!-- ./tab -->
+
 <?php include "menu/3hopcn.php" ?>
 </div>
