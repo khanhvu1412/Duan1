@@ -41,10 +41,10 @@ if (is_array($sanpham)) {
                             </ins>
                             <!-- <del>125.00 ₫</del> -->
                         </span>
-                        <div class="meta">
+                        <!-- <div class="meta">
                             <span>Only 15 left 3</span>
                             <span>Availalbe: <span class="text-primary">In Stock</span></span>
-                        </div>
+                        </div> -->
                         <div class="short-descript">
                             <?= $mota ?>
 
