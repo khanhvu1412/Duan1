@@ -21,7 +21,7 @@
 						echo '<li class="product-item col-xs-12 col-sm-4 col-md-3">
 								<div class="product-inner">
 								<div class="product-thumb has-back-image">
-								<form action="index.php?act=giohang" method="post">
+								<form action="index.php?act=addgiohang" method="post">
 								<input type="hidden" name="id" value="' . $id . '">
 								<input type="hidden" name="img" value="' . $img . '">
 

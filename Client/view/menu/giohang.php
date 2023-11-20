@@ -19,25 +19,20 @@
                             $id = 0;
 
                             foreach ($_SESSION['mycart'] as $cart) {
-                                $hinh = '../upload_file/'.$cart[2].'';
-                                $xoa = 'index.php?act=deletecart&id='.$id.'';
+                                $hinh = '../upload_file/' . $cart[2] . '';
+                                $xoa = 'index.php?act=deletecart&id=' . $id . '';
                                 //$tong += $thanhtien;
                                 echo '<tr>
                                         <td class="product-thumbnail"><img src="' . $hinh . '" alt=""></td>
 
                                         <td class="product-name"><a href="#">' . $cart[1] . '</a></td>
                                         <td class="product-price"><a href="#">' . $cart[3] . ' VNĐ</a></td>
-                                        <td class="product-remove"><a href='.$xoa.'><i class="fa-regular fa-trash-can"></i></a></td> 
+                                        <td class="product-remove"><a href=' . $xoa . '><i class="fa-regular fa-trash-can"></i></a></td> 
                                     </tr>';
 
-                            $id += 1;    
+                                $id += 1;
                             }
-                            // echo '
-                            // <tr>
-                            //     <td class="product-thumbnail">Tổng đơn hàng</td>
-                            //     <td>' . $tong . '</td>
-                            //     <td></td>
-                            // </tr> ';
+                            ;
                             ?>
                         </tbody>
                     </table>
@@ -56,22 +51,38 @@
                     <div class="box-cart-total">
                         <h2 class="title">Tổng</h2>
                         <table>
+
                             <tr>
-                                <td>Tổng phụ</td>
-                                <td><span class="price">170.000 VNĐ</span></td>
+                                <?php
+                                $tong = 0;
+                                foreach ($_SESSION['mycart'] as $cart) {
+                                    $tong += $cart[4];
+                                    $count = count($_SESSION['mycart']);
+                                }
+                                echo '<p>x' . $count . ' Số lượng</p>  <b>' . $tong . '.000 VNĐ</b>';
+                                ?>
+
                             </tr>
+
                             <tr>
                                 <td>Giao hàng</td>
                                 <td>
-                                    <label><input name="shipping" type="checkbox"> Miễn phí vận chuyển</label>
-                                    <label>
-                                        <input name="shipping" type="checkbox"> Giao hàng tận nơi
-                                    </label>
+                                    <label><input name="shipping" type="radio"> Miễn phí vận chuyển</label>
+                                   
                                 </td>
                             </tr>
                             <tr class="order-total">
+                                <?php
+                                $tong = 0;
+                                foreach ($_SESSION['mycart'] as $cart) {
+                                    $tong += $cart[4];
+                                }
+                                echo '
                                 <td>Tổng: </td>
-                                <td><span class="price">320.000 VNĐ</span></td>
+                                <td><span class="price">' . $tong . '.000 VNĐ</span></td>';
+
+                                ?>
+
                             </tr>
                         </table>
                         <button class="button medium">Thanh toán</button>

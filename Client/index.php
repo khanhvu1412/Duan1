@@ -133,7 +133,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             include('view/menu/blog.php');
             break;
 
-        case 'giohang':
+        case 'addgiohang':
             if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
                 $id = $_POST['id'];
                 $tensp = $_POST['tensp'];

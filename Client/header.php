@@ -74,7 +74,7 @@ if (isset($_POST["dangxuat"])) {
 									</div>
 								</form>
 								<div class="mini-cart">
-									<a class="cart-link" href="index.php?act=giohang"><span class="pe-7s-cart"></a>
+									<a class="cart-link" href="index.php?act=addgiohang"><span class="pe-7s-cart"></a>
 
 								</div>
 								<div class="box-settings">
