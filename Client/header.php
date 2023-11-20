@@ -84,7 +84,7 @@ if (isset($_POST["dangxuat"])) {
 											<?php ob_start();
 											if (isset($_SESSION["user"])) {
 												extract($_SESSION['user']);
-												
+
 												echo '
 												<div class="setting-option">
 													<ul>
@@ -122,6 +122,14 @@ if (isset($_POST["dangxuat"])) {
 									<a href="#">Danh mục</a>
 									<span class="arow"></span>
 									<ul class="sub-menu">
+										<?php 
+										// foreach ($listdanhmuc as $danhmuc) {
+										// 	extract($danhmuc);
+										// 	echo '<a href="index.php?act=timkiemdm&iddm=' . $id . '" class="content-right-tab">
+                						// 	<p><i class="fa-solid fa-caret-right"></i><span>' . $tendm . '</span></p>
+            							// 	</a>';
+										// } 
+										?>
 
 
 										<li><a href="#">Danh mục 2</a></li>

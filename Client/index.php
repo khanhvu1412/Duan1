@@ -42,21 +42,29 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             break;
 
         case "chitietsp":
-
-
-
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
                 //$sanphamcl = load_sanpham_cungloai($_GET['id'], $sanpham['iddm']);
                 // $binhluan = loadone_binhluan($_GET['idsp']);
                 // }else{
                 //     include("view/chitietsp.php");
-                
+
 
             }
-            $sanphamcl = load_sanpham_cungloai($_GET['id'], $sanpham['iddm']);
+            // $sanphamcl = load_sanpham_cungloai($_GET['id'], $sanpham['iddm']);
             include("view/chitietsp.php");
             break;
+
+            // case "timkiemdm":
+            //     if(isset($_GET['iddm']) && ($_GET['iddm']) > 0){
+            //         $iddm = $_GET['iddm'];
+            //         $danhmuc = loadone_danhmuc($_GET['iddm']);
+            //     } else {
+            //         $iddm = 0;
+            //     }
+            //     $listsanpham = loadall_sanpham("",$iddm);
+            //     include "view/timkiemdm.php";
+            //     break;
 
         // case 'tkcanhan':
         //     include('view/tkcanhan.php');
@@ -126,12 +134,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             break;
 
         case 'giohang':
-            include('view/menu/giohang.php');
-            break;
-
-
-
-        case 'addtocart':
             if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
                 $id = $_POST['id'];
                 $tensp = $_POST['tensp'];
@@ -139,11 +141,23 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $giasp = $_POST['giasp'];
                 $soluong = 1;
                 $thanhtien = $soluong * $giasp;
-                $sanphamadd = [$id, $tensp, $img, $giasp, $soluong, $thanhtien];
+                $sanphamadd = [$id, $tensp, $img, $giasp, $thanhtien];
                 array_push($_SESSION['mycart'], $sanphamadd);
             }
             include('view/menu/giohang.php');
             break;
+
+        case "deletecart":
+            if (isset($_GET['id'])) {
+                array_splice($_SESSION['mycart'], $_GET['id'], 1);
+            } else {
+                $_SESSION['mycart'] = [];
+            }
+            header("Location: index.php?act=giohang");
+            break;
+
+
+
 
 
 

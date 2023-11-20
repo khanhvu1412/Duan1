@@ -2710,12 +2710,13 @@ Last change: 01/15/2016
   .product-item .product-name a:hover{
       color: #c99947;
   }
-  .product-item .price{
+  .product-info .price{
       color: #222;
       display: block;
       margin-bottom: 15px;
   }
-  .product-item .price ins{
+  .product-info .price ins{
+      color: red;
       text-decoration: none;
   }
   .product-item .price del{
@@ -2866,7 +2867,7 @@ Last change: 01/15/2016
       font-family: 'Roboto';
   }
   
-  .product-item.list .available{
+  .product-iitemproduct-infotem.list .available{
       text-transform: uppercase;
       color: #999;
   }

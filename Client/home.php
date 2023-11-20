@@ -37,28 +37,37 @@
 						echo '<li class="product-item col-xs-12 col-sm-4 col-md-3">
 								<div class="product-inner">
 								<div class="product-thumb has-back-image">
-								<form action="index.php?act=addtocart method="post">
+								<form action="index.php?act=giohang" method="post">
 								<input type="hidden" name="id" value="'.$id.'">
-								
+								<input type="hidden" name="img" value="'.$img.'">
+
 								<a href="' . $linksp . '"><img src="../upload_file/' . $img . '" alt=""></a>
-								<a class="back-image" href=""><img src=""
-									alt=""></a>
 								</div>
-								<div class="product-info">
+
+								<div class="product-info" >
+								<input type ="hidden" name="tensp" class="product-name" value ="'.$tensp.'">
+								<h3 class="product-name"><a href="#">' . $tensp . '</a></h3>
 								
-								<h3 class="product-name"><a href="' . $linksp . '">' . $tensp . '</a></h3>
-								<span class="price">
-								<ins style="color:red;">' . $giasp . ' VNĐ</ins>
-									</span>
+								<input type ="hidden" name="giasp" class="price" value ="'.$giasp.'">
+								<span class ="price"><ins>' . $giasp . ' VNĐ</ins></span> 
+
 								<input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+								
 								</form>
 								</div>
-								
 							</div>
 							</li>';
 					}
 					?>
 				</ul>
+
+				<!-- <input type="hidden" name="tensp" class="product-name">'. $tensp .'
+								<br>
+								<input type="hidden" name="giasp">-->
+
+				<!-- <input type="hidden" name="tensp"><h3 class="product-name"><a href="' . $linksp . '">' . $tensp . '</a></h3>
+								<input type="hidden" name="giasp"><span class="price" name="giasp"><ins style="color:red;">' . $giasp . ' VNĐ</ins></span> -->
+
 
 
 				<!-- <ul class="product-list-grid desktop-columns-4 tablet-columns-3 mobile-columns-1 row flex-flow">

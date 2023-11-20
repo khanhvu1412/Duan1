@@ -11,28 +11,26 @@
                             <tr>
                                 <th colspan="2" class="product-name">Sản phẩm</th>
                                 <th class="product-price">Giá</th>
-                                <th class="product-quantity">Số lượng</th>
-                                <th class="product-subtotal">Tổng</th>
                                 <th class="product-remove">&nbsp;</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php
-                            $tong = 0;
+                            $id = 0;
 
                             foreach ($_SESSION['mycart'] as $cart) {
-                                $hinh = $img_path . $cart[2];
-                                $thanhtien = $cart[3] * $cart[4];
-                                $tong += $thanhtien;
+                                $hinh = '../upload_file/'.$cart[2].'';
+                                $xoa = 'index.php?act=deletecart&id='.$id.'';
+                                //$tong += $thanhtien;
                                 echo '<tr>
                                         <td class="product-thumbnail"><img src="' . $hinh . '" alt=""></td>
 
                                         <td class="product-name"><a href="#">' . $cart[1] . '</a></td>
-                                        <td>' . $cart[3] . '</td>
-                                        <td><input class="qty" type="text" value="">' . $cart[4] . '</td>
-                                        <td>' . $thanhtien . 'VNĐ</td>
-                                        <td class="product-remove"><a href="#"><i class="fa-regular fa-trash-can"></i></a></td>
+                                        <td class="product-price"><a href="#">' . $cart[3] . ' VNĐ</a></td>
+                                        <td class="product-remove"><a href='.$xoa.'><i class="fa-regular fa-trash-can"></i></a></td> 
                                     </tr>';
+
+                            $id += 1;    
                             }
                             // echo '
                             // <tr>
@@ -41,24 +39,6 @@
                             //     <td></td>
                             // </tr> ';
                             ?>
-                            <!-- <tr>
-                                <td class="product-thumbnail"><img src="images/products/1.png" alt=""></td>
-
-                                <td class="product-name"><a href="#">Oversize Fit Trousers Sneaker</a></td>
-                                <td>85.000 VNĐ</td>
-                                <td><input class="qty" type="text" value="+1"></td>
-                                <td>85.000 VNĐ</td>
-                                <td class="product-remove"><a href="#"><i class="fa-regular fa-trash-can"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td class="product-thumbnail"><img src="images/products/2.jpg" alt=""></td>
-                                <td class="product-name"><a href="#">Oversize Fit Trousers Sneaker</a></td>
-                                <td>85.000 VNĐ</td>
-                                <td><input class="qty" type="text" value="+1"></td>
-                                <td>85.000 VNĐ</td>
-                                <td class="product-remove"><a href="#"><i class="fa-regular fa-trash-can"></i></i></a>
-                                </td>
-                            </tr> -->
                         </tbody>
                     </table>
                     <!-- <div class="box-coupon">

@@ -22,11 +22,11 @@ function loadall_shop($kyw = " ", $iddm = 0)
     return $sanphamShop;
 }
 
-function load_sanpham_cungloai($id, $iddm){
-    $sql = "select * from sanpham where iddm =  $iddm and  id <> $id"; 
-    $sanphamcl= pdo_query($sql);
-    return $sanphamcl;
-}
+// function load_sanpham_cungloai($id, $iddm){
+//     $sql = "select * from sanpham where iddm =  $iddm and  id <> $id"; 
+//     $sanphamcl= pdo_query($sql);
+//     return $sanphamcl;
+// }
 
 function delete_sapham($id)
 {
@@ -49,7 +49,7 @@ function loadall_sanpham($kyw = " ", $iddm = 0)
     if ($iddm > 0) {
         $sql .= " and iddm ='" . $iddm . "'";
     }
-    $sql .= " order by id asc limit 0, 20";
+    $sql .= " order by id asc";
 
     $listsanpham = pdo_query($sql);
     return $listsanpham;
