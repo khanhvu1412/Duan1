@@ -62,6 +62,23 @@ if (is_file($hinhpath)) {
                         <label for="exampleInputDescribe" class="form-label">Mô tả</label>
                         <textarea class="form-control" rows="10" name="mota"><?= $mota ?></textarea>
                     </div>
+                    <div class="mb-3">
+                        <label for="exampleInputDescribe" class="form-label">Số lượng</label>
+                        <input class="form-control"  name="soluong" value="<?= $soluong ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputDescribe" class="form-label">Lượt xem</label>
+                        <input class="form-control"  name="luotxem" value="<?= $luotxem ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputDescribe" class="form-label">Trang thái</label>
+                        <input class="form-control"  name="trangthai" value="<?= $trangthai ?>">
+                    </div>
+
+
+
+
+
                     <input type="hidden" name="id" value="<?= $sanpham['id']; ?>">
                     <input type="submit"  class="btn btn-success" name="capnhat"  onclick="return confirmUpdatesp()" value="Cập nhật">
                     <input type="reset" class="btn btn-info" value="Nhập lại">

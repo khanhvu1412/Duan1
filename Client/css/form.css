@@ -37,6 +37,17 @@
   border-radius: 5px;
 }
 
+.login form .form-input  .matkhau{
+  display: flex;
+  width: 656px;
+  
+}
+.login form .form-input  .matkhau i{
+  padding-top: 16px;
+  display: block;
+  color: #c99947;
+}
+
 .login form .form-input-img input {
   margin: 17px 0px;
 }

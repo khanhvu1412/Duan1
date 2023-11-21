@@ -33,6 +33,13 @@ if (is_array($taikhoan)) {
                         <label for="exampleInputImg" class="form-label">Email</label>
                         <input type="text" class="form-control" name="email" value="<?= $email ?>">
                     </div>
+                    <div class="mb-3">
+                    <label for="exampleInputImg" class="form-label">Ảnh</label>
+                        <!-- <br>
+                        <?php //$img ?>
+                        <br>
+                        <input type="file" class="mt-2" name="img"> -->
+                    </div>
 
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Địa chỉ</label>

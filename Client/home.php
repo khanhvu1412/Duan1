@@ -49,7 +49,7 @@
 
 									<input type="hidden" name="giasp" value="' . $giasp . ' VNĐ";>
 									<span class="price">
-										<ins>' . $giasp . '.000 VNĐ</ins>
+										<ins>' . $giasp . ' VNĐ</ins>
 									</span>
 									<input type="submit" name="addtocart" onclick="return confirmAddgh()" value="Thêm vào giỏ hàng">
 								</div>
@@ -130,7 +130,7 @@
 
 									<input type="hidden" name="giasp" value="' . $giasp . ' VNĐ";>
 									<span class="price">
-										<ins>' . $giasp . '.000 VNĐ</ins>
+										<ins>' . $giasp . ' VNĐ</ins>
 									</span>
 									<input type="submit" name="addtocart" onclick="return confirmAddgh()" value="Thêm vào giỏ hàng">
 								</div>
@@ -204,7 +204,7 @@
 
 									<input type="hidden" name="giasp" value="' . $giasp . ' VNĐ";>
 									<span class="price">
-										<ins>' . $giasp . '.000 VNĐ</ins>
+										<ins>' . $giasp . ' VNĐ</ins>
 									</span>
 									<input type="submit" name="addtocart" onclick="return confirmAddgh()" value="Thêm vào giỏ hàng">
 								</div>
@@ -274,7 +274,7 @@
 								<h3 class="product-name"><a href="#">' . $tensp . '</a></h3>
 								
 								<input type ="hidden" name="giasp" class="price" value="' . $giasp . '">
-								<span class ="price"><ins>' . $giasp . '.000 VNĐ</ins></span> 
+								<span class ="price"><ins>' . $giasp . ' VNĐ</ins></span> 
 
 								<input type="submit" name="addtocart" onclick="return confirmAddgh()" value="Thêm vào giỏ hàng">
 								

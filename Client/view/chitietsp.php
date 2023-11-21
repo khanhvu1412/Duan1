@@ -40,10 +40,8 @@ if (is_array($sanpham)) {
                                 <?= $giasp ?> VNĐ
                             </ins>
                         </span>
-                        <!-- <div class="meta">
-                            <span>Only 15 left 3</span>
-                            <span>Availalbe: <span class="text-primary">In Stock</span></span>
-                        </div> -->
+                        <div class="meta"><span class="text-primary"><?= ($trangthai === 0 ? "<p style='color: green;'>Còn hàng</p>" : "<p style='color: red;'>Hết hàng</p>") ?></span></span>
+                        </div>
                         <div class="short-descript">
                             <?= $mota ?>
 
@@ -148,7 +146,7 @@ if (is_array($sanpham)) {
         <ul class="owl-carousel" data-responsive='{"0":{"items":1},"600":{"items":3},"1000":{"items":4}}'
             data-autoplay="true" data-loop="true" data-items="4" data-dots="false" data-nav="false" data-margin="30">
             <?php
-            foreach ($sanphamcl as $spcl): ?>
+            foreach ($sanphamkl as $spkl): ?>
                 <li class="product-item">
                     <div class="product-inner">
                         <div class="product-thumb">
@@ -156,11 +154,11 @@ if (is_array($sanpham)) {
                         </div>
                         <div class="product-info">
                             <h3 class="product-name"><a href="#">
-                                    <?php $tensp ?>
+                                    <?= $tensp ?>
                                 </a></h3>
                             <span class="price">
                                 <ins style="color:red">
-                                    <?php $giasp ?> VNĐ
+                                    <?= $giasp ?> VNĐ
                                 </ins>
                             </span>
                             <a href="#"  class="button">Thêm vào giỏ hàng</a>

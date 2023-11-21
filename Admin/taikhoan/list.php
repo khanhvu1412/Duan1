@@ -16,6 +16,7 @@
                             <th>Tên đăng nhập</th>
                             <th>Mật khẩu</th>
                             <th>Email</th>
+                            <th>Ảnh</th>
                             <th>Địa chỉ</th>
                             <th>Số điện thoại</th>
                             <th>Vai trò</th>
@@ -38,6 +39,7 @@
                             <td>' . $nguoidung . '</td>
                             <td>' . $matkhau . '</td>
                             <td>' . $email . '</td>
+                            <td></td>
                             <td>' . $diachi . '</td>
                             <td>' . $sdt . '</td>
                             <td>' . $id_role . '</td>

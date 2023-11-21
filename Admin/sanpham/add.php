@@ -42,8 +42,25 @@
                         <label for="exampleInputDescribe" class="form-label">Mô tả</label>
                         <textarea class="form-control" rows="10" name="mota"></textarea>
                     </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPrice" class="form-label">Số lượng</label>
+                        <input type="text" class="form-control" name="soluong">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPrice" class="form-label">Lượt xem</label>
+                        <input type="text" class="form-control" name="luotxem" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPrice" class="form-label">Trang thái</label>
+                        <br>
+                        <select name="trangthai" class="form-control" id="">
+                            <option value="0" selected>Còn hàng</option>
+                            <option value="1" selected>Hết hàng</option>
+                        </select>
+                    </div>
 
-                    <input type="submit" class="btn btn-primary" name="themmoi"  onclick="return confirmAddsp()" value="Thêm mới">
+                    <input type="submit" class="btn btn-primary" name="themmoi" onclick="return confirmAddsp()"
+                        value="Thêm mới">
                     <input type="reset" class="btn btn-primary" value="Nhập lại">
                     <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Danh sách"></a>
 

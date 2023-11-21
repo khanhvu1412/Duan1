@@ -18,6 +18,9 @@
                             <th>Giá sản phẩm</th>
                             <th>Ảnh</th>
                             <th>Mô tả</th>
+                            <th>Số lượng</th>
+                            <th>Lượt xem</th>
+                            <th>Trạng thái</th>
                             <th>Hành động</th>
 
                         </tr>
@@ -41,8 +44,11 @@
                                 <td>' . $giasp . '.000  VNĐ</td>
                                 <td>' . $hinh . '</td>
                                 <td>' . $mota . '</td>
+                                <td>' . $soluong . '</td>
+                                <td>' . $luotxem . '</td>
+                                <td>' . ($trangthai === 0 ? "<p style='color: green;'>Còn hàng</p>" : "<p style='color: red;'>Hết hàng</p>") . '</td>
                                 <td>  
-                                   <a href=" index.php?act=chitietsp&id= '.$id.'"><input type="button" class=" form-control btn btn-secondary" value="Chi tiết"></a> 
+                                   <a href=" index.php?act=chitietsp&id= ' . $id . '"><input type="button" class=" form-control btn btn-secondary" value="Chi tiết"></a> 
                                     <a href="' . $suasp . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
                                     <a href="' . $xoasp . '"  onclick="return confirmDeletesp()"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
                                 </td> 
@@ -68,11 +74,11 @@
 
 
 <script>
-function confirmDeletesp() {
-    if (confirm("Bạn có muốn xóa sản phẩm này không ?")) {
-        document.location = "index.php?act=listsp";
-    } else {
-        return false;
+    function confirmDeletesp() {
+        if (confirm("Bạn có muốn xóa sản phẩm này không ?")) {
+            document.location = "index.php?act=listsp";
+        } else {
+            return false;
+        }
     }
-}
 </script>

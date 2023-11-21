@@ -17,6 +17,8 @@ include("header.php");
 // if (!isset($_SESSION['mycart']))
 //     $_SESSION['mycart'] = [];
 
+
+
 if (!isset($_SESSION['mycart'])) {
     $_SESSION['mycart'] = [];
 }
@@ -34,16 +36,16 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $diachi = $_POST['diachi'];
                 $sdt = $_POST['sdt'];
 
-                // $img = $_FILES['hinh']['name'];
-                // $target_dir = "../upload_file/";
-                // $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
-                // if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
-                //     //echo "Load ảnh thành công";
-                // } else {
-                //     //echo "Upload ảnh không thành công";
-                // }
+                $img = $_FILES['img']['name'];
+                $target_dir = "../upload_file/";
+                $target_file = $target_dir . basename($_FILES["img"]["name"]);
+                if (move_uploaded_file($_FILES["img"]["tmp_name"], $target_file)) {
+                    //echo "Load ảnh thành công";
+                } else {
+                    //echo "Upload ảnh không thành công";
+                }
 
-                insert_taikhoan($nguoidung, $matkhau, $email, $diachi, $sdt);
+                insert_taikhoan($nguoidung, $matkhau, $email, $img, $diachi, $sdt);
 
             }
             include "view/taikhoan/dangky.php";
@@ -69,7 +71,8 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 
         case 'tkcanhan':
             if (isset($_GET['id']) && $_GET['id'] > 0) {
-                $taikhoan = loadone_taikhoan($_GET['id']);
+                $taikhoan = loadone_taikhoan($id);
+
                 // $dssp = loadall_sanpham("", $iddm);
 
                 // $sanphamShop = loadall_shop($kyw, $iddm);
@@ -78,28 +81,57 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 // $listsanpham = loadall_sanpham($kyw, $iddm);
 
             }
-
+            $taikhoan = loadone_taikhoan($id);
             include('view/tkcanhan.php');
             break;
         case "capnhattk":
-            if(isset($_GET['id'])&&$_GET['id']>0){
-                $taikhoan = loadone_taikhoan($_GET['id']);
-            }
-            if (isset($_POST['capnhattk']) && ($_POST['capnhattk'])) {
+            // if(isset($_GET['id'])&&$_GET['id']>0){
+
+            // }
+            if (isset($_POST['capnhattk'])) {
                 $id = $_POST['id'];
                 $nguoidung = $_POST['nguoidung'];
                 $email = $_POST['email'];
                 $diachi = $_POST['diachi'];
                 $sdt = $_POST['sdt'];
 
-                update_taikhoan_user($id, $nguoidung, $email, $diachi, $sdt);
+                $img = $_FILES['img']['name'];
+                $target_dir = "../upload_file/";
+                $target_file = $target_dir . basename($_FILES["img"]["name"]);
+                if (move_uploaded_file($_FILES["img"]["tmp_name"], $target_file)) {
+                    //echo "Load ảnh thành công";
+                } else {
+                    //echo "Upload ảnh không thành công";
+                }
+                update_taikhoan_user($id, $nguoidung, $email, $img, $diachi, $sdt);
                 // $thongbao = "Cập nhật thành công";
                 header("Location:index.php?act=tkcanhan");
 
             }
-            $listtaikhoan = loadall_taikhoan();
+            $taikhoan = loadone_taikhoan($id);
+            // $listtaikhoan = loadall_taikhoan();
 
             include "view/capnhattk.php";
+            break;
+
+        case "doimk":
+            // if(isset($_GET['id'])&&$_GET['id']>0){
+
+            // }
+            if (isset($_POST['doimk'])) {
+                $id = $_POST['id'];
+                $matkhau = $_POST['matkhau'];
+
+
+                update_matkhau($id, $matkhau);
+                // $thongbao = "Cập nhật thành công";
+                header("Location:index.php?act=tkcanhan");
+
+            }
+            $taikhoan = loadone_taikhoan($id);
+            // $listtaikhoan = loadall_taikhoan();
+
+            include "view/doimk.php";
             break;
 
 
@@ -132,17 +164,20 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             } else {
                 $iddm = 0;
             }
+
+
             $dssp = loadall_sanpham("", $iddm);
             $sanphamShop = loadall_shop($kyw, $iddm);
             $listsanpham = loadall_sanpham($kyw, $iddm);
             $listdanhmuc = loadall_danhmuc();
+            $sanpham_one = loadall_sanpham_1($kyw, $iddm);
             include("view/sanpham.php");
             break;
 
         case "chitietsp":
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
-                $sanphamcl = load_sanpham_cungloai($_GET['id'], $sanpham['iddm']);
+                $sanphamkl = load_sanpham_khac($_GET['id'], $sanpham['iddm']);
                 //$binhluan = loadone_binhluan($_GET['id']);
                 //echo "<pre>";
                 //print_r($binhluan);

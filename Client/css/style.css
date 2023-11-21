@@ -6607,8 +6607,14 @@ Last change: 01/15/2016
   }
   .product-detail-image.style2 .main-image-wapper{
       padding: 0;
+      height: 200px;
+      width:  200px;
       margin-bottom: 20px;
+      border: 5px solid;
+      border-radius: 50%;
   }
+
+
   .product-detail-image.style2 .thumbnails a{
       margin: 0;
   }
@@ -6765,9 +6771,11 @@ Last change: 01/15/2016
   .product-details-right.style2{
       font-family: 'MontserratLight';
       width: 100%;
-      float: left;
-      padding-left: 10px;
+      /* float: right; */
+      margin-left: -120px;
+
   }
+
   .product-details-right.style2 .product-name{
       color: #000;
       margin-bottom: 0;
@@ -9941,3 +9949,15 @@ Last change: 01/15/2016
   .fa-brands {
     padding-top: 10px;
   }
+  
+/* Mật khẩu */
+  /* .password-toggle {
+    position: relative;
+}
+.password-toggle i {
+    position: absolute;
+    left: 147px;
+   
+    transform: translateY(-50%); 
+    cursor: pointer;
+} */

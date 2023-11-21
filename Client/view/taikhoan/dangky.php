@@ -1,7 +1,7 @@
 <div class="wrapper">
     <div class="login">
         <h1>Đăng ký</h1>
-        <form action="index.php?act=dangky" method="post" class="form-login">
+        <form action="index.php?act=dangky" method="post" class="form-login" enctype="multipart/form-data">
             <div class="form-input">
                 <p>Tài khoản</p>
                 <input type="text" name="nguoidung" />
@@ -11,8 +11,8 @@
                 <input type="text" name="email" />
             </div>
 
-                <!-- <p>Ảnh</p>
-                <input type="file" name="hinh" /><br> -->
+                <p>Ảnh</p>
+                <input type="file" name="img" /><br>
 
             <div class="form-input">
                 <p>Số điện thoại</p>

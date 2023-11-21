@@ -50,6 +50,9 @@ if (is_file($hinhpath)) {
                         <h2><label for="">Tên sản phẩm: <?= $tensp ?> </label></h2>
                         <h2><label for="">Giá sản phẩm: <?= $giasp ?> </label></h2>
                         <h2><label for="">Mô tả: <?= $mota ?> </label></h2>
+                        <h2><label for="">Số lượng: <?= $soluong ?> </label></h2>
+                        <h2><label for="">Lượt xem: <?= $luotxem ?> </label></h2>
+                        <h2><label for="">Trạng thái:  <?=$trangthai === 0 ? "<span style='color: green;'>Còn hàng</span>" : "<span style='color: red;'>hết hàng</span>"?> </label></h2>
                             
                         </div>
                     </div>
