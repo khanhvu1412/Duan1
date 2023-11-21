@@ -22,37 +22,40 @@ if (is_array($donhang)) {
                 <div class="row">
 
                     <div class="container">
-                            <h2><label for="">Mã đơn:
-                                    <?= $id ?>
-                                </label></h2>
-                            <h2><label for="">Tên khách hàng:
-                                    <?= $tentk ?>
-                                </label></h2>
-                            <h2><label for="">Tên sản phẩm:
-                                    <?= $tensp ?>
-                                </label></h2>
-                            <h2><label for="">Giá sản phẩm:
-                                    <?= $gia ?>
-                                </label></h2>
-                            <h2><label for="">Địa chỉ giao hàng:
-                                    <?= $diachi_giaohang ?>
-                                </label></h2>
-                            <h2><label for="">Thời gian mua:
-                                    <?= $thoigian_mua ?>
-                                </label></h2>
-                            <h2><label for="">Trạng thái:
-                                    <?php
-                                    if ($id_trangthai_donhang == 1) {
-                                        echo "Mới đặt hàng";
-                                    } else if ($id_trangthai_donhang == 2) {
-                                        echo "Đang giao hàng";
-                                    } else {
-                                        echo "Đã thanh toán";
-                                    }
-                                    //  if($trangthai === 1 ) "<p style='background-color: yellow; color: black; '>Mới đặt hàng</p>" :
-                                    //     "<p style='background-color: green; color: white;'>Đã thanh toán</p>" 
-                                    ?>
-                                </label></h2>
+                        <h2><label for="">Mã đơn:
+                                <?= $id ?>
+                            </label></h2>
+                        <h2><label for="">Tên khách hàng:
+                                <?= $tentk ?>
+                            </label></h2>
+                        <h2><label for="">Tên sản phẩm:
+                                <?= $tensp ?>
+                            </label></h2>
+                        <h2><label for="">Giá:
+                                <?= $gia ?>
+                            </label></h2>
+                        <h2><label for="">Địa chỉ giao hàng:
+                                <?= $diachi_giaohang ?>
+                            </label></h2>
+                        <h2><label for="">Thời gian mua:
+                                <?= $thoigian_mua ?>
+                            </label></h2>
+                        <h2><label for="">Số lượng:
+                                <?= $soluong ?>
+                            </label></h2>
+                        <h2><label for="">Trạng thái:
+                                <?php
+                                if ($id_trangthai_donhang == 1) {
+                                    echo "Mới đặt hàng";
+                                } else if ($id_trangthai_donhang == 2) {
+                                    echo "Đang giao hàng";
+                                } else {
+                                    echo "Đã thanh toán";
+                                }
+                                //  if($trangthai === 1 ) "<p style='background-color: yellow; color: black; '>Mới đặt hàng</p>" :
+                                //     "<p style='background-color: green; color: white;'>Đã thanh toán</p>" 
+                                ?>
+                            </label></h2>
 
                     </div>
                     <br>

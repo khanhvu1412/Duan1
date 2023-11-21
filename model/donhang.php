@@ -14,6 +14,22 @@ function delete_donhang($id)
     pdo_execute($sql);
 }
 
+// function loadall_trangthai()
+// {
+//     $sql = "select * from trangthai_donhang order by id_trangthai asc";
+//     $listtrangthai = pdo_query($sql);
+//     return $listtrangthai;
+// }
+
+// function loadone_trangthai($id_trangthai)
+// {
+//     $sql = "select * from donhang where id=" . $id_trangthai;
+//     $trangthaidonhang = pdo_query_one($sql);
+//     return $trangthaidonhang;
+// }
+
+
+
 
 function loadall_donhang()
 {

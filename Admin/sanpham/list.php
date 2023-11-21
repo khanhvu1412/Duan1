@@ -38,7 +38,7 @@
                             echo '<tr>
                                 <td>' . $id . '</td>
                                 <td>' . $tensp . '</td>
-                                <td>' . $giasp . ' VNĐ</td>
+                                <td>' . $giasp . '.000  VNĐ</td>
                                 <td>' . $hinh . '</td>
                                 <td>' . $mota . '</td>
                                 <td>  
@@ -50,22 +50,6 @@
 
                         }
                         ?>
-
-
-                        <!-- <tr>
-                            <td>DM01</td>
-                            <td>1</td>
-                            <td>Áo polo ARIST</td>
-                            <td><img src="../img/6.jpg" alt=""></td>
-                            <td>Áo dành riêng cho phái nam</td>
-                            <td>100</td>
-                            <td>
-                                <a href="index.php?act=suasp"><input type="button" class="btn btn-primary"
-                                        value="Sửa"></a>
-                                <a href="index.php?act=xoasp"><input type="button" class="btn btn-primary"
-                                        value="Xóa"></a>
-                            </td>
-                        </tr> -->
                     </tbody>
                 </table>
                 <form action="">

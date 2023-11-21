@@ -18,7 +18,7 @@ if (is_array($taikhoan)) {
             <div class="table-responsive">
 
                 <br>
-                <form action="index.php?act=updatetk" method="post">
+                <form action="index.php?act=updatetk" method="post" >
 
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên tài khoản</label>
@@ -33,6 +33,7 @@ if (is_array($taikhoan)) {
                         <label for="exampleInputImg" class="form-label">Email</label>
                         <input type="text" class="form-control" name="email" value="<?= $email ?>">
                     </div>
+
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Địa chỉ</label>
                         <input type="text" class="form-control" name="diachi" value="<?= $diachi ?>">
@@ -46,7 +47,8 @@ if (is_array($taikhoan)) {
                         <input type="text" class="form-control" name="id_role" value="<?= $id_role ?>">
                     </div>
                     <input type="hidden" name="id" value="<?= $taikhoan['id'] ?>  ">
-                    <input type="submit" class="btn btn-success" name="capnhat" onclick="return confirmUpdatetk()" value="Cập nhật">
+                    <input type="submit" class="btn btn-success" name="capnhat" onclick="return confirmUpdatetk()"
+                        value="Cập nhật">
                     <input type="reset" class="btn btn-info" value="Nhập lại">
                     <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Danh sách"></a>
 

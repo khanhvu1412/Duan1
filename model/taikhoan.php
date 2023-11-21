@@ -53,11 +53,18 @@ function loadone_taikhoan($id)
 
 }
 
-function update_taikhoan($id, $nguoidung, $matkhau, $email, $diachi, $sdt, $id_role)
+function update_taikhoan_admin($id, $nguoidung, $matkhau, $email, $diachi, $sdt, $id_role)
 {
-    $sql = "update taikhoan set nguoidung = '" . $nguoidung . "', matkhau = '" . $matkhau . "',email = '" . $email . "',diachi = '" . $diachi . "',sdt = '" . $sdt . "',nguoidung = '" . $nguoidung . "',id_role = '" . $id_role . "' where id =" . $id;
+    $sql = "update taikhoan set nguoidung = '" . $nguoidung . "', matkhau = '" . $matkhau . "',email = '" . $email . "',diachi = '" . $diachi . "',sdt = '" . $sdt . "', id_role = '" . $id_role . "' where id =" . $id;
     pdo_execute($sql);
 }
+
+function update_taikhoan_user($id, $nguoidung, $email, $diachi, $sdt)
+{
+    $sql = "update taikhoan set nguoidung = '" . $nguoidung . "', email = '" . $email . "',diachi = '" . $diachi . "', sdt = '" . $sdt . "'  where id =" . $id;
+    pdo_execute($sql);
+}
+
 function delete_taikhoan($id)
 {
     $sql = "delete from taikhoan where id =" . $id;

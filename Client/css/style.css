@@ -1065,11 +1065,10 @@ Last change: 01/15/2016
       -o-border-radius: 50%;
       border-radius: 50%;
       text-align: center;
-      font-size: 11px;
       color: #222;
       text-transform: uppercase;
       vertical-align: middle;
-      padding-top:20px;
+      padding-top: 53px;
   }
   .category-menu li>a:hover{
       color: #c99947;
@@ -3653,6 +3652,7 @@ Last change: 01/15/2016
       color: #555;
       display: inline-block;
   }
+  
   .breadcrumbs a:after {
       content: "/";
       padding: 0 2px;
@@ -6766,6 +6766,7 @@ Last change: 01/15/2016
       font-family: 'MontserratLight';
       width: 100%;
       float: left;
+      padding-left: 10px;
   }
   .product-details-right.style2 .product-name{
       color: #000;

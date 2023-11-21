@@ -30,7 +30,7 @@
                             extract($taikhoan);
                             $suatk = "index.php?act=suatk&id=" . $id;
                             $xoatk = "index.php?act=xoatk&id=" . $id;
-                            
+
 
                             echo '
                             <tr>

@@ -19,6 +19,7 @@
                             <th>Giá tiền</th>
                             <th>Địa chỉ giao hàng</th>
                             <th>Thời gian mua</th>
+                            <th>Số lượng</th>
                             <th>Trạng thái</th>
                             <th>Hành động</th>
 
@@ -42,6 +43,7 @@
                                 <td>' . $gia . ' VNĐ</td>
                                 <td>' . $diachi_giaohang . '</td>
                                 <td>' . $thoigian_mua . '</td>
+                                <td>' . $soluong . '</td>
                                 <td>' . ($id_trangthai_donhang === 1 ? "<p style='background-color: yellow; color: black; '>Mới đặt hàng</p>" :
                                 "<p style='background-color: green; color: white;'>Đã thanh toán</p>") . '</td>
                                 <td>  

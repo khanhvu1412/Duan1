@@ -10,6 +10,10 @@
                 <p>Email</p>
                 <input type="text" name="email" />
             </div>
+
+                <!-- <p>Ảnh</p>
+                <input type="file" name="hinh" /><br> -->
+
             <div class="form-input">
                 <p>Số điện thoại</p>
                 <input type="text" name="sdt" />

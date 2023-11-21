@@ -84,15 +84,16 @@ if (isset($_POST["dangxuat"])) {
 											<?php ob_start();
 											if (isset($_SESSION["user"])) {
 												extract($_SESSION['user']);
+												$linktk = 'index.php?act=tkcanhan';
 
 												echo '
 												<div class="setting-option">
 													<ul>
 													    <p> Xin chào ' . $nguoidung . '</p>
-														
 														<form action="" method="post">
+														<a href="'.$linktk.'"><p>Trang cá nhân</p></a>
+														<br>
 														<input type="submit" name="dangxuat" value="Đăng xuất">
-														</input>
 														</form>
 													</ul>
 											 	</div> ';
@@ -117,24 +118,6 @@ if (isset($_POST["dangxuat"])) {
 							<ul class="boutique-nav main-menu clone-main-menu">
 								<li class="menu-item-has-children item-megamenu">
 									<a href="index.php">HOME</a>
-								</li>
-								<li class="menu-item-has-children">
-									<a href="#">Danh mục</a>
-									<span class="arow"></span>
-									<ul class="sub-menu">
-										<?php 
-										// foreach ($listdanhmuc as $danhmuc) {
-										// 	extract($danhmuc);
-										// 	echo '<a href="index.php?act=timkiemdm&iddm=' . $id . '" class="content-right-tab">
-                						// 	<p><i class="fa-solid fa-caret-right"></i><span>' . $tendm . '</span></p>
-            							// 	</a>';
-										// } 
-										?>
-
-
-										<li><a href="#">Danh mục 2</a></li>
-										<li><a href="#">Danh mục 3</a></li>
-									</ul>
 								</li>
 								<li class="menu-item-has-children item-megamenu">
 									<a href="index.php?act=sanpham">SHOP</a>

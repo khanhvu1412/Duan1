@@ -35,7 +35,7 @@ if (isset($_GET['act'])) {
                 $sdt = $_POST['sdt'];
                 $id_role = $_POST['id_role'];
 
-                update_taikhoan($id, $nguoidung, $matkhau, $email, $diachi, $sdt, $id_role);
+                update_taikhoan_admin($id, $nguoidung, $matkhau, $email, $diachi, $sdt, $id_role);
                 $thongbao = "Cập nhật thành công";
 
             }
@@ -259,6 +259,9 @@ if (isset($_GET['act'])) {
 
 
         case "listdh":
+
+            // $trangthaidonhang = loadone_trangthai($id_trangthai);
+            // $listtrangthai = loadall_trangthai();
             $listdonhang = loadall_donhang();
             include "donhang/list.php";
             break;
@@ -282,6 +285,7 @@ if (isset($_GET['act'])) {
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                 $donhang = loadone_donhang($_GET['id']);
             }
+            // $listtrangthai = loadall_trangthai();   
             $listdonhang = loadall_donhang();
             include "donhang/update.php";
             break;
@@ -308,6 +312,7 @@ if (isset($_GET['act'])) {
                 $thongbao = 'Cập nhật thành công';
 
             }
+            // $listtrangthai = loadall_trangthai();
             $listsanpham = loadall_sanpham();
             $listdonhang = loadall_donhang();
             include "donhang/list.php";
