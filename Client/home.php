@@ -64,6 +64,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<div class="margin-top-50">
 		<div class="row">
 			<div class="col-sm-12 col-md-5">

@@ -19,7 +19,7 @@
                         <p><input type="text" placeholder="Địa chỉ"></p>
                         <p><input type="text" placeholder="Thị trấn / Thành phố"></p>
                         <p><input type="text" placeholder="Số điện thoại"></p>
-                       
+
                     </div>
                     <div class="form-checkout checkout-payment">
                         <h5 class="form-title">Bạn muốn thanh toán</h5>
@@ -34,8 +34,9 @@
                             </div>
                             <div class="payment_method">
                                 <label><input name="payment_method" type="radio">PAYPAL</label>
-
                             </div>
+
+                            <a href="#"><button class="button medium">Gửi</button></a>
                         </div>
                     </div>
                 </div>
@@ -47,58 +48,42 @@
 
                             <table class="shop_table cart">
                                 <tbody>
-                                    <tr>
-                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img src="images/products/1.png" alt=""></a></td>
 
-                                        <td class="product-name"><a href="index.php?act=chitietsp">Oversize Fit Trousers Sneaker</a></td>
-                                        <td>85.00 ₫</td>
-                                       
-                                        <td class="product-remove"><a href="#"></a></td>
-                                        <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
+                                    <?php
+                                    foreach ($sanphamtop5 as $sanpham) {
+                                        extract($sanpham);
+
+                                        $linksp = "index.php?act=chitietsp&id=" . $id;
+
+                                        echo '
+                                        <tr>
+                                        <form action="index.php?act=addgiohang" method="post">
+                                        <td class="product-thumbnail"><a href="' . $linksp . '"><img src="../upload_file/' . $img . '" alt=""></a></td>
+
+                                        <td class="product-name"><a href="index.php?act=chitietsp" >' . $tensp . '</a></td>
+                                        <td><span class ="price"><ins>' . $giasp . ' VNĐ</ins></span> </td>
+
+                                        <td class="product-remove"></td>
+                                        
+                                        <td class="text-right"><input type="submit" name="addtocart"onclick="return confirmAddgh()"  value="Thêm vào giỏ hàng"></td>
+                                        </form>
                                     </tr>
-                                    <tr>
-                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img src="images/products/2.jpg" alt=""></a></td>
-                                        <td class="product-name"><a href="index.php?act=chitietsp">Oversize Fit Trousers Sneaker</a></td>
-                                        <td>85.00 ₫</td>
-                                       
+                                        ';
+                                    }
+                                    ?>
+
+
+                                    <!-- <tr>
+                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img
+                                                    src="images/products/1.png" alt=""></a></td>
+
+                                        <td class="product-name"><a href="index.php?act=chitietsp">Oversize Fit Trousers
+                                                Sneaker</a></td>
+                                        <td>85.000 VNĐ</td>
 
                                         <td class="product-remove"><a href="#"></a></td>
-                                        <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img src="images/products/1.png" alt=""></a></td>
-
-                                        <td class="product-name"><a href="index.php?act=chitietsp">Oversize Fit Trousers Sneaker</a></td>
-                                        <td>85.00 ₫</td>
-                                       
-                                        <td class="product-remove"><a href="#"></a></td>
-                                        <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img src="images/products/2.jpg" alt=""></a></td>
-                                        <td class="product-name"><a href="index.php?act=chitietsp">Oversize Fit Trousers Sneaker</a></td>
-                                        <td>85.00 ₫</td>
-                                       
-
-                                        <td class="product-remove"><a href="#"></a></td>
-                                        <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img src="images/products/1.png" alt=""></td>
-
-                                        <td class="product-name"><a href="#">Oversize Fit Trousers Sneaker</a></td>
-                                        <td>85.00 ₫</td>
-                                       
-                                        <td class="product-remove"><a href="#"></a></td>
-                                        <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img src="images/products/2.jpg" alt=""></td>
-                                        <td class="product-name"><a href="#">Oversize Fit Trousers Sneaker</a></td>
-                                        <td>85.00 ₫</td>
-                                        <td class="product-remove"><a href="#"></a></td>
-                                        <td class="text-right"><a class="button" href="#">ADD TO CART</a></td>
-                                    </tr>
+                                        <td class="text-right"><a class="button" href="#">Thêm vào gỏ hàng</a></td>
+                                    </tr> -->
 
                                 </tbody>
                             </table>
@@ -111,4 +96,14 @@
         </div>
     </div>
     <?php include "menu/3hopcn.php"; ?>
+
+    <script>
+        function confirmAddgh() {
+            if (confirm("Bạn thêm sản phẩm này vào giỏ hàng?")) {
+                document.location = "index.php?act=listsp";
+            } else {
+                return false;
+            }
+        }
+    </script>
 </div>

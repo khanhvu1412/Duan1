@@ -171,6 +171,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             $listsanpham = loadall_sanpham($kyw, $iddm);
             $listdanhmuc = loadall_danhmuc();
             $sanpham_one = loadall_sanpham_1($kyw, $iddm);
+            $sanphamtop = loadall_sanpham_top5();
             include("view/sanpham.php");
             break;
 
@@ -225,6 +226,19 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             break;
 
         case "thanhtoan":
+            if (isset($_POST['kyw']) && $_POST['kyw'] != "") {
+                $kyw = $_POST['kyw'];
+            } else {
+                $kyw = "";
+            }
+            if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
+                $iddm = $_GET['iddm'];
+            } else {
+                $iddm = 0;
+            }
+            $dssp = loadall_sanpham("", $iddm);
+            $listsanpham = loadall_sanpham($kyw, $iddm);
+            $sanphamtop5 = loadall_sanpham_top5();
             include("view/thanhtoan.php");
             break;
 

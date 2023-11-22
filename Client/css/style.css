@@ -6607,6 +6607,8 @@ Last change: 01/15/2016
   }
   .product-detail-image.style2 .main-image-wapper{
       padding: 0;
+      /* width: 370px;*/
+      height: 370px; 
       /* height: 200px;
       width:  200px;
       margin-bottom: 20px;

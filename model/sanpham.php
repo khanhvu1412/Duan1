@@ -7,6 +7,12 @@ function insert_sanpham($tensp, $giasp, $hinh, $mota, $soluong, $luotxem, $trang
 
 }
 
+function loadall_sanpham_top5(){
+    $sql = "select * from sanpham where 1 order by giasp asc limit 0,5";
+    $sanphamtop5 = pdo_query($sql);
+    return $sanphamtop5;
+}
+
 function loadall_shop($kyw = " ", $iddm = 0)
 {
     $sql = "select * from sanpham where 1";
