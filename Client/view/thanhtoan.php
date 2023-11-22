@@ -61,7 +61,7 @@
                                         <td class="product-thumbnail"><a href="' . $linksp . '"><img src="../upload_file/' . $img . '" alt=""></a></td>
 
                                         <td class="product-name"><a href="index.php?act=chitietsp" >' . $tensp . '</a></td>
-                                        <td><span class ="price"><ins>' . $giasp . ' VNĐ</ins></span> </td>
+                                        <td><span class ="price" style="color:red;">' . $giasp . ' VNĐ</span> </td>
 
                                         <td class="product-remove"></td>
                                         
