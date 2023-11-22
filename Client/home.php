@@ -14,6 +14,8 @@
 
 <!-- End Imgslide -->
 
+<?php include "view/menu/3hopcn.php"; ?>
+
 <div class="container">
 	<div class="margin-top-30">
 		<div class="box-product-featured">
@@ -29,7 +31,7 @@
 					<ul class="box-product-list owl-carousel nav-style2 nav-center-outside" data-nav="true"
 						data-dots="false" data-margin="30" data-loop="true"
 						data-responsive='{"0":{"items":1},"600":{"items":2},"1000":{"items":3}}'>
-						<?php foreach ($listsanpham as $sanpham) {
+						<?php foreach ($sanphamShop as $sanpham) {
 							extract($sanpham);
 							$linksp = "index.php?act=chitietsp&id=" . $id;
 							echo '
@@ -64,12 +66,12 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="margin-top-50">
 		<div class="row">
 			<div class="col-sm-12 col-md-5">
 				<div class="section-title text-center margin-top-40 margin-bottom-30">
-					<h3>DANH MỤC CỦA CHÚNG TÔI</h3>
+					<h3>DANH MỤC SẢN PHẨM</h3>
 				</div>
 			</div>
 			<div class="col-sm-12 col-md-7">
@@ -85,13 +87,6 @@
 						</li>';
 					} ?>
 					<?php ?>
-
-
-
-
-
-
-
 				</ul>
 			</div>
 		</div>
@@ -111,7 +106,7 @@
 						data-dots="false" data-margin="30" data-loop="true"
 						data-responsive='{"0":{"items":1},"600":{"items":2},"1000":{"items":3}}'>
 
-						<?php foreach ($listsanpham as $sanpham) {
+						<?php foreach ($sanphamtop5  as $sanpham) {
 							extract($sanpham);
 							$linksp = "index.php?act=chitietsp&id=" . $id;
 							echo '
@@ -236,56 +231,12 @@
 		</div>
 	</div>
 
-
-
-
-
 	<div class="main-container no-slidebar">
 		<div class="container">
 			<div class="row">
 				<div class="main-content col-sm-12">
-					<div class="shop-top">
-						<div class="shop-top-left">
-							<div class="breadcrumbs">
-								<h1>Sản phẩm mới</h1>
-							</div>
-						</div>
-					</div>
-					<ul class="product-list-grid desktop-columns-4 tablet-columns-3 mobile-columns-1 row flex-flow">
-
-						<?php
-
-						foreach ($listsanpham as $sanpham) {
-							extract($sanpham);
-
-							$linksp = "index.php?act=chitietsp&id=" . $id;
-
-							echo '<li class="product-item col-xs-12 col-sm-4 col-md-3">
-								<div class="product-inner">
-								<div class="product-thumb has-back-image">
-								<form action="index.php?act=addgiohang" method="post">
-								<input type="hidden" name="id" value="' . $id . '">
-								<input type="hidden" name="img" value="' . $img . '">
-
-								<a href="' . $linksp . '"><img src="../upload_file/' . $img . '" alt=""></a>
-								</div>
-
-								<div class="product-info" >
-								<input type ="hidden" name="tensp" class="product-name" value ="' . $tensp . '">
-								<h3 class="product-name"><a href="#">' . $tensp . '</a></h3>
-								
-								<input type ="hidden" name="giasp" class="price" value="' . $giasp . '">
-								<span class ="price"><ins>' . $giasp . ' VNĐ</ins></span> 
-
-								<input type="submit" name="addtocart" onclick="return confirmAddgh()" value="Thêm vào giỏ hàng">
-								
-								</form>
-								</div>
-							</div>
-							</li>';
-						}
-						?>
-					</ul>
+					
+					
 				</div>
 			</div>
 		</div>
@@ -301,4 +252,3 @@
 	</script>
 </div>
 
-<?php include "view/menu/3hopcn.php"; ?>

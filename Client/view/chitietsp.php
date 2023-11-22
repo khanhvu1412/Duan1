@@ -46,25 +46,6 @@ if (is_array($sanpham)) {
                             <?= $mota ?>
 
                         </div>
-                        <!-- <div class="select-color">
-                            <label>MÀU</label>
-                            <div class="inner">
-                                <a href="#"><span style="background-color:#736357;"></span></a>
-                                <a href="#"><span style="background-color:#bdb871;"></span></a>
-                                <a href="#"><span style="background-color:#f26522;"></span></a>
-                                <a href="#"><span style="background-color:#fff799;"></span></a>
-                            </div>
-                        </div>
-                        <div class="select-size">
-                            <label>SIZE </label>
-                            <div class="inner">
-                                <a href="#"><span>S</span></a>
-                                <a href="#"><span>M</span></a>
-                                <a href="#"><span>L</span></a>
-                                <a href="#"><span>XL</span></a>
-                                <a href="#"><span>XXL</span></a>
-                            </div>
-                        </div> -->
 
                         <form class="cart-form" enctype="multipart/form-data" method="post">
                             <div class="quantity">
@@ -146,7 +127,7 @@ if (is_array($sanpham)) {
         <ul class="owl-carousel" data-responsive='{"0":{"items":1},"600":{"items":3},"1000":{"items":4}}'
             data-autoplay="true" data-loop="true" data-items="4" data-dots="false" data-nav="false" data-margin="30">
             <?php
-            foreach ($sanphamkl as $spkl): ?>
+            foreach ($sanphamtop6 as $sanpham): ?>
                 <li class="product-item">
                     <div class="product-inner">
                         <div class="product-thumb">
@@ -167,24 +148,6 @@ if (is_array($sanpham)) {
                 </li>
 
             <?php endforeach; ?>
-            <!-- <li class="product-item">
-                <div class="product-inner">
-                    <div class="product-thumb">
-                        <a href="#"><img src="images/products/5.jpg" alt=""></a>
-
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
-                        <span class="price">
-                            <ins style="color:red"> 85.00 ₫</ins>
-                            <del>95.00 ₫</del>
-                        </span>
-                        <a href="#" class="button">ADD TO CART</a>
-                    </div>
-                </div>
-            </li>
-            
-            </li> -->
         </ul>
     </div>
 </div>

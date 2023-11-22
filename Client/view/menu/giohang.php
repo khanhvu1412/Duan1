@@ -58,10 +58,11 @@
                                 $tong = 0;
                                 foreach ($_SESSION['mycart'] as $cart) {
                                     $tong += $cart[4];
-                                    $count = count($_SESSION['mycart']);
+                                    
                                 }
+                                $count = count($_SESSION['mycart']);
                                 echo '<p>Số lượng x' . $count . ' </p> 
-                                <p> Tổng: ' . $tong . '.000 VNĐ</p>';
+                                <p> Tổng: ' . $tong . ' VNĐ</p>';
                                 ?>
 
                             </tr>

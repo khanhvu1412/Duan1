@@ -7,8 +7,9 @@ function insert_sanpham($tensp, $giasp, $hinh, $mota, $soluong, $luotxem, $trang
 
 }
 
-function loadall_sanpham_top5(){
-    $sql = "select * from sanpham where 1 order by giasp asc limit 0,5";
+function loadall_sanpham_top5()
+{
+    $sql = "select * from sanpham where 1 order by giasp desc limit 0,5";
     $sanphamtop5 = pdo_query($sql);
     return $sanphamtop5;
 }
@@ -28,11 +29,11 @@ function loadall_shop($kyw = " ", $iddm = 0)
     return $sanphamShop;
 }
 
-function load_sanpham_khac($id, $iddm)
+function load_sanpham_top6()
 {
-    $sql = "select * from sanpham where id != $id  and iddm = $iddm  ";
-    $sanphamkl = pdo_query($sql);
-    return $sanphamkl;
+    $sql = "select * from sanpham order by giasp desc limit 6";
+    $sanphamtop6 = pdo_query($sql);
+    return $sanphamtop6;
 }
 
 
@@ -50,7 +51,8 @@ function load_danhmuc()
     return $listdanhmuc;
 }
 
-function loadall_sanpham_1($kyw = " ", $iddm = 0){
+function loadall_sanpham_1($kyw = " ", $iddm = 0)
+{
     $sql = "select * from sanpham where 1";
     if ($kyw != "") {
         $sql .= " and tensp like '%" . $kyw . "%'";
@@ -101,9 +103,9 @@ function loadone_sanpham($id)
 function update_sanpham($id, $iddm, $tensp, $giasp, $mota, $soluong, $luotxem, $trangthai, $hinh)
 {
     if ($hinh != "") {
-        $sql = " update sanpham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "', soluong='".$soluong."', luotxem='".$luotxem."', trangthai='".$trangthai."', img = '" . $hinh . "' where id = " . $id;
+        $sql = " update sanpham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "', soluong='" . $soluong . "', luotxem='" . $luotxem . "', trangthai='" . $trangthai . "', img = '" . $hinh . "' where id = " . $id;
     } else {
-        $sql = " update sanpham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "', soluong='".$soluong."', luotxem='".$luotxem."', trangthai='".$trangthai."' where id = " . $id;
+        $sql = " update sanpham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "', soluong='" . $soluong . "', luotxem='" . $luotxem . "', trangthai='" . $trangthai . "' where id = " . $id;
     }
     pdo_execute($sql);
 }

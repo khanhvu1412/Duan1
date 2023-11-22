@@ -90,7 +90,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             // }
             if (isset($_POST['capnhattk'])) {
                 $id = $_POST['id'];
-                $nguoidung = $_POST['nguoidung'];
                 $email = $_POST['email'];
                 $diachi = $_POST['diachi'];
                 $sdt = $_POST['sdt'];
@@ -103,7 +102,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 } else {
                     //echo "Upload ảnh không thành công";
                 }
-                update_taikhoan_user($id, $nguoidung, $email, $img, $diachi, $sdt);
+                update_taikhoan_user($id, $email, $img, $diachi, $sdt);
                 // $thongbao = "Cập nhật thành công";
                 header("Location:index.php?act=tkcanhan");
 
@@ -122,9 +121,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $id = $_POST['id'];
                 $matkhau = $_POST['matkhau'];
 
-
                 update_matkhau($id, $matkhau);
-                // $thongbao = "Cập nhật thành công";
                 header("Location:index.php?act=tkcanhan");
 
             }
@@ -168,7 +165,10 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 
             $dssp = loadall_sanpham("", $iddm);
             $sanphamShop = loadall_shop($kyw, $iddm);
+            // var_dump($sanphamShop);die()
             $listsanpham = loadall_sanpham($kyw, $iddm);
+            // var_dump($listsanpham);
+            // die();
             $listdanhmuc = loadall_danhmuc();
             $sanpham_one = loadall_sanpham_1($kyw, $iddm);
             $sanphamtop = loadall_sanpham_top5();
@@ -178,16 +178,11 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
         case "chitietsp":
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
-                $sanphamkl = load_sanpham_khac($_GET['id'], $sanpham['iddm']);
-                //$binhluan = loadone_binhluan($_GET['id']);
-                //echo "<pre>";
-                //print_r($binhluan);
-                // } else {
-                //     include("view/chitietsp.php");
 
+               
 
             }
-            // $sanphamcl = load_sanpham_cungloai($_GET['id'], $sanpham['iddm']);
+            $sanphamtop6 = load_sanpham_top6();
             include("view/chitietsp.php");
             break;
 
@@ -257,7 +252,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $img = $_POST['img'];
                 $giasp = $_POST['giasp'];
                 $soluong = 1;
-                $thanhtien = $soluong * $giasp;
+                $thanhtien = ((int) $soluong * (int) $giasp);
                 $sanphamadd = [$id, $tensp, $img, $giasp, $thanhtien];
                 array_push($_SESSION['mycart'], $sanphamadd);
             }
@@ -303,8 +298,11 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
         $iddm = 0;
     }
     ;
+    $sanphamtop5 = loadall_sanpham_top5();
     $listdanhmuc = loadall_danhmuc();
     $listsanpham = loadall_sanpham($kyw, $iddm);
+    
+    $sanphamShop = loadall_shop($kyw, $iddm);
     include("home.php");
 }
 

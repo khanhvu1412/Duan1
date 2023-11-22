@@ -189,7 +189,7 @@ Last change: 01/15/2016
     display: inline-block;
     padding: 9px 25px;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -6664,7 +6664,6 @@ Last change: 01/15/2016
   .product-details-right .product-name{
       font-size: 18px;
       color: #222;
-      text-transform: uppercase;
       margin-bottom: 10px;
   }
   .product-details-right .rating{
@@ -6816,7 +6815,7 @@ Last change: 01/15/2016
   .product-details-right.style2 .button-add-cart{
       display: inline-block;
       clear: none;
-      /* margin: 0; */
+      margin: 0;
       margin-right: 5px;
       /* margin-top: 188px; */
   }

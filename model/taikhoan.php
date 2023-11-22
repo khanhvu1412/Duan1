@@ -51,9 +51,9 @@ function update_taikhoan_admin($id, $nguoidung, $matkhau, $email, $diachi, $sdt,
     pdo_execute($sql);
 }
 
-function update_taikhoan_user($id, $nguoidung, $email, $img, $diachi, $sdt)
+function update_taikhoan_user($id, $email, $img, $diachi, $sdt)
 {
-    $sql = "update taikhoan set nguoidung = '" . $nguoidung . "', email = '" . $email . "', img = '" . $img . "',  diachi = '" . $diachi . "', sdt = '" . $sdt . "'  where id =" . $id;
+    $sql = "update taikhoan set email = '" . $email . "', img = '" . $img . "',  diachi = '" . $diachi . "', sdt = '" . $sdt . "'  where id =" . $id;
     pdo_execute($sql);
 }
 

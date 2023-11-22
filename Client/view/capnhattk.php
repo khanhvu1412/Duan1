@@ -19,10 +19,7 @@ if (is_file($hinhpath)) {
         <h1>Cập nhật tài khoản</h1>
         <form action="index.php?act=capnhattk" method="post" class="form-login" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?= $id ?>">
-            <div class="form-input">
-                <p>Tài khoản</p>
-                <input type="text" name="nguoidung" value="<?= $nguoidung ?>">
-            </div>
+            
             <div class="form-input">
                 <p>Email</p>
                 <input type="text" name="email" value="<?= $email ?>">
@@ -30,6 +27,7 @@ if (is_file($hinhpath)) {
             <div class="form-input">
                 <p>Ảnh</p>
                 <br>
+                <?php $hinhpath ?>
                 <input type="file" class="form-control" name="img" value="<?= $hinhpath ?>">
                 <br>
             </div>

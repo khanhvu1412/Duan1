@@ -33,19 +33,6 @@ if (is_array($taikhoan)) {
                     <i class="far fa-eye" id="togglePassword2" onclick="togglePassword('passwordInput2')"></i>
                 </div>
             </div>
-            <!-- <div class="show">
-                <input type="checkbox" onclick="myFunction()" > Hiện mật khẩu
-            </div> -->
-            <!-- <br> -->
-
-            <!-- <div class="form-input">
-                <p>Mật khẩu cũ</p>
-                <input type="text" name="matkhau" value="<?= $matkhau ?>" >
-            </div>
-            <div class="form-input">
-                <p>Mật khẩu mới</p>
-                <input type="text" name="matkhau" >
-            </div> -->
 
 
             <?php if (isset($_POST['doimk']) && $_POST['doimk']) {
@@ -72,16 +59,6 @@ if (is_array($taikhoan)) {
     }
 </script>
 
-<!-- <script>
-    function myFunction() {
-        var x = document.getElementById("password1");
-        if (x.type === "password") {
-            x.type = "text";
-        } else {
-            x.type = "password";
-        }
-    }
-</script> -->
 
 
 <script>
