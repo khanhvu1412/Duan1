@@ -2,7 +2,7 @@
 if (is_array($taikhoan)) {
     extract($taikhoan);
 }
-$hinh = "../upload_file/" .$img ;
+$hinh = "../upload_file/" . $img;
 if (is_file($hinh)) {
     $img = "<img src='" . $hinh . "' height='200'>";
 } else {
@@ -21,8 +21,8 @@ if (is_file($hinh)) {
             <div class="row">
                 <div class="col-sm-4">
                     <div class="product-detail-image style2">
-                    <div class="main-image-wapper">
-                            <img class="main-image" src="<?= $hinh ?>"  alt="">
+                        <div class="main-image-wapper">
+                            <img class="main-image" src="<?= $hinh ?>" alt="">
                         </div>
 
                     </div>
@@ -44,14 +44,15 @@ if (is_file($hinh)) {
                             <?= $sdt ?>
                         </h3>
                         <br>
-                        <span class="price">
+                        <span class="product-name">
                             Địa chỉ:
                             <?= $diachi ?>
                         </span>
                         <br>
-                        <a href="index.php?act=capnhattk"><input type="submit" class="button button-add-cart" value="Cập nhật tài khoản"></a>
-                        <a href="index.php?act=doimk"><input type="submit" class="button button-add-cart" value="Đổi mật khẩu"></a>
-
+                        <a href="index.php?act=capnhattk"><input type="submit" class="button button-add-cart"
+                                value="Cập nhật tài khoản"></a>
+                        <a href="index.php?act=doimk"><input type="submit" class="button button-add-cart"
+                                value="Đổi mật khẩu"></a>
                     </div>
                 </div>
             </div>

@@ -20,12 +20,14 @@
             </div>
             <div class="form-input">
                 <p>Nhập mật khẩu</p>
-                <input type="password" name="matkhau" />
+                <input type="password" id="password" name="matkhau" />
             </div>
             <div class="form-input">
                 <p>Địa chỉ</p>
                 <input type="text" name="diachi" />
             </div>
+
+            <input type="checkbox" class="mt-2" onclick="myFunction()"> Hiện mật khẩu
             
             <?php if(isset($_POST['dangky']) && $_POST['dangky']){
                 echo "Đăng ký tài khoản thành công";
@@ -41,4 +43,15 @@
             </div>
         </form>
     </div>
+
+    <script>
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 </div>

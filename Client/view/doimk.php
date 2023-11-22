@@ -55,6 +55,9 @@ if (is_array($taikhoan)) {
 
                 <input type="submit" name="doimk" value="Cập nhật" onclick="return confirmDoimk()">
             </div>
+            <div class="forget-password">
+                <a href="index.php?act=tkcanhan">Về trang tài khoản</a>
+            </div>
         </form>
     </div>
 </div>

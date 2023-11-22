@@ -50,6 +50,9 @@ if (is_file($hinhpath)) {
 
                 <input type="submit" name="capnhattk" value="Cập nhật" onclick="return confirmCapnhattk()">
             </div>
+            <div class="forget-password">
+                <a href="index.php?act=tkcanhan">Về trang tài khoản</a>
+            </div>
         </form>
     </div>
 </div>
