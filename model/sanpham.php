@@ -70,11 +70,27 @@ function loadall_sanpham($kyw = " ", $iddm = 0, $id_sptheomua = 0)
     if ($id_sptheomua > 0) {
         $sql .= " and id_sptheomua ='" . $id_sptheomua . "'";
     }
-    
+
     $sql .= " order by id desc";
 
     $listsanpham = pdo_query($sql);
     return $listsanpham;
+}
+
+function loadall_sp_theomua($kyw = " ", $id_sptheomua = 0)
+{
+    $sql = "select * from sanpham where 1";
+    if ($kyw != "") {
+        $sql .= " and tensp like '%" . $kyw . "%'";
+    }
+    if ($id_sptheomua > 0) {
+        $sql .= " and id_sptheomua ='" . $id_sptheomua . "'";
+    }
+
+    $sql .= " order by id desc";
+
+    $listsp_theomua = pdo_query($sql);
+    return $listsp_theomua;
 }
 
 

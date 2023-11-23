@@ -218,7 +218,8 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             } else {
                 $id_sptheomua = 0;
             }   
-            $listsanpham = loadall_sanpham("", $id_sptheomua);
+            $listsptheomua = loadall_sptheomua();
+            $listsp_theomua = loadall_sp_theomua("", $id_sptheomua);
             include "view/sphamtheomua.php";
             break;
 
@@ -248,9 +249,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             include('view/menu/about.php');
             break;
 
-        case 'blog':
-            include('view/menu/blog.php');
-            break;
 
         case 'addgiohang':
             if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {

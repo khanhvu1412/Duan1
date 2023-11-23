@@ -33,10 +33,11 @@ if (is_file($hinhpath)) {
                             <?php
                             foreach ($listdanhmuc as $danhmuc) {
                                 extract($danhmuc);
-                                if ($iddm == $id)
+                                if ($iddm == $id){
                                     $s = "selected";
-                                else
+                                }else{
                                     $s = "";
+                                }
                                 echo '<option value="' . $id . '" ' . $s . '>' . $tendm . '</option>';
                             }
                             ?>
@@ -46,10 +47,11 @@ if (is_file($hinhpath)) {
                             <?php
                             foreach ($listmua as $sptheomua) {
                                 extract($sptheomua);
-                                if ($id_sptheomua == $id_mua)
+                                if ($id_sptheomua == $id_mua){
                                     $s = "selected";
-                                else
+                                }else{
                                     $s = "";
+                                }
                                 echo '<option value="' . $id_mua . '" ' . $s . '>' . $ten_mua. '</option>';
                             }
                             // foreach ($listsptheomua as $sptheomua) {

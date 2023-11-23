@@ -135,7 +135,7 @@ if (isset($_GET['act'])) {
                 $iddm = 0;
                 $id_sp_theomua = 0;
             }
-            $listsptheomua = loadall_sptheomua();
+            //$listsptheomua = loadall_sptheomua();
             $listdanhmuc = loadall_danhmuc();
             $listsanpham = loadall_sanpham($kyw, $iddm);
             include "sanpham/list.php";
@@ -193,6 +193,7 @@ if (isset($_GET['act'])) {
                 $sanpham = loadone_sanpham($_GET['id']);
             }
             $listdanhmuc = loadall_danhmuc();
+            $listmua = loadall_sptheomua();
             include "sanpham/update.php";
             break;
 
@@ -348,7 +349,7 @@ if (isset($_GET['act'])) {
             $tongtk = tinhtongtk();
             $tongbl = tinhtongbl();
             $listdanhmuc = loadall_danhmuc();
-            $listsptheomua = loadall_sptheomua();
+            $listthongke = loadall_thongke();
             $listsanpham = loadall_sanpham($kym, $iddm);
             include "home.php";
             break;
@@ -363,6 +364,7 @@ if (isset($_GET['act'])) {
         $iddm = 0;
     }
     ;
+    $listthongke = loadall_thongke();
     $tongdm = tinhtongdm();
     $tongsp = tinhtongsp();
     $tongtk = tinhtongtk();

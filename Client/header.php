@@ -130,9 +130,6 @@ if (isset($_POST["dangxuat"])) {
 								<li class="menu-item-has-children">
 									<a href="index.php?act=about">ABOUT</a>
 								</li>
-								<li class="menu-item-has-children">
-									<a href="index.php?act=blog">BLOG</a>
-								</li>
 							</ul>
 							<span class="mobile-navigation"><i class="fa fa-bars"></i></span>
 						</div>

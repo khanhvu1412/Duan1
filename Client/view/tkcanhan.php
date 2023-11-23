@@ -49,9 +49,9 @@ if (is_file($hinh)) {
                             <?= $diachi ?>
                         </span>
                         <br>
-                        <a href="index.php?act=capnhattk"><input type="submit" class="button button-add-cart"
+                        <a href="index.php?act=capnhattk"><input type="submit" style="margin-top:50px" class="button button-add-cart"
                                 value="Cập nhật tài khoản"></a>
-                        <a href="index.php?act=doimk"><input type="submit" class="button button-add-cart"
+                        <a href="index.php?act=doimk"><input type="submit" style="margin-top:50px; margin-left: 10px;"  class="button button-add-cart"
                                 value="Đổi mật khẩu"></a>
                     </div>
                 </div>

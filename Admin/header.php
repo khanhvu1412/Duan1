@@ -52,11 +52,11 @@
                     <i class="fas fa-fw fa-box-open"></i>
                     <span>Quản lý sản phẩm</span></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="index.php?act=thongke">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Thống kê</span></a>
-            </li>
+            </li> -->
 
             <li class="nav-item">
                 <a class="nav-link" href="index.php?act=listdh">

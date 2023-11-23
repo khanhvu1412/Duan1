@@ -11,7 +11,7 @@ if (is_array($sptheomua)) {
                     <div class="shop-top-left">
                         <div class="breadcrumbs">
                             <a href="index.php">Home</a>
-                            <span>Sản phẩm theo mùa
+                            <span>Sản phẩm mùa
                                 <?= $ten_mua?>
                             </span>
                         </div>
@@ -20,7 +20,7 @@ if (is_array($sptheomua)) {
                 <ul class="product-list-grid desktop-columns-4 tablet-columns-3 mobile-columns-1 row flex-flow">
                     <?php
 
-                    foreach ($listsanpham as $sanpham) {
+                    foreach ($listsp_theomua as $sanpham) {
                         $i = 0;
                         if (($i == 2) || ($i == 5) || ($i == 8 || ($i == 11))) {
                             $mr = "";
@@ -63,6 +63,8 @@ if (is_array($sptheomua)) {
         </div>
     </div>
 </div>
+
+<?php include 'menu/3hopcn.php';?>
 <script>
     function confirmAddgh() {
         if (confirm("Bạn thêm sản phẩm này vào giỏ hàng?")) {

@@ -63,6 +63,9 @@ if (is_array($danhmuc)) {
         </div>
     </div>
 </div>
+
+<?php include 'menu/3hopcn.php';?>
+
 <script>
     function confirmAddgh() {
         if (confirm("Bạn thêm sản phẩm này vào giỏ hàng?")) {

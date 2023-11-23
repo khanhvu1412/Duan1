@@ -41,7 +41,7 @@
                             echo '<tr>
                                 <td>' . $id . '</td>
                                 <td>' . $tensp . '</td>
-                                <td>' . $giasp . '.000  VNĐ</td>
+                                <td>' . $giasp . ' VNĐ</td>
                                 <td>' . $hinh . '</td>
                                 <td>' . $mota . '</td>
                                 <td>' . $soluong . '</td>
