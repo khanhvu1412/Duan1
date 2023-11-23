@@ -1,8 +1,8 @@
 <?php
 
-function insert_sanpham($tensp, $giasp, $hinh, $mota, $soluong, $luotxem, $trangthai, $iddm)
+function insert_sanpham($tensp, $giasp, $hinh, $mota, $soluong, $luotxem, $trangthai, $iddm, $id_sptheomua)
 {
-    $sql = "insert into sanpham (tensp, giasp, img , mota, soluong, luotxem, trangthai, iddm) values ('$tensp', '$giasp', '$hinh', '$mota','$soluong','$luotxem','$trangthai', '$iddm' )";
+    $sql = "insert into sanpham (tensp, giasp, img , mota, soluong, luotxem, trangthai, iddm, id_sptheomua) values ('$tensp', '$giasp', '$hinh', '$mota','$soluong','$luotxem','$trangthai', '$iddm',  '$id_sptheomua')";
     pdo_execute($sql);
 
 }
@@ -44,13 +44,6 @@ function delete_sapham($id)
     pdo_execute($sql);
 }
 
-function load_danhmuc()
-{
-    $sql = "select * from danhmuc";
-    $listdanhmuc = pdo_query($sql);
-    return $listdanhmuc;
-}
-
 function loadall_sanpham_1($kyw = " ", $iddm = 0)
 {
     $sql = "select * from sanpham where 1";
@@ -60,12 +53,12 @@ function loadall_sanpham_1($kyw = " ", $iddm = 0)
     if ($iddm > 0) {
         $sql .= " and iddm ='" . $iddm . "'";
     }
-    $sql .= " order by giasp desc";
+    $sql .= " order by view desc";
     $listsanpham1 = pdo_query($sql);
     return $listsanpham1;
 }
 
-function loadall_sanpham($kyw = " ", $iddm = 0)
+function loadall_sanpham($kyw = " ", $iddm = 0, $id_sptheomua = 0)
 {
     $sql = "select * from sanpham where 1";
     if ($kyw != "") {
@@ -74,11 +67,17 @@ function loadall_sanpham($kyw = " ", $iddm = 0)
     if ($iddm > 0) {
         $sql .= " and iddm ='" . $iddm . "'";
     }
-    $sql .= " order by giasp desc";
+    if ($id_sptheomua > 0) {
+        $sql .= " and id_sptheomua ='" . $id_sptheomua . "'";
+    }
+    
+    $sql .= " order by id desc";
 
     $listsanpham = pdo_query($sql);
     return $listsanpham;
 }
+
+
 
 function loadone_sanpham($id)
 {
@@ -100,12 +99,12 @@ function loadone_sanpham($id)
 // }
 
 
-function update_sanpham($id, $iddm, $tensp, $giasp, $mota, $soluong, $luotxem, $trangthai, $hinh)
+function update_sanpham($id, $iddm, $id_sptheomua, $tensp, $giasp, $mota, $soluong, $luotxem, $trangthai, $hinh)
 {
     if ($hinh != "") {
-        $sql = " update sanpham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "', soluong='" . $soluong . "', luotxem='" . $luotxem . "', trangthai='" . $trangthai . "', img = '" . $hinh . "' where id = " . $id;
+        $sql = " update sanpham set iddm = '" . $iddm . "' , id_sptheomua = '" . $id_sptheomua . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "', soluong='" . $soluong . "', luotxem='" . $luotxem . "', trangthai='" . $trangthai . "', img = '" . $hinh . "' where id = " . $id;
     } else {
-        $sql = " update sanpham set iddm = '" . $iddm . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "', soluong='" . $soluong . "', luotxem='" . $luotxem . "', trangthai='" . $trangthai . "' where id = " . $id;
+        $sql = " update sanpham set iddm = '" . $iddm . "' , id_sptheomua = '" . $id_sptheomua . "' , tensp = '" . $tensp . "', giasp = '" . $giasp . " ', mota = '" . $mota . "', soluong='" . $soluong . "', luotxem='" . $luotxem . "', trangthai='" . $trangthai . "' where id = " . $id;
     }
     pdo_execute($sql);
 }

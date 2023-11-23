@@ -3,6 +3,10 @@ if (is_array($sanpham)) {
     extract($sanpham);
 }
 
+if(isset($_SESSION['nguoidung']) &&(is_array($_SESSION['nguoidung']))){  
+    extract($_SESSION['nguoidung']);
+}
+
 
 ?>
 
@@ -40,7 +44,9 @@ if (is_array($sanpham)) {
                                 <?= $giasp ?> VNĐ
                             </ins>
                         </span>
-                        <div class="meta"><span class="text-primary"><?= ($trangthai === 0 ? "<p style='color: green;'>Còn hàng</p>" : "<p style='color: red;'>Hết hàng</p>") ?></span></span>
+                        <div class="meta"><span class="text-primary">
+                                <?= ($trangthai === 0 ? "<p style='color: green;'>Còn hàng</p>" : "<p style='color: red;'>Hết hàng</p>") ?>
+                            </span></span>
                         </div>
                         <div class="short-descript">
                             <?= $mota ?>
@@ -53,7 +59,7 @@ if (is_array($sanpham)) {
                             </div>
                             <a class="button button-add-cart" data-quantity="1" href="#">Mua</a>
 
-                            <a class="wishlist button" href="#"  style="margin-left: 5px;"><i
+                            <a class="wishlist button" href="#" style="margin-left: 5px;"><i
                                     class="fa-solid fa-cart-plus" style="padding-top: 10px ;"></i></a>
                         </form>
                     </div>
@@ -65,7 +71,7 @@ if (is_array($sanpham)) {
 
 <!-- tab -->
 <div class="container">
-    <div class="tab-details-product style2">
+    <!-- <div class="tab-details-product style2">
         <br>
         <div class="tab-container">
             <div class="binhluan">
@@ -78,17 +84,17 @@ if (is_array($sanpham)) {
                             <th>Nội dung</th>
                             <th>Ngày bình luận</th>
                         </tr>
-                        <?php //foreach ($listbinhluan as $binhluan): ?>
-                        <?php //extract($binhl)?>
-
-                            <tr>
-                                <td><?php //echo $binhluan['nguoidung'] ?></td>
-                                <td><?php //echo $binhluan['noidung'] ?></td>
-                                <td><?php //echo date("d/m/Y", strtotime($value['ngaybinhluan'])) ?></td>
+                        <?php foreach ($listbinhluan as $binhluan) {
+                            extract($binhluan);
+                            echo '
+                        
+                        <tr>
+                                <td>' . $nguoidung . '</td>
+                                <td>' . $noidung . ' </td>
+                                <td>' . $ngaybinhluan . '</td>
                             </tr>
-
-
-                        <?php //endforeach; ?>
+                        ';
+                        } ?>
 
 
                         <tr>
@@ -100,24 +106,30 @@ if (is_array($sanpham)) {
                             <td>HEHE</td>
                             <td>HEHE</td>
                             <td>HEHE</td>
-                        </tr>
+                        </tr> 
 
                     </table>
                 </div>
                 <br>
 
-
-
-
                 <div class="binhluan_content">
-                    <div class="ndbinhluan"><input type="text" name="binhluan" height="20px" width="400px"
-                            id="binhluan"></div>
-                    <div class="nut"><a href="#"><input type="submit" value="Gửi"></a></div>
+                    <form action="index.php?act=chitietsp&id_sp<?php //$sanpham['id'] ?>" method="post">
+                        <input type="text" name="noidung">
+                        <input type="hidden" name="id_sp" value="<?php //$sanpham['id'] ?>">
+                        <input type="hidden" name="iduser" value="<?php //$_SESSION['nguoidung']['id'] ?>">
+                        <input type="submit" name="guibinhluan" value="Gửi">
+                    </form>
                 </div>
             </div>
         </div>
 
-    </div>
+    </div> -->
+
+
+    <iframe src="./view/binhluanform.php?id_sp=<?php if(is_array($sanpham)){
+    extract($sanpham);
+    } 
+    echo $id;?>" width="100%" height="300px" frameborder="0"></iframe>
 
 
     <div class="product-slide upsell-products">
@@ -127,27 +139,34 @@ if (is_array($sanpham)) {
         <ul class="owl-carousel" data-responsive='{"0":{"items":1},"600":{"items":3},"1000":{"items":4}}'
             data-autoplay="true" data-loop="true" data-items="4" data-dots="false" data-nav="false" data-margin="30">
             <?php
-            foreach ($sanphamtop6 as $sanpham): ?>
-                <li class="product-item">
+            foreach ($sanphamtop6 as $sanpham) {
+
+                extract($sanpham);
+
+                echo '
+                 <li class="product-item">
                     <div class="product-inner">
                         <div class="product-thumb">
-                            <a href="#"><img src="../upload_file/<?= $img ?>" alt=""></a>
+                            <a href="#"><img src="../upload_file/'. $img .'" alt=""></a>
                         </div>
                         <div class="product-info">
-                            <h3 class="product-name"><a href="#">
-                                    <?= $tensp ?>
+                            <h3 class="product-name"><a href="#">'. $tensp.'
                                 </a></h3>
                             <span class="price">
-                                <ins style="color:red">
-                                    <?= $giasp ?> VNĐ
+                                <ins style="color:red"> '.$giasp.'  VNĐ
                                 </ins>
                             </span>
-                            <a href="#"  class="button">Thêm vào giỏ hàng</a>
+                            <a href="#" class="button">Thêm vào giỏ hàng</a>
                         </div>
                     </div>
                 </li>
+                
+                
+                ';
 
-            <?php endforeach; ?>
+
+
+            } ?>
         </ul>
     </div>
 </div>

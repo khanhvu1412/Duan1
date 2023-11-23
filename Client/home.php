@@ -135,28 +135,37 @@
 						</li>
 							';
 						} ?>
-						<!-- <li class="product-item style2">
-							<div class="product-inner">
-								<div class="product-thumb has-back-image">
-									<a href="#"><img src="images/products/21.jpg" alt=""></a>
-
-								</div>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
-									<span class="price">
-										<ins>85.000 VNĐ</ins>
-									</span>
-									<a href="index.php?act=addgiohang" class="button add_to_cart_button">Thêm vào giỏ
-										hàng</a>
-								</div>
-							</div>
-						</li> -->
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="section-brand-slide">
+
+	<div class="margin-top-50">
+		<div class="row">
+			<div class="col-sm-12 col-md-5">
+				<div class="section-title text-center margin-top-40 margin-bottom-30">
+					<h3>Sản phẩm theo mùa</h3>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-7">
+				<ul class="category-menu category-carousel pull-left owl-carousel nav-style7 nav-center-center"
+					data-nav="true" data-autoplay="false" data-dots="false" data-loop="true" data-margin="30"
+					data-responsive='{"0":{"items":1},"600":{"items":4},"1000":{"items":4}}'>
+					<?php foreach ($listsptheomua as $sptheomua) {
+						extract($sptheomua);
+						echo '
+						<li>
+							<a href="index.php?act=sptheomua&id_sptheomua=' . $id_mua . '">
+							' . $ten_mua . '</a>
+						</li>';
+					} ?>
+					<?php ?>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="section-brand-slide">
 		<div class="brands-slide owl-carousel nav-center-center nav-style7" data-nav="true" data-dots="false"
 			data-loop="true" data-margin="60" data-responsive='{"0":{"items":1},"600":{"items":3},"1000":{"items":5}}'>
 			<a href="#"><img src="images/brands/brand1.png" alt=""></a>
@@ -165,7 +174,7 @@
 			<a href="#"><img src="images/brands/brand4.png" alt=""></a>
 			<a href="#"><img src="images/brands/brand5.png" alt=""></a>
 		</div>
-	</div>
+	</div> -->
 	<div class="margin-top-60">
 		<div class="box-product-featured">
 			<div class="box-head banner-opacity">

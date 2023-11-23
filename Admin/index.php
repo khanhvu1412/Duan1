@@ -6,6 +6,7 @@ include "../model/danhmuc.php";
 include "../model/taikhoan.php";
 include "../model/thongke.php";
 include "../model/donhang.php";
+include "../model/sptheomua.php";
 include "../model/binhluan.php";
 include "../model/tong.php";
 
@@ -128,10 +129,13 @@ if (isset($_GET['act'])) {
             if (isset($_POST['listok']) && ($_POST['listok'])) {
                 $kyw = $_POST['kyw'];
                 $iddm = $_POST['iddm'];
+                $id_sp_theomua = $_POST['id_sp_theomua'];
             } else {
                 $kyw = '';
                 $iddm = 0;
+                $id_sp_theomua = 0;
             }
+            $listsptheomua = loadall_sptheomua();
             $listdanhmuc = loadall_danhmuc();
             $listsanpham = loadall_sanpham($kyw, $iddm);
             include "sanpham/list.php";
@@ -141,7 +145,7 @@ if (isset($_GET['act'])) {
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
             }
-            //$listsanpham = loadall_sanpham();
+            $listsptheomua= loadall_sptheomua();
             $listbinhluan = loadall_binhluan();
             $listdanhmuc = loadall_danhmuc();
             include "sanpham/chitietsp.php";
@@ -149,7 +153,9 @@ if (isset($_GET['act'])) {
 
         case "addsp":
             if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
+                
                 $iddm = $_POST['iddm'];
+                $id_sptheomua = $_POST['id_sptheomua'];
                 $tensp = $_POST['tensp'];
                 $giasp = $_POST['giasp'];
                 $mota = $_POST['mota'];
@@ -164,11 +170,12 @@ if (isset($_GET['act'])) {
                 } else {
                     //echo "Upload ảnh không thành công";
                 }
-                insert_sanpham($tensp, $giasp, $hinh, $mota, $soluong, $luotxem, $trangthai, $iddm);
+                insert_sanpham($tensp, $giasp, $hinh, $mota, $soluong, $luotxem, $trangthai, $iddm, $id_sptheomua);
                 $thongbao = "Thêm thành công";
 
 
             }
+            $listmua = loadall_sptheomua();
             $listdanhmuc = loadall_danhmuc();
             include "sanpham/add.php";
             break;
@@ -193,6 +200,7 @@ if (isset($_GET['act'])) {
             if (isset($_POST["capnhat"]) && ($_POST["capnhat"])) {
                 $id = $_POST['id'];
                 $iddm = $_POST['iddm'];
+                $id_sptheomua = $_POST['id_sptheomua'];
                 $tensp = $_POST['tensp'];
                 $giasp = $_POST['giasp'];
                 $mota = $_POST['mota'];
@@ -208,10 +216,12 @@ if (isset($_GET['act'])) {
                     // echo "Upload ảnh không thành công";
                 }
 
-                update_sanpham($id, $iddm, $tensp, $giasp, $mota, $soluong, $luotxem, $trangthai, $hinh);
+                update_sanpham($id, $iddm, $id_sptheomua, $tensp, $giasp, $mota, $soluong, $luotxem, $trangthai, $hinh);
                 $thongbao = 'Cập nhật thành công';
 
             }
+            //$sptheomua = loadone_sptheomua($id);
+            $listmua = loadall_sptheomua();
             $listdanhmuc = loadall_danhmuc();
             $listsanpham = loadall_sanpham();
             include "sanpham/list.php";
@@ -338,6 +348,7 @@ if (isset($_GET['act'])) {
             $tongtk = tinhtongtk();
             $tongbl = tinhtongbl();
             $listdanhmuc = loadall_danhmuc();
+            $listsptheomua = loadall_sptheomua();
             $listsanpham = loadall_sanpham($kym, $iddm);
             include "home.php";
             break;

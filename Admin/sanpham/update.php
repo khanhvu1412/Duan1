@@ -41,6 +41,23 @@ if (is_file($hinhpath)) {
                             }
                             ?>
                         </select>
+                        <select name="id_sptheomua">
+                            <option value="0" seclection>Mùa</option>
+                            <?php
+                            foreach ($listmua as $sptheomua) {
+                                extract($sptheomua);
+                                if ($id_sptheomua == $id_mua)
+                                    $s = "selected";
+                                else
+                                    $s = "";
+                                echo '<option value="' . $id_mua . '" ' . $s . '>' . $ten_mua. '</option>';
+                            }
+                            // foreach ($listsptheomua as $sptheomua) {
+                            //     extract($sptheomua);
+                            //     echo '<option value="' . $id . '"> ' . $ten_mua . '</option>';
+                            // }
+                            ?>
+                        </select>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên sản phẩm</label>
@@ -64,15 +81,15 @@ if (is_file($hinhpath)) {
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Số lượng</label>
-                        <input class="form-control"  name="soluong" value="<?= $soluong ?>">
+                        <input class="form-control" name="soluong" value="<?= $soluong ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Lượt xem</label>
-                        <input class="form-control"  name="luotxem" value="<?= $luotxem ?>">
+                        <input class="form-control" name="luotxem" value="<?= $luotxem ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Trang thái</label>
-                        <input class="form-control"  name="trangthai" value="<?= $trangthai ?>">
+                        <input class="form-control" name="trangthai" value="<?= $trangthai ?>">
                     </div>
 
 
@@ -80,7 +97,8 @@ if (is_file($hinhpath)) {
 
 
                     <input type="hidden" name="id" value="<?= $sanpham['id']; ?>">
-                    <input type="submit"  class="btn btn-success" name="capnhat"  onclick="return confirmUpdatesp()" value="Cập nhật">
+                    <input type="submit" class="btn btn-success" name="capnhat" onclick="return confirmUpdatesp()"
+                        value="Cập nhật">
                     <input type="reset" class="btn btn-info" value="Nhập lại">
                     <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Danh sách"></a>
 

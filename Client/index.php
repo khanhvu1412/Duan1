@@ -9,6 +9,7 @@ include("../model/taikhoan.php");
 include("../model/binhluan.php");
 include("../model/danhmuc.php");
 include("../model/sanpham.php");
+include("../model/sptheomua.php");
 include("../model/donhang.php");
 include("global.php");
 
@@ -75,7 +76,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 
                 // $dssp = loadall_sanpham("", $iddm);
 
-                // $sanphamShop = loadall_shop($kyw, $iddm);
+                // $sanphamShop = loadall_shop();
                 // $sanpham = loadone_sanpham($_GET['id']);
 
                 // $listsanpham = loadall_sanpham($kyw, $iddm);
@@ -162,26 +163,20 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $iddm = 0;
             }
 
-
-            $dssp = loadall_sanpham("", $iddm);
-            $sanphamShop = loadall_shop($kyw, $iddm);
-            // var_dump($sanphamShop);die()
             $listsanpham = loadall_sanpham($kyw, $iddm);
-            // var_dump($listsanpham);
-            // die();
             $listdanhmuc = loadall_danhmuc();
-            $sanpham_one = loadall_sanpham_1($kyw, $iddm);
-            $sanphamtop = loadall_sanpham_top5();
             include("view/sanpham.php");
             break;
 
         case "chitietsp":
+            
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
-
-               
+               // $listsanpham = loadall_sanpham($kyw, $iddm);
+                
 
             }
+            
             $sanphamtop6 = load_sanpham_top6();
             include("view/chitietsp.php");
             break;
@@ -198,6 +193,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $iddm = 0;
             }
             $dssp = loadall_sanpham("", $iddm);
+            $listsptheomua = loadall_sptheomua();
             $listsanpham = loadall_sanpham($kyw, $iddm);
             $listdanhmuc = loadall_danhmuc();
             include "view/timkiem.php";
@@ -213,6 +209,17 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             }
             $listsanpham = loadall_sanpham("", $iddm);
             include "view/timkiemdm.php";
+            break;
+
+        case "sptheomua":
+            if (isset($_GET['id_sptheomua']) && ($_GET['id_sptheomua']) > 0) {
+                $id_sptheomua = $_GET['id_sptheomua'];
+                $sptheomua = loadone_sptheomua($_GET['id_sptheomua']);
+            } else {
+                $id_sptheomua = 0;
+            }   
+            $listsanpham = loadall_sanpham("", $id_sptheomua);
+            include "view/sphamtheomua.php";
             break;
 
 
@@ -283,6 +290,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $iddm = 0;
             }
             ;
+            $listsptheomua = loadall_sptheomua();
             $listdanhmuc = loadall_danhmuc();
             $listsanpham = loadall_sanpham($kyw, $iddm);
             include("home.php");
@@ -300,9 +308,10 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
     ;
     $sanphamtop5 = loadall_sanpham_top5();
     $listdanhmuc = loadall_danhmuc();
+    $listsptheomua = loadall_sptheomua();
     $listsanpham = loadall_sanpham($kyw, $iddm);
-    
-    $sanphamShop = loadall_shop($kyw, $iddm);
+
+    $sanphamShop = loadall_shop();
     include("home.php");
 }
 

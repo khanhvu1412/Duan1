@@ -25,6 +25,19 @@
 
                         </select>
                     </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Mùa</label>
+                        <select name="id_sptheomua" id="">
+                            <?php
+                            foreach ($listmua as $sptheomua) {
+                                extract($sptheomua);
+                                echo '<option value="' . $id_mua. '"> ' . $ten_mua . '</option>';
+                            }
+                            ?>
+
+                        </select>
+                    </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên sản phẩm</label>
                         <input type="text" class="form-control" name="tensp">
