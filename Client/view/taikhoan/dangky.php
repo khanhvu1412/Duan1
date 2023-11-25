@@ -4,15 +4,15 @@
         <form action="index.php?act=dangky" method="post" class="form-login" enctype="multipart/form-data">
             <div class="form-input">
                 <p>Tài khoản</p>
-                <input type="text" name="nguoidung" />
+                <input type="text" name="nguoidung">
             </div>
             <div class="form-input">
                 <p>Email</p>
-                <input type="text" name="email" />
+                <input type="text" name="email">
             </div>
 
-                <p>Ảnh</p>
-                <input type="file" name="img" /><br>
+            <p>Ảnh</p>
+            <input type="file" name="img"><br>
 
             <div class="form-input">
                 <p>Số điện thoại</p>
@@ -28,10 +28,10 @@
             </div>
 
             <input type="checkbox" class="mt-2" onclick="myFunction()"> Hiện mật khẩu
-            
-            <?php if(isset($_POST['dangky']) && $_POST['dangky']){
+
+            <?php if (isset($_POST['dangky']) && $_POST['dangky']) {
                 echo "Đăng ký tài khoản thành công";
-            }  ?>
+            } ?>
             <div class="login-btn">
                 <input type="submit" name="dangky" value="Đăng Ký">
             </div>
@@ -45,13 +45,13 @@
     </div>
 
     <script>
-function myFunction() {
-  var x = document.getElementById("password");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-</script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
 </div>

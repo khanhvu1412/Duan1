@@ -218,22 +218,6 @@
 						</li>
 							';
 						} ?>
-						<!-- <li class="product-item style2">
-							<div class="product-inner">
-								<div class="product-thumb has-back-image">
-									<a href="#"><img src="images/products/24.jpg" alt=""></a>
-
-								</div>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">London Star Sweatshirt</a></h3>
-									<span class="price">
-										<ins>85.000 VNĐ</ins>
-									</span>
-									<a href="index.php?act=addgiohang" class="button add_to_cart_button">Thêm vào giỏ
-										hàng</a>
-								</div>
-							</div>
-						</li> -->
 					</ul>
 				</div>
 			</div>

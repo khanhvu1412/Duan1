@@ -27,7 +27,7 @@
                                         <td class="product-thumbnail"><img src="' . $hinh . '" alt=""></td>
 
                                         <td class="product-name"><a href="#">' . $cart[1] . '</a></td>
-                                        <td class="product-price"><a href="#">' . $cart[4] . ' VNĐ</a></td>
+                                        <td class="product-price"><a href="#">' . $cart[4] . '.000 VNĐ</a></td>
                                         <td class="product-remove"><a href=' . $xoa . ' onclick="return confirmDeletegh()"><i class="fa-regular fa-trash-can"></i></a></td> 
                                     </tr>';
 
@@ -62,7 +62,7 @@
                                 }
                                 $count = count($_SESSION['mycart']);
                                 echo '<p>Số lượng x' . $count . ' </p> 
-                                <p> Tổng: ' . $tong . ' VNĐ</p>';
+                                <p> Tổng: ' . $tong . '.000 VNĐ</p>';
                                 ?>
 
                             </tr>

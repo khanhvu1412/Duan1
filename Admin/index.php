@@ -143,10 +143,11 @@ if (isset($_GET['act'])) {
 
         case "chitietsp":
             if (isset($_GET['id']) && $_GET['id'] > 0) {
+                
                 $sanpham = loadone_sanpham($_GET['id']);
             }
-            $listsptheomua= loadall_sptheomua();
-            $listbinhluan = loadall_binhluan();
+            $listmua = loadall_sptheomua();
+            $listbinhluan = loadall_binhluan_admin();
             $listdanhmuc = loadall_danhmuc();
             include "sanpham/chitietsp.php";
             break;
@@ -234,8 +235,8 @@ if (isset($_GET['act'])) {
         // Bình luận
         case "listbl":
 
-            $listsanpham = loadall_sanpham();
-            $listbinhluan = loadall_binhluan();
+            $listsanpham = loadall_sanpham("", 0);
+            $listbinhluan = loadall_binhluan_admin();
             include "binhluan/list.php";
             break;
 
@@ -243,7 +244,7 @@ if (isset($_GET['act'])) {
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                 $binhluan = loadone_binhluan($_GET['id']);
             }
-
+            $listbinhluan = loadall_binhluan_admin();
             include "binhluan/update.php";
             break;
 
@@ -251,8 +252,9 @@ if (isset($_GET['act'])) {
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                 delete_binhluan($_GET['id']);
             }
-            $listsanpham = loadall_binhluan();
-            include "binhluan/list.php";
+            $listbinhluan = loadall_binhluan_admin();
+            $sanpham = loadone_sanpham($_GET['id']);
+            include "sanpham/chitietsp.php";
             break;
 
         case "updatebl":
@@ -265,7 +267,7 @@ if (isset($_GET['act'])) {
                 $thongbao = "Cập nhật thành công";
             }
 
-            $listbinhluan = loadall_binhluan();
+            $listbinhluan = loadall_binhluan_admin();
             include "binhluan/list.php";
             break;
 

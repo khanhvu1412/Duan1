@@ -3,7 +3,7 @@ if (is_array($sanpham)) {
     extract($sanpham);
 }
 
-if(isset($_SESSION['nguoidung']) &&(is_array($_SESSION['nguoidung']))){  
+if (isset($_SESSION['nguoidung']) && (is_array($_SESSION['nguoidung']))) {
     extract($_SESSION['nguoidung']);
 }
 
@@ -57,7 +57,7 @@ if(isset($_SESSION['nguoidung']) &&(is_array($_SESSION['nguoidung']))){
                             <div class="quantity">
                                 <input style="border: 1px solid #000" type="number" name="" id="">
                             </div>
-                            <a class="button button-add-cart" data-quantity="1" href="#">Mua</a>
+                            <a class="button button-add-cart" data-quantity="1" href="index.php?act=thanhtoan">Mua</a>
 
                             <a class="wishlist button" href="#" style="margin-left: 5px;"><i
                                     class="fa-solid fa-cart-plus" style="padding-top: 10px ;"></i></a>
@@ -69,91 +69,41 @@ if(isset($_SESSION['nguoidung']) &&(is_array($_SESSION['nguoidung']))){
     </div>
 </div>
 
-<!-- tab -->
+
 <div class="container">
-    <!-- <div class="tab-details-product style2">
-        <br>
-        <div class="tab-container">
-            <div class="binhluan">
-                <span style="font-size: 35px">Bình luận</span>
-                <div class="luot">
-                    <table class="product-cart">
-
-                        <tr>
-                            <th>Tài khoản</th>
-                            <th>Nội dung</th>
-                            <th>Ngày bình luận</th>
-                        </tr>
-                        <?php foreach ($listbinhluan as $binhluan) {
-                            extract($binhluan);
-                            echo '
-                        
-                        <tr>
-                                <td>' . $nguoidung . '</td>
-                                <td>' . $noidung . ' </td>
-                                <td>' . $ngaybinhluan . '</td>
-                            </tr>
-                        ';
-                        } ?>
+   
+    <iframe src="./view/binhluanform.php?id_sp=<?php if (is_array($sanpham)) {
+        extract($sanpham);
+    }
+    echo $id; ?>" width="100%" height="300px" frameborder="0"></iframe>
+    <div class="comment">
+        
 
 
-                        <tr>
-                            <td>HEHE</td>
-                            <td>HEHE</td>
-                            <td>HEHE</td>
-                        </tr>
-                        <tr>
-                            <td>HEHE</td>
-                            <td>HEHE</td>
-                            <td>HEHE</td>
-                        </tr> 
-
-                    </table>
-                </div>
-                <br>
-
-                <div class="binhluan_content">
-                    <form action="index.php?act=chitietsp&id_sp<?php //$sanpham['id'] ?>" method="post">
-                        <input type="text" name="noidung">
-                        <input type="hidden" name="id_sp" value="<?php //$sanpham['id'] ?>">
-                        <input type="hidden" name="iduser" value="<?php //$_SESSION['nguoidung']['id'] ?>">
-                        <input type="submit" name="guibinhluan" value="Gửi">
-                    </form>
-                </div>
+        <div class="product-slide upsell-products">
+            <div class="section-title text-center">
+                <h3>SẢN PHẨM KHÁC</h3>
             </div>
-        </div>
+            <ul class="owl-carousel" data-responsive='{"0":{"items":1},"600":{"items":3},"1000":{"items":4}}'
+                data-autoplay="true" data-loop="true" data-items="4" data-dots="false" data-nav="false"
+                data-margin="30">
+                <?php
+                foreach ($sanphamtop6 as $sanpham) {
 
-    </div> -->
+                    extract($sanpham);
+                    $linksp = "index.php?act=chitietsp&id=" . $id;
 
-
-    <iframe src="./view/binhluanform.php?id_sp=<?php if(is_array($sanpham)){
-    extract($sanpham);
-    } 
-    echo $id;?>" width="100%" height="300px" frameborder="0"></iframe>
-
-
-    <div class="product-slide upsell-products">
-        <div class="section-title text-center">
-            <h3>SẢN PHẨM KHÁC</h3>
-        </div>
-        <ul class="owl-carousel" data-responsive='{"0":{"items":1},"600":{"items":3},"1000":{"items":4}}'
-            data-autoplay="true" data-loop="true" data-items="4" data-dots="false" data-nav="false" data-margin="30">
-            <?php
-            foreach ($sanphamtop6 as $sanpham) {
-
-                extract($sanpham);
-
-                echo '
+                    echo '
                  <li class="product-item">
                     <div class="product-inner">
                         <div class="product-thumb">
-                            <a href="#"><img src="../upload_file/'. $img .'" alt=""></a>
+                            <a href="'.$linksp.'"><img src="../upload_file/' . $img . '" alt=""></a>
                         </div>
                         <div class="product-info">
-                            <h3 class="product-name"><a href="#">'. $tensp.'
+                            <h3 class="product-name"><a href="#">' . $tensp . '
                                 </a></h3>
                             <span class="price">
-                                <ins style="color:red"> '.$giasp.'  VNĐ
+                                <ins style="color:red"> ' . $giasp . '  VNĐ
                                 </ins>
                             </span>
                             <a href="#" class="button">Thêm vào giỏ hàng</a>
@@ -166,13 +116,13 @@ if(isset($_SESSION['nguoidung']) &&(is_array($_SESSION['nguoidung']))){
 
 
 
-            } ?>
-        </ul>
+                } ?>
+            </ul>
+        </div>
     </div>
-</div>
 
-<!--END CONTAINER-->
-<!-- ./tab -->
+    <!--END CONTAINER-->
+    <!-- ./tab -->
 
-<?php include "menu/3hopcn.php" ?>
+    <?php include "menu/3hopcn.php" ?>
 </div>

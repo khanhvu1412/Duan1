@@ -11,8 +11,8 @@ if (is_array($sptheomua)) {
                     <div class="shop-top-left">
                         <div class="breadcrumbs">
                             <a href="index.php">Home</a>
-                            <span>Sản phẩm mùa
-                                <?= $ten_mua?>
+                            <span>Mùa
+                                <?= $ten_mua ?>
                             </span>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ if (is_array($sptheomua)) {
     </div>
 </div>
 
-<?php include 'menu/3hopcn.php';?>
+<?php include 'menu/3hopcn.php'; ?>
 <script>
     function confirmAddgh() {
         if (confirm("Bạn thêm sản phẩm này vào giỏ hàng?")) {

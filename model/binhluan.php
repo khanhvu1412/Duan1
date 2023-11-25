@@ -1,38 +1,55 @@
 <?php
 
-// in danh sách
-function insert_binhluan($id_sp, $id_nguoidung, $noidung,$ngaybinhluan )
-{
+
+// function insert_binhluan($id_sp, $id_nguoidung, $noidung) {
     
-    if (!empty($noidung)){
-        
-        $sql = "
-                INSERT INTO binhluan 
-                VALUES (null, '$noidung','$id_nguoidung','$id_sp','$ngaybinhluan'); ";
+//     $date = date('d-m-Y');
+//         $sql = "
+//                 INSERT INTO binhluan 
+//                 VALUES ('$noidung','$id_nguoidung','$id_sp','$date');  
+//                 WHERE id_sp= ".$id_sp;
+//         pdo_execute($sql);
+    
+// }
+
+
+function insert_binhluan($noidung, $id_nguoidung, $id_sp,  $ngaybinhluan)
+{
+    if (!empty($noidung)) {
+        $sql = "INSERT INTO binhluan VALUES(null,'$noidung','$id_nguoidung','$id_sp','$ngaybinhluan')";
         
         pdo_execute($sql);
     }
 }
 
-// xóa danh mục
+
 function delete_binhluan($id)
 {
     $sql = "delete from binhluan where id=" . $id;
     pdo_execute($sql);
 }
 
-
-function loadall_binhluan()
+function loadall_binhluan_admin()
 {
-    // $sql = "select * from binhluan order by id asc";
-    // $listbinhluan = pdo_query($sql);
-    // return $listbinhluan;
+    
+    $sql = "
+            SELECT binhluan.id, binhluan.noidung, taikhoan.nguoidung, sanpham.tensp , binhluan.id_nguoidung, binhluan.id_sp, binhluan.ngaybinhluan FROM `binhluan` 
+            LEFT JOIN taikhoan ON binhluan.id_nguoidung = taikhoan.id
+            LEFT JOIN sanpham ON binhluan.id_sp = sanpham.id ; 
+        ";
+    $listbinhluan = pdo_query($sql);
+    return $listbinhluan;
+}
 
 
+function loadall_binhluan($id_sp)
+{
+    
     $sql = "
             SELECT binhluan.id, binhluan.noidung, taikhoan.nguoidung, binhluan.id_nguoidung, binhluan.id_sp, binhluan.ngaybinhluan FROM `binhluan` 
             LEFT JOIN taikhoan ON binhluan.id_nguoidung = taikhoan.id
-            LEFT JOIN sanpham ON binhluan.id_sp = sanpham.id; 
+            LEFT JOIN sanpham ON binhluan.id_sp = sanpham.id
+            WHERE id_sp = $id_sp; 
         ";
     $listbinhluan = pdo_query($sql);
     return $listbinhluan;

@@ -29,13 +29,12 @@
                             extract($binhluan);
                             $suabl = "index.php?act=suabl&id=" . $id;
                             $xoabl = "index.php?act=xoabl&id=" . $id;
-                            $hinhpath = "../upload_file/" . $img;
 
 
                             echo '<tr>
                                 <td>' . $id . '</td>
-                                <td>' . $tenkh . '</td>
-                                <td>' . $tensp . '</td>
+                                <td>' . $nguoidung . '</td>
+                                <td>' . $ten_sp . '</td>
                                 <td>' . $noidung . ' VNĐ</td>
                                 <td>' . $ngaybinhluan . '</td>
                                 <td> 

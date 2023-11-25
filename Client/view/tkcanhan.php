@@ -17,7 +17,7 @@ if (is_file($hinh)) {
         <a href="index.php">Home</a> Tài khoản
     </div>
     <div class="row">
-        <div class="main-content col-sm-12" style="border:1px soloid">
+        <div class="main-content col-sm-12">
             <div class="row">
                 <div class="col-sm-4">
                     <div class="product-detail-image style2">
@@ -49,18 +49,17 @@ if (is_file($hinh)) {
                             <?= $diachi ?>
                         </span>
                         <br>
-                        <a href="index.php?act=capnhattk"><input type="submit" style="margin-top:50px" class="button button-add-cart"
-                                value="Cập nhật tài khoản"></a>
-                        <a href="index.php?act=doimk"><input type="submit" style="margin-top:50px; margin-left: 10px;"  class="button button-add-cart"
-                                value="Đổi mật khẩu"></a>
+                        <a href="index.php?act=capnhattk"><input type="submit" style="margin-top:50px"
+                                class="button button-add-cart" value="Cập nhật tài khoản"></a>
+                        <a href="index.php?act=doimk"><input type="submit" style="margin-top:50px; margin-left: 10px;"
+                                class="button button-add-cart" value="Đổi mật khẩu"></a>
                     </div>
                 </div>
             </div>
-
-
-
-
         </div>
+
+        
+
     </div>
 </div>
 

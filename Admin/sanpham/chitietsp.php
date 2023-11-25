@@ -24,19 +24,21 @@ if (is_file($hinhpath)) {
         </div>
 
         <div class="card-body">
-               
+
             <div class="table-responsive">
-                
-            
-                
-                
-                    
-                    <div class="container" style="display: flex; ">
-                        <div class="list-product-img">
-                            <?= $img ?>
-                        </div>
-                        <div class="list-product-text" style="padding-left: 50px">
-                        <h2><label for="">Mã sản phẩm : <?= $id ?> </label></h2>
+
+
+
+
+
+                <div class="container" style="display: flex; ">
+                    <div class="list-product-img">
+                        <?= $img ?>
+                    </div>
+                    <div class="list-product-text" style="padding-left: 50px">
+                        <h2><label for="">Mã sản phẩm :
+                                <?= $id ?>
+                            </label></h2>
                         <h2><label for="">Tên danh mục:
                                 <?php foreach ($listdanhmuc as $danhmuc) {
                                     extract($danhmuc);
@@ -47,35 +49,49 @@ if (is_file($hinhpath)) {
                                     }
                                 } ?>
                             </label></h2>
-                        <h2><label for="">Tên sản phẩm: <?= $tensp ?> </label></h2>
-                        <h2><label for="">Giá sản phẩm: <?= $giasp ?> </label></h2>
-                        <h2><label for="">Mô tả: <?= $mota ?> </label></h2>
+                        <h2><label for="">Tên sản phẩm:
+                                <?= $tensp ?>
+                            </label></h2>
+                        <h2><label for="">Giá sản phẩm:
+                                <?= $giasp ?>
+                            </label></h2>
+                        <h2><label for="">Mô tả:
+                                <?= $mota ?>
+                            </label></h2>
                         <h2><label for="">Mùa :
-                                <?php foreach ($listsptheomua as $sptheomua) {
+                                <?php
+                                foreach ($listmua as $sptheomua) {
                                     extract($sptheomua);
-                                    if ($id_sptheomua === $id) {
+                                    if ($id_sptheomua === $id_mua) {
                                         echo $ten_mua;
                                     } else {
                                         echo "";
                                     }
-                                } ?>
+                                }
+                                ?>
                             </label></h2>
-                        <h2><label for="">Số lượng: <?= $soluong ?> </label></h2>
-                        <h2><label for="">Lượt xem: <?= $luotxem ?> </label></h2>
-                        <h2><label for="">Trạng thái:  <?=$trangthai === 0 ? "<span style='color: green;'>Còn hàng</span>" : "<span style='color: red;'>hết hàng</span>"?> </label></h2>
-                            
-                        </div>
+                        <h2><label for="">Số lượng:
+                                <?= $soluong ?>
+                            </label></h2>
+                        <h2><label for="">Lượt xem:
+                                <?= $luotxem ?>
+                            </label></h2>
+                        <h2><label for="">Trạng thái:
+                                <?= $trangthai === 0 ? "<span style='color: green;'>Còn hàng</span>" : "<span style='color: red;'>hết hàng</span>" ?>
+                            </label></h2>
+
                     </div>
                 </div>
-                <br>
-                <div class="row">
-                     <div class="function-back">
+            </div>
+            <br>
+            <div class="row">
+                <div class="function-back">
                     <a href="index.php?act=listsp"><input type="submit" class="btn btn-primary"
                             value="Quay lại trang sản phẩm"></a>
                 </div>
-                
-                
-                
+
+
+
 
 
             </div>
@@ -84,7 +100,7 @@ if (is_file($hinhpath)) {
 
 
 
-    
+
     <br>
     <div class="card shadow mb-4">
         <div class="card-header py-3">
@@ -99,6 +115,7 @@ if (is_file($hinhpath)) {
                         <tr>
                             <th>ID</th>
                             <th>Tên khách hàng</th>
+                            <th>Tên sản phẩm</th>
                             <th>Nội dung</th>
                             <th>Ngày bình luận</th>
                             <th>Hành động</th>
@@ -117,8 +134,9 @@ if (is_file($hinhpath)) {
 
                             echo '<tr>
                                 <td>' . $id . '</td>
-                                <td>' . $id_nguoidung. '</td>
-                                <td>' . $noidung. ' </td>
+                                <td>' . $nguoidung . '</td>
+                                <td>' . $tensp . '</td>
+                                <td>' . $noidung . ' </td>
                                 <td>' . $ngaybinhluan . '</td>
                                 <td> 
                                     <a href="' . $suabl . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
@@ -144,7 +162,7 @@ if (is_file($hinhpath)) {
         }
     </script>
 
-    
+
 
 </div>
 <!--End Content -->

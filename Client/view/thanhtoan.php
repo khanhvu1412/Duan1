@@ -8,17 +8,26 @@
                 <div class="col-sm-6">
                     <div class="form-checkout">
                         <h5 class="form-title">ĐỊA CHỈ GIAO HÀNG</h5>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p><input type="text" placeholder="First Name"></p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><input type="text" placeholder="Last Name"></p>
-                            </div>
-                        </div>
-                        <p><input type="text" placeholder="Địa chỉ"></p>
-                        <p><input type="text" placeholder="Thị trấn / Thành phố"></p>
-                        <p><input type="text" placeholder="Số điện thoại"></p>
+                        <!-- <div class="row"> -->
+                        <!-- <div class="col-sm-6"> -->
+                        <label for="">Họ tên:</label>
+                        <p><input type="text" value="<?= $nguoidung ?>"></p>
+                        <!-- </div> -->
+
+
+
+                        <!-- <div class="col-sm-6">
+                                <p><input type="text"e"></p>
+                            </div> -->
+                        <!-- </div> -->
+                        <label for="">Email: </label>
+                        <p><input type="text" value="<?= $email ?>"></p>
+
+                        <label for="">Địa chỉ:</label>
+                        <p><input type="text" value="<?= $diachi ?>"></p>
+
+                        <label for="">Số điện thoại:</label>
+                        <p><input type="text" value="<?= $sdt ?>"></p>
 
                     </div>
                     <div class="form-checkout checkout-payment">
@@ -72,18 +81,6 @@
                                     }
                                     ?>
 
-
-                                    <!-- <tr>
-                                        <td class="product-thumbnail"><a href="index.php?act=chitietsp"><img
-                                                    src="images/products/1.png" alt=""></a></td>
-
-                                        <td class="product-name"><a href="index.php?act=chitietsp">Oversize Fit Trousers
-                                                Sneaker</a></td>
-                                        <td>85.000 VNĐ</td>
-
-                                        <td class="product-remove"><a href="#"></a></td>
-                                        <td class="text-right"><a class="button" href="#">Thêm vào gỏ hàng</a></td>
-                                    </tr> -->
 
                                 </tbody>
                             </table>

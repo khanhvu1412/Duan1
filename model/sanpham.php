@@ -14,6 +14,13 @@ function loadall_sanpham_top5()
     return $sanphamtop5;
 }
 
+function loadall_sanpham_top10()
+{
+    $sql = "select * from sanpham where 1 order by giasp desc limit 0,10";
+    $sanphamtop10 = pdo_query($sql);
+    return $sanphamtop10;
+}
+
 function loadall_shop($kyw = " ", $iddm = 0)
 {
     $sql = "select * from sanpham where 1";
@@ -23,7 +30,7 @@ function loadall_shop($kyw = " ", $iddm = 0)
     if ($iddm > 0) {
         $sql .= " and iddm ='" . $iddm . "'";
     }
-    $sql .= " order by giasp asc";
+    $sql .= " order by luotxem asc limit 0, 10";
     // $sql = "select * from sanpham where 1 order by id desc ";
     $sanphamShop = pdo_query($sql);
     return $sanphamShop;
@@ -44,21 +51,9 @@ function delete_sapham($id)
     pdo_execute($sql);
 }
 
-function loadall_sanpham_1($kyw = " ", $iddm = 0)
-{
-    $sql = "select * from sanpham where 1";
-    if ($kyw != "") {
-        $sql .= " and tensp like '%" . $kyw . "%'";
-    }
-    if ($iddm > 0) {
-        $sql .= " and iddm ='" . $iddm . "'";
-    }
-    $sql .= " order by view desc";
-    $listsanpham1 = pdo_query($sql);
-    return $listsanpham1;
-}
 
-function loadall_sanpham($kyw = " ", $iddm = 0, $id_sptheomua = 0)
+
+function loadall_sanpham($kyw = " ", $iddm = 0)
 {
     $sql = "select * from sanpham where 1";
     if ($kyw != "") {
@@ -66,9 +61,6 @@ function loadall_sanpham($kyw = " ", $iddm = 0, $id_sptheomua = 0)
     }
     if ($iddm > 0) {
         $sql .= " and iddm ='" . $iddm . "'";
-    }
-    if ($id_sptheomua > 0) {
-        $sql .= " and id_sptheomua ='" . $id_sptheomua . "'";
     }
 
     $sql .= " order by id desc";
@@ -125,5 +117,9 @@ function update_sanpham($id, $iddm, $id_sptheomua, $tensp, $giasp, $mota, $soluo
     pdo_execute($sql);
 }
 
+function tang_luotxem($luotxem,$idsp){
+    $sql = "UPDATE sanpham SET luotxem='$luotxem' WHERE id_sp='$idsp'";
+    pdo_execute($sql);
+}
 
 ?>

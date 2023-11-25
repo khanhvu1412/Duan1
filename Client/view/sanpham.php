@@ -16,7 +16,7 @@
 					foreach ($listsanpham as $sanpham) {
 						extract($sanpham);
 
-						$linksp = "index.php?act=chitietsp&id=" . $id;
+						$linksp = "index.php?act=chitietsp&&id=" . $id;
 
 						echo '<li class="product-item col-xs-12 col-sm-4 col-md-3">
 								<div class="product-inner">
@@ -49,12 +49,12 @@
 	</div>
 </div>
 <script>
-function confirmAddgh() {
-    if (confirm("Bạn thêm sản phẩm này vào giỏ hàng?")) {
-        document.location = "index.php?act=listsp";
-    } else {
-        return false;
-    }
-}
+	function confirmAddgh() {
+		if (confirm("Bạn thêm sản phẩm này vào giỏ hàng?")) {
+			document.location = "index.php?act=listsp";
+		} else {
+			return false;
+		}
+	}
 </script>
 <?php include "menu/3hopcn.php"; ?>

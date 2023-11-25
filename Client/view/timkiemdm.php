@@ -11,9 +11,7 @@ if (is_array($danhmuc)) {
                     <div class="shop-top-left">
                         <div class="breadcrumbs">
                             <a href="index.php">Home</a>
-                            <span>Danh mục
-                                <?= $tendm ?>
-                            </span>
+                            <span> <?= $tendm ?> </span>
                         </div>
                     </div>
                 </div>
@@ -64,7 +62,7 @@ if (is_array($danhmuc)) {
     </div>
 </div>
 
-<?php include 'menu/3hopcn.php';?>
+<?php include 'menu/3hopcn.php'; ?>
 
 <script>
     function confirmAddgh() {

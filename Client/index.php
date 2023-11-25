@@ -68,8 +68,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             include("dangnhap.php");
             break;
 
-
-
         case 'tkcanhan':
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $taikhoan = loadone_taikhoan($id);
@@ -133,20 +131,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             break;
 
 
-        case 'quenmk':
-            // if (isset($_POST['guiemail']) && $_POST['guiemail']) {
-            //     $email = $_POST['email'];
-
-            //     $checkemail = checkemail($email);
-            //     if (is_array($checkemail)) {
-            //       $thongbao = "Mật khẩu của bạn là: " . $checkemail['pass'];
-            //     } else {
-            //       $thongbao = "Email này không tồn tại";
-            //     }
-            //   }
-
-            include('view/taikhoan/quenmk.pjp');
-            break;
 
 
 
@@ -169,14 +153,11 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             break;
 
         case "chitietsp":
-            
+
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
-               // $listsanpham = loadall_sanpham($kyw, $iddm);
-                
 
             }
-            
             $sanphamtop6 = load_sanpham_top6();
             include("view/chitietsp.php");
             break;
@@ -217,7 +198,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $sptheomua = loadone_sptheomua($_GET['id_sptheomua']);
             } else {
                 $id_sptheomua = 0;
-            }   
+            }
             $listsptheomua = loadall_sptheomua();
             $listsp_theomua = loadall_sp_theomua("", $id_sptheomua);
             include "view/sphamtheomua.php";
@@ -226,6 +207,9 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 
         case "lienhe":
             include("view/menu/lienhe.php");
+            break;
+        case "about":
+            include("view/menu/about.php");
             break;
 
         case "thanhtoan":
@@ -243,10 +227,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             $listsanpham = loadall_sanpham($kyw, $iddm);
             $sanphamtop5 = loadall_sanpham_top5();
             include("view/thanhtoan.php");
-            break;
-
-        case 'about':
-            include('view/menu/about.php');
             break;
 
 
@@ -304,11 +284,10 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
         $iddm = 0;
     }
     ;
-    $sanphamtop5 = loadall_sanpham_top5();
+    $sanphamtop5 = loadall_sanpham_top10();
     $listdanhmuc = loadall_danhmuc();
     $listsptheomua = loadall_sptheomua();
     $listsanpham = loadall_sanpham($kyw, $iddm);
-
     $sanphamShop = loadall_shop();
     include("home.php");
 }
