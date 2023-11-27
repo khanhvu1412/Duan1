@@ -45,8 +45,12 @@ if (isset($_SESSION['nguoidung']) && (is_array($_SESSION['nguoidung']))) {
                             </ins>
                         </span>
                         <div class="meta"><span class="text-primary">
-                                <?= ($trangthai === 0 ? "<p style='color: green;'>Còn hàng</p>" : "<p style='color: red;'>Hết hàng</p>") ?>
-                            </span></span>
+                            </span>
+                            <?= ($trangthai === 0 ? "<p style='color: green;'>Còn hàng</p>" : "<p style='color: red;'>Hết hàng</p>") ?>
+                            </span>
+                        </div>
+                        <div class="meta"><span class="text-primary">
+                            <span>Còn <?= $soluong ?></span>
                         </div>
                         <div class="short-descript">
                             <?= $mota ?>
@@ -71,13 +75,15 @@ if (isset($_SESSION['nguoidung']) && (is_array($_SESSION['nguoidung']))) {
 
 
 <div class="container">
-   
+
     <iframe src="./view/binhluanform.php?id_sp=<?php if (is_array($sanpham)) {
         extract($sanpham);
     }
     echo $id; ?>" width="100%" height="300px" frameborder="0"></iframe>
+    
+ 
     <div class="comment">
-        
+
 
 
         <div class="product-slide upsell-products">
@@ -97,7 +103,7 @@ if (isset($_SESSION['nguoidung']) && (is_array($_SESSION['nguoidung']))) {
                  <li class="product-item">
                     <div class="product-inner">
                         <div class="product-thumb">
-                            <a href="'.$linksp.'"><img src="../upload_file/' . $img . '" alt=""></a>
+                            <a href="' . $linksp . '"><img src="../upload_file/' . $img . '" alt=""></a>
                         </div>
                         <div class="product-info">
                             <h3 class="product-name"><a href="#">' . $tensp . '

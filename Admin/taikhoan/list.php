@@ -32,18 +32,21 @@
                             $suatk = "index.php?act=suatk&id=" . $id;
                             $xoatk = "index.php?act=xoatk&id=" . $id;
 
-
+                            if ($img) {
+                                $url = "../upload_file/$img";
+                            } else {
+                                $url = "https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_1280.png";
+                            }
                             echo '
                             <tr>
                             <td>' . $id . '</td>
                             <td>' . $nguoidung . '</td>
                             <td>' . $matkhau . '</td>
                             <td>' . $email . '</td>
-                            <td></td>
+                            <td><img src="' . $url . '" width="100px" height="130px"></td>
                             <td>' . $diachi . '</td>
                             <td>' . $sdt . '</td>
-                            <td>' .  ($id_role === 1 ? "<p style='color: green; '>Admin</p>" :
-                            "<p style='color: black;'>Khách hàng</p>") . '</td>
+                            <td>' . ($id_role === 1 ? "Admin" : ($id_role === 2 ? "Nhân viên" : "Khách hàng")) . '</td>
                             <td><a href="' . $suatk . '" ><input type="button" class= " form-control btn btn-warning" value="Sửa"></a> <a href="' . $xoatk . '" onclick="return confirmDeletetk()"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a></td>
                         </tr>';
                         }

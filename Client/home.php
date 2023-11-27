@@ -106,7 +106,7 @@
 						data-dots="false" data-margin="30" data-loop="true"
 						data-responsive='{"0":{"items":1},"600":{"items":2},"1000":{"items":3}}'>
 
-						<?php foreach ($sanphamtop5  as $sanpham) {
+						<?php foreach ($sanphamtop5 as $sanpham) {
 							extract($sanpham);
 							$linksp = "index.php?act=chitietsp&id=" . $id;
 							echo '
@@ -143,11 +143,7 @@
 
 	<div class="margin-top-50">
 		<div class="row">
-			<div class="col-sm-12 col-md-5">
-				<div class="section-title text-center margin-top-40 margin-bottom-30">
-					<h3>Sản phẩm theo mùa</h3>
-				</div>
-			</div>
+
 			<div class="col-sm-12 col-md-7">
 				<ul class="category-menu category-carousel pull-left owl-carousel nav-style7 nav-center-center"
 					data-nav="true" data-autoplay="false" data-dots="false" data-loop="true" data-margin="30"
@@ -162,6 +158,11 @@
 					} ?>
 					<?php ?>
 				</ul>
+			</div>
+			<div class="col-sm-12 col-md-5">
+				<div class="section-title text-center margin-top-40 margin-bottom-30">
+					<h3>Sản phẩm theo mùa</h3>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -228,8 +229,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="main-content col-sm-12">
-					
-					
+
+
 				</div>
 			</div>
 		</div>
@@ -244,4 +245,3 @@
 		}
 	</script>
 </div>
-

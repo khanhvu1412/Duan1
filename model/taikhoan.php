@@ -3,22 +3,9 @@ function insert_taikhoan($nguoidung, $matkhau, $email, $img, $diachi, $sdt)
 {
     $sql = "insert into taikhoan(nguoidung, matkhau, email,img, diachi, sdt) values ('$nguoidung', '$matkhau', '$email','$img','$diachi', '$sdt')";
     pdo_execute($sql);
-    // header("location:index.php?act=listsp");
+    
 }
 
-// Đăng nhập / đăng xuất
-// function dangnhap($nguoidung, $matkhau)
-// {
-//     $sql = "select * from taikhoan where nguoidung = '$nguoidung' and matkhau='$matkhau '";
-
-//     $taikhoan = pdo_query_one($sql);
-//     return $taikhoan;
-// }
-
-// function dangxuat()
-// {
-//     unset($_SESSION["nguoidung"]);
-// }
 
 function checkuser($nguoidung, $matkhau)
 {
@@ -27,7 +14,7 @@ function checkuser($nguoidung, $matkhau)
     $sp = pdo_query_one($sql);
     return $sp;
 }
-// end 
+
 
 function loadall_taikhoan()
 {
@@ -51,6 +38,12 @@ function update_taikhoan_admin($id, $nguoidung, $matkhau, $email, $diachi, $sdt,
     pdo_execute($sql);
 }
 
+// function loadall_role(){
+//     $sql = "select * from role " ;
+//     $listrole = pdo_query($sql);
+//     return $listrole;
+// }
+
 function update_taikhoan_user($id, $email, $img, $diachi, $sdt)
 {
     $sql = "update taikhoan set email = '" . $email . "', img = '" . $img . "',  diachi = '" . $diachi . "', sdt = '" . $sdt . "'  where id =" . $id;
@@ -69,11 +62,5 @@ function delete_taikhoan($id)
     pdo_execute($sql);
 }
 
-function checkemail($email)
-{
-    $sql = "SELECT * FROM user WHERE email='" . $email . "'";
-    $sp = pdo_query_one($sql);
-    return $sp;
-}
 
 ?>

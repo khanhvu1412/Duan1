@@ -35,19 +35,13 @@ if (isset($_GET['act'])) {
                 $diachi = $_POST['diachi'];
                 $sdt = $_POST['sdt'];
                 $id_role = $_POST['id_role'];
-                // $hinh = $_FILES['hinh']['name'];
-                // $target_dir = "../upload_file/";
-                // $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
-                // if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
-                //     //echo "Load ảnh thành công";
-                // } else {
-                //     //echo "Upload ảnh không thành công";
-                // }
+                
 
                 update_taikhoan_admin($id, $nguoidung, $matkhau, $email, $diachi, $sdt, $id_role);
                 $thongbao = "Cập nhật thành công";
 
             }
+            // $listrole = loadall_role();
             $listtaikhoan = loadall_taikhoan();
             include "taikhoan/list.php";
             break;

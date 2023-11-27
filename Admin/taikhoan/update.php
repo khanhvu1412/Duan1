@@ -33,13 +33,6 @@ if (is_array($taikhoan)) {
                         <label for="exampleInputImg" class="form-label">Email</label>
                         <input type="text" class="form-control" name="email" value="<?= $email ?>">
                     </div>
-                    <div class="mb-3">
-                    <label for="exampleInputImg" class="form-label">Ảnh</label>
-                        <!-- <br>
-                        <?php //$img ?>
-                        <br>
-                        <input type="file" class="mt-2" name="img"> -->
-                    </div>
 
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Địa chỉ</label>
@@ -57,7 +50,7 @@ if (is_array($taikhoan)) {
                     <input type="submit" class="btn btn-success" name="capnhat" onclick="return confirmUpdatetk()"
                         value="Cập nhật">
                     <input type="reset" class="btn btn-info" value="Nhập lại">
-                    <a href="index.php?act=listsp"><input type="button" class="btn btn-primary" value="Danh sách"></a>
+                    <a href="index.php?act=listtk"><input type="button" class="btn btn-primary" value="Danh sách"></a>
 
                     <?php
                     if (isset($thongbao) && ($thongbao != ""))

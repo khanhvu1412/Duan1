@@ -130,11 +130,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             include "view/doimk.php";
             break;
 
-
-
-
-
-
+            
         case "sanpham":
             if (isset($_POST['kyw']) && $_POST['kyw'] != "") {
                 $kyw = $_POST['kyw'];
@@ -162,25 +158,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             include("view/chitietsp.php");
             break;
 
-        case "timkiem":
-            if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
-                $kyw = $_POST['kyw'];
-            } else {
-                $kyw = "";
-            }
-            if (isset($_GET['iddm']) && ($_GET['iddm']) > 0) {
-                $iddm = $_GET['iddm'];
-            } else {
-                $iddm = 0;
-            }
-            $dssp = loadall_sanpham("", $iddm);
-            $listsptheomua = loadall_sptheomua();
-            $listsanpham = loadall_sanpham($kyw, $iddm);
-            $listdanhmuc = loadall_danhmuc();
-            include "view/timkiem.php";
-            break;
-
-
+        
         case "timkiemdm":
             if (isset($_GET['iddm']) && ($_GET['iddm']) > 0) {
                 $iddm = $_GET['iddm'];
