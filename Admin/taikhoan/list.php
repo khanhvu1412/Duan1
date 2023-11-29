@@ -27,31 +27,29 @@
                     <tbody>
                         <?php
 
-                        foreach ($listtaikhoan as $taikhoan) {
+                        foreach ($listtaikhoan as $taikhoan): 
                             extract($taikhoan);
-                            $suatk = "index.php?act=suatk&id=" . $id;
-                            $xoatk = "index.php?act=xoatk&id=" . $id;
+                            $suatk = "index.php?act=suatk&id=" . $tk_id;
+                            $xoatk = "index.php?act=xoatk&id=" . $tk_id;
 
-                            if ($img) {
-                                $url = "../upload_file/$img";
+                            if ($tk_img) {
+                                $url = "../upload_file/$tk_img";
                             } else {
-                                $url = "https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_1280.png";
+                                $url = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png";
                             }
-                            echo '
+                            ?>
                             <tr>
-                            <td>' . $id . '</td>
-                            <td>' . $nguoidung . '</td>
-                            <td>' . $matkhau . '</td>
-                            <td>' . $email . '</td>
-                            <td><img src="' . $url . '" width="100px" height="130px"></td>
-                            <td>' . $diachi . '</td>
-                            <td>' . $sdt . '</td>
-                            <td>' . ($id_role === 1 ? "Admin" : ($id_role === 2 ? "Nhân viên" : "Khách hàng")) . '</td>
-                            <td><a href="' . $suatk . '" ><input type="button" class= " form-control btn btn-warning" value="Sửa"></a> <a href="' . $xoatk . '" onclick="return confirmDeletetk()"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a></td>
-                        </tr>';
-                        }
-
-                        ?>
+                            <td><?= $tk_id  ;?></td>
+                            <td><?= $tk_nguoidung ;?></td>
+                            <td><?= $tk_matkhau ;?></td>
+                            <td><?= $tk_email ;?></td>
+                            <td><img src="<?= $url ?>" width="100px" height="130px"></td>
+                            <td><?= $tk_diachi ?></td>
+                            <td><?= $tk_sdt ?></td>
+                            <td><?= $r_name_role?></td>
+                            <td><a href="<?= $suatk ?>" ><input type="button" class= " form-control btn btn-warning" value="Sửa"></a> <a href="' . $xoatk . '" onclick="return confirmDeletetk()"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a></td>
+                        </tr>
+                        <?php endforeach;?>
 
                     </tbody>
                 </table>

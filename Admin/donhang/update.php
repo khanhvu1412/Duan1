@@ -49,21 +49,19 @@ if (is_array($donhang)) {
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Trạng thái</label><br>
-                        <div class="row">
-                            <div class="form-check">
-                                <?php 
-                                // foreach ($listtrangthai as $donhang) {
-                                //     extract($donhang);
-                                //     echo '
-                                //     <input type="radio" name="trangthai" id="trangthai" value="' . $id_trangthai . '">
+                        
+                            <select name="trangthai" class="form-control" id="trangthai">
+                            <?php
+                            foreach ($listtrangthai as $trangthai):
+                                extract($trangthai); ?>
+                                <option <?= $trangthai['id_trangthai'] == $donhang['id_trangthai_donhang'] ? 'selected' : '' ?>
+                                    value="<?= $trangthai['id_trangthai'] ?>">
+                                    <?= $trangthai['ten_trangthai'] ?>
+                                </option>
 
-                                //         ' . $ten_trangthai . ' <br>
-                                //     ';
-                                // } 
-                                ?>
+                            <?php endforeach; ?>
 
-                            </div>
-                        </div>
+                        </select>
 
                     </div>
                     <input type="submit" class="btn btn-success" name="capnhat" value="Cập nhật">

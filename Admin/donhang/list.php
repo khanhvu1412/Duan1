@@ -30,31 +30,28 @@
 
 
                         <?php
-                        foreach ($listdonhang as $donhang) {
+                        foreach ($listdonhang as $donhang) :
                             extract($donhang);
-                            $suadh = "index.php?act=suadh&id=" . $id;
-                            $xoadh = "index.php?act=xoadh&id=" . $id;
-
-                            echo '
+                            $linkdh ="index.php?act=chitietdh&id=". $dh_id ;
+                            $suadh = "index.php?act=suadh&id=" . $dh_id;
+                            $xoadh = "index.php?act=xoadh&id=" . $dh_id;
+                            ?>
                                 <tr>
-                                <td>' . $id . '</td>
-                                <td>' . $tentk . '</td>
-                                <td>' . $tensp . ' </td>
-                                <td>' . $gia . ' VNĐ</td>
-                                <td>' . $diachi_giaohang . '</td>
-                                <td>' . $thoigian_mua . '</td>
-                                <td>' . $soluong . '</td>
-                                <td>' . ($id_trangthai_donhang === 1 ? "<p style='background-color: yellow; color: black; '>Mới đặt hàng</p>" :
-                                "<p style='background-color: green; color: white;'>Đã thanh toán</p>") . '</td>
+                                <td><?= $donhang['dh_id']?></td>
+                                <td><?= $donhang['dh_tentk']?></td>
+                                <td><?= $donhang['dh_tensp']?> </td>
+                                <td><?= $donhang['dh_gia']?> VNĐ</td>
+                                <td><?= $donhang['dh_dcgh']?></td>
+                                <td><?= $donhang['dh_tgmua']?></td>
+                                <td><?= $donhang['dh_soluong']?></td>
+                                <td><?= $donhang['ttdh_tentt']?></td>
                                 <td>  
-                                    <a href=" index.php?act=chitietdh&id= ' . $id . '"><input type="button" class=" form-control btn btn-secondary" value="Xem đơn hàng"></a> 
-                                    <a href="' . $suadh . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
-                                    <a href="' . $xoadh . '" ><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
+                                    <a href="<?= $linkdh?>"><input type="button" class=" form-control btn btn-secondary" value="Xem đơn hàng"></a> 
+                                    <a href="<?= $suadh ?>"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
+                                    <a href="<?= $xoadh ?>" ><input type="button" class=" form-control btn btn-danger mt-2" onclick="return confirm('Bạn có muốn xóa không?')" value="Xóa"></a>
                                 </td> 
-                                </tr>';
-
-                        }
-                        ?>
+                                </tr>
+                       <?php endforeach;?>
 
 
                     </tbody>

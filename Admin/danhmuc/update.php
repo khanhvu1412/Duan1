@@ -26,10 +26,7 @@ if (is_file($hinhpath)) {
 
                 <br>
                 <form action="index.php?act=updatedm" method="post">
-                    <div class="mb-3">
-                        <label for="exampleInputId" class="form-label">Mã danh mục</label>
-                        <input type="text" class="form-control" name="madm" value="<?= $id?>" disabled>
-                    </div>
+                    
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên danh mục</label>
                         <input type="text" class="form-control" name="tendm" value="<?= $tendm ?>">

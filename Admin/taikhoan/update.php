@@ -23,11 +23,11 @@ if (is_array($taikhoan)) {
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên tài khoản</label>
                         <input type="text" class="form-control" name="nguoidung"
-                            value="<?= $taikhoan['nguoidung']; ?> ">
+                            value="<?= $nguoidung ?> ">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPrice" class="form-label">Mật khẩu</label>
-                        <input type="text" class="form-control" name="matkhau" value="<?= $matkhau ?>">
+                        <input type="password" class="form-control" name="matkhau" value="<?= $matkhau ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputImg" class="form-label">Email</label>
@@ -44,7 +44,18 @@ if (is_array($taikhoan)) {
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Vai trò</label>
-                        <input type="text" class="form-control" name="id_role" value="<?= $id_role ?>">
+                        <select name="trangthai" class="form-control" id="trangthai" >
+                            <?php
+                            foreach ($listrole as $role):
+                                extract($role); ?>
+                                <option <?= $role['id_role'] == $taikhoan['id_role'] ? 'selected' : '' ?>
+                                    value="<?= $role['id_role'] ?>">
+                                    <?= $role['name_role'] ?>
+                                </option>
+
+                            <?php endforeach; ?>
+
+                        </select>
                     </div>
                     <input type="hidden" name="id" value="<?= $taikhoan['id'] ?>  ">
                     <input type="submit" class="btn btn-success" name="capnhat" onclick="return confirmUpdatetk()"

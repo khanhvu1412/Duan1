@@ -22,19 +22,30 @@
                     </thead>
                     <tbody>
 
-                        <?php foreach ($listthongke as $thongke) {
+                        <?php foreach ($listthongke as $thongke):
                             extract($thongke);
-                            echo '
+                            ?>
                             <tr>
-                            <td>'.$madm.'</td>
-                            <td>'.$tendm.'</td>
-                            <td>'.$countsp.'</td>
-                            <td>'.$maxprice.'</td>
-                            <td>'.$minprice.'</td>
-                            <td>'.$avgprice.'</td>
+                                <td>
+                                    <?= $thongke['madm'] ?>
+                                </td>
+                                <td>
+                                    <?= $thongke['tendm'] ?>
+                                </td>
+                                <td>
+                                    <?= $thongke['countsp'] ?>
+                                </td>
+                                <td>
+                                    <?= $thongke['maxprice'] ?>
+                                </td>
+                                <td>
+                                    <?= $thongke['minprice'] ?>
+                                </td>
+                                <td>
+                                    <?= $thongke['avgprice'] ?>
+                                </td>
                             </tr>
-                            ';
-                        } ?>
+                        <?php endforeach; ?>
 
 
 
@@ -42,8 +53,7 @@
                 </table>
                 <form action="">
 
-                    <a href="index.php?act=bieudo"><input type="button" class="  btn btn-success"
-                            value="Biểu đồ"></a>
+                    <a href="index.php?act=bieudo"><input type="button" class="  btn btn-success" value="Biểu đồ"></a>
 
                 </form>
             </div>

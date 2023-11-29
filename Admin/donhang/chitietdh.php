@@ -46,11 +46,21 @@ if (is_array($donhang)) {
                         <h2><label for="">Trạng thái:
                                 <?php
                                 if ($id_trangthai_donhang == 1) {
-                                    echo "Mới đặt hàng";
+                                    echo "Chờ xác nhận";
                                 } else if ($id_trangthai_donhang == 2) {
-                                    echo "Đang giao hàng";
-                                } else {
+                                    echo "Đã xác nhận";
+                                } else if ($id_trangthai_donhang == 3){
+                                    echo "Đang xửa lý";
+                                }else if ($id_trangthai_donhang == 4){
+                                    echo "Đang vận chuyển";
+                                }else if ($id_trangthai_donhang == 5){
+                                    echo "Giao hàng thành công";
+                                }else if ($id_trangthai_donhang == 6){
+                                    echo "CHờ thanh toán ";
+                                }else if ($id_trangthai_donhang == 7){
                                     echo "Đã thanh toán";
+                                }else {
+                                    echo "Đã hủy";
                                 }
                                 //  if($trangthai === 1 ) "<p style='background-color: yellow; color: black; '>Mới đặt hàng</p>" :
                                 //     "<p style='background-color: green; color: white;'>Đã thanh toán</p>" 

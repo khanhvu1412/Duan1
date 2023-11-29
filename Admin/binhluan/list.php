@@ -13,7 +13,7 @@
                 <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>STT</th>
                             <th>Tên khách hàng</th>
                             <th>Sản phẩm</th>
                             <th>Nội dung</th>
@@ -25,33 +25,29 @@
                     <tbody>
 
                         <?php
-                        foreach ($listbinhluan as $binhluan) {
+                        foreach ($listbinhluan as $binhluan) :
                             extract($binhluan);
                             $suabl = "index.php?act=suabl&id=" . $id;
                             $xoabl = "index.php?act=xoabl&id=" . $id;
-
-
-                            echo '<tr>
-                                <td>' . $id . '</td>
-                                <td>' . $nguoidung . '</td>
-                                <td>' . $ten_sp . '</td>
-                                <td>' . $noidung . ' VNĐ</td>
-                                <td>' . $ngaybinhluan . '</td>
+                             ?><tr>
+                                <td><?= $binhluan['id ']?></td>
+                                <td><?= $binhluan['nguoidung ']?></td>
+                                <td><?= $binhluan['ten_sp ']?></td>
+                                <td><?= $binhluan['noidung ']?> VNĐ</td>
+                                <td><?= $binhluan['ngaybinhluan ']?></td>
                                 <td> 
-                                    <a href="' . $suabl . '"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
-                                    <a href="' . $xoabl . '"  onclick="return confirmDeletebl()"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
+                                    <a href="<?= $suabl ?>"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 
+                                    <a href="<?= $xoabl ?>"  onclick="return confirm('Bạn có muốn xóa bình luận này không')"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a>
                                 </td> 
-                                </tr>';
-
-                        }
-                        ?>
+                                </tr>
+                        <?php endforeach;?>
 
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-    <script>
+    <!-- <script>
         function confirmDeletebl() {
             if (confirm("Bạn có muốn xóa bình luận này không")) {
                 document.location = "index.php?act=listbl";
@@ -59,7 +55,7 @@
                 return false;
             }
         }
-    </script>
+    </script> -->
 
 </div>
 

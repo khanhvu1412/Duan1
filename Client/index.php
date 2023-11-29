@@ -61,6 +61,9 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                     $_SESSION['user'] = $checkuser;
                     header("Location: index.php");
                 }
+                if (!$checkuser) {
+                    echo "Tài khoản hoặc mật khẩu không chính xác";
+                }
                 $thongbao = "Tài khoản không tồn tại. Vui lòng nhập lại";
 
 
@@ -130,7 +133,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             include "view/doimk.php";
             break;
 
-            
+
         case "sanpham":
             if (isset($_POST['kyw']) && $_POST['kyw'] != "") {
                 $kyw = $_POST['kyw'];
@@ -154,11 +157,12 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $sanpham = loadone_sanpham($_GET['id']);
 
             }
+
             $sanphamtop6 = load_sanpham_top6();
             include("view/chitietsp.php");
             break;
 
-        
+
         case "timkiemdm":
             if (isset($_GET['iddm']) && ($_GET['iddm']) > 0) {
                 $iddm = $_GET['iddm'];
@@ -191,6 +195,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             break;
 
         case "thanhtoan":
+            
             if (isset($_POST['kyw']) && $_POST['kyw'] != "") {
                 $kyw = $_POST['kyw'];
             } else {
@@ -201,6 +206,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             } else {
                 $iddm = 0;
             }
+
             $dssp = loadall_sanpham("", $iddm);
             $listsanpham = loadall_sanpham($kyw, $iddm);
             $sanphamtop5 = loadall_sanpham_top5();
@@ -219,9 +225,10 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $sanphamadd = [$id, $tensp, $img, $giasp, $thanhtien];
                 array_push($_SESSION['mycart'], $sanphamadd);
             }
-
+            // $sanphamtop6 = load_sanpham_top6();
             include('view/menu/giohang.php');
             break;
+
 
         case "deletecart":
             if (isset($_GET['id'])) {

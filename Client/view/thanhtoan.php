@@ -4,6 +4,7 @@
             <div class="page-title">
                 <h3>Thanh toán</h3>
             </div>
+
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-checkout">
@@ -52,34 +53,48 @@
 
                 <div class="col-sm-6">
                     <div class="form-checkout">
-                        <h5 class="form-title">SẢN PHẢM CÓ THỂ BẠN THÍCH</h5>
+                        <h5 class="form-title">SẢN PHẨM CÓ THỂ BẠN THÍCH</h5>
                         <div class="row">
 
                             <table class="shop_table cart">
                                 <tbody>
 
                                     <?php
-                                    foreach ($sanphamtop5 as $sanpham) {
+                                    foreach ($sanphamtop5 as $sanpham):
                                         extract($sanpham);
-
                                         $linksp = "index.php?act=chitietsp&id=" . $id;
-
-                                        echo '
+                                        $hinh = "../upload_file/" . $img;
+                                        ?>
                                         <tr>
-                                        <form action="index.php?act=addgiohang" method="post">
-                                        <td class="product-thumbnail"><a href="' . $linksp . '"><img src="../upload_file/' . $img . '" alt=""></a></td>
+                                            <form action="index.php?act=addgiohang" method="post">
+                                                <td class="product-thumbnail">
+                                                    <input type="hidden" name="id" value="<?= $id ?>">
+                                                    <input type="hidden" name="img" value="<?= $img ?>">
+                                                    <a href="<?= $linksp ?>">
+                                                        <img src="<?= $hinh ?>" alt="">
+                                                    </a>
+                                                </td>
 
-                                        <td class="product-name"><a href="index.php?act=chitietsp" >' . $tensp . '</a></td>
-                                        <td><span class ="price" style="color:red;">' . $giasp . ' VNĐ</span> </td>
+                                                <td class="product-name">
+                                                    <a href="<?= $linksp ?>">
+                                                        <input type="hidden" name="tensp" value="<?= $tensp ?>">
+                                                        <?= $tensp ?>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <span class="price" style="color:red;">
+                                                    <input type="hidden" name="giasp" value="<?= $giasp ?> VNĐ">
+                                                        <?= $giasp ?> VNĐ
+                                                    </span>
+                                                </td>
 
-                                        <td class="product-remove"></td>
-                                        
-                                        <td class="text-right"><input type="submit" name="addtocart"onclick="return confirmAddgh()"  value="Thêm vào giỏ hàng"></td>
-                                        </form>
-                                    </tr>
-                                        ';
-                                    }
-                                    ?>
+                                                <td class="text-right"><input type="submit" name="addtocart"
+                                                        onclick="return confirmAddgh()" value="Thêm vào giỏ hàng">
+                                                </td>
+                                            </form>
+                                        </tr>
+
+                                    <?php endforeach; ?>
 
 
                                 </tbody>

@@ -113,7 +113,7 @@ if (is_file($hinhpath)) {
                 <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>STT</th>
                             <th>Tên khách hàng</th>
                             <th>Tên sản phẩm</th>
                             <th>Nội dung</th>
