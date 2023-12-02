@@ -29,14 +29,16 @@ if (is_file($hinhpath)) {
                     
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên danh mục</label>
-                        <input type="text" class="form-control" name="tendm" value="<?= $tendm ?>">
+                        <input type="hidden" class="form-control" name="tendm" value="<?= $tendm ?>" >
+                        <input type="text" class="form-control" name="tendm" value="<?= $tendm ?>" disabled>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputImg" class="form-label">Ảnh</label>
+                        <input type="hidden" class="mt-2" name="img" value="<?= $img  ?>">
                         <br>
-                        <?= $img ?>
+                        <img src="<?= $img  ?>" alt="">
                         <br>
-                        <input type="file" class="mt-2" name="img">
+                        <input type="file" class="mt-2" name="img" >
                     </div>
                     <input type="hidden" name="id" value="<?php if (isset($id) && ($id > 0))
                         echo $id; ?>">

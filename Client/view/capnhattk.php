@@ -28,6 +28,8 @@ if (is_file($hinhpath)) {
                 <p>Ảnh</p>
                 <br>
                 <?php $hinhpath ?>
+                <input type="hidden" class="form-control" name="img" value="<?= $hinhpath ?>">
+
                 <input type="file" class="form-control" name="img" value="<?= $hinhpath ?>">
                 <br>
             </div>

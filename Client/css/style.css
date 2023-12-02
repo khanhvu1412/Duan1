@@ -9953,6 +9953,11 @@ Last change: 01/15/2016
     padding-top: 10px;
   }
 
+  .wrapper-bill{
+    max-width: 1200px;
+    margin: auto;
+    
+  }
 
 
 

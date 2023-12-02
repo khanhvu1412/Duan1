@@ -15,8 +15,8 @@
                         <tr>
                             <th>Mã đơn</th>
                             <th>Tên khách hàng</th>
-                            <th>Tên sản phẩm</th>
-                            <th>Giá tiền</th>
+                            <th>Số điện thoại</th>
+                            <th>Email</th>
                             <th>Địa chỉ giao hàng</th>
                             <th>Thời gian mua</th>
                             <th>Số lượng</th>
@@ -32,19 +32,19 @@
                         <?php
                         foreach ($listdonhang as $donhang) :
                             extract($donhang);
-                            $linkdh ="index.php?act=chitietdh&id=". $dh_id ;
-                            $suadh = "index.php?act=suadh&id=" . $dh_id;
-                            $xoadh = "index.php?act=xoadh&id=" . $dh_id;
+                            $linkdh ="index.php?act=chitietdh&id=". $id ;
+                            $suadh = "index.php?act=suadh&id=" . $id;
+                            $xoadh = "index.php?act=xoadh&id=" . $id;
                             ?>
                                 <tr>
-                                <td><?= $donhang['dh_id']?></td>
-                                <td><?= $donhang['dh_tentk']?></td>
-                                <td><?= $donhang['dh_tensp']?> </td>
-                                <td><?= $donhang['dh_gia']?> VNĐ</td>
-                                <td><?= $donhang['dh_dcgh']?></td>
-                                <td><?= $donhang['dh_tgmua']?></td>
-                                <td><?= $donhang['dh_soluong']?></td>
-                                <td><?= $donhang['ttdh_tentt']?></td>
+                                <td><?= $donhang['id']?></td>
+                                <td><?= $donhang['nguoidung']?></td>
+                                <td><?= $donhang['sdt']?> </td>
+                                <td><?= $donhang['email']?> </td>
+                                <td><?= $donhang['diachi']?></td>
+                                <td><?= $donhang['thoigian_mua']?></td>
+                                <td><?= $donhang['soluong']?></td>
+                                <td><?= $donhang['ten_trangthai']?></td>
                                 <td>  
                                     <a href="<?= $linkdh?>"><input type="button" class=" form-control btn btn-secondary" value="Xem đơn hàng"></a> 
                                     <a href="<?= $suadh ?>"><input type="button" class=" form-control btn btn-warning mt-2" value="Sửa"></a> 

@@ -35,9 +35,8 @@ if (isset($_GET['act'])) {
                 $email = $_POST['email'];
                 $diachi = $_POST['diachi'];
                 $sdt = $_POST['sdt'];
-                
-                
-                
+                //$id_role = $_POST['id_role'];
+
 
                 update_taikhoan_admin($id, $nguoidung, $matkhau, $email, $diachi, $sdt);
                 $thongbao = "Cập nhật thành công";
@@ -132,6 +131,7 @@ if (isset($_GET['act'])) {
                 $iddm = 0;
                 $id_sp_theomua = 0;
             }
+            //$list_ttsp = loadall_trangthaisanpham();
             //$listsptheomua = loadall_sptheomua();
             $listdanhmuc = loadall_danhmuc();
             $listsanpham = loadall_sanpham($kyw, $iddm);
@@ -140,7 +140,7 @@ if (isset($_GET['act'])) {
 
         case "chitietsp":
             if (isset($_GET['id']) && $_GET['id'] > 0) {
-                
+
                 $sanpham = loadone_sanpham($_GET['id']);
             }
             $listmua = loadall_sptheomua();
@@ -151,7 +151,7 @@ if (isset($_GET['act'])) {
 
         case "addsp":
             if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
-                
+
                 $iddm = $_POST['iddm'];
                 $id_sptheomua = $_POST['id_sptheomua'];
                 $tensp = $_POST['tensp'];
@@ -231,19 +231,14 @@ if (isset($_GET['act'])) {
 
         // Bình luận
         case "listbl":
-
+            
             $listsanpham = loadall_sanpham("", 0);
+            $listbl = loadall_binhluan($id_sp);
             $listbinhluan = loadall_binhluan_admin();
             include "binhluan/list.php";
             break;
 
-        case "suabl":
-            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                $binhluan = loadone_binhluan($_GET['id']);
-            }
-            $listbinhluan = loadall_binhluan_admin();
-            include "binhluan/update.php";
-            break;
+
 
         case "xoabl":
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
@@ -251,21 +246,7 @@ if (isset($_GET['act'])) {
             }
             $listbinhluan = loadall_binhluan_admin();
             $sanpham = loadone_sanpham($_GET['id']);
-            include "sanpham/chitietsp.php";
-            break;
-
-        case "updatebl":
-            if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
-                $id = $_POST['id'];
-                $id_nguoidung = $_POST['id_nguoidung'];
-                $noidung = $_POST['noidung'];
-
-                update_binhluan($id, $tennguoidung, $noidung);
-                $thongbao = "Cập nhật thành công";
-            }
-
-            $listbinhluan = loadall_binhluan_admin();
-            include "binhluan/list.php";
+            include "sanpham/listbl.php";
             break;
 
         // Thống kê
@@ -296,7 +277,7 @@ if (isset($_GET['act'])) {
             // }
             // include "donhang/chitietdh.php";
             // break;
-            
+
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $donhang = loadone_donhang($_GET['id']);
             }
@@ -310,7 +291,7 @@ if (isset($_GET['act'])) {
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                 $donhang = loadone_donhang($_GET['id']);
             }
-            $listtrangthai = loadall_trangthai();   
+            $listtrangthai = loadall_trangthai();
             $listdonhang = loadall_donhang();
             include "donhang/update.php";
             break;
@@ -326,15 +307,15 @@ if (isset($_GET['act'])) {
         case "updatedh":
             if (isset($_POST["capnhat"]) && ($_POST["capnhat"])) {
                 $id = $_POST['id'];
-                $tentk = $_POST['tentk'];
-                $tensp = $_POST['tensp'];
-                $gia = $_POST['gia'];
-                $diachi_giaohang = $_POST['diachi_giaohang'];
+                $nguoidung = $_POST['nguoidung'];
+                $sdt = $_POST['sdt'];
+                $email = $_POST['email'];
+                $diachi = $_POST['diachi'];
                 $thoigian_mua = $_POST['thoigian_mua'];
                 $soluong = $_POST['soluong'];
                 $id_trangthai_donhang = $_POST['trangthai'];
 
-                update_donhang($id, $tentk, $tensp, $gia, $diachi_giaohang, $thoigian_mua, $soluong, $id_trangthai_donhang);
+                update_donhang($id, $nguoidung, $sdt, $email, $diachi, $thoigian_mua, $soluong, $id_trangthai_donhang);
                 $thongbao = 'Cập nhật thành công';
 
             }

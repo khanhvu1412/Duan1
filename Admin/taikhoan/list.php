@@ -47,7 +47,8 @@
                             <td><?= $tk_diachi ?></td>
                             <td><?= $tk_sdt ?></td>
                             <td><?= $r_name_role?></td>
-                            <td><a href="<?= $suatk ?>" ><input type="button" class= " form-control btn btn-warning" value="Sửa"></a> <a href="' . $xoatk . '" onclick="return confirmDeletetk()"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a></td>
+                            <td><a href="<?= $suatk ?>" ><input type="button" class= " form-control btn btn-warning" value="Sửa"></a>
+                            <a href="<?= $xoatk ?>" onclick="return confirmDeletetk()"><input type="button" class=" form-control btn btn-danger mt-2" value="Xóa"></a></td>
                         </tr>
                         <?php endforeach;?>
 

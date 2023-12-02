@@ -60,7 +60,7 @@ if (isset($_POST['guibinhluan']) && ($_POST['guibinhluan'])) {
     $noidung = $_POST['noidung'];
     $id_sp = $_POST['id_sp'];
     $id_nguoidung = $_SESSION['user']['id'];
-    $ngaybinhluan = date('h:i:sa d/m/Y');
+    $ngaybinhluan = date('d/m/Y');
     insert_binhluan($noidung, $id_nguoidung, $sanpham['id'], $ngaybinhluan);
     header("Location: " . $_SERVER['HTTP_REFERER']);
 }

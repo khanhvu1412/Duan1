@@ -10,6 +10,7 @@ include("../model/binhluan.php");
 include("../model/danhmuc.php");
 include("../model/sanpham.php");
 include("../model/sptheomua.php");
+include("../model/giohang.php");
 include("../model/donhang.php");
 include("global.php");
 
@@ -30,66 +31,25 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 
         case "dangky":
 
-            if (isset($_POST['dangky']) && $_POST['dangky']) {
-                $nguoidung = $_POST['nguoidung'];
-                $matkhau = $_POST['matkhau'];
-                $email = $_POST['email'];
-                $diachi = $_POST['diachi'];
-                $sdt = $_POST['sdt'];
-
-                $img = $_FILES['img']['name'];
-                $target_dir = "../upload_file/";
-                $target_file = $target_dir . basename($_FILES["img"]["name"]);
-                if (move_uploaded_file($_FILES["img"]["tmp_name"], $target_file)) {
-                    //echo "Load ảnh thành công";
-                } else {
-                    //echo "Upload ảnh không thành công";
-                }
-
-                insert_taikhoan($nguoidung, $matkhau, $email, $img, $diachi, $sdt);
-
-            }
             include "view/taikhoan/dangky.php";
             break;
 
         case 'dangnhap':
-            if (isset($_POST['dangnhap']) && ($_POST['dangnhap'])) {
-                $nguoidung = $_POST['nguoidung'];
-                $matkhau = $_POST['matkhau'];
-                $checkuser = checkuser($nguoidung, $matkhau);
-                if (is_array($checkuser)) {
-                    $_SESSION['user'] = $checkuser;
-                    header("Location: index.php");
-                }
-                if (!$checkuser) {
-                    echo "Tài khoản hoặc mật khẩu không chính xác";
-                }
-                $thongbao = "Tài khoản không tồn tại. Vui lòng nhập lại";
 
-
-            }
-            include("dangnhap.php");
+            include "dangnhap.php";
             break;
 
         case 'tkcanhan':
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $taikhoan = loadone_taikhoan($id);
 
-                // $dssp = loadall_sanpham("", $iddm);
-
-                // $sanphamShop = loadall_shop();
-                // $sanpham = loadone_sanpham($_GET['id']);
-
-                // $listsanpham = loadall_sanpham($kyw, $iddm);
 
             }
             $taikhoan = loadone_taikhoan($id);
             include('view/tkcanhan.php');
             break;
         case "capnhattk":
-            // if(isset($_GET['id'])&&$_GET['id']>0){
 
-            // }
             if (isset($_POST['capnhattk'])) {
                 $id = $_POST['id'];
                 $email = $_POST['email'];
@@ -132,6 +92,8 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 
             include "view/doimk.php";
             break;
+
+
 
 
         case "sanpham":
@@ -194,25 +156,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             include("view/menu/about.php");
             break;
 
-        case "thanhtoan":
-            
-            if (isset($_POST['kyw']) && $_POST['kyw'] != "") {
-                $kyw = $_POST['kyw'];
-            } else {
-                $kyw = "";
-            }
-            if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
-                $iddm = $_GET['iddm'];
-            } else {
-                $iddm = 0;
-            }
-
-            $dssp = loadall_sanpham("", $iddm);
-            $listsanpham = loadall_sanpham($kyw, $iddm);
-            $sanphamtop5 = loadall_sanpham_top5();
-            include("view/thanhtoan.php");
-            break;
-
 
         case 'addgiohang':
             if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
@@ -220,14 +163,79 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $tensp = $_POST['tensp'];
                 $img = $_POST['img'];
                 $giasp = $_POST['giasp'];
-                $soluong = 1;
+                $soluong = $_POST['soluong'];
                 $thanhtien = ((int) $soluong * (int) $giasp);
-                $sanphamadd = [$id, $tensp, $img, $giasp, $thanhtien];
-                array_push($_SESSION['mycart'], $sanphamadd);
+                $sanphamadd = [$id, $tensp, $img, $giasp, $soluong, $thanhtien];
+                if (isset($_SESSION['mycart'])) {
+                    $cartItems = $_SESSION['mycart'];
+                    $existingItemKey = null;
+                    foreach ($cartItems as $key => $item) {
+                        if ($item[0] == $id) {
+                            $existingItemKey = $key;
+                            break;
+                        }
+                    }
+                }
+                if ($existingItemKey !== null) {
+                    $cartItems[$existingItemKey][5] += $thanhtien;
+                    $cartItems[$existingItemKey][4]++;
+                } else {
+
+                    array_push($cartItems, $sanphamadd);
+                }
+                $_SESSION['mycart'] = $cartItems;
             }
-            // $sanphamtop6 = load_sanpham_top6();
+            $sanphamtop6 = load_sanpham_top6();
             include('view/menu/giohang.php');
             break;
+
+
+        case "thanhtoan":
+            $donhang = null;
+            $giohang = null;
+            if (isset($_POST['dongythanhtoan']) && ($_POST['dongythanhtoan'])) {
+                $nguoidung = $_POST['nguoidung'];
+                $diachi = $_POST['diachi'];
+                $sdt = $_POST['sdt'];
+                $email = $_POST['email'];
+                $pt_thanhtoan = $_POST['pt_thanhtoan'];
+                $thoigian_mua = date('d/m/Y');
+
+                $id_dathang = insert_donhang($nguoidung, $sdt, $email, $diachi, $pt_thanhtoan, $thoigian_mua, count($_SESSION['mycart']));
+
+                $donhang = loadone_donhang($id_dathang);
+                $giohang = load_cart($id_dathang);
+                foreach ($_SESSION['mycart'] as $cart) {
+                    insert_giohang($_SESSION['user']['id'], $cart[0], $cart[1], $cart[2], $cart[3], $cart[4], $id_dathang);
+                }
+                $_SESSION['mycart'] = [];
+                header("Location: index.php?act=hoadon");
+            }
+            $donhang = load_hoadon_user($_SESSION['user']['id']);
+            $giohang = load_cart($_SESSION['user']['id']);
+
+            $sanphamtop5 = loadall_sanpham_top5();
+            include("view/thanhtoan.php");
+            break;
+
+        case "hoadon":
+            if (!isset($_SESSION["user"])) {
+                header("Location: index.php");
+            }
+            $donhang = loadone_donhang($_SESSION['user']['id']);
+            $giohang = load_hoadon($_SESSION['user']['id']);
+            include "view/hoadon.php";
+            break;
+
+        case "lichsudathang":
+           
+
+            include "view/lichsudathang.php";
+            break;
+
+
+
+
 
 
         case "deletecart":
@@ -238,6 +246,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             }
             header("Location: index.php?act=addgiohang");
             break;
+
 
 
 

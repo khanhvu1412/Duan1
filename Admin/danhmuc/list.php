@@ -12,7 +12,7 @@
                 <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>Mã loại</th>
+                            <th>STT</th>
                             <th>Tên loại</th>
                             <th>Ảnh</th>
                             <th>Hành động</th>
@@ -21,27 +21,23 @@
                     </thead>
                     <tbody>
 
-                        <?php foreach ($listdanhmuc as $danhmuc) {
+                        <?php foreach ($listdanhmuc as $danhmuc) :
                             extract($danhmuc);
                             $suadm = "index.php?act=suadm&id=" . $id;
                             $xoadm = "index.php?act=xoadm&id=" . $id;
                             $hinhpath = "../upload_file/" . $img;
-                            if (is_file($hinhpath)) {
-                                $hinh = "<img src='" . $hinhpath . "' height='90'>";
-                            } else {
-                                $hinh = "No img";
-                            }
-                            echo '
+                            
+                            ?>
                             <tr>
-                                <td>' . $id . '</td>
-                                <td>' . $tendm . '</td>
-                                <td>'. $hinh . '</td>
-                                <td> <a href="' . $suadm . '"><input type="button" class=" btn btn-warning" value="Sửa"></a> 
-                                    <a href="' . $xoadm . '" onclick="return confirmDeletedm()" ><input type="button" class="  btn btn-danger " value="Xóa"></a>
+                                <td><?=$id ?></td>
+                                <td><?=$tendm ?></td>
+                                <td><img src="<?= $hinhpath?>" width="100px" alt=""></td>
+                                <td> <a href="<?=$suadm ?>"><input type="button" class=" btn btn-warning" value="Sửa"></a> 
+                                    <a href="<?=$xoadm ?>" onclick="return confirmDeletedm()" ><input type="button" class="  btn btn-danger " value="Xóa"></a>
                             
                                 </td>
-                            </tr>';
-                        } ?>
+                            </tr>
+                        <?php endforeach;?>
                     </tbody>
                 </table>
                 <form action="">

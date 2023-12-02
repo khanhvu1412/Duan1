@@ -43,6 +43,7 @@ if (isset($_SESSION['nguoidung']) && (is_array($_SESSION['nguoidung']))) {
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
+                            <input type="hidden" name="soluong" value="1">
                             <span class="price">
                                 <ins>
                                     <input type="hidden" name="giasp" value="<?= $giasp ?> VNĐ">
@@ -123,6 +124,8 @@ if (isset($_SESSION['nguoidung']) && (is_array($_SESSION['nguoidung']))) {
                                             <input type="hidden" name="tensp" value="<?= $tensp ?>">
                                             <?= $tensp ?>
                                         </a></h3>
+
+                                    <input type="hidden" name="soluong" value="1">
 
                                     <span class="price">
                                         <ins style="color:red">

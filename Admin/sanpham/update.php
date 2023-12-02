@@ -54,10 +54,7 @@ if (is_file($hinhpath)) {
                                 }
                                 echo '<option value="' . $id_mua . '" ' . $s . '>' . $ten_mua. '</option>';
                             }
-                            // foreach ($listsptheomua as $sptheomua) {
-                            //     extract($sptheomua);
-                            //     echo '<option value="' . $id . '"> ' . $ten_mua . '</option>';
-                            // }
+                            
                             ?>
                         </select>
                     </div>
@@ -91,7 +88,15 @@ if (is_file($hinhpath)) {
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Trang thái</label>
-                        <input class="form-control" name="trangthai" value="<?= $trangthai ?>">
+                        <br>
+                        <input type="hidden" class="form-control" name="trangthai" value="<?= $trangthai ?>">
+                        <select name="trangthai" class="form-control" id="trangthai">
+                            <option value="" >Chọn</option>
+                            <option value="0">Còn hàng</option>
+                            <option value="1">Hết hàng</option>
+
+                        </select>
+                        
                     </div>
 
 

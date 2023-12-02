@@ -19,6 +19,27 @@ if (isset($_SESSION["user"])) {
             </div>
 
             <input type="checkbox" class="mt-2" onclick="myFunction()"> Hiện mật khẩu
+            <br>
+            <?php
+
+            if (isset($_POST['dangnhap']) && ($_POST['dangnhap'])) {
+                $nguoidung = $_POST['nguoidung'];
+                $matkhau = $_POST['matkhau'];
+                $checkuser = checkuser($nguoidung, $matkhau);
+
+                if (is_array($checkuser)) {
+                    $_SESSION['user'] = $checkuser;
+                    header("Location: index.php");
+
+                }
+                if (!$checkuser) {
+                    echo "Tài khoản hoặc mật khẩu không chính xác";
+                }
+                $thongbao = "Tài khoản không tồn tại. Vui lòng nhập lại";
+            }
+
+
+            ?>
 
             <div class="login-btn">
                 <input type="submit" class="mt-2" name="dangnhap" value="Đăng nhập">
@@ -26,6 +47,7 @@ if (isset($_SESSION["user"])) {
             <div class="forget-password">
                 <a href="">Quên mật khẩu?</a>
             </div>
+
             <div class="forget-password">
                 <a href="index.php?act=dangky">Đăng ký tài khoản</a>
             </div>
@@ -35,13 +57,14 @@ if (isset($_SESSION["user"])) {
 </div>
 <?php ob_end_flush(); ?>
 
+
 <script>
-function myFunction() {
-  var x = document.getElementById("password");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
+    function myFunction() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
 </script>

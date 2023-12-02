@@ -95,6 +95,7 @@ if (isset($_POST["dangxuat"])) {
 														<form action="" method="post">
 														<a href="'.$linktk.'"><p>Trang cá nhân</p></a>
 														<br>
+														
 														<input type="submit" name="dangxuat" value="Đăng xuất">
 														</form>
 													</ul>

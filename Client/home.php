@@ -53,7 +53,9 @@
 													<?= $tensp ?>
 												</a></h3>
 
-											<input type="hidden" name="giasp" value="<?= $giasp ?> VNĐ">
+											<input type="hidden" name="soluong" value="1">
+
+											<input type="hidden" name="giasp" value="<?= $giasp ?>">
 											<span class="price">
 												<ins>
 													<?= $giasp ?> VNĐ
@@ -136,7 +138,9 @@
 													<?= $tensp ?>
 												</a></h3>
 
-											<input type="hidden" name="giasp" value="<?= $giasp ?> VNĐ">
+											<input type="hidden" name="soluong" value="1">
+
+											<input type="hidden" name="giasp" value="<?= $giasp ?>">
 											<span class="price">
 												<ins>
 													<?= $giasp ?> VNĐ
@@ -207,34 +211,41 @@
 					<ul class="box-product-list owl-carousel nav-style2 nav-center-outside" data-nav="true"
 						data-dots="false" data-margin="30" data-loop="true"
 						data-responsive='{"0":{"items":1},"600":{"items":2},"1000":{"items":3}}'>
-						<?php foreach ($listsanpham as $sanpham) : 
+						<?php foreach ($listsanpham as $sanpham):
 							extract($sanpham);
 							$linksp = "index.php?act=chitietsp&id=" . $id;
-							$hinh = "../upload_file/" .$img;
+							$hinh = "../upload_file/" . $img;
 							?>
 							<li class="product-item style2">
-							<div class="product-inner">
-								<form action="index.php?act=addgiohang" method="post">  
-								<div class="product-thumb has-back-image">
-									<input type="hidden" name="id" value="<?= $id ?>">
+								<div class="product-inner">
+									<form action="index.php?act=addgiohang" method="post">
+										<div class="product-thumb has-back-image">
+											<input type="hidden" name="id" value="<?= $id ?>">
 
-									<input type="hidden" name="img" value="<?= $img ?>">
-									<a href="<?= $linksp ?>"><img src="<?= $hinh ?>" alt=""></a>
+											<input type="hidden" name="img" value="<?= $img ?>">
+											<a href="<?= $linksp ?>"><img src="<?= $hinh ?>" alt=""></a>
 
+										</div>
+										<div class="product-info">
+											<input type="hidden" name="tensp" value="<?= $tensp ?>">
+											<h3 class="product-name"><a href="#">
+													<?= $tensp ?>
+												</a></h3>
+
+											<input type="hidden" name="soluong" value="1">
+
+											<input type="hidden" name="giasp" value="<?= $giasp ?> ">
+											<span class="price">
+												<ins>
+													<?= $giasp ?> VNĐ
+												</ins>
+											</span>
+											<input type="submit" name="addtocart" onclick="return confirmAddgh()"
+												value="Thêm vào giỏ hàng">
+										</div>
 								</div>
-								<div class="product-info">
-								<input type="hidden" name="tensp" value="<?= $tensp ?>">
-								<h3 class="product-name"><a href="#"><?= $tensp ?></a></h3>
-
-									<input type="hidden" name="giasp" value="<?= $giasp?> VNĐ">
-									<span class="price">
-										<ins><?= $giasp ?> VNĐ</ins>
-									</span>
-									<input type="submit" name="addtocart" onclick="return confirmAddgh()" value="Thêm vào giỏ hàng">
-								</div>
-							</div>
-							</form>
-						</li>
+								</form>
+							</li>
 						<?php endforeach; ?>
 					</ul>
 				</div>

@@ -26,16 +26,14 @@ if (is_array($donhang)) {
                                 <?= $id ?>
                             </label></h2>
                         <h2><label for="">Tên khách hàng:
-                                <?= $tentk ?>
+                                <?= $nguoidung ?>
                             </label></h2>
-                        <h2><label for="">Tên sản phẩm:
-                                <?= $tensp ?>
                             </label></h2>
-                        <h2><label for="">Giá:
-                                <?= $gia ?>
+                        <h2><label for="">Số điện thoại
+                                <?= $sdt ?>
                             </label></h2>
                         <h2><label for="">Địa chỉ giao hàng:
-                                <?= $diachi_giaohang ?>
+                                <?= $diachi?>
                             </label></h2>
                         <h2><label for="">Thời gian mua:
                                 <?= $thoigian_mua ?>

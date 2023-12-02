@@ -25,19 +25,20 @@ if (is_array($donhang)) {
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên khách hàng</label>
-                        <input type="text" class="form-control" name="tentk" value="<?= $tentk ?>">
+                        <input type="text" class="form-control" name="nguoidung" value="<?= $nguoidung ?>">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Số điện thoại</label>
+                        <input type="text" class="form-control" name="sdt" value="<?= $sdt ?>">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputName" class="form-label">Tên sản phẩm</label>
-                        <input type="text" class="form-control" name="tensp" value="<?= $tensp ?>">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputName" class="form-label">Giá tiền</label>
-                        <input type="text" class="form-control" name="gia" value="<?= $gia ?>">
+                        <label for="exampleInputName" class="form-label">Email</label>
+                        <input type="text" class="form-control" name="email" value="<?= $email?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Địa chỉ giao hàng</label>
-                        <input type="text" class="form-control" name="diachi_giaohang" value="<?= $diachi_giaohang ?>">
+                        <input type="text" class="form-control" name="diachi" value="<?= $diachi ?>">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Thời gian mua</label>

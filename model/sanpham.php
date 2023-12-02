@@ -7,6 +7,7 @@ function insert_sanpham($tensp, $giasp, $hinh, $mota, $soluong, $luotxem, $trang
 
 }
 
+
 function loadall_sanpham_top5()
 {
     $sql = "select * from sanpham where 1 order by giasp desc limit 0,5";

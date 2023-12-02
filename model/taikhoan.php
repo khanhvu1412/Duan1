@@ -1,9 +1,9 @@
 <?php
-function insert_taikhoan($nguoidung, $matkhau, $email, $img, $diachi, $sdt)
+function insert_taikhoan($nguoidung, $matkhau, $email, $img, $diachi, $sdt, $id_role)
 {
-    $sql = "insert into taikhoan(nguoidung, matkhau, email,img, diachi, sdt) values ('$nguoidung', '$matkhau', '$email','$img','$diachi', '$sdt')";
+    $sql = "insert into taikhoan(nguoidung, matkhau, email,img, diachi, sdt, id_role) values ('$nguoidung', '$matkhau', '$email','$img','$diachi', '$sdt', '$id_role')";
     pdo_execute($sql);
-    
+
 }
 
 function loadall_role()
@@ -21,6 +21,20 @@ function checkuser($nguoidung, $matkhau)
 
     $sp = pdo_query_one($sql);
     return $sp;
+}
+
+function checknguoidung($nguoidung)
+{
+    $sql = "SELECT * FROM taikhoan WHERE nguoidung='" . $nguoidung . "'";
+    $checknguoidung = pdo_query_one($sql);
+    return $checknguoidung;
+}
+
+function checkemail($email)
+{
+    $sql = "select * from taikhoan WHERE email='" . $email . "'";
+    $checkemail = pdo_query_one($sql);
+    return $checkemail;
 }
 
 
@@ -43,7 +57,12 @@ function loadall_taikhoan()
     return $listtaikhoan;
 }
 
-
+// function loadall_taikhoan()
+// {
+//     $sql = "select * from taikhoan order by id asc";
+//     $listtaikhoan = pdo_query($sql);
+//     return $listtaikhoan;
+// }
 
 
 function loadone_taikhoan($id)
@@ -60,11 +79,6 @@ function update_taikhoan_admin($id, $nguoidung, $matkhau, $email, $diachi, $sdt)
     pdo_execute($sql);
 }
 
-// function loadall_role(){
-//     $sql = "select * from role " ;
-//     $listrole = pdo_query($sql);
-//     return $listrole;
-// }
 
 function update_taikhoan_user($id, $email, $img, $diachi, $sdt)
 {
@@ -74,7 +88,7 @@ function update_taikhoan_user($id, $email, $img, $diachi, $sdt)
 
 function update_matkhau($id, $matkhau)
 {
-    $sql = "update taikhoan set matkhau ='".$matkhau."' where id =" . $id;
+    $sql = "update taikhoan set matkhau ='" . $matkhau . "' where id =" . $id;
     pdo_execute($sql);
 }
 
