@@ -61,6 +61,7 @@ if (is_file($hinhpath)) {
     function confirmCapnhattk() {
         if (confirm("Bạn có muốn cập nhật lại tài khoản này không")) {
             document.location = "index.php?act=tkcanhan";
+            alert("Cập nhật thành công");
         } else {
             return false;
         }

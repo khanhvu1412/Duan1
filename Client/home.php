@@ -58,7 +58,7 @@
 											<input type="hidden" name="giasp" value="<?= $giasp ?>">
 											<span class="price">
 												<ins>
-													<?= $giasp ?> VNĐ
+													<?= $giasp ?> ₫
 												</ins>
 											</span>
 											<input type="submit" name="addtocart" onclick="return confirmAddgh()"
@@ -143,7 +143,7 @@
 											<input type="hidden" name="giasp" value="<?= $giasp ?>">
 											<span class="price">
 												<ins>
-													<?= $giasp ?> VNĐ
+													<?= $giasp ?> ₫
 												</ins>
 											</span>
 											<input type="submit" name="addtocart" onclick="return confirmAddgh()"
@@ -237,7 +237,7 @@
 											<input type="hidden" name="giasp" value="<?= $giasp ?> ">
 											<span class="price">
 												<ins>
-													<?= $giasp ?> VNĐ
+													<?= $giasp ?> ₫
 												</ins>
 											</span>
 											<input type="submit" name="addtocart" onclick="return confirmAddgh()"

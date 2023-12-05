@@ -44,7 +44,7 @@ if (is_array($danhmuc)) {
 								<h3 class="product-name"><a href="#">' . $tensp . '</a></h3>
 								
 								<input type ="hidden" name="giasp" class="price" value ="' . $giasp . '">
-								<span class ="price"><ins>' . $giasp . ' VNĐ</ins></span> 
+								<span class ="price"><ins>' . $giasp . ' ₫</ins></span> 
 
 								<input type="submit" name="addtocart"onclick="return confirmAddgh()"  value="Thêm vào giỏ hàng">
 								

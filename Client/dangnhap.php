@@ -33,9 +33,9 @@ if (isset($_SESSION["user"])) {
 
                 }
                 if (!$checkuser) {
-                    echo "Tài khoản hoặc mật khẩu không chính xác";
+                    echo "<lable style='color:red;'>Tài khoản hoặc mật khẩu không chính xác</lable>";
                 }
-                $thongbao = "Tài khoản không tồn tại. Vui lòng nhập lại";
+                $thongbao = "<lable style='color:red;'>Tài khoản không tồn tại. Vui lòng nhập lại</lable>";
             }
 
 

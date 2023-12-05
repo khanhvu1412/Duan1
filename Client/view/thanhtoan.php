@@ -84,8 +84,7 @@ if (isset($_SESSION['user'])) {
                                 <label><input name="pt_thanhtoan" type="radio" value="1">Chuyển khoản trực
                                     tiếp</label>
                             </div>
-                                <input type="submit" name="dongythanhtoan" onclick="return confirm('Bạn có muốn thanh toán không ?')" class="button medium" value="Thanh toán">
-                            <!-- <a href="index.php?act=hoadon" name="dongythanhtoan" onclick="return confirm('Bạn có muốn thanh toán không ?')" class="button medium">Thanh toán</a> -->
+                                <input type="submit" name="dongythanhtoan" onclick="return datHang()" class="button medium" value="Thanh toán">
                         </div>
                     </div>
                 </div>
@@ -155,6 +154,14 @@ if (isset($_SESSION['user'])) {
             if (confirm("Bạn thêm sản phẩm này vào giỏ hàng?")) {
                 document.location = "index.php?act=listsp";
             } else {
+                return false;
+            }
+        }
+
+        function datHang(){
+            if(confirm("Bạn có muốn đặt hàng không ?")){
+                alert("Bạn đã đặt hàng thành công")
+            }else{
                 return false;
             }
         }

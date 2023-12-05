@@ -87,19 +87,26 @@ if (isset($_POST["dangxuat"])) {
 											if (isset($_SESSION["user"])) {
 												extract($_SESSION['user']);
 												$linktk = 'index.php?act=tkcanhan';
+												$linkadmin = '../Admin/index.php';
 
 												echo '
 												<div class="setting-option">
 													<ul>
 													    <p> Xin chào ' . $nguoidung . '</p>
 														<form action="" method="post">
-														<a href="'.$linktk.'"><p>Trang cá nhân</p></a>
-														<br>
+														<a href="'.$linktk.'"><p>Trang cá nhân</p></a>';
 														
+												if($id_role == 1){
+													$linkadmin = '../Admin/index.php';
+													echo '<a href="'.$linkadmin.'"><p>Trang Admin</p></a>';
+												}
+												echo '
+														<br>
 														<input type="submit" name="dangxuat" value="Đăng xuất">
 														</form>
 													</ul>
 											 	</div> ';
+												
 											} else {
 												echo '
 													<div class="setting-option">

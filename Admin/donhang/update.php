@@ -21,7 +21,8 @@ if (is_array($donhang)) {
                 <form action="index.php?act=updatedh" method="post">
                     <div class="mb-3">
                         <label for="exampleInputId" class="form-label">Mã đơn hàng</label>
-                        <input type="text" class="form-control" name="id" value="<?= $id ?>">
+                        <input type="hidden" class="form-control" name="id" value="<?= $id ?>">
+                        <input type="text" class="form-control" name="id" value="<?= $id ?>" >
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Tên khách hàng</label>
@@ -65,7 +66,7 @@ if (is_array($donhang)) {
                         </select>
 
                     </div>
-                    <input type="submit" class="btn btn-success" name="capnhat" value="Cập nhật">
+                    <input type="submit" class="btn btn-success" onclick="return confirm('Bạn có muốn cập nhật không ?')" name="capnhat" value="Cập nhật">
                     <input type="reset" class="btn btn-info" value="Nhập lại">
 
                     <a href="index.php?act=listdh"><input type="button" class="btn btn-primary" value="Danh sách"></a>

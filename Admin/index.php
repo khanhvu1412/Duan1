@@ -170,6 +170,7 @@ if (isset($_GET['act'])) {
                 }
                 insert_sanpham($tensp, $giasp, $hinh, $mota, $soluong, $luotxem, $trangthai, $iddm, $id_sptheomua);
                 $thongbao = "Thêm thành công";
+                // header('L');
 
 
             }

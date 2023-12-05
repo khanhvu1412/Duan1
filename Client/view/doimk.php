@@ -53,6 +53,7 @@ if (is_array($taikhoan)) {
     function confirmDoimk() {
         if (confirm("Bạn có muốn đổi mật khẩu này không")) {
             document.location = "index.php?act=tkcanhan";
+            alert("Đổi mật khẩu thành công");
         } else {
             return false;
         }

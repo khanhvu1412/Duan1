@@ -40,7 +40,7 @@ function checkemail($email)
 
 function loadall_taikhoan()
 {
-    $sql = "select
+    $sql = "SELECT
                     tk.id as tk_id,
                     tk.nguoidung as tk_nguoidung,
                     tk.matkhau as tk_matkhau,
@@ -49,10 +49,10 @@ function loadall_taikhoan()
                     tk.diachi as tk_diachi,
                     tk.sdt as tk_sdt,
                     r.name_role as r_name_role
-                    from taikhoan as tk
-                    inner join role as r
-                    on r.id_role = tk.id_role
-                    order by tk.id asc";
+            from taikhoan as tk
+            inner join role as r
+            on r.id_role = tk.id_role
+            order by tk.id asc";
     $listtaikhoan = pdo_query($sql);
     return $listtaikhoan;
 }

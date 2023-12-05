@@ -32,16 +32,9 @@ $regexEmail = "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]
                 <p>Địa chỉ</p>
                 <input type="text" name="diachi" />
             </div>
-            
+
             <input type="checkbox" class="mt-2" onclick="myFunction()"> Hiện mật khẩu
             <br>
-
-
-
-            <?php //if (isset($_POST['dangky']) && $_POST['dangky']) {
-            //echo "Đăng ký tài khoản thành công";
-            //} 
-            ?>
 
             <?php
             if (isset($_POST['dangky']) && $_POST['dangky']) {
@@ -64,24 +57,26 @@ $regexEmail = "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]
                 $checknguoidung = checknguoidung($nguoidung);
                 $checkemail = checkemail($email);
                 if (empty($nguoidung) || empty($email) || empty($matkhau) || empty($sdt) || empty($diachi)) {
-                    echo "Hãy điền tất cả trường";
+                    echo "<span style='color:red;'>Hãy điền tất cả trường</span>";
                 } else if (is_array($checkemail)) {
-                    echo "Email đã tồn tại";
+                    echo "<span style='color:red;'>Email đã tồn tại</span>";
                 } else if (is_array($checknguoidung)) {
-                    echo "Tài khoản đã tồn tại";
+                    echo "<span style='color:red;'>Tài khoản đã tồn tại</span>";
                 } else if ($length < 8) {
-                    echo "Mật khẩu ít nhất 8 ký tự";
-                } else {
+                    echo "<span style='color:red;'>Mật khẩu ít nhất 8 ký tự</span>";
+                } 
+                else {
                     insert_taikhoan($nguoidung, $matkhau, $email, $img, $diachi, $sdt, $id_role);
-                    echo "Đăng ký thành công";
+                    echo "<span style='color:green;'>Đăng ký thành công</span>";
+                    // header("Location: index.php?act=dangnhap");
                 }
 
             } ?>
-            
-            
-            
+
+
+
             <div class="login-btn">
-                <input type="submit" name="dangky" value="Đăng Ký">
+                <input type="submit" onclick="return confirmDangkytk()" name="dangky" value="Đăng Ký">
             </div>
             <div class="forget-password">
                 <a href="#">Quên mật khẩu ?</a>
@@ -93,6 +88,16 @@ $regexEmail = "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]
     </div>
 
     <script>
+
+
+        function confirmDangkytk() {
+            if (confirm("Bạn có muốn đăng ký tài khoản này không")) {
+                document.location = "index.php?act=dangnhap";
+                alert("Đăng ký thành công");
+            } else {
+                return false;
+            }
+        }
         function myFunction() {
             var x = document.getElementById("password");
             if (x.type === "password") {

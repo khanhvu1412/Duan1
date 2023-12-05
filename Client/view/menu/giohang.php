@@ -9,10 +9,10 @@
                     <table class="shop_table cart">
                         <thead>
                             <tr>
-                                <th colspan="2" class="product-name">Sản phẩm</th>
-                                <th class="product-soluong">Số lượng</th>
-                                <th class="product-price">Giá</th>
-                                <th class="product-remove">&nbsp;</th>
+                                <th colspan="2" class="product-name text-center">Sản phẩm</th>
+                                <th class="product-soluong text-center">Số lượng</th>
+                                <th class="product-price text-center">Giá</th>
+                                <th class="product-remove text-center">&nbsp;</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -24,16 +24,28 @@
                                 $linksp = 'index.php?act=chitietsp';
                                 $xoa = 'index.php?act=deletecart&id=' . $id . '';
 
-                                echo '<tr>
+                                echo '
+                                        <tr>
                                         <td class="product-thumbnail"><img src="' . $hinh . '" alt=""></td>
-
                                         <td class="product-name"><a href="#">' . $cart[1] . '</a></td>
-                                        <td class="product-soluong"><a href="#">' . $cart[4] . '</a></td>
 
-                                        <td class="product-price"><a href="#">' . $cart[5] . '.000 ₫</a></td>
+                                        <form action="" method="post" class="quantity-cart">
+                                        <td class="product-soluong">
+                                        <div class="form-soluong">
+                                        <input type="hidden" name="id" value="'.$cart[0].'">
+                                        <input type="submit" name="giamsoluong" class="count" value="-">
+                                        <input type="number" name="soluong" class="count" value="'. $cart[4] .'">
+                                        <input type="submit" name="tangsoluong" class="count" value="+">
+                                        </div>
+                                        </td>
+                                        </form>
+                                        
+                                        
+
+                                        <td class="product-price"><a href="#">' . $cart[3] . '</a></td>
 
                                         <td class="product-remove"><a href=' . $xoa . ' onclick="return confirmDeletegh()"><i class="fa-regular fa-trash-can"></i></a></td> 
-                                    </tr>';
+                                        </tr>';
 
                                 $id += 1;
                             }
@@ -58,7 +70,7 @@
                                 $tongSoLuong = 0;
                                 if (isset($_SESSION['mycart'])) {
                                     $cartItems = $_SESSION['mycart'];
-                                
+
                                     foreach ($cartItems as $cart) {
                                         $tongSoLuong += $cart[4];
                                     }
@@ -79,7 +91,7 @@
                                 }
                                 echo '
                                 <td>Tổng: </td>
-                                <td><span class="price" style ="color: red">' . $tong . '.000 VNĐ</span></td>';
+                                <td><span class="price" style ="color: red">' . $tong . '.000 ₫</span></td>';
 
                                 ?>
 

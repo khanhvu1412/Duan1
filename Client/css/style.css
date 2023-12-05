@@ -8536,6 +8536,7 @@ Last change: 01/15/2016
       padding-left: 10px;
       padding-right: 10px;
       text-transform: uppercase;
+      text-align: center;
   }
   .shop_table.cart .product-name a{
       color: #222222;
@@ -9959,6 +9960,26 @@ Last change: 01/15/2016
     
   }
 
+
+   .product-soluong .count{
+    width: 60px; 
+    height: 41px;
+
+    
+    /* padding-left: 25px; */
+    font-size: 20px;
+    color: black;
+    /* border: 1px solid gray; */
+    background-color: white;
+  }
+  .count{
+    text-align: center;
+  }
+
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
 
 
   
