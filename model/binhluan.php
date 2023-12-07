@@ -10,11 +10,12 @@ function insert_binhluan($noidung, $id_nguoidung, $id_sp,  $ngaybinhluan)
 }
 
 
-function delete_binhluan($id)
+function delete_binhluan($id_sp,$id)
 {
     $sql = "delete from binhluan where id=" . $id;
     pdo_execute($sql);
-    //header("Location: ../Admin/sanpham/listbl.php");
+    header("Location: listbl.php?id_sp=$id_sp");
+   
 }
 
 function loadall_binhluan_admin()
@@ -23,7 +24,7 @@ function loadall_binhluan_admin()
     $sql = "
             SELECT binhluan.id, binhluan.noidung, taikhoan.nguoidung, sanpham.tensp , binhluan.id_nguoidung, binhluan.id_sp, binhluan.ngaybinhluan FROM `binhluan` 
             LEFT JOIN taikhoan ON binhluan.id_nguoidung = taikhoan.id
-            LEFT JOIN sanpham ON binhluan.id_sp = sanpham.id ; 
+            LEFT JOIN sanpham ON binhluan.id_sp = sanpham.id; 
         ";
     $listbinhluan = pdo_query($sql);
     return $listbinhluan;

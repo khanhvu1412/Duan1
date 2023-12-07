@@ -68,6 +68,21 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             include "view/capnhattk.php";
             break;
 
+
+        case "quenmk":
+            // if (isset($_POST['guiemail']) && $_POST['guiemail']) {
+            //     $email = $_POST['email'];
+        
+            //     $checkemail = checkemail($email);
+            //     if (is_array($checkemail)) {
+            //       $thongbao = "Mật khẩu của bạn là: " . $checkemail['matkhau'];
+            //     } else {
+            //       $thongbao = "Email này không tồn tại";
+            //     }
+            //   }
+            include "view/taikhoan/quenmk.php";
+            break;
+
         case "doimk":
             if (isset($_POST['doimk'])) {
                 $id = $_POST['id'];
@@ -89,12 +104,15 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             include "view/ct_donhang.php";
             break;
 
-        case "huydohang":
-            if(isset($_GET['id']) && ($_GET['id'] > 0)){
+        case "huydonhang":
+            if(isset($_GET['id']) && $_GET['id']){
                 huydonhang($_GET['id']);
                 header("Location: index.php?act=tkcanhan");
             }
-            include "";
+            $donhang = loadone_donhang_user($_SESSION['user']['id']);
+            $giohang = load_cart_user();
+            $taikhoan = loadone_taikhoan($id);
+            include "view/tkcanhan.php";
             break;
 
 
@@ -118,7 +136,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             break;
 
         case "chitietsp":
-
+            
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
             }
@@ -273,8 +291,8 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             if (isset($_GET['id_donhang']) && ($_GET['id_donhang']) > 0){
                 $giohang = load_cart($_GET['id_donhang']);
             }
+            $donhang = loadonedonang();
             
-            $donhang = loadone_donhang();
             include "view/hoadon.php";
             break;
 

@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if (isset($_SESSION["user"])) {
+if(isset($_SESSION["user"])) {
     header("Location: index.php");
 }
 
@@ -22,17 +22,17 @@ if (isset($_SESSION["user"])) {
             <br>
             <?php
 
-            if (isset($_POST['dangnhap']) && ($_POST['dangnhap'])) {
+            if(isset($_POST['dangnhap']) && ($_POST['dangnhap'])) {
                 $nguoidung = $_POST['nguoidung'];
                 $matkhau = $_POST['matkhau'];
                 $checkuser = checkuser($nguoidung, $matkhau);
 
-                if (is_array($checkuser)) {
+                if(is_array($checkuser)) {
                     $_SESSION['user'] = $checkuser;
                     header("Location: index.php");
 
                 }
-                if (!$checkuser) {
+                if(!$checkuser) {
                     echo "<lable style='color:red;'>Tài khoản hoặc mật khẩu không chính xác</lable>";
                 }
                 $thongbao = "<lable style='color:red;'>Tài khoản không tồn tại. Vui lòng nhập lại</lable>";
@@ -45,7 +45,7 @@ if (isset($_SESSION["user"])) {
                 <input type="submit" class="mt-2" name="dangnhap" value="Đăng nhập">
             </div>
             <div class="forget-password">
-                <a href="">Quên mật khẩu?</a>
+                <a href="#">Quên mật khẩu?</a>
             </div>
 
             <div class="forget-password">

@@ -1,8 +1,10 @@
 <?php
 
-if (is_array($donhang)) {
+if(is_array($donhang)) {
     extract($donhang);
 }
+
+
 
 ?>
 
@@ -28,12 +30,12 @@ if (is_array($donhang)) {
                         <h2><label for="">Tên khách hàng:
                                 <?= $nguoidung ?>
                             </label></h2>
-                            </label></h2>
+                        </label></h2>
                         <h2><label for="">Số điện thoại
                                 <?= $sdt ?>
                             </label></h2>
                         <h2><label for="">Địa chỉ giao hàng:
-                                <?= $diachi?>
+                                <?= $diachi ?>
                             </label></h2>
                         <h2><label for="">Thời gian mua:
                                 <?= $thoigian_mua ?>
@@ -41,38 +43,95 @@ if (is_array($donhang)) {
                         <h2><label for="">Số lượng:
                                 <?= $soluong ?>
                             </label></h2>
+                        <h2><label for="">Phương thức thanh toán: 
+                                <?= $pt_thanhtoan == 0  ? 'Thanh toán khi giao hàng' : 'Chuyển khoản trực tiếp' ?>
+                            </label></h2>
                         <h2><label for="">Trạng thái:
                                 <?php
-                                if ($id_trangthai_donhang == 1) {
+                                if($id_trangthai_donhang == 1) {
                                     echo "Chờ xác nhận";
-                                } else if ($id_trangthai_donhang == 2) {
+                                } else if($id_trangthai_donhang == 2) {
                                     echo "Đã xác nhận";
-                                } else if ($id_trangthai_donhang == 3){
+                                } else if($id_trangthai_donhang == 3) {
                                     echo "Đang xửa lý";
-                                }else if ($id_trangthai_donhang == 4){
+                                } else if($id_trangthai_donhang == 4) {
                                     echo "Đang vận chuyển";
-                                }else if ($id_trangthai_donhang == 5){
+                                } else if($id_trangthai_donhang == 5) {
                                     echo "Giao hàng thành công";
-                                }else if ($id_trangthai_donhang == 6){
+                                } else if($id_trangthai_donhang == 6) {
                                     echo "CHờ thanh toán ";
-                                }else if ($id_trangthai_donhang == 7){
+                                } else if($id_trangthai_donhang == 7) {
                                     echo "Đã thanh toán";
-                                }else {
+                                } else {
                                     echo "Đã hủy";
                                 }
-                                //  if($trangthai === 1 ) "<p style='background-color: yellow; color: black; '>Mới đặt hàng</p>" :
-                                //     "<p style='background-color: green; color: white;'>Đã thanh toán</p>" 
+
                                 ?>
                             </label></h2>
 
                     </div>
-                    <br>
-                    <div class="function-back">
-                        <a href="index.php?act=listdh"><input type="submit" class="btn btn-primary"
-                                value="Quay lại trang đơn hàng"></a>
-                    </div>
+
                 </div>
             </div>
+            <br>
+
+            <div class="m-2">
+                <h2>Sản phẩm</h2>
+                <br>
+                <table class="text-center" style="font-size: 20px; width: 100%;">
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <th>Ảnh</th>
+                        <th>Giá tiền</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+
+                    <?php foreach($giohang as $gh):
+                        extract($gh);
+                        ?>
+
+                        <tr>
+                            <td style="padding-top: 30px;">
+                                <?= $tensp ?>
+                            </td>
+                            <td style="padding-top: 30px;"><img src="<?= ' ../upload_file/'.$img ?>" width="100px" alt="">
+                            </td>
+                            <td style="padding-top: 30px;">
+                                <?= (int)$giasp ?>.000 ₫
+                            </td>
+                            <td style="padding-top: 30px;">
+                                <?= $soluong ?>
+                            </td>
+                            <td style="padding-top: 30px;">
+                                <?= (int)$giasp * $soluong ?>.000 ₫
+                            </td>
+                        </tr>
+
+                    <?php endforeach; ?>
+                </table>
+                <br>
+                <h2>Tổng giá:
+                    <?php
+                    $tong = 0;
+                    foreach($giohang as $value) {
+                        extract($value);
+                        $tong += (int)$giasp * $soluong;
+                    }
+                    echo $tong;
+                    ?>.000 đ
+                </h2>
+            </div>
+
+
+
+
+
+            <div class="function-back">
+                <a href="index.php?act=listdh"><input type="submit" class="btn btn-primary mt-5"
+                        value="Quay lại trang đơn hàng"></a>
+            </div>
+
         </div>
     </div>
 

@@ -66,14 +66,6 @@ if (isset($_SESSION['nguoidung']) && (is_array($_SESSION['nguoidung']))) {
                             </div>
 
 
-                                <!-- <div class="quantity">
-                                    <input style="border: 1px solid #000" type="number" name="" id="">
-                                    <input type="submit" name="giamsoluong" class="count" value="-">
-                                    <input type="number" name="soluong" class="count" value="<?= $cart[4] ?>">
-                                    <input type="submit" name="tangsoluong" class="count" value="+">
-                                </div> -->
-
-
 
                             <a class="button button-add-cart" data-quantity="1" href="index.php?act=thanhtoan">Mua</a>
 

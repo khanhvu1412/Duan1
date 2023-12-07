@@ -7,14 +7,21 @@ include "../../model/sanpham.php";
 
 
 $id_sp = $_REQUEST['id_sp'];
-if (isset($_SESSION["user"]))  {
+
+if(isset($_SESSION["user"])) {
     $id_nguoidung = $_SESSION["user"]["id"];
-}else {
-    echo"";
+} else {
+    echo "";
 }
+
+// if (empty($_SESSION["user"]))  {
+
+// }else {
+//     echo"";
+// }
 $listbl = loadall_binhluan($id_sp);
 $sanpham = loadone_sanpham($id_sp);
-if (is_array($sanpham)) {
+if(is_array($sanpham)) {
     extract($sanpham);
 }
 ?>
@@ -31,12 +38,12 @@ if (is_array($sanpham)) {
                 <th class="w-5">Ngày bình luận</th>
             </tr>
             <?php
-            foreach ($listbl as $bl) {
+            foreach($listbl as $bl) {
                 extract($bl);
                 echo '<tr>
-                    <td>' . $nguoidung . '</td>
-                    <td>' . $noidung . '</td>
-                    <td>' . $ngaybinhluan . '</td>
+                    <td>'.$nguoidung.'</td>
+                    <td>'.$noidung.'</td>
+                    <td>'.$ngaybinhluan.'</td>
                   </tr>';
             }
             ?>
@@ -55,14 +62,20 @@ if (is_array($sanpham)) {
 
 
 <?php
-if (isset($_POST['guibinhluan']) && ($_POST['guibinhluan'])) {
+if(!empty($_SESSION["user"])) {
 
-    $noidung = $_POST['noidung'];
-    $id_sp = $_POST['id_sp'];
-    $id_nguoidung = $_SESSION['user']['id'];
-    $ngaybinhluan = date('d/m/Y');
-    insert_binhluan($noidung, $id_nguoidung, $sanpham['id'], $ngaybinhluan);
-    header("Location: " . $_SERVER['HTTP_REFERER']);
+    if(isset($_POST['guibinhluan']) && ($_POST['guibinhluan'])) {
+
+        $noidung = $_POST['noidung'];
+        $id_sp = $_POST['id_sp'];
+        $id_nguoidung = $_SESSION['user']['id'];
+        $ngaybinhluan = date('d/m/Y');
+        insert_binhluan($noidung, $id_nguoidung, $sanpham['id'], $ngaybinhluan);
+        header("Location: ".$_SERVER['HTTP_REFERER']);
+
+    }
     
+} else {
+    echo "";
 }
 ?>

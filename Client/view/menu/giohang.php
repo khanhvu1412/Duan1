@@ -1,5 +1,13 @@
 <div class="main-container no-sidebar">
     <div class="container">
+    <div class="shop-top">
+        <div class="shop-top-left">
+            <div class="breadcrumbs">
+                <a href="index.php">Home</a>
+                <span>Giỏ hàng<span>
+            </div>
+        </div>
+    </div>
         <div class="main-content">
             <div class="page-title">
                 <h3>Giỏ hàng</h3>

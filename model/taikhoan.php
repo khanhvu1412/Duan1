@@ -32,8 +32,8 @@ function checknguoidung($nguoidung)
 
 function checkemail($email)
 {
-    $sql = "select * from taikhoan WHERE email='" . $email . "'";
-    $checkemail = pdo_query_one($sql);
+    $sql = "SELECT * FROM taikhoan WHERE email=  $email";
+    $checkemail = pdo_query($sql);
     return $checkemail;
 }
 

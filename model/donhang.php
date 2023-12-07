@@ -65,10 +65,15 @@ function loadall_donhang()
     return $listdonhang;
 }
 
+function loadonedonang(){
+    $sql = "SELECT * FROM donhang ORDER BY id desc";
+    $donhang = pdo_query_one($sql);
+    return $donhang;
+}
 
-function loadone_donhang()
+function loadone_donhang($id)
 {
-    $sql = "select * from donhang order by id desc";
+    $sql = "select * from donhang where id= " .$id;
     $donhang = pdo_query_one($sql);
     return $donhang;
 }
@@ -76,7 +81,7 @@ function loadone_donhang()
 function huydonhang($id){
     $sql = "UPDATE donhang SET id_trangthai_donhang = 8 WHERE id = $id";
     pdo_execute($sql);
-    header("Location: index.php?act=");
+    header("Location: index.php?act=listdh");
 }
 
 

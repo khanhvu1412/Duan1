@@ -118,7 +118,7 @@ if ($img) {
                             <?= $value['thoigian_mua'] ?>
                         </td>
                         <td style="padding: 10px;" class="text-center">
-                            <?= $gh['giasp'] ?> ₫
+                            <?= $gh['giasp'] ?> 
                         </td>
                         <td style="padding: 10px;" class="text-center">
                             <?= $value['soluong'] ?>
@@ -130,10 +130,8 @@ if ($img) {
                             <?= $value['ten_trangthai'] ?>
                         </td>
                         <td style="padding: 10px;" class="text-center">
-                            <?php echo $value['ten_trangthai'] ?
-                                "<a onclick='return huyBo()' class=' my-1'  '
-                        href='index.php?act=huydonhang&id=" . $value['id'] . " ' >Hủy đơn hàng </a>" : "" ?>
-                            <hr>
+                           <a href="index.php?act=huydonhang&id=<?=$value['id'] ?>" name="huydonhang" onclick="return huyboDonHang()" style="padding-top:10px">Hủy đơn hàng</a>
+                           <hr>
                             <a href="index.php?act=chitietdonhang&id=<?= $value['id'] ?>" style="padding-top:10px">Chi tiết đơn hàng</a>
                         </td>
                     </tr>
@@ -144,10 +142,10 @@ if ($img) {
     </div>
 </div>
 <script>
-function huyBo() {
+function huyboDonHang() {
     if (confirm("Bạn có muốn hủy đơn hàng không ?")) {
         document.location = "index.php?act=tkcanhan";
-        alert("Cập nhật thành công");
+        alert("Hủy đơn thành công");
     } else {
         return false;
     }

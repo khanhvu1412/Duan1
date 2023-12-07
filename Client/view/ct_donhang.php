@@ -1,9 +1,17 @@
 <?php
-if (is_array($giohang)) {
+if(is_array($giohang)) {
     extract($giohang);
 }
 ?>
 <div class="container">
+    <div class="shop-top">
+        <div class="shop-top-left">
+            <div class="breadcrumbs">
+                <a href="index.php?act=tkcanhan">Tài khoản cá nhân</a>
+                <span>Chi tiết đơn hàng</span>
+            </div>
+        </div>
+    </div>
     <div class="content-information">
         <div class="login">
             <h1>Chi tiết đơn hàng</h1>
@@ -20,7 +28,7 @@ if (is_array($giohang)) {
                     <th style="padding: 10px; width: 100px;" class="text-center">Thành tiền</th>
                 </tr>
                 <?php
-                foreach ($giohang as $value):
+                foreach($giohang as $value):
                     extract($value);
                     ?>
                     <tr>
@@ -50,11 +58,11 @@ if (is_array($giohang)) {
             <h1 style="margin: 15px 0px; font-size: 24px;">Tổng số tiền:
                 <?php
                 $tong = 0;
-                foreach ($giohang as $value) {
+                foreach($giohang as $value) {
                     extract($value);
                     $tong += (int)$giasp * $soluong;
                 }
-                echo '<b>' . $tong . '.000 đ</b>' ?>
+                echo '<b>'.$tong.'.000 đ</b>' ?>
             </h1>
         </div>
     </div>

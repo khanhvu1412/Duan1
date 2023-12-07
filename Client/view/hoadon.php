@@ -24,13 +24,13 @@ if (isset($_SESSION['user'])) {
             <h3 class="box_title text-center">Thông tin đơn hàng</h3>
             <div class="box-bill " style="min-height: 20px;">
                 <p>Mã đơn hàng: N4 -
-                    <?= $id ?>
+                    <?= $donhang['id'] ?>
                 </p>
                 <p>Ngày đặt hàng:
                     <?= $donhang['thoigian_mua']?>
                 </p>
                 <p>Phương thức thanh toán:
-                    <?= $donhang['pt_thanhtoan'] == 0 ? "Thanh toán khi giao hàng" : "Chuyển khoản trực tiếp" ?>
+                    <?= $pt_thanhtoan === 0 ? "Thanh toán khi giao hàng" : "Chuyển khoản trực tiếp" ?>
                 </p>
             </div>
             <h3 class="box_title text-center">Thông tin đặt hàng</h3>
@@ -77,7 +77,7 @@ if (isset($_SESSION['user'])) {
                             <?= $value['tensp'] ?>
                         </td>
                         <td style="padding: 10px" class="text-center">
-                            <?= $value['giasp'] ?> ₫
+                            <?= $value['giasp'] ?> 
                         </td>
                         <td style="padding: 10px" class="text-center">
                             <?= $value['soluong'] ?>
