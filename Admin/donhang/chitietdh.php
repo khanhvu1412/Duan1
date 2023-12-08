@@ -1,6 +1,6 @@
 <?php
 
-if(is_array($donhang)) {
+if (is_array($donhang)) {
     extract($donhang);
 }
 
@@ -21,56 +21,56 @@ if(is_array($donhang)) {
 
         <div class="card-body">
             <div class="table-responsive">
-                <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="container">
+                            <h2><label for="">Mã đơn:
+                                    <?= $id ?>
+                                </label></h2>
+                            <h2><label for="">Tên khách hàng:
+                                    <?= $nguoidung ?>
+                                </label></h2>
+                            </label></h2>
+                            <h2><label for="">Số điện thoại
+                                    <?= $sdt ?>
+                                </label></h2>
+                            <h2><label for="">Địa chỉ giao hàng:
+                                    <?= $diachi ?>
+                                </label></h2>
+                            <h2><label for="">Thời gian mua:
+                                    <?= $thoigian_mua ?>
+                                </label></h2>
+                            <h2><label for="">Số lượng:
+                                    <?= $soluong ?>
+                                </label></h2>
+                            <h2><label for="">Phương thức thanh toán:
+                                    <?= $pt_thanhtoan == 0 ? 'Thanh toán khi giao hàng' : 'Chuyển khoản trực tiếp' ?>
+                                </label></h2>
+                            <h2><label for="">Trạng thái:
+                                    <?php
+                                    if ($id_trangthai_donhang == 1) {
+                                        echo "Chờ xác nhận";
+                                    } else if ($id_trangthai_donhang == 2) {
+                                        echo "Đã xác nhận";
+                                    } else if ($id_trangthai_donhang == 3) {
+                                        echo "Đang xửa lý";
+                                    } else if ($id_trangthai_donhang == 4) {
+                                        echo "Đang vận chuyển";
+                                    } else if ($id_trangthai_donhang == 5) {
+                                        echo "Giao hàng thành công";
+                                    } else if ($id_trangthai_donhang == 6) {
+                                        echo "CHờ thanh toán ";
+                                    } else if ($id_trangthai_donhang == 7) {
+                                        echo "Đã thanh toán";
+                                    } else {
+                                        echo "Đã hủy";
+                                    }
 
-                    <div class="container">
-                        <h2><label for="">Mã đơn:
-                                <?= $id ?>
-                            </label></h2>
-                        <h2><label for="">Tên khách hàng:
-                                <?= $nguoidung ?>
-                            </label></h2>
-                        </label></h2>
-                        <h2><label for="">Số điện thoại
-                                <?= $sdt ?>
-                            </label></h2>
-                        <h2><label for="">Địa chỉ giao hàng:
-                                <?= $diachi ?>
-                            </label></h2>
-                        <h2><label for="">Thời gian mua:
-                                <?= $thoigian_mua ?>
-                            </label></h2>
-                        <h2><label for="">Số lượng:
-                                <?= $soluong ?>
-                            </label></h2>
-                        <h2><label for="">Phương thức thanh toán: 
-                                <?= $pt_thanhtoan == 0  ? 'Thanh toán khi giao hàng' : 'Chuyển khoản trực tiếp' ?>
-                            </label></h2>
-                        <h2><label for="">Trạng thái:
-                                <?php
-                                if($id_trangthai_donhang == 1) {
-                                    echo "Chờ xác nhận";
-                                } else if($id_trangthai_donhang == 2) {
-                                    echo "Đã xác nhận";
-                                } else if($id_trangthai_donhang == 3) {
-                                    echo "Đang xửa lý";
-                                } else if($id_trangthai_donhang == 4) {
-                                    echo "Đang vận chuyển";
-                                } else if($id_trangthai_donhang == 5) {
-                                    echo "Giao hàng thành công";
-                                } else if($id_trangthai_donhang == 6) {
-                                    echo "CHờ thanh toán ";
-                                } else if($id_trangthai_donhang == 7) {
-                                    echo "Đã thanh toán";
-                                } else {
-                                    echo "Đã hủy";
-                                }
-
-                                ?>
-                            </label></h2>
+                                    ?>
+                                </label></h2>
+                        </div>
 
                     </div>
-
                 </div>
             </div>
             <br>
@@ -87,7 +87,7 @@ if(is_array($donhang)) {
                         <th>Thành tiền</th>
                     </tr>
 
-                    <?php foreach($giohang as $gh):
+                    <?php foreach ($giohang as $gh):
                         extract($gh);
                         ?>
 
@@ -95,16 +95,16 @@ if(is_array($donhang)) {
                             <td style="padding-top: 30px;">
                                 <?= $tensp ?>
                             </td>
-                            <td style="padding-top: 30px;"><img src="<?= ' ../upload_file/'.$img ?>" width="100px" alt="">
+                            <td style="padding-top: 30px;"><img src="<?= ' ../upload_file/' . $img ?>" width="100px" alt="">
                             </td>
                             <td style="padding-top: 30px;">
-                                <?= (int)$giasp ?>.000 ₫
+                                <?= (int) $giasp ?>.000 ₫
                             </td>
                             <td style="padding-top: 30px;">
                                 <?= $soluong ?>
                             </td>
                             <td style="padding-top: 30px;">
-                                <?= (int)$giasp * $soluong ?>.000 ₫
+                                <?= (int) $giasp * $soluong ?>.000 ₫
                             </td>
                         </tr>
 
@@ -114,9 +114,9 @@ if(is_array($donhang)) {
                 <h2>Tổng giá:
                     <?php
                     $tong = 0;
-                    foreach($giohang as $value) {
+                    foreach ($giohang as $value) {
                         extract($value);
-                        $tong += (int)$giasp * $soluong;
+                        $tong += (int) $giasp * $soluong;
                     }
                     echo $tong;
                     ?>.000 đ

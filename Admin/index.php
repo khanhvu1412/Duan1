@@ -36,10 +36,10 @@ if(isset($_GET['act'])) {
                 $email = $_POST['email'];
                 $diachi = $_POST['diachi'];
                 $sdt = $_POST['sdt'];
-                
+                $id_role = $_POST['id_role'];
 
 
-                update_taikhoan_admin($id, $nguoidung, $matkhau, $email, $diachi, $sdt);
+                update_taikhoan_admin($id, $nguoidung, $matkhau, $email, $diachi, $sdt, $id_role);
                 $thongbao = "Cập nhật thành công";
 
             }

@@ -44,7 +44,7 @@ if (is_array($taikhoan)) {
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDescribe" class="form-label">Vai trò</label>
-                        <select name="trangthai" class="form-control" id="trangthai" >
+                        <select name="id_role" class="form-control" id="id_role" >
                             <?php
                             foreach ($listrole as $role):
                                 extract($role); ?>
