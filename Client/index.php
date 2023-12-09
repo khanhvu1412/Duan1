@@ -72,7 +72,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
         case "quenmk":
             // if (isset($_POST['guiemail']) && $_POST['guiemail']) {
             //     $email = $_POST['email'];
-        
+
             //     $checkemail = checkemail($email);
             //     if (is_array($checkemail)) {
             //       $thongbao = "Mật khẩu của bạn là: " . $checkemail['matkhau'];
@@ -98,14 +98,14 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             break;
 
         case "chitietdonhang":
-            if(isset($_GET['id']) && $_GET['id']){
+            if (isset($_GET['id']) && $_GET['id']) {
                 $giohang = load_cart($_GET['id']);
             }
             include "view/ct_donhang.php";
             break;
 
         case "huydonhang":
-            if(isset($_GET['id']) && $_GET['id']){
+            if (isset($_GET['id']) && $_GET['id']) {
                 huydonhang($_GET['id']);
                 header("Location: index.php?act=tkcanhan");
             }
@@ -136,7 +136,36 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             break;
 
         case "chitietsp":
+
+            if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
+                $id = $_POST['id'];
+                $tensp = $_POST['tensp'];
+                $img = $_POST['img'];
+                $giasp = $_POST['giasp'];
+                $soluong = $_POST['soluong'];
+                $thanhtien = ((int) $soluong * (int) $giasp);
+                $sanphamadd = [$id, $tensp, $img, $giasp, $soluong, $thanhtien];
+                if (isset($_SESSION['mycart'])) {
+                    $cartItems = $_SESSION['mycart'];
+                    $existingItemKey = null;
+                    foreach ($cartItems as $key => $item) {
+                        if ($item[0] == $id) {
+                            $existingItemKey = $key;
+                            break;
+                        }
+                    }
+                }
+                if ($existingItemKey !== null) {
+                    $cartItems[$existingItemKey][5] += $thanhtien;
+                    $cartItems[$existingItemKey][4]++;
+                } else {
+
+                    array_push($cartItems, $sanphamadd);
+                }
+                $_SESSION['mycart'] = $cartItems;
+            }
             
+
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
             }
@@ -207,19 +236,19 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $_SESSION['mycart'] = $cartItems;
             }
 
-            
 
-            if(isset($_POST['tangsoluong']) && $_POST['tangsoluong']){
+
+            if (isset($_POST['tangsoluong']) && $_POST['tangsoluong']) {
                 $id = $_POST['id'];
                 $cartItems = $_SESSION['mycart'];
-                
+
 
                 // Tìm kiếm sản phẩm trong giỏ hàng
-                foreach($cartItems as $key => $item){
-                    if($item[0] == $id){
+                foreach ($cartItems as $key => $item) {
+                    if ($item[0] == $id) {
                         // Tăng số lượng và giá tiền của sản phẩm
                         $cartItems[$key][4]++;
-                        $cartItems[$key][5] += (int)$item[3];
+                        $cartItems[$key][5] += (int) $item[3];
                         break;
                     }
                 }
@@ -228,17 +257,17 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             }
 
 
-            if(isset($_POST['giamsoluong']) && $_POST['giamsoluong']){
+            if (isset($_POST['giamsoluong']) && $_POST['giamsoluong']) {
                 $id = $_POST['id'];
                 $cartItems = $_SESSION['mycart'];
-                
+
                 // Tìm kiếm sản phẩm trong giỏ hàng
-                foreach($cartItems as $key => $item) {
-                    if($item[0] == $id){
+                foreach ($cartItems as $key => $item) {
+                    if ($item[0] == $id) {
                         // Giảm số lượng và giá tiền của sản phẩm
-                        if($item[4] > 1){
+                        if ($item[4] > 1) {
                             $cartItems[$key][4]--;
-                            $cartItems[$key][5] -= (int)$item[3];
+                            $cartItems[$key][5] -= (int) $item[3];
                             break;
                         }
                     }
@@ -252,7 +281,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 
 
         case "thanhtoan":
-            if(isset($_SESSION["user"]) === []){
+            if (isset($_SESSION["user"]) === []) {
                 echo "Bạn chưa đăng nhập tài khoản";
                 die;
             }
@@ -265,9 +294,9 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $email = $_POST['email'];
                 $thoigian_mua = date('d/m/Y');
                 $pt_thanhtoan = $_POST['pt_thanhtoan'];
-                
 
-                $id_dathang = insert_donhang($nguoidung, $sdt, $email, $diachi, $thoigian_mua, $pt_thanhtoan, count($_SESSION['mycart']) , $_SESSION['user']['id']);
+
+                $id_dathang = insert_donhang($nguoidung, $sdt, $email, $diachi, $thoigian_mua, $pt_thanhtoan, count($_SESSION['mycart']), $_SESSION['user']['id']);
 
                 $donhang = loadone_donhang($id_dathang);
                 $giohang = load_cart($id_dathang);
@@ -288,15 +317,15 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             if (!isset($_SESSION["user"])) {
                 header("Location: index.php");
             }
-            if (isset($_GET['id_donhang']) && ($_GET['id_donhang']) > 0){
+            if (isset($_GET['id_donhang']) && ($_GET['id_donhang']) > 0) {
                 $giohang = load_cart($_GET['id_donhang']);
             }
             $donhang = loadonedonang();
-            
+
             include "view/hoadon.php";
             break;
 
- 
+
 
         case "deletecart":
             if (isset($_GET['id'])) {
@@ -339,7 +368,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
     $listdanhmuc = loadall_danhmuc();
     $listsptheomua = loadall_sptheomua();
     $listsanpham = loadall_sanpham($kyw, $iddm);
-    
+
     include("home.php");
 }
 

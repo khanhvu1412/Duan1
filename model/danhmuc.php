@@ -10,7 +10,7 @@ function insert_danhmuc($tendm, $img)
 // xóa danh mục
 function delete_danhmuc($id)
 {
-    $sql = "delete from danhmuc where id=" . $id;
+    $sql = "delete from danhmuc where id=  $id" ;
     pdo_execute($sql);
 }
 

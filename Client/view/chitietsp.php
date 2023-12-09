@@ -66,13 +66,11 @@ if (isset($_SESSION['nguoidung']) && (is_array($_SESSION['nguoidung']))) {
                             </div>
 
 
-
+                            
                             <a class="button button-add-cart" data-quantity="1" href="index.php?act=thanhtoan">Mua</a>
 
                             <input type="submit" class="button button-add-cart" name="addtocart"
                                 onclick="return confirmAddgh()" value="Thêm vào giỏ hàng">
-                            <!-- <a class="wishlist button" style="margin-left: 5px;"><i class="fa-solid fa-cart-plus"
-                                    name="addtocart" style="padding-top: 10px ;"></i></a> -->
                 </form>
             </div>
         </div>
