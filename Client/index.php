@@ -281,7 +281,8 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 
 
         case "thanhtoan":
-            if (isset($_SESSION["user"]) === []) {
+            
+            if (isset($_SESSION["user"]) === [] || !isset($_SESSION['user'])) {
                 echo "Bạn chưa đăng nhập tài khoản";
                 die;
             }

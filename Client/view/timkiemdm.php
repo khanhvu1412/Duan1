@@ -42,6 +42,8 @@ if (is_array($danhmuc)) {
 								<div class="product-info" >
 								<input type ="hidden" name="tensp" class="product-name" value ="' . $tensp . '">
 								<h3 class="product-name"><a href="#">' . $tensp . '</a></h3>
+
+                                <input type="hidden" name="soluong" value="1">
 								
 								<input type ="hidden" name="giasp" class="price" value ="' . $giasp . '">
 								<span class ="price"><ins>' . $giasp . ' ₫</ins></span> 

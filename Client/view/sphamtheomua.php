@@ -44,11 +44,13 @@ if (is_array($sptheomua)) {
 								<div class="product-info" >
 								<input type ="hidden" name="tensp" class="product-name" value ="' . $tensp . '">
 								<h3 class="product-name"><a href="#">' . $tensp . '</a></h3>
+
+                                <input type="hidden" name="soluong" value="1">
 								
 								<input type ="hidden" name="giasp" class="price" value ="' . $giasp . '">
 								<span class ="price"><ins>' . $giasp . ' ₫</ins></span> 
 
-								<input type="submit" name="addtocart"onclick="return confirmAddgh()"  value="Thêm vào giỏ hàng">
+								<input type="submit" name="addtocart" onclick="return confirmAddgh()"  value="Thêm vào giỏ hàng">
 								
 								</form>
 								</div>
@@ -67,7 +69,7 @@ if (is_array($sptheomua)) {
 <?php include 'menu/3hopcn.php'; ?>
 <script>
     function confirmAddgh() {
-        if (confirm("Bạn thêm sản phẩm này vào giỏ hàng?")) {
+        if (confirm("Bạn muốn thêm sản phẩm này vào giỏ hàng?")) {
             document.location = "index.php?act=listsp";
         } else {
             return false;
