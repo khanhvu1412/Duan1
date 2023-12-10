@@ -9,6 +9,10 @@
         <div class="card-body">
 
             <div class="table-responsive">
+                <form action="">
+                    <a href="index.php?act=addsp"><input type="button" class="btn btn-primary" value="Nhập thêm"></a>
+                </form>
+
                 <br>
                 <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                     <thead>
@@ -58,11 +62,6 @@
                         ?>
                     </tbody>
                 </table>
-                <form action="">
-                    <a href="index.php?act=addsp"><input type="button" class="btn btn-primary" value="Nhập thêm"></a>
-                    <!-- <a href="index.php?act=listbl"><input type="button" class="btn btn-primary" value="Bình luận"></a> -->
-
-                </form>
 
             </div>
         </div>
@@ -82,7 +81,3 @@
         }
     }
 </script>
-
-
-
-

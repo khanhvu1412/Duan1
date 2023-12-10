@@ -8,6 +8,9 @@
         </div>
         <div class="card-body">
             <div class="table-responsive">
+            <form action="">
+                    <a href="index.php?act=adddm"><input type="button" class="btn btn-primary" value="Nhập thêm"></a>
+                </form>
                 <br>
                 <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                     <thead>
@@ -20,6 +23,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                        
 
                         <?php foreach ($listdanhmuc as $danhmuc) :
                             extract($danhmuc);
@@ -40,9 +44,7 @@
                         <?php endforeach;?>
                     </tbody>
                 </table>
-                <form action="">
-                    <a href="index.php?act=adddm"><input type="button" class="btn btn-primary" value="Nhập thêm"></a>
-                </form>
+                
                 <script>
                     function confirmDeletedm() {
                         if (confirm("Bạn có muốn xóa danh mục này không")) {

@@ -88,6 +88,7 @@ if(isset($_GET['act'])) {
 
                 insert_danhmuc($tendm, $img);
                 $thongbao = "Thêm thành công danh mục";
+               
             }
             include "danhmuc/add.php";
             break;

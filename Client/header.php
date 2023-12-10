@@ -98,9 +98,9 @@ if (isset($_POST["dangxuat"])) {
 														<form action="" method="post">
 														<a href="'.$linktk.'"><p>Trang cá nhân</p></a>';
 														
-												if($id_role == 1){
+												if($id_role == 1 || $id_role == 2){
 													$linkadmin = '../Admin/index.php';
-													echo '<a href="'.$linkadmin.'"><p>Trang Admin</p></a>';
+													echo '<a href="'.$linkadmin.'"><p>Trang Quản Lý</p></a>';
 												}
 												echo '
 														<br>
