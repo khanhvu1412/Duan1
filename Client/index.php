@@ -69,20 +69,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             break;
 
 
-        case "quenmk":
-            // if (isset($_POST['guiemail']) && $_POST['guiemail']) {
-            //     $email = $_POST['email'];
-
-            //     $checkemail = checkemail($email);
-            //     if (is_array($checkemail)) {
-            //       $thongbao = "Mật khẩu của bạn là: " . $checkemail['matkhau'];
-            //     } else {
-            //       $thongbao = "Email này không tồn tại";
-            //     }
-            //   }
-            include "view/taikhoan/quenmk.php";
-            break;
-
         case "doimk":
             if (isset($_POST['doimk'])) {
                 $id = $_POST['id'];
@@ -93,7 +79,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 
             }
             $taikhoan = loadone_taikhoan($id);
-
             include "view/doimk.php";
             break;
 
@@ -114,9 +99,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             $taikhoan = loadone_taikhoan($id);
             include "view/tkcanhan.php";
             break;
-
-
-
 
         case "sanpham":
             if (isset($_POST['kyw']) && $_POST['kyw'] != "") {
@@ -164,7 +146,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 }
                 $_SESSION['mycart'] = $cartItems;
             }
-            
+
 
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
@@ -286,7 +268,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 echo "Bạn chưa đăng nhập tài khoản";
                 die;
             }
-            
+
             $donhang = null;
             $giohang = null;
             if (isset($_POST['dongythanhtoan']) && ($_POST['dongythanhtoan'])) {
