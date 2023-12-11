@@ -58,8 +58,6 @@ if (is_array($sptheomua)) {
 							</li>';
                     }
                     ?>
-
-
                 </ul>
             </div>
         </div>
