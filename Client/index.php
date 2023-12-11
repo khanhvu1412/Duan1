@@ -219,7 +219,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                         break;
                     }
                 }
-                //Lưu giỏ hàng SESION
+                //Lưu giỏ hàng SESSION
                 $_SESSION['mycart'] = $cartItems;
             }
 
@@ -238,7 +238,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                         }
                     }
                 }
-                //Lưu giỏ hàng SESION
+                //Lưu giỏ hàng SESSION
                 $_SESSION['mycart'] = $cartItems;
             }
             $sanphamtop6 = load_sanpham_top6();
