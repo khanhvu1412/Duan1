@@ -18,7 +18,6 @@ if (isset($_GET['act'])) {
     $act = $_GET['act'];
     switch ($act) {
 
-
         // Tài khoản
         case "listtk":
 
@@ -47,7 +46,6 @@ if (isset($_GET['act'])) {
             $listtaikhoan = loadall_taikhoan();
             include "taikhoan/list.php";
             break;
-
 
         case "xoatk":
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
@@ -120,8 +118,6 @@ if (isset($_GET['act'])) {
             include "danhmuc/list.php";
             break;
 
-
-
         // Sản phẩm
         case "listsp":
             if (isset($_POST['listok']) && ($_POST['listok'])) {
@@ -173,9 +169,6 @@ if (isset($_GET['act'])) {
                 }
                 insert_sanpham($tensp, $giasp, $hinh, $mota, $soluong, $luotxem, $trangthai, $iddm, $id_sptheomua);
                 $thongbao = "Thêm thành công";
-
-
-
             }
             $listmua = loadall_sptheomua();
             $listdanhmuc = loadall_danhmuc();
@@ -239,7 +232,6 @@ if (isset($_GET['act'])) {
             include "binhluan/list.php";
             break;
 
-
         // Thống kê
         case "thongke":
             $listthongke = loadall_thongke();
@@ -251,20 +243,15 @@ if (isset($_GET['act'])) {
             include "thongke/bieudo.php";
             break;
 
-
         // Đơn hàng
         case "listdh":
             $listdonhang = loadall_donhang();
             include "donhang/list.php";
             break;
 
-
         case "chitietdh":
-
             if (isset($_GET['id']) && $_GET['id'] > 0) {
-
                 $giohang = load_cart($_GET['id']);
-
                 $donhang = loadone_donhang($_GET['id']);
             }
             include "donhang/chitietdh.php";
@@ -288,7 +275,6 @@ if (isset($_GET['act'])) {
             break;
 
         case "updatedh":
-            
             if (isset($_POST["capnhat"]) && ($_POST["capnhat"])) {
                 $id = $_POST['id'];
                 $nguoidung = $_POST['nguoidung'];

@@ -33,10 +33,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             break;
 
         case 'tkcanhan':
-            // if (isset($_GET['id']) && $_GET['id'] > 0) {
-            //     $taikhoan = loadone_taikhoan($id);
-            // }
-
             $donhang = loadone_donhang_user($_SESSION['user']['id']);
             $giohang = load_cart_user();
             $taikhoan = loadone_taikhoan($id);
@@ -64,16 +60,13 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
 
             }
             $taikhoan = loadone_taikhoan($id);
-
             include "view/capnhattk.php";
             break;
-
 
         case "doimk":
             if (isset($_POST['doimk'])) {
                 $id = $_POST['id'];
                 $matkhau = $_POST['matkhau'];
-
                 update_matkhau($id, $matkhau);
                 header("Location:index.php?act=tkcanhan");
 
@@ -111,14 +104,12 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             } else {
                 $iddm = 0;
             }
-
             $listsanpham = loadall_sanpham($kyw, $iddm);
             $listdanhmuc = loadall_danhmuc();
             include("view/sanpham.php");
             break;
 
         case "chitietsp":
-
             if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
                 $id = $_POST['id'];
                 $tensp = $_POST['tensp'];
@@ -147,15 +138,12 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $_SESSION['mycart'] = $cartItems;
             }
 
-
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $sanpham = loadone_sanpham($_GET['id']);
             }
-
             $sanphamtop6 = load_sanpham_top6();
             include("view/chitietsp.php");
             break;
-
 
         case "timkiemdm":
             if (isset($_GET['iddm']) && ($_GET['iddm']) > 0) {
@@ -180,10 +168,10 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             include "view/sphamtheomua.php";
             break;
 
-
         case "lienhe":
             include("view/menu/lienhe.php");
             break;
+
         case "about":
             include("view/menu/about.php");
             break;
@@ -218,12 +206,9 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $_SESSION['mycart'] = $cartItems;
             }
 
-
-
             if (isset($_POST['tangsoluong']) && $_POST['tangsoluong']) {
                 $id = $_POST['id'];
                 $cartItems = $_SESSION['mycart'];
-
 
                 // Tìm kiếm sản phẩm trong giỏ hàng
                 foreach ($cartItems as $key => $item) {
@@ -237,7 +222,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 //Lưu giỏ hàng SESION
                 $_SESSION['mycart'] = $cartItems;
             }
-
 
             if (isset($_POST['giamsoluong']) && $_POST['giamsoluong']) {
                 $id = $_POST['id'];
@@ -261,9 +245,7 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             include('view/menu/giohang.php');
             break;
 
-
         case "thanhtoan":
-
             if (isset($_SESSION["user"]) === [] || !isset($_SESSION['user'])) {
                 echo "Bạn chưa đăng nhập tài khoản";
                 die;
@@ -279,7 +261,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $thoigian_mua = date('d/m/Y');
                 $pt_thanhtoan = $_POST['pt_thanhtoan'];
 
-
                 $id_dathang = insert_donhang($nguoidung, $sdt, $email, $diachi, $thoigian_mua, $pt_thanhtoan, count($_SESSION['mycart']), $_SESSION['user']['id']);
 
                 $donhang = loadone_donhang($id_dathang);
@@ -292,7 +273,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             }
             $donhang = load_hoadon_user($_SESSION['user']['id']);
             $giohang = load_cart($_SESSION['user']['id']);
-
             $sanphamtop5 = loadall_sanpham_top5();
             include("view/thanhtoan.php");
             break;
@@ -305,11 +285,8 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
                 $giohang = load_cart($_GET['id_donhang']);
             }
             $donhang = loadonedonang();
-
             include "view/hoadon.php";
             break;
-
-
 
         case "deletecart":
             if (isset($_GET['id'])) {
@@ -319,8 +296,6 @@ if (isset($_GET['act']) && $_GET['act'] != "") {
             }
             header("Location: index.php?act=addgiohang");
             break;
-
-
 
         default:
             if (isset($_POST['listok']) && ($_POST['listok'])) {
